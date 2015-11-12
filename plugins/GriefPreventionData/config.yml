@@ -4,7 +4,7 @@ GriefPrevention:
     world: -1
   Claims:
     Mode:
-      world: Survival
+      world: Disabled
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -36,7 +36,7 @@ GriefPrevention:
     PortalGenerationRequiresPermission: false
     VillagerTradingRequiresPermission: true
     CommandsRequiringAccessTrust: /sethome
-    DeliverManuals: true
+    DeliverManuals: false
   Spam:
     Enabled: false
     LoginCooldownSeconds: 3
