@@ -209,7 +209,7 @@ checks:
         &e>>>
       timeout: 10
     relog:
-      active: true
+      active: false
       timeout: 5000
       warning:
         message: '&cYou relogged really fast! If you keep doing that, you''re going to be banned.'
@@ -218,7 +218,7 @@ checks:
       kickmessage: Too fast re-login, try with a little delay.
       actions: log:relog:0:10:cf cancel vl>20 log:relog:0:10:cf cancel cmd:tempkick5
     logins:
-      active: true
+      active: false
       startupdelay: 600
       perworldcount: false
       seconds: 10
