@@ -35,7 +35,7 @@ lookup:
   defaultDist: 20
   linesLimit: 1500
 mysql:
-  password: '4Uh77Am12uv1'
+  password: 4Uh77Am12uv1
   host: localhost
   port: 3306
   database: minecraft

@@ -1,3 +1,5 @@
 updateSpawnsToNewSpawnsConfig: true
 updateJailsToNewJailsConfig: true
 warnMetrics: true
+moverulesToFile: true
+deleteOldItemsCsv: true

@@ -2,5 +2,6 @@
 *.lck
 *.sqlite
 *.gz
-*.tar.gz
 *.db
+*.bak
+plugins/Multiverse-Core/worlds.yml
