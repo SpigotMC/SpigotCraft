@@ -10,6 +10,7 @@ groups:
     - modifyworld.*
     - essentials.msg
     - essentials.reply
+    - plots.permpack.basic
     options:
       build: false
       rank: '1000'
@@ -125,33 +126,17 @@ groups:
       prefix: '&5'
   Admin:
     permissions:
-    - -essentials.backup
-    - -essentials.essentials
-    - -essentials.setspawn
-    - -essentials.reloadall
-    - essentials.*
-    - permissions.manage.users
-    - permissions.manage.users.permissions
-    - permissions.manage.users.permissions.timed
-    - multiverse.teleport.self.*
-    - logblock.*
+    - '*'
     inheritance:
     - moderator
     options:
       build: true
       rank: '100'
       prefix: '&c'
-  Owner:
-    permissions:
-    - '*'
-    inheritance:
-    - admin
-    options:
-      build: true
-      rank: '0'
-      prefix: '&4'
 users:
-  md_5:
+  c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
-    - Owner
+    - Admin
+    options:
+      name: md_5
 schema-version: 1
