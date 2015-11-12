@@ -15,7 +15,7 @@ GriefPrevention:
     ProtectFires: false
     ProtectHorses: true
     InitialBlocks: 1000
-    BlocksAccruedPerHour: 1000
+    BlocksAccruedPerHour: 500
     MaxAccruedBlocks: 80000
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
@@ -36,7 +36,7 @@ GriefPrevention:
     PortalGenerationRequiresPermission: false
     VillagerTradingRequiresPermission: true
     CommandsRequiringAccessTrust: /sethome
-    DeliverManuals: false
+    DeliverManuals: true
   Spam:
     Enabled: false
     LoginCooldownSeconds: 3
