@@ -1,0 +1,292 @@
+# Add block or item names you want to be overridden or also names for custom blocks
+'1':
+  '1': granite
+  '2': polished granite
+  '3': diorite
+  '4': polished diorite
+  '5': andesite
+  '6': polished andesite
+'5':
+  '0': oak wood
+  '1': spruce wood
+  '2': birch wood
+  '3': jungle wood
+  '4': acacia wood
+  '5': dark oak wood
+'3':
+  '1': coarse dirt
+  '2': podzol
+'6':
+  '1': redwood sapling
+  '2': birch sapling
+  '3': jungle sapling
+  '4': acacia sapling
+  '5': dark oak sapling
+'9': water
+'11': lava
+'12':
+  '1': red sand
+'17':
+  '0': oak log
+  '1': spruce log
+  '2': birch log
+  '3': jungle log
+  '4': oak log
+  '5': spruce log
+  '6': birch log
+  '7': jungle log
+  '8': oak log
+  '9': spruce log
+  '10': birch log
+  '11': jungle log
+  '12': oak log
+  '13': spruce log
+  '14': birch log
+  '15': jungle log
+'18':
+  '1': spruce leaves
+  '2': birch leaves
+  '3': jungle leaves
+  '4': oak leaves
+  '5': spruce leaves
+  '6': birch leaves
+  '7': jungle leaves
+  '8': oak leaves
+  '9': spruce leaves
+  '10': birch leaves
+  '11': jungle leaves
+  '12': oak leaves
+  '13': spruce leaves
+  '14': birch leaves
+  '15': jungle leaves
+'19':
+  '1': wet sponge
+'37':
+  '0': dandelion
+'38':
+  '0': poppy
+  '1': blue orchid
+  '2': allium
+  '3': azure bluet
+  '4': red tulip
+  '5': orange tulip
+  '6': white tulip
+  '7': pink tulip
+  '8': oxeye daisy
+'24':
+  '1': chiseled sandstone
+  '2': smooth sandstone
+'31':
+  '0': dead bush
+  '1': tall grass
+  '2': fern
+'98':
+  '0': stone brick
+  '1': mossy stone brick
+  '2': cracked stone brick
+  '3': chiseled stone brick
+'125':
+  '0': wood double step generic
+  '1': wood double step redwood
+  '2': wood double step birch
+  '3': wood double step jungle
+  '4': wood double step generic
+  '5': wood double step redwood
+'126':
+  '0': wood step generic
+  '1': wood step redwood
+  '2': wood step birch
+  '3': wood step jungle
+  '4': wood step generic
+  '5': wood step redwood
+  '8': oak step
+  '9': spruce step
+  '10': birch step
+  '11': jungle step
+  '12': acacia step
+  '13': dark oak step
+  '08': wood step generic
+  '18': wood step redwood
+  '28': wood step birch
+  '38': wood step jungle
+  '48': wood step generic
+  '58': wood step redwood
+'139':
+  '1': mossy cobble wall
+'155':
+  '1': chiseled quartz block
+  '2': pillar quartz block
+  '3': pillar quartz block
+  '4': pillar quartz block
+'161':
+  '0': acacia leaves
+  '1': dark oak leaves
+  '4': acacia leaves
+  '5': dark oak leaves
+  '8': acacia leaves
+  '9': dark oak leaves
+  '12': acacia leaves
+  '13': dark oak leaves
+'162':
+  '0': acacia log
+  '1': dark oak log
+  '4': acacia log
+  '5': dark oak log
+  '8': acacia log
+  '9': dark oak log
+  '12': acacia log
+  '13': dark oak log
+'168':
+  '1': prismarine brick
+  '2': dark prismarine
+'181':
+  '0': red sandstone double step
+  '8': smooth red sandstone double step
+'175':
+  '0': sunflower
+  '1': lilac
+  '2': double tall grass
+  '3': large fern
+  '4': rose bush
+  '5': peony
+  '8': sunflower
+  '9': lilac
+  '10': double tall grass
+  '11': large fern
+  '12': rose bush
+  '13': peony
+'179':
+  '1': chiseled sandstone
+  '2': smooth sandstone
+'263':
+  '1': charcoal
+'43':
+  '0': stone double step
+  '1': sandstone double step
+  '2': wood double step
+  '3': cobblestone double step
+  '4': brick double step
+  '5': smooth brick double step
+  '6': nether brick double step
+  '7': quartz block double step
+  '8': stone double step
+  '9': sandstone double step
+  '15': quartz double step
+'44':
+  '0': stone step
+  '7': quartz block step
+  '1': sandstone step
+  '8': sandstone step
+  '2': wood step
+  '9': wood step
+  '3': cobblestone step
+  '10': cobblestone step
+  '4': brick step
+  '11': brick step
+  '5': smooth brick step
+  '12': smooth brick step
+  '6': nether brick step
+  '13': nether brick step
+  '14': quartz block step
+'351':
+  '0': black dye
+  '1': red dye
+  '2': green dye
+  '3': brown dye
+  '4': blue dye
+  '5': purple dye
+  '6': cyan dye
+  '7': silver dye
+  '8': gray dye
+  '9': pink dye
+  '10': lime dye
+  '11': yellow dye
+  '12': light blue dye
+  '13': magenta dye
+  '14': orange dye
+  '15': white dye
+'35':
+  '0': white wool
+  '1': orange wool
+  '2': magenta wool
+  '3': light blue wool
+  '4': yellow wool
+  '5': lime wool
+  '6': pink wool
+  '7': gray wool
+  '8': silver wool
+  '9': cyan wool
+  '10': purple wool
+  '11': blue wool
+  '12': brown wool
+  '13': green wool
+  '14': red wool
+  '15': black wool
+'159':
+  '0': white stained clay
+  '1': orange stained clay
+  '2': magenta stained clay
+  '3': light blue stained clay
+  '4': yellow stained clay
+  '5': lime stained clay
+  '6': pink stained clay
+  '7': gray stained clay
+  '8': silver stained clay
+  '9': cyan stained clay
+  '10': purple stained clay
+  '11': blue stained clay
+  '12': brown stained clay
+  '13': green stained clay
+  '14': red stained clay
+  '15': black stained clay
+'95':
+  '0': white stained glass
+  '1': orange stained glass
+  '2': magenta stained glass
+  '3': light blue stained glass
+  '4': yellow stained glass
+  '5': lime stained glass
+  '6': pink stained glass
+  '7': gray stained glass
+  '8': silver stained glass
+  '9': cyan stained glass
+  '10': purple stained glass
+  '11': blue stained glass
+  '12': brown stained glass
+  '13': green stained glass
+  '14': red stained glass
+  '15': black stained glass
+'160':
+  '0': white stained glass pane
+  '1': orange stained glass pane
+  '2': magenta stained glass pane
+  '3': light blue stained glass pane
+  '4': yellow stained glass pane
+  '5': lime stained glass pane
+  '6': pink stained glass pane
+  '7': gray stained glass pane
+  '8': silver stained glass pane
+  '9': cyan stained glass pane
+  '10': purple stained glass pane
+  '11': blue stained glass pane
+  '12': brown stained glass pane
+  '13': green stained glass pane
+  '14': red stained glass pane
+  '15': black stained glass pane
+'171':
+  '0': white carpet
+  '1': orange carpet
+  '2': magenta carpet
+  '3': light blue carpet
+  '4': yellow carpet
+  '5': lime carpet
+  '6': pink carpet
+  '7': gray carpet
+  '8': silver carpet
+  '9': cyan carpet
+  '10': purple carpet
+  '11': blue carpet
+  '12': brown carpet
+  '13': green carpet
+  '14': red carpet
+  '15': black carpet
