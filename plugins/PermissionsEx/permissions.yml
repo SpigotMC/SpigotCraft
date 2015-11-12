@@ -123,7 +123,7 @@ groups:
         options:
             build: true
             rank: '200'
-    Admin:
+    Administrator:
         permissions:
         - -essentials.backup
         - -essentials.essentials
@@ -145,7 +145,7 @@ groups:
         permissions:
         - '*'
         inheritance:
-        - admin
+        - administrator
         prefix: '&4'
         options:
             build: true
