@@ -1,0 +1,175 @@
+# Global configuration for PurpleIRC
+# NOTE: If you make changes to this file while the server is running use "/irc reloadconfig" to load the changes into memory.
+# Check for updates
+update-checker: false
+update-checker-mode: stable
+conn-check-interval: 1000
+reconnect-fail-message-count: 10
+enable-ident-server: false
+channel-check-interval: 100
+message-format:
+  console-chat: '[&dServer&r] %MESSAGE%'
+  game-achievement: '[&2%WORLD%&r] %NAME% has just earned the achievement [%MESSAGE%]'
+  game-mode: '[&2%WORLD%&r] %NAME% has changed game mode: [%MESSAGE%]'
+  game-action: '[&2%WORLD%&r]***%NAME% %MESSAGE%'
+  game-pchat: '[&2%WORLD%] <%NAME%> %MESSAGE%'
+  death-messages: '[&2%WORLD%&r]%MESSAGE%'
+  game-pchat-response: ' &6-> &7%TARGET%: %MESSAGE%'
+  game-chat: '[&2%WORLD%&r] <%NAME%> %MESSAGE%'
+  game-death: '[&2%WORLD%&r] %MESSAGE%'
+  game-kick: '[&2%WORLD%&r] %MESSAGE%: %REASON%'
+  game-join: '[&2%WORLD%&r] %NAME% joined the game.'
+  game-quit: '[&2%WORLD%&r] %NAME% left the game.'
+  fake-join: '[&2%WORLD%&r] %NAME% joined the game.'
+  fake-quit: '[&2%WORLD%&r] %NAME% left the game.'
+  game-command: '[&2%WORLD%&r] Command detected by %NAME%: %COMMAND% %PARAMS%'
+  game-send: '[&2%WORLD%&r]<%NAME%> %MESSAGE%'
+  ess-player-afk: '[&2%WORLD%&r] %NAME% is now AFK'
+  ess-player-not-afk: '[&2%WORLD%&r] %NAME% is no longer AFK'
+  ess-helpop: '&4[HelpOp] %DISPLAYNAME%&r: %MESSAGE%'
+  irc-ess-helpop: '&4[HelpOp] %DISPLAYNAME%&r: %MESSAGE%'
+  irc-action: '[&4IRC&r] ***%NAME% %MESSAGE%'
+  irc-chat: '[&4IRC&r]<%NAME%> %MESSAGE%'
+  irc-chat-response: ' &6-> &7Minecraft: %MESSAGE%'
+  irc-pchat: '&dPrivate message: [&4IRC&r]<%NAME%> %MESSAGE%'
+  irc-pchat-response: ' &6-> &7%TARGET%: %MESSAGE%'
+  irc-hchat-response: ' &6-> &7%TARGET%: %MESSAGE%'
+  irc-join: '[&4IRC&r] %NAME% has joined %CHANNEL%.'
+  irc-kick: '[&4IRC&r] %NAME% was kicked from %CHANNEL% by %KICKER%. (Reason- %REASON%)'
+  irc-part: '[&4IRC&r] %NAME% has left %CHANNEL%.'
+  irc-quit: '[&4IRC&r] %NAME% has left %CHANNEL%. (Reason: %REASON%)'
+  irc-topic: '[&4IRC&r] Topic changed by %NAME%: %TOPIC%.'
+  irc-nickchange: '[&4IRC&r] %OLDNICK% is now known as %NEWNICK%.'
+  irc-mode: '[&4IRC&r] %NAME% %MODE% on %CHANNEL%'
+  irc-console-chat: '&f[&5IRC&f]&r<%NAME%> %MESSAGE%'
+  irc-notice: '[&4IRC&r] [notice(%CHANNEL%)] %NOTICE% '
+  irc-a-response: ' &6-> &7[AdminChat]: %MESSAGE%'
+  game-a-chat: '[%WORLD%] <%NAME%> -> [AdminChat]: %MESSAGE%'
+  irc-a-chat: '[AdminChat] [&4IRC&r] %MESSAGE%'
+  clever-send: '[&4BOT]<%NAME%> %MESSAGE%'
+  mcmmo-admin-chat: '[admin:%WORLD%]<%NAME%> %MESSAGE%'
+  mcmmo-party-chat: '[party:%PARTY%]<%NAME%> %MESSAGE%'
+  mcmmo-chat: '[mcMMO]<%NAME%> %MESSAGE%'
+  faction-public-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
+  faction-ally-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
+  faction-enemy-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
+  hero-chat: '[%CHANNEL%]<%NAME%> %MESSAGE%'
+  hero-action: '[&2%CHANNEL%&r]***%NAME% %MESSAGE%'
+  irc-hero-action: '[&3IRC&r] ***%NAME% %MESSAGE%'
+  irc-hero-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
+  irc-hero-join: '[&3IRC&r] %NAME% has joined %CHANNEL%.'
+  irc-hero-kick: '[&3IRC&r] %NAME% was kicked from %CHANNEL% by %KICKER%. (Reason-
+    %REASON%)'
+  irc-hero-part: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-hero-quit: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-hero-topic: '[&3IRC&r] Topic changed by %NAME%: %TOPIC%.'
+  titan-chat: '[%CHANNEL%]<%NAME%> %MESSAGE%'
+  irc-titan-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
+  valid-irc-commands: 'Valid commands: %COMMANDS%'
+  invalid-irc-command: I'm sorry '%NICK%' I can't do that. Type '%CMDPREFIX%help' for a list of commands I might respond to.
+  no-perm-for-irc-command: I'm sorry '%NICK%' you are not authorized to do that. Type '%CMDPREFIX%help' for a list of commands I might respond to.
+  rts-notify: '[RTS:New] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-complete: '[RTS:Complete] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-claim: '[RTS:Claim] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-unclaim: '[RTS:Unclaim] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-held: '[RTS:Held] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-assign: '[RTS:Assign] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  rts-reopen: '[RTS:Reopen] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  dynmap-web-chat: '[Dynmap] <%NAME%> %MESSAGE%'
+  irc-dynmap-web-chat: '[IRC] %MESSAGE%'
+  irc-action-dynmap-web-chat: '[IRC] ***%NAME% %MESSAGE%'
+  irc-dynmap-nick: '[IRC] %NICK%'
+  irc-dynmap-action-nick: '[IRC] ***%NICK%'
+  ore-broadcast: '[OreBroadcast] %MESSAGE%'
+  jobs-separator: ', '
+  irc-hero-channels:
+    Global: '[G][IRC]%PLAYERPREFIX%%NAME% %MESSAGE%'
+  irc-hero-action-channels:
+    Global: '[G][IRC]***%PLAYERPREFIX%%NAME% %MESSAGE%'
+  hero-channels:
+    Global: '[%CHANNEL%]<%NAME%> %MESSAGE%'
+  hero-action-channels:
+    Global: '[&2%CHANNEL%&r]***%NAME% %MESSAGE%'
+  towny-channel-chat: '%TOWNYCHANNELTAG%[%TOWNYCHANNEL%]<%NAME%> %MESSAGE%'
+  irc-towny-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
+  irc-towny-channels:
+    irc: '[IRC]%PLAYERPREFIX%%NAME% %MESSAGE%'
+  broadcast-message: '[Broadcast] <%NAME%> %MESSAGE%'
+  broadcast-console-message: '[Broadcast] <Console> %MESSAGE%'
+  prism-rollback: '[PrismRollback] [Player: %NAME%] [Radius: %RADIUS%] [Command: %COMMAND%]
+    [Keyword: %KEYWORD%] [X,Y,Z: %X%,%Y%,%Z%] [World: %PARAMWORLD%]'
+  prism-drain: '[PrismDrain] [Player: %NAME%] [Radius: %RADIUS%] [OrigBlock: %ORIGINALBLOCK%]
+    [NewBlock: %NEWBLOCK%] [X,Y,Z: %X%,%Y%,%Z%] [World: %BLOCKWORLD%]'
+  prism-extinguish: '[PrismExtinguish] [Player: %NAME%] [Radius%: %RADIUS] [OrigBlock:
+    %ORIGINALBLOCK%] [NewBlock: %NEWBLOCK%] [X,Y,Z: %X%,%Y%,%Z%] [World: %BLOCKWORLD%]'
+  prism-custom: '[PrismCustom] [Player: %NAME%] [Action: %ACTION%] [Message: %MESSAGE%]
+    [Plugin: %PLUGIN%]'
+  reddit-messages: '[R] %MESSAGE%'
+  default-player-suffix: ''
+  default-player-prefix: ''
+  default-group-suffix: ''
+  default-group-prefix: ''
+  default-player-world: world
+  default-player-group: ''
+  game-flood-warning: '&3Message not sent to IRC due to spamming. &rCooldown: %COOLDOWN%s'
+  irc-flood-warning: '&3Message not sent to game due to spamming. &rCooldown: %COOLDOWN%s'
+list-format: '[&9Minecraft&r] &2Online &r(%COUNT%/%MAX%): %PLAYERS%'
+list-separator: ', '
+list-player: '%GROUPPREFIX%%NAME%'
+list-sort-by-name: true
+strip-game-colors: false
+strip-irc-colors: false
+strip-irc-bg-colors: true
+custom-tab-list: false
+custom-tab-prefix: '[I] '
+custom-tab-gamemode: SPECTATOR
+nick-exact-match: true
+nick-prefixes:
+  ircop: '&4~'
+  ircsuperop: '&6&&'
+  op: '&c@'
+  halfop: '&3%'
+  voice: '&2+'
+irc-color-map:
+  AQUA: CYAN
+  BLACK: BLACK
+  BLUE: BLUE
+  BOLD: BOLD
+  DARK_AQUA: TEAL
+  DARK_BLUE: DARK_BLUE
+  DARK_GRAY: DARK_GRAY
+  DARK_GREEN: DARK_GREEN
+  DARK_PURPLE: PURPLE
+  DARK_RED: RED
+  GOLD: OLIVE
+  GRAY: LIGHT_GRAY
+  GREEN: GREEN
+  LIGHT_PURPLE: MAGENTA
+  RED: RED
+  UNDERLINE: UNDERLINE
+  YELLOW: YELLOW
+  WHITE: WHITE
+  RESET: NORMAL
+game-color-map:
+  BLACK: BLACK
+  BLUE: BLUE
+  BOLD: BOLD
+  BROWN: GRAY
+  CYAN: AQUA
+  DARK_BLUE: DARK_BLUE
+  DARK_GRAY: DARK_GRAY
+  DARK_GREEN: DARK_GREEN
+  GREEN: GREEN
+  LIGHT_GRAY: GRAY
+  MAGENTA: LIGHT_PURPLE
+  NORMAL: RESET
+  OLIVE: GOLD
+  PURPLE: DARK_PURPLE
+  RED: RED
+  TEAL: DARK_AQUA
+  UNDERLINE: UNDERLINE
+  WHITE: WHITE
+  YELLOW: YELLOW
+Debug: false
+ignore-chat-cancel: false
+broadcast-chat-to-console: true
