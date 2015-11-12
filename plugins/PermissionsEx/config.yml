@@ -14,5 +14,5 @@ permissions:
     file:
       type: file
       file: permissions.yml
-updater: true
+updater: false
 alwaysUpdate: false
