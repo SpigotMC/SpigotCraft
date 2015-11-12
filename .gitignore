@@ -1,3 +1,6 @@
 *.log
 *.lck
 *.sqlite
+*.gz
+*.tar.gz
+*.db
