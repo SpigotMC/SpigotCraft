@@ -1,0 +1,2 @@
+# SpigotCraft
+Make a server!
