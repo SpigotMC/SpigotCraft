@@ -15,4 +15,4 @@ Recommended Setup
 
 IRC
 ---
-Join us on [irc.spi.gt, #spigot-server](https://irc.spi.gt/iris/?nick=&channels=spigot)
+Join us on [irc.spi.gt, #spigot-server](https://irc.spi.gt/iris/?nick=&channels=spigot-server)
