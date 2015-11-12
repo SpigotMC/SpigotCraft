@@ -12,3 +12,7 @@ Recommended Setup
 -----------------
 * Clone this repo
 * symlink the plugins dir into your test server: `ln -s SpigotCraft/plugins .`
+
+IRC
+---
+Join us on [irc.spi.gt, #spigot-server](https://irc.spi.gt/iris/?nick=&channels=spigot)
