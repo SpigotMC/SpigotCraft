@@ -9,6 +9,8 @@ groups:
         - essentials.helpop
         - essentials.help
         - modifyworld.*
+        - essentials.msg
+        - essentials.reply
         prefix: '&e'
         options:
             build: false
@@ -33,7 +35,6 @@ groups:
         - essentials.mail
         - essentials.mail.send
         - essentials.me
-        - essentials.msg
         - essentials.nick
         - essentials.pay
         - essentials.ping
