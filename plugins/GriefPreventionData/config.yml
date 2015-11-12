@@ -38,7 +38,7 @@ GriefPrevention:
     CommandsRequiringAccessTrust: /sethome
     DeliverManuals: false
   Spam:
-    Enabled: false
+    Enabled: true
     LoginCooldownSeconds: 3
     ChatSlashCommands: /me;/tell;/global;/local;/w;/msg;/r;/t
     WhisperSlashCommands: /tell;/pm;/r;/w;/whisper;/t;/msg
@@ -78,7 +78,7 @@ GriefPrevention:
   AdminsGetWhispers: true
   AdminsGetSignNotifications: true
   SmartBan: true
-  MaxPlayersPerIpAddress: 3
+  MaxPlayersPerIpAddress: 0
   Siege:
     Worlds: []
     BreakableBlocks:
