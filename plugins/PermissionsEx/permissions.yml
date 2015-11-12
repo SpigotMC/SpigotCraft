@@ -114,6 +114,9 @@ groups:
         - permissions.user.promote.default
         - permissions.user.demote.default
         - permissions.manage.membership
+        - logblock.spawnTools
+        - logblock.tools.toolblock
+        - logblock.lookup
         inheritance:
         - builder
         prefix: '&5'
@@ -130,6 +133,8 @@ groups:
         - permissions.manage.users
         - permissions.manage.users.permissions
         - permissions.manage.users.permissions.timed
+        - multiverse.teleport.self.*
+        - logblock.*
         inheritance:
         - moderator
         prefix: '&c'
