@@ -5,6 +5,7 @@ GriefPrevention:
   Claims:
     Mode:
       world: Survival
+      creative: Disabled
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
