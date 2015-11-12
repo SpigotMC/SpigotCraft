@@ -1,0 +1,18 @@
+multiserver:
+  use-netevents: true
+permissions:
+  debug: false
+  allowOps: false
+  user-add-groups-last: false
+  log-players: false
+  createUserRecords: false
+  backend: file
+  informplayers:
+    changes: false
+  basedir: plugins/PermissionsEx
+  backends:
+    file:
+      type: file
+      file: permissions.yml
+updater: true
+alwaysUpdate: false

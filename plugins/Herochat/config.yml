@@ -1,0 +1,29 @@
+moderator-permissions:
+  can-kick: true
+  can-ban: true
+  can-mute: true
+  can-remove-channel: true
+  can-modify-nick: true
+  can-modify-color: true
+  can-modify-distance: true
+  can-modify-password: true
+  can-modify-format: false
+  can-modify-shortcut: false
+  can-modify-verbose: true
+  can-modify-focusable: false
+  can-modify-crossworld: false
+  can-color-messages: true
+  can-view-info: true
+  can-focus: true
+default-channel: Global
+censors: []
+format:
+  default: '{color}[{nick}] &f{prefix}{sender}{suffix}{color}: {msg}'
+  announce: '{color}[{nick}] {msg}'
+  emote: '{color}[{nick}] * {msg}'
+  private-message: '&d{convoaddress} {convopartner}&d: {msg}'
+use-channel-emotes: true
+locale: en_US
+log-chat: true
+log-to-bukkit: false
+twitter-style-private-messages: true

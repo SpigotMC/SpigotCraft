@@ -1,0 +1,5 @@
+# This configuration file affects all plugins using the Updater system (version 2+ - http://forums.bukkit.org/threads/96681/ )
+# If you wish to use your API key, read http://wiki.bukkit.org/ServerMods_API and place it below.
+# Some updating systems will not adhere to the disabled value, but these may be turned off in their plugin's configuration.
+api-key: PUT_API_KEY_HERE
+disable: false

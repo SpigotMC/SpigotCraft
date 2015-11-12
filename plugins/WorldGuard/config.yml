@@ -1,0 +1,170 @@
+#
+# WorldGuard's main configuration file
+#
+# This is the global configuration file. Anything placed into here will
+# be applied to all worlds. However, each world has its own configuration
+# file to allow you to replace most settings in here for that world only.
+#
+# About editing this file:
+# - DO NOT USE TABS. You MUST use spaces or Bukkit will complain. If
+#   you use an editor like Notepad++ (recommended for Windows users), you
+#   must configure it to "replace tabs with spaces." In Notepad++, this can
+#   be changed in Settings > Preferences > Language Menu.
+# - Don't get rid of the indents. They are indented so some entries are
+#   in categories (like "enforce-single-session" is in the "protection"
+#   category.
+# - If you want to check the format of this file before putting it
+#   into WorldGuard, paste it into http://yaml-online-parser.appspot.com/
+#   and see if it gives "ERROR:".
+# - Lines starting with # are comments and so they are ignored.
+#
+
+regions:
+    uuid-migration:
+        perform-on-next-start: false
+        keep-names-that-lack-uuids: true
+    use-creature-spawn-event: true
+    sql:
+        use: false
+        dsn: jdbc:mysql://localhost/worldguard
+        username: worldguard
+        password: worldguard
+        table-prefix: ''
+    enable: true
+    invincibility-removes-mobs: false
+    fake-player-build-override: true
+    explosion-flags-block-entity-damage: true
+    high-frequency-flags: false
+    protect-against-liquid-flow: false
+    wand: 334
+    max-claim-volume: 30000
+    claim-only-inside-existing-regions: false
+    max-region-count-per-player:
+        default: 7
+auto-invincible: false
+auto-invincible-group: false
+auto-no-drowning-group: false
+use-player-move-event: true
+use-player-teleports: true
+security:
+    deop-everyone-on-join: false
+    block-in-game-op-command: false
+host-keys: {}
+summary-on-start: true
+op-permissions: true
+build-permission-nodes:
+    enable: false
+    deny-message: '&eSorry, but you are not permitted to do that here.'
+event-handling:
+    block-entity-spawns-with-untraceable-cause: false
+    interaction-whitelist: []
+    emit-block-use-at-feet: []
+protection:
+    item-durability: true
+    remove-infinite-stacks: false
+    disable-xp-orb-drops: false
+    disable-obsidian-generators: false
+gameplay:
+    block-potions: []
+    block-potions-overly-reliably: false
+simulation:
+    sponge:
+        enable: false
+        radius: 3
+        redstone: false
+default:
+    pumpkin-scuba: false
+    disable-health-regain: false
+physics:
+    no-physics-gravel: false
+    no-physics-sand: false
+    vine-like-rope-ladders: false
+    allow-portal-anywhere: false
+    disable-water-damage-blocks: []
+ignition:
+    block-tnt: false
+    block-tnt-block-damage: false
+    block-lighter: false
+fire:
+    disable-lava-fire-spread: true
+    disable-all-fire-spread: false
+    disable-fire-spread-blocks: []
+    lava-spread-blocks: []
+mobs:
+    block-creeper-explosions: false
+    block-creeper-block-damage: false
+    block-wither-explosions: false
+    block-wither-block-damage: false
+    block-wither-skull-explosions: false
+    block-wither-skull-block-damage: false
+    block-enderdragon-block-damage: false
+    block-enderdragon-portal-creation: false
+    block-fireball-explosions: false
+    block-fireball-block-damage: false
+    anti-wolf-dumbness: false
+    allow-tamed-spawns: true
+    disable-enderman-griefing: false
+    disable-snowman-trails: false
+    block-painting-destroy: false
+    block-item-frame-destroy: false
+    block-plugin-spawning: true
+    block-above-ground-slimes: false
+    block-other-explosions: false
+    block-zombie-door-destruction: false
+    block-creature-spawn: []
+player-damage:
+    disable-fall-damage: false
+    disable-lava-damage: false
+    disable-fire-damage: false
+    disable-lightning-damage: false
+    disable-drowning-damage: false
+    disable-suffocation-damage: false
+    disable-contact-damage: false
+    teleport-on-suffocation: false
+    disable-void-damage: false
+    teleport-on-void-falling: false
+    disable-explosion-damage: false
+    disable-mob-damage: false
+    disable-death-messages: false
+chest-protection:
+    enable: false
+    disable-off-check: false
+crops:
+    disable-creature-trampling: false
+    disable-player-trampling: false
+weather:
+    prevent-lightning-strike-blocks: []
+    disable-lightning-strike-fire: false
+    disable-thunderstorm: false
+    disable-weather: false
+    disable-pig-zombification: false
+    disable-powered-creepers: false
+    always-raining: false
+    always-thundering: false
+dynamics:
+    disable-mushroom-spread: false
+    disable-ice-melting: false
+    disable-snow-melting: false
+    disable-snow-formation: false
+    disable-ice-formation: false
+    disable-leaf-decay: false
+    disable-grass-growth: false
+    disable-mycelium-spread: false
+    disable-vine-growth: false
+    disable-soil-dehydration: false
+    snow-fall-blocks: []
+blacklist:
+    use-as-whitelist: false
+    logging:
+        console:
+            enable: true
+        database:
+            enable: false
+            dsn: jdbc:mysql://localhost:3306/minecraft
+            user: root
+            pass: ''
+            table: blacklist_events
+        file:
+            enable: false
+            path: worldguard/logs/%Y-%m-%d.log
+            open-files: 10

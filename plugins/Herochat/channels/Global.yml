@@ -1,0 +1,14 @@
+name: Global
+nick: G
+format: '{default}'
+password: ''
+color: DARK_GREEN
+distance: 0
+shortcut: false
+verbose: true
+crossworld: false
+muted: false
+worlds: []
+bans: []
+mutes: []
+moderators: []
