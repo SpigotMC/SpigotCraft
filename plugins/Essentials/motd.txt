@@ -1,2 +1,2 @@
-Welcome to &6SpigotCraft
-&rWe currently contain {ONLINE} fellow players.
+&7Welcome to &6Spigot&eCraft&7!
+&7We currently have &6{ONLINE} &7community members online.
