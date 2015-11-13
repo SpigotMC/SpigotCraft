@@ -1,0 +1,372 @@
+# Sample PurpleIRC bot configuration.
+# Most of these options should be self explanatory.
+# Place your bot file in the PurpleIRC/bots/ folder.
+# NOTE: If you make changes to this file while the server is running use "/irc reloadbotconfigs" to load the changes into memory.
+#
+# nick - Your bot's unique nickname
+nick: AwesomeBot
+# If your bot's nick is in use try these alternates. Leave blank for none.
+alt-nicks:
+  - '%NICK%_'
+  - '%NICK%__'
+# login - Your bot's login name
+login: AwesomeName
+# realname
+realname: ''
+# server - IRC server to join
+server: irc.example.com
+# port - IRC server port
+port: 6667
+# Enable TLS support via STARTTLS. Must connect to non-SSL port to use this.
+tls: false
+# Attempt ssl connection to IRC server
+ssl: false
+# Trust all SSL certs
+trust-all-certs: false
+# Bind address
+bind: ''
+# Auto split length for long messages
+max-line-length: 440
+# Character encoding. Leave blank for Java default.
+charset: ''
+# show irc server motd on connect
+show-motd: false
+# autoconnect - Connect automatically on startup
+autoconnect: 'false'
+# password - Server password if needed
+password: ''
+# identify password (sent to NickServ)
+ident-password: ''
+# command-prefix - The bot will listen for commands that start with this. 
+command-prefix: '.'
+# quit-message - Message the bot will send when it quits the server
+quit-message: '&r[&5PurpleIRC&r] &rGood bye!'
+# Message delay in milliseconds (be careful when changing this)
+message-delay: 1000
+# CTCP finger reply
+finger-reply: ''
+# send a raw message on connect
+raw-message-on-connect: false
+# the raw message
+raw-message: auth name pass
+# relay-private-chat - Allow private chat to the bot to relay to the game
+relay-private-chat: false
+# notify channels or users when a player uses commands
+command-notify:
+  enabled: false
+  # valid modes: msg, ctcp
+  mode: msg
+  # recipients can be channels or users
+  recipients:
+    - '#minecraft-test'
+    - example
+  ignore:
+    - /example
+# Messaging flood control (game and IRC)
+flood-control:
+    # Enable or disable flood control
+    enabled: false
+    # The maximum number of messages per interval
+    max-messages: 2
+    # Time interval in milliseconds
+    time-interval: 1000
+    # Cooldown in milliseconds. If user is spamming then this cooldown takes effect.
+    cooldown: 60000    
+# Automatically part invalid channels
+part-invalid-channels: false
+# Message when leaving invalid channel
+part-invalid-channels-message: 'I should not be here! Bye!'
+# Channel auto join delay in server ticks (20 ticks = 1 second)
+channel-auto-join-delay: 20
+# If your irc-chat message has a %CUSTOMPREFIX% then these custom prefixes can replace them.
+# Can match either nick or hostmask
+custom-prefixes:
+    - 'AwesomeNick [AwesomePrefix]'
+    - '*!*sarah@example.com [Owner]'
+# Default if no match is found
+custom-prefix-default: '[IRC]'
+# Similar to custom-prefixe above. Search and replace first occurrence of : and replace with &r:
+replace-first-occurrences:
+    - 'AwesomeNick : &r:'
+    - '*!*sarah@example.com : &r:'
+# channels - List the channels your bot will join here
+channels:
+  # Channel name must be surrounded by sing quotes to be YAML compliant.
+  # Use %2E instead of dots in the channel names.
+  # Example: minecraft%2Etest == minecraft.test  
+  '#minecraft-test':
+    # message prefix (replaces %CHANNELPREFIX%
+    prefix: ''
+    # worlds we listen to for this channel
+    worlds:
+    - '*'
+    # autojoin - Join the channel automatically on connect
+    autojoin: true
+    # modes - Channel modes to set
+    modes: ''
+    # password - Channel password
+    password: ''
+    # topic - Channel topic
+    topic: New topic
+    # topic-protect - Prevent others from changing the topic
+    topic-protect: false    
+    # Enable chanserve mode for topic set command (/msg chanserv topic #channel <topic>
+    topic-chanserv: false
+    # If the Shortify plugin is installed then shoten URLs sent from IRC
+    shortify: true
+    # Enable or disable message filtering
+    enable-filtering: false
+    # Filters. These wll be removed from IRC to game messages.
+    filter-list: 
+       - AwesomeBot
+    # enabled-messages - These are the message types that are either sent to the game or IRC
+    # config.yml. Remove or comment the messages you don't want.       
+    enabled-messages:
+    # These messages are sent from game to IRC (see permissions)
+    - console-chat
+    - game-action
+    - game-chat
+    - game-death
+    - game-kick
+    - game-join
+    - game-quit
+    - fake-join
+    - fake-quit
+    - game-mode
+    # Essentials helpop messages (/helpop /amsg /ac)   
+    - ess-helpop
+    # Prism
+    #- prism-rollback
+    #- prism-drain
+    #- prism-extinguish
+    #- prism-custom
+    # The game-afk message type is not functional yet.
+    #- game-afk
+    # These messages are sent from IRC to game (see permissions)
+    - irc-action
+    - irc-chat
+    - irc-pchat
+    - irc-join
+    - irc-kick
+    - irc-part
+    - irc-topic
+    - irc-quit
+    - irc-nickchange
+    - irc-mode
+    - irc-notice
+    #- invalid-irc-commmand
+    #- irc-console-chat
+    # Dynmap Web Chat to IRC
+    - dynmap-web-chat
+    # IRC to Dynmap Web Chat
+    - irc-dynmap-web-chat
+    # IRC acion to Dynmap Chat (/me)
+    - irc-action-dynmap-web-chat
+    # mcMMO messages sent to IRC
+    - mcmmo-admin-chat
+    - mcmmo-party-chat
+    - mcmmo-chat
+    # FactionChat messages sent to IRC
+    - faction-public-chat
+    - faction-ally-chat
+    - faction-enemy-chat
+    # Hero chat message types that are sent from game to IRC
+    # Game messages from Global HC channel
+    - hero-Global-chat
+    - hero-Global-action
+    # Game messages from any HC channel
+    - hero-chat
+    - hero-action
+    # Specific HC channel
+    #- hero-[CHANNEL]-chat
+    #- hero-[CHANNEL]-action
+    # Various IRC messages that are sent to Herochat channel. Receiving HC
+    # channel name is configured per hero-channel: 'CHANNEL NAME'
+    #- irc-hero-action
+    #- irc-hero-chat
+    #- irc-hero-kick
+    #- irc-hero-join
+    #- irc-hero-part
+    #- irc-hero-topic
+    # CleverNotch bot messages will be sent to the IRC channel
+    - clever-chat
+    # OreBroadcast messages
+    #- ore-broadcast
+    - titan-chat
+    - towny-chat
+    # Specific TownyChat channel or tag
+    #- towny-[CHANNEL]-chat
+    #- towny-[CHANNELTAG]-chat
+    # Specific TitanChat channel
+    #- titan-[CHANNEL]-chat
+    # ReportRTS ticket notifications to irc
+    - rts-notify
+    # Catch /broadcast messages
+    #- broadcast-console-message
+    #- broadcast-message
+    # RedditStream
+    #- reddit-messages
+    # AdminPrivateChat messages game to IRC
+    #- game-a-chat
+    # AdminPrivateChat messages IRC to game
+    #- irc-a-chat
+    # Hero channel destination for IRC messages    
+    hero-channel: admin
+    # Towny channel destination for IRC messages
+    towny-channel: irc
+    # Log all messages from IRC to HeroChat    
+    log-irc-to-hero-chat: false
+    # ops - IRC hostname mask styled ops list
+    ops:    
+    - '*!*sarah@example.com'
+    # muted - IRC users that should not be heard in game
+    muted:      
+    - KuShy
+    # Set ignore-irc-chat to true if you are using @chat and don't want regular IRC chat in your game
+    ignore-irc-chat: false
+    # ignore list for custom tab list
+    custom-tab-ignore-list:
+      - AwesomeBot
+    # Don't add IRC users to tab list when a matching player is online.
+    custom-tab-ignore-duplicates: false
+    # Hide join message when player is invisible (VanishNoPacket)
+    hide-join-when-vanished: true
+    # Hide quit message when player is invisible (VanishNoPacket)
+    hide-quit-when-vanished: true
+    # How to respond to an invalid command
+    invalid-command:
+        private: false
+        ctcp: false
+    # Raw message to send if raw-message-on-join is true
+    raw-message: ''
+    raw-message-on-join: false
+    # join-notice
+    join-notice:
+        # Enable or disable this feature.
+        enabled: false
+        # Cool down in seconds per user.
+        cooldown: 60
+        # If true then message will be sent in private
+        private: true
+        # If true then message will be sent via ctcp. if false then normal msg
+        ctcp: true
+        # The actual message sent to the user when joining the channel.
+        # If the message starts with a / then a command will be run and the output sent as the message.
+        message: '/list'
+    # commands - A list of commands that the bot will act on
+    # There are several builtin game_command options.
+    #  @list - list the players in the game
+    #  @help - print out of all of the commands
+    #  @uptime - print the uptime of the game server
+    #  @chat - send message to game
+    #  @hchat - send message to specific hero channel
+    #  @ochat - send message to game (overrides irc-chat)
+    #  @motd - display minecraft server motd
+    #  @msg - send private message to player
+    #  @query - query remote minecraft server
+    #  @rtsmb - Send ReportRTS broadcast message to mods
+    #  @a - Send message to AdminPrivateChat
+    #  @version - display version
+    #  @bukkit - display API version
+    #  @versionfull - display full version info (same as /version)
+    # The modes can be *, o , v , h, q, s, or i. Mix and match as needed.
+    # If game_command can optionally accept arguments via %ARGS% and %NAME%
+    # If a command is private then the result is sent to the player privately.
+    commands:
+      chat:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@chat'
+        private_listen: true
+        channel_listen: true
+      ochat:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@ochat'   
+        private_listen: true
+        channel_listen: true
+      h:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@hchat'   
+        private_listen: true
+        channel_listen: true  
+      msg:
+        modes: '*'
+        private: true
+        ctcp: false
+        game_command: '@msg'
+        private_listen: true
+        channel_listen: true
+      list:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@list'        
+        private_listen: true
+        channel_listen: true
+      help:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@help'
+        private_listen: true
+        channel_listen: true
+      uptime:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@uptime'        
+        private_listen: true
+        channel_listen: true
+      version:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: '@versionfull'
+        private_listen: true
+        channel_listen: true
+      lag:
+        modes: '*'
+        private: false
+        ctcp: false
+        game_command: lag   
+        private_listen: true
+        channel_listen: true
+      mb:
+        modes: 'o'
+        private: 'false'
+        ctcp: 'false'
+        game_command: '@rtsmb'
+        private_listen: 'true'
+        channel_listen: 'true'
+        perm: ''
+      lv:
+        modes: 'o'
+        private: 'false'
+        ctcp: 'false'
+        game_command: '@list'
+        extra_commands: 
+            - '@version'
+        private_listen: 'true'
+        channel_listen: 'true'
+        perm: ''
+## Uncomment this if you want to hook into AdminPrivateChat
+#      a:
+#        modes: '*'
+#        private: false
+#        ctcp: false
+#        game_command: '@a'
+#        private_listen: true
+#        channel_listen: true
+## Uncomment this to allow gamemode changes via IRC
+#      gamemode:
+#        modes: 'o'
+#        private: false
+#        ctcp: false
+#        game_command: 'gamemode %ARGS%'
+#        private_listen: true
+#        channel_listen: true

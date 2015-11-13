@@ -1,0 +1,2 @@
+&7Welcome to &6Spigot&eCraft&7!
+&7We currently have &6{ONLINE} &7community members online.
