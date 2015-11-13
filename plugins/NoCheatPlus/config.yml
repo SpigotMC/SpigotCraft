@@ -134,10 +134,10 @@ checks:
       actions: cancel vl>150 log:bpspeed:3:5:if cancel vl>1000 log:bpspeed:3:5:cif cancel
   chat:
     color:
-      active: true
+      active: false
       actions: log:color:0:1:if cancel
     commands:
-      active: true
+      active: false
       exclusions: []
       handleaschat:
       - me
@@ -155,7 +155,7 @@ checks:
       tries: 3
       actions: cancel cmd:kickcaptcha vl>4 log:captcha:2:5:cf cancel cmd:kickcaptcha
     text:
-      active: true
+      active: false
       allowvlreset: true
       frequency:
         normal:
@@ -184,7 +184,7 @@ checks:
           lengthmsg: 1.0
           noletter: 0.0
       global:
-        active: true
+        active: false
         weight: 1.0
         words:
           active: false
@@ -193,7 +193,7 @@ checks:
         similarity:
           active: false
       player:
-        active: true
+        active: false
         words:
           active: false
         prefixes:
@@ -201,7 +201,7 @@ checks:
         similarity:
           active: false
     warning:
-      active: true
+      active: false
       level: 67
       message: |-
         &e>>>
