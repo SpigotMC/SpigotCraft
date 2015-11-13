@@ -1,0 +1,18 @@
+icons: {
+    }
+sets:
+    markers:
+        circles: {
+            }
+        hide: false
+        markers: {
+            }
+        layerprio: 0
+        areas: {
+            }
+        deficon: default
+        lines: {
+            }
+        label: Markers
+playersets: {
+    }
