@@ -371,7 +371,7 @@ custom-join-message: "&8(&a+&8) &6{USERNAME}"
 
 # You can set a custom quit message here, set to "none" to disable.
 # You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
-custom-quit-message: "&8(&a+&8) &6{USERNAME}"
+custom-quit-message: "&8(&4-&8) &6{USERNAME}"
 
 # Add worlds to this list, if you want to automatically disable god mode there.
 no-god-in-worlds:
