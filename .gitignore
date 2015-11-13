@@ -10,3 +10,7 @@ plugins/Herochat/chatters
 plugins/Multiverse-Core/worlds.yml
 plugins/GriefPreventionData/ClaimData
 plugins/GriefPreventionData/PlayerData
+plugins/dynmap/web/tiles
+plugins/dynmap/web/standalone
+plugins/dynmap/web/js
+plugins/dynmap/web/css
