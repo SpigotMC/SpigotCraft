@@ -32,11 +32,3 @@ templates:
         shader: stdtexture
         lighting: shadows
         mapzoomin: 1
-      - class: org.dynmap.hdmap.HDMap
-        name: cave
-        title: "Cave"
-        prefix: ct
-        perspective: iso_SE_60_lowres
-        shader: cave
-        lighting: default
-        mapzoomin: 3

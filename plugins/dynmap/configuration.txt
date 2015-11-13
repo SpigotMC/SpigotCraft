@@ -40,7 +40,7 @@ components:
   - class: org.dynmap.InternalClientUpdateComponent
     sendhealth: true
     sendposition: true
-    allowwebchat: true
+    allowwebchat: false
     webchat-interval: 5
     hidewebchatip: false
     trustclientname: false
@@ -137,7 +137,7 @@ components:
   - class: org.dynmap.ClientComponent
     type: chatbox
     showplayerfaces: true
-    messagettl: 5
+    messagettl: 10
     # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
     #scrollback: 100
     # Optiona; set maximum number of lines visible for chatbox
@@ -197,13 +197,13 @@ components:
 display-whitelist: false
 
 # How often a tile gets rendered (in seconds).
-renderinterval: 1
+renderinterval: 60
 
 # How many tiles on update queue before accelerate render interval
 renderacceleratethreshold: 60
 
 # How often to render tiles when backlog is above renderacceleratethreshold
-renderaccelerateinterval: 0.2
+renderaccelerateinterval: 30
 
 # How many update tiles to work on at once (if not defined, default is 1/2 the number of cores)
 tiles-rendered-at-once: 2
@@ -220,15 +220,15 @@ saverestorepending: true
 save-pending-period: 900
 
 # Zoom-out tile update period - how often to scan for and process tile updates into zoom-out tiles (in seconds)
-zoomoutperiod: 30
+zoomoutperiod: 120
 
 # Control whether zoom out tiles are validated on startup (can be needed if zoomout processing is interrupted, but can be expensive on large maps)
-initial-zoomout-validate: true
+initial-zoomout-validate: false
 
 # Default delay on processing of updated tiles, in seconds.  This can reduce potentially expensive re-rendering
 # of frequently updated tiles (such as due to machines, pistons, quarries or other automation).  Values can
 # also be set on individual worlds and individual maps.
-tileupdatedelay: 30
+tileupdatedelay: 60
 
 # Tile hashing is used to minimize tile file updates when no changes have occurred - set to false to disable
 enabletilehash: true
@@ -288,22 +288,22 @@ render-triggers:
   #- playerjoin
   - blockplaced
   - blockbreak
-  - leavesdecay
+  #- leavesdecay
   - blockburn
-  - chunkgenerated
-  - blockformed
-  - blockfaded
-  - blockspread
-  - pistonmoved
-  - explosion
+  #- chunkgenerated
+  #- blockformed
+  #- blockfaded
+  #- blockspread
+  #- pistonmoved
+  #- explosion
   #- blockfromto
   #- blockphysics
-  - structuregrow
-  - blockgrow
+  #- structuregrow
+  #- blockgrow
   #- blockredstone
 
 # Title for the web page - if not specified, defaults to the server's name (unless it is the default of 'Unknown Server')
-#webpage-title: "My Awesome Server Map"
+webpage-title: "SpigotCraft Map"
 
 # The path where the tile-files are placed.
 tilespath: web/tiles
@@ -339,7 +339,7 @@ login-required: false
 timesliceinterval: 0.0
 
 # Maximum chunk loads per server tick (1/20th of a second) - reducing this below 90 will impact render performance, but also will reduce server thread load
-maxchunkspertick: 200
+maxchunkspertick: 90
 
 # Progress report interval for fullrender/radiusrender, in tiles.  Must be 100 or greater
 progressloginterval: 100
@@ -350,7 +350,7 @@ progressloginterval: 100
 #parallelrendercnt: 4
 
 # Interval the browser should poll for updates.
-updaterate: 2000
+updaterate: 10000
 
 # If nonzero, server will pause fullrender/radiusrender processing when 'fullrenderplayerlimit' or more users are logged in
 fullrenderplayerlimit: 0
@@ -424,7 +424,7 @@ msg:
     maptypes: "Map Types"
     players: "Players"
     chatrequireslogin: "Chat Requires Login"
-    chatnotallowed: "You are not permitted to send chat messages"
+    chatnotallowed: "Join the SpigotMC IRC to chat"
     hiddennamejoin: "Player joined"
     hiddennamequit: "Player quit"
 
