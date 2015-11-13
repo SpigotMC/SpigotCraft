@@ -8,3 +8,5 @@ plugins/Essentials/userdata
 plugins/Essentials/usermap.csv
 plugins/Herochat/chatters
 plugins/Multiverse-Core/worlds.yml
+plugins/GriefPreventionData/ClaimData
+plugins/GriefPreventionData/PlayerData
