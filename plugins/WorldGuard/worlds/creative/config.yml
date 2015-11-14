@@ -9,4 +9,9 @@
 # Remove the {} and add your own entries.
 #
 
-{}
+physics:
+    no-physics-gravel: true
+    no-physics-sand: true
+    vine-like-rope-ladders: false
+    allow-portal-anywhere: false
+    disable-water-damage-blocks: []
