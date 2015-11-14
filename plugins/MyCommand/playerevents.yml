@@ -1,0 +1,30 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							MyCommand PlayerEvents config File (last update v5.0.0)							#
+#																											#
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+#					Active this feature in the config.yml (Put EXTRA_LISTENER: true)						#
+#-----------------------------------------------------------------------------------------------------------#
+
+PlayerJoin:
+  active: true
+  execute:
+  - '$text$&cWelcome on $server-name &b$player !'
+  - '$text$&6Online players : $online'
+
+PlayerKick:
+  active: false
+  execute:
+  - '/example'
+
+PlayerQuit:
+  active: false
+  execute:
+  - '/say $player quit.'
+
+PlayerDeath:
+  active_on_kill: false
+  active_on_death: false
+  execute_for_killer:
+  - '/example'
+  execute_for_defeated:
+  - '/example'

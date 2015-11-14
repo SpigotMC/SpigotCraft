@@ -10,7 +10,10 @@ groups:
     - modifyworld.*
     - essentials.msg
     - essentials.reply
-    - plots.permpack.basic
+    worlds:
+      creative:
+        permissions:
+        - plots.permpack.basic
     options:
       build: false
       rank: '1000'
