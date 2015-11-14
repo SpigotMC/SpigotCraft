@@ -151,6 +151,8 @@ worlds:
       max_height: 256
       gamemode: creative
       min_height: 1
-      border: false
+      border: true
     natural_mob_spawning: false
-    flags: {}
+    flags:
+      vehicle-cap: '32'
+      entity-cap: '32'
