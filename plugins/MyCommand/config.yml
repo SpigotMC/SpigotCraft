@@ -11,10 +11,10 @@
 #-----------------------------------------------------------------------------------------------------------#
 LISTENERS:
   CUSTOM_COMMANDS_GAME: true
-  CUSTOM_COMMANDS_CONSOLE: true
-  BLOCK_LISTENER: true
-  ITEM_LISTENER: true
-  SIGN_LISTENER: true
+  CUSTOM_COMMANDS_CONSOLE: false
+  BLOCK_LISTENER: false
+  ITEM_LISTENER: false
+  SIGN_LISTENER: false
   VEHICLE_LISTENER: false
   MOVE_LISTENER: false
   EXTRA_LISTENER: false

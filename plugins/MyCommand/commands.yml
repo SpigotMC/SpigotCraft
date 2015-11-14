@@ -25,13 +25,38 @@
 #   With register commands you can use the "tab_completer: - Hi - Hello!"	 								#
 #-----------------------------------------------------------------------------------------------------------#
 
-'delay_example':
-  command: /mycmd-timer
-  type: RUN_COMMAND
+'creative':
+  command: /creative
+  type: TEXT
+  text:
+  - '&c&lWARNING: &r&cMoving to a creative world &c&lwill result in death.'
+  - '&cStore all inventory you want to keep in a chest!'
+  - '&fYou may transfer to &6/PlotWorld'
+  permission-required: false
+'plotworld':
+  command: /plotworld
+  type: RUN_CONSOLE
   runcmd:
-  - '$delay$/say 3..'
-  - '$delay$/say 2..'
-  - '$delay$/say 1..'
-  cost: 0
-  delaytimer: 1
-  delaytimer_format: SECONDS
+  - 'clear $player'
+  - 'mv tp $player creative'
+  - 'tell $player Get started with /plot auto'
+  cooldown: 60
+  allowed_worlds:
+  - world
+  error-message: '&cYou must be in the default survival world to travel to PlotWorld (or you are already in PlotWorld)'
+  permission-required: false
+'survival':
+  command: /survival
+  type: RUN_CONSOLE
+  runcmd:
+  - 'clear $player'
+  - 'mv tp $player world'
+  - 'clear $player'
+  - '%PlayerOptions%damage: 9001'
+  - 'kill $player'
+  - '%PlayerOptions%damage: 9001'
+  cooldown: 60
+  allowed_worlds:
+  - creative
+  error-message: '&cYou are already in Survival'
+  permission-required: false
