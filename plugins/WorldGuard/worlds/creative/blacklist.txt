@@ -63,3 +63,26 @@
 #[wood:0;>=2]
 #ignore-groups=admins,mods
 #on-break=notify,deny,log
+
+# Silently blocks, notifies, and logs usage of non-obtainable items
+# commandblock, endportal, nether portal, barrier, minecart with command block, monster spawner, dragon egg
+[commandblock,119,90,166,422,52,122]
+ignore-perms=iguess.ignore
+on-use=deny,notify,log
+on-place=deny,notify,log
+on-interact=deny,notify,log
+on-acquire=deny,notify,log
+on-dispense=deny,notify,log
+on-destroy-with=deny,notify,log
+on-break=deny,notify,log
+on-drop=deny,notify,log
+
+# Denies access to unnecessary stuff
+# Experience bottle, hopper, anvil(?), book_and_quill, eye of ender (prevent end portals), minecart w/ TNT, minecart w/ hopper, potions (splash potions apparently share the same ID as regular potions)
+[experience_bottle,hopper,anvil,book_and_quill,381,407,408,373]
+ignore-perms=iguess.ignore
+on-use=deny,tell,notify,log
+on-place=deny,notify,log
+on-interact=deny,tell,notify,log
+on-acquire=deny,tell
+on-dispense=deny,notify,log
