@@ -1,0 +1,8 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							MyCommand PlayerData Database File (last update v5.0.0)							#
+#																											#
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+#-----------------------------------------------------------------------------------------------------------# 
+playername:
+  Integer: 0
+  String: 'test'

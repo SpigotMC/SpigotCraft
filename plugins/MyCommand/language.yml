@@ -1,0 +1,24 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Language config file (last update v5.1.1)							#
+#									Use & as color code ,and %s for variables								#
+#  						BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    				#
+#-----------------------------------------------------------------------------------------------------------#
+LANGUAGE:
+  PREFIX: "&0[&6MyCmd&0]&r "
+  ECONOMY_COST: "&6This command cost &e%s&6$. New balance §e%s&6$"
+  ECONOMY_NO_MONEY: "&6You need &e%s&6$ for run this command."
+  DEBUG_EXECUTE: "Execute: "
+  COMMAND_ARGS_LINE1: "No args...Please use :"
+  COMMAND_ARGS_LINE2: "-> Output command(s) :"
+  ITEM_NOSET: "&dThere are no command(s) on this item"
+  NO_PERMISSIONS: "&cOps, check your permissions."
+  SIGN_REMOVED: "Sign removed!."
+  SIGN_EMPTY: "All lines are empty."
+  BLOCK_REMOVED: "Block removed!."
+  SPOUT_NOCLIENT: "You need a Spoutcraft client for use this command"
+  BLOCK_DELAY: "&cYou must wait %s sec for re-use this"
+  WARMUP1: "&6The command will be performed in &e%s &6seconds"
+  WARMUP2: "&aYou have bypassed the warmup"
+  WARMUP3: "&cThis command it's already called. Wait &4%s&c seconds"
+  COOLDOWN1: "&cWait %s seconds before you can use this command again"
+  COOLDOWN2: "&cYou have bypassed the cooldown on this command"

@@ -1,0 +1,48 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Plugin config file (last update v5.1.6)								#
+#																											#
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/  					#
+#																											#
+# With the listener, you can disable completely plugin parts. Put true for active and false for deactive it #
+# The vehicle listener, it's used only for DETECTOR_RAIL Material.											#
+# The Move listener instead, it's used for WarmUps. 														#
+# DELAY_SEC in Signs and Block it's used for prevent the command floods. Put it on 0, for disable it.		#
+# The Economy function require the Vault plugin. Download it here : http://dev.bukkit.org/server-mods/vault/#																								#
+#-----------------------------------------------------------------------------------------------------------#
+LISTENERS:
+  CUSTOM_COMMANDS_GAME: true
+  CUSTOM_COMMANDS_CONSOLE: true
+  BLOCK_LISTENER: true
+  ITEM_LISTENER: true
+  SIGN_LISTENER: true
+  VEHICLE_LISTENER: false
+  MOVE_LISTENER: false
+  EXTRA_LISTENER: false
+  PLUGIN_MESSAGE_LISTENER: false
+DEBUG:
+  GAME: false
+  CONSOLE: true
+  DISABLE_PERMISSIONS: false
+  USE_UUID_FOR_PLAYERDATA: true
+ECONOMY:
+  ALLOW_DEBIT: false
+SCHEDULER:
+  ENABLED: false
+  DATE_FORMAT: "d M yyyy"
+  FIRST_CHECK_AFTER_SEC: 60
+  LAUNCH_CHECK_ON_EVERY_N_MIN: 60
+SIGNS:
+  HEADER: "[MYCMD]"
+  DELAY_SEC: 5
+BLOCKS:
+  DELAY_SEC: 5
+  MATERIAL:
+    RIGHT_CLICK_INTERACTION:
+    - LEVER
+    - STONE_BUTTON
+    - WOOD_BUTTON
+    - WOODEN_DOOR
+    PHYSICAL_INTERACTION:
+    - STONE_PLATE
+    - WOOD_PLATE
+    - DETECTOR_RAIL
