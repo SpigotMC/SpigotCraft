@@ -43,7 +43,7 @@
   cooldown: 60
   allowed_worlds:
   - world
-  error-message: '&cYou must be in the default survival world to travel to PlotWorld (or you are already in PlotWorld)'
+  error-message: '&cYou are already in PlotWorld, or are in The End or the Nether. If the latter, find a way back to the overworld first.'
   permission-required: false
 'survival':
   command: /survival
@@ -60,3 +60,18 @@
   - creative
   error-message: '&cYou are already in Survival'
   permission-required: false
+'spawn':
+  command: /spawn
+  type: RUN_CONSOLE
+  runcmd:
+  - '$world=%creative%tell $player Use /survival to get back to survival.'
+  - '$world=%creative%mv tp $player creative'
+  - '$world=%world%mv tp $player world'
+  - ''
+  allowed_worlds:
+  - creative
+  - world
+  error-message: '&cYou are in The End or the Nether, find a way back to the overworld first.'
+  cooldown: 10
+  permission-required: false
+  

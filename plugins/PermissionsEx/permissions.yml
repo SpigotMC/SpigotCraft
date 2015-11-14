@@ -1,7 +1,6 @@
 groups:
   Default:
     permissions:
-    - essentials.spawn
     - essentials.rules
     - essentials.motd
     - essentials.list
