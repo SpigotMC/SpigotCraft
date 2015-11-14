@@ -11,6 +11,7 @@ groups:
     - essentials.msg
     - essentials.reply
     - plots.permpack.basic
+    - plots.plot.1
     options:
       build: false
       rank: '1000'
@@ -18,6 +19,7 @@ groups:
       default: true
   Builder:
     permissions:
+    - plots.plot.4
     - essentials.afk
     - essentials.back
     - essentials.back.ondeath
