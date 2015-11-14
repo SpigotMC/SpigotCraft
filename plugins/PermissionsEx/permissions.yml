@@ -1,7 +1,6 @@
 groups:
   Default:
     permissions:
-    - essentials.spawn
     - essentials.rules
     - essentials.motd
     - essentials.list
@@ -10,8 +9,11 @@ groups:
     - modifyworld.*
     - essentials.msg
     - essentials.reply
-    - plots.permpack.basic
     - plots.plot.1
+    worlds:
+      creative:
+        permissions:
+        - plots.permpack.basic
     options:
       build: false
       rank: '1000'
