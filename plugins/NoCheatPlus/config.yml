@@ -401,7 +401,7 @@ checks:
           - set back
           - back set
     survivalfly:
-      active: true
+      active: false
       extended:
         vertical-accounting: true
       falldamage: true
