@@ -351,7 +351,7 @@ checks:
       ignorecreative: false
       model:
         creative:
-          horizontalspeed: 100
+          horizontalspeed: 150
           verticalspeed: 100
           maxheight: 128
         spectator:
