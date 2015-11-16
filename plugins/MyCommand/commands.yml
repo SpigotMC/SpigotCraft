@@ -67,7 +67,6 @@
   - '$world=%creative%tell $player Use /survival to get back to survival.'
   - '$world=%creative%mv tp $player creative'
   - '$world=%world%mv tp $player world'
-  - ''
   allowed_worlds:
   - creative
   - world
