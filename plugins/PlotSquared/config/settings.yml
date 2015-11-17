@@ -71,7 +71,7 @@ kill_road_mobs: false
 mob_pathfinding: true
 plotme-alias: false
 plotme-convert:
-  enabled: true
+  enabled: false
   cache-uuids: false
 global_limit: false
 update-notifications: false
