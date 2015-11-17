@@ -64,14 +64,14 @@ approval:
   ratings:
     require-done: false
 chat:
-  fancy: true
+  fancy: false
 console:
-  color: true
-kill_road_mobs: false
+  color: false
+kill_road_mobs: true
 mob_pathfinding: true
 plotme-alias: false
 plotme-convert:
-  enabled: true
+  enabled: false
   cache-uuids: false
 global_limit: false
 update-notifications: false
@@ -96,11 +96,11 @@ uuid:
 max_plots: 127
 bo3:
   save_path: BO3
-kill_road_vehicles: false
+kill_road_vehicles: true
 debug: true
 clusters:
   enabled: false
-titles: true
+titles: false
 worlds:
   creative:
     plot:
