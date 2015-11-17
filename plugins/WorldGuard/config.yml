@@ -44,7 +44,7 @@ regions:
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
-use-player-move-event: true
+use-player-move-event: false
 use-player-teleports: true
 security:
     deop-everyone-on-join: false
