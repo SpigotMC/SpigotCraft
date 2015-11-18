@@ -1,0 +1,76 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.1.2)							#
+#																											#
+#  BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example    	#
+#																											#
+#	How to make a command :	(See an example command below)													#
+#		For first,put you command number on first line  													#
+#		Now put your command name on "command:" line. Don't forget the '/' before you command.				#
+#		So,select your command type from a predefined list putting it after "type" line						#
+#	COMMAND TYPE LIST :																						#
+#		TEXT , ALIAS , RUN_COMMAND , BROADCAST_TEXT , RUN_COMMAND_TEXT , RUN_COMMAND_BROADCAST_TEXT			#
+#		ADD_PERMISSION , WARMUP , COOLDOWN , RUN_CONSOLE , RUNCOMMAND_PERM_BROADCAST_TEXT , SPOUT_TEXT		#
+#       RUN_COMMAND_RANDOM , RUN_ASOPERATOR , ICON_MENU , SCOREBOARD , BUNGEE_TP , SPOUT_NOTIFICATION		#
+#		BAR_API_TEXT , BAR_API_BROADCAST_TEXT , RUN_CONSOLE_RANDOM	, CALL_URL								#
+#																											#
+#	Now,if you command it's "TEXT" type,you can put multiple line of text below text list					#
+#	Same thing,if your command it's "RUNCOMMAND" type,but put you commands below runcmd list.				#
+#	For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list					#
+#	Set delay time with delaytimer: 5 (5 = seconds) | Use the dot . for decimal cost Example = cost : 5.5 	#
+#	You can customize your permission node by placing "permission-node:" field in a command					#
+#	Also,you can change the permission error message with "permission-error:"								#
+#   Custom error-message for invalid args ,put "error-message:" line in a command.							#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 											#
+#   Register REAL commands putting "register: true" below the command.     									#
+#   With register commands you can use the "tab_completer: - Hi - Hello!"	 								#
+#-----------------------------------------------------------------------------------------------------------#
+
+'creative':
+  command: /creative
+  type: TEXT
+  text:
+  - '&c&lWARNING: &r&cMoving to a creative world &c&lwill result in death.'
+  - '&cStore all inventory you want to keep in a chest!'
+  - '&fYou may transfer to &6/PlotWorld'
+  permission-required: false
+'plotworld':
+  command: /plotworld
+  type: RUN_CONSOLE
+  runcmd:
+  - 'clear $player'
+  - 'mv tp $player creative'
+  - 'tell $player Get started with /plot auto'
+  cooldown: 60
+  allowed_worlds:
+  - world
+  error-message: '&cYou are already in PlotWorld, or are in The End or the Nether. If the latter, find a way back to the overworld first.'
+  permission-required: false
+'survival':
+  command: /survival
+  type: RUN_CONSOLE
+  runcmd:
+  - 'clear $player'
+  - 'mv tp $player world'
+  - 'clear $player'
+  - '%PlayerOptions%damage: 9001'
+  - 'kill $player'
+  - '%PlayerOptions%damage: 9001'
+  cooldown: 60
+  allowed_worlds:
+  - creative
+  error-message: '&cYou are already in Survival'
+  permission-required: false
+'spawn':
+  command: /spawn
+  type: RUN_CONSOLE
+  runcmd:
+  - '$world=%creative%tell $player Use /survival to get back to survival.'
+  - '$world=%creative%mv tp $player creative'
+  - '$world=%world%mv tp $player world'
+  allowed_worlds:
+  - creative
+  - world
+  error-message: '&cYou are in The End or the Nether, find a way back to the overworld first.'
+  cooldown: 10
+  permission-required: false
+  
