@@ -1,6 +1,0 @@
-name: FAQ
-version: 0.1
-author: alexander44233
-main: de.bitcrusher.faq.Main
-commands:
-  faq:
