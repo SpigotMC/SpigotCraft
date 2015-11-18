@@ -1,0 +1,118 @@
+# Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
+GriefPrevention:
+  SeaLevelOverrides:
+    world: -1
+  Claims:
+    Mode:
+      world: Survival
+      creative: Disabled
+    PreventTheft: true
+    ProtectCreatures: true
+    PreventButtonsSwitches: true
+    LockWoodenDoors: false
+    LockTrapDoors: false
+    LockFenceGates: true
+    EnderPearlsRequireAccessTrust: true
+    ProtectFires: false
+    ProtectHorses: true
+    InitialBlocks: 1000
+    BlocksAccruedPerHour: 500
+    MaxAccruedBlocks: 80000
+    AbandonReturnRatio: 1.0
+    AutomaticNewPlayerClaimsRadius: 4
+    ExtendIntoGroundDistance: 5
+    MinimumWidth: 5
+    MinimumArea: 100
+    MaximumDepth: 0
+    InvestigationTool: STICK
+    ModificationTool: WOOD_SPADE
+    Expiration:
+      ChestClaimDays: 7
+      UnusedClaimDays: 14
+      AllClaimDays: 0
+      AutomaticNatureRestoration:
+        SurvivalWorlds: false
+    MaximumNumberOfClaimsPerPlayer: 0
+    CreationRequiresWorldGuardBuildPermission: true
+    PortalGenerationRequiresPermission: false
+    VillagerTradingRequiresPermission: true
+    CommandsRequiringAccessTrust: /sethome
+    DeliverManuals: true
+  Spam:
+    Enabled: true
+    LoginCooldownSeconds: 3
+    ChatSlashCommands: /me;/tell;/global;/local;/w;/msg;/r;/t
+    WhisperSlashCommands: /tell;/pm;/r;/w;/whisper;/t;/msg
+    WarningMessage: Please reduce your noise level.  Spammers will be punted.
+    BanOffenders: false
+    BanMessage: Punted for spam.
+    AllowedIpAddresses: 1.2.3.4; 5.6.7.8
+    DeathMessageCooldownSeconds: 60
+  PvP:
+    RulesEnabledInWorld:
+      world: true
+    ProtectFreshSpawns: true
+    PunishLogout: true
+    CombatTimeoutSeconds: 10
+    AllowCombatItemDrop: false
+    BlockedSlashCommands: /home;/vanish;/spawn;/tpa
+    ProtectPlayersInLandClaims:
+      PlayerOwnedClaims: true
+      AdministrativeClaims: true
+      AdministrativeSubdivisions: true
+    AllowLavaDumpingNearOtherPlayers: true
+    AllowFlintAndSteelNearOtherPlayers: true
+  Economy:
+    ClaimBlocksPurchaseCost: 0.0
+    ClaimBlocksSellValue: 0.0
+  ProtectItemsDroppedOnDeath:
+    PvPWorlds: false
+    NonPvPWorlds: true
+  BlockLandClaimExplosions: true
+  BlockSurfaceCreeperExplosions: true
+  BlockSurfaceOtherExplosions: true
+  LimitSkyTrees: true
+  LimitTreeGrowth: false
+  LimitPistonsToLandClaims: true
+  FireSpreads: false
+  FireDestroys: false
+  AdminsGetWhispers: true
+  AdminsGetSignNotifications: true
+  SmartBan: true
+  MaxPlayersPerIpAddress: 0
+  Siege:
+    Worlds: []
+    BreakableBlocks:
+    - DIRT
+    - GRASS
+    - LONG_GRASS
+    - COBBLESTONE
+    - GRAVEL
+    - SAND
+    - GLASS
+    - THIN_GLASS
+    - WOOD
+    - WOOL
+    - SNOW
+  EndermenMoveBlocks: false
+  SilverfishBreakBlocks: false
+  CreaturesTrampleCrops: false
+  RabbitsEatCrops: true
+  HardModeZombiesBreakDoors: false
+  Database:
+    URL: ''
+    UserName: ''
+    Password: ''
+  Mods:
+    BlockIdsRequiringAccessTrust: []
+    BlockIdsRequiringContainerTrust:
+    - 99999:*:Example - ID 99999, all data values.
+    BlockIdsExplodable: []
+    PlayersIgnoringAllClaims: []
+  Abridged Logs:
+    Days To Keep: 7
+    Included Entry Types:
+      Social Activity: true
+      Suspicious Activity: true
+      Administrative Activity: false
+      Debug: false

@@ -1,0 +1,12 @@
+version: 3.2.16
+mysql:
+  port: '3306'
+  use: false
+  user: root
+  password: password
+  database: plot_db
+  host: localhost
+sqlite:
+  db: storage
+  use: true
+prefix: ''

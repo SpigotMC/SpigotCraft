@@ -264,24 +264,24 @@ kits:
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
-  #- color
-  #- balance
-  #- buy
-  #- sell
-  #- trade
-  #- free
-  #- disposal
-  #- warp
-  #- kit
-  #- mail
-  #- enchant
-  #- gamemode
-  #- heal
-  #- info
-  #- spawnmob
-  #- repair
-  #- time
-  #- weather
+  - color
+  - balance
+  - buy
+  - sell
+  - trade
+  - free
+  - disposal
+  - warp
+  - kit
+  - mail
+  - enchant
+  - gamemode
+  - heal
+  - info
+  - spawnmob
+  - repair
+  - time
+  - weather
 
 # How many times per second can Essentials signs be interacted with per player.
 # Values should be between 1-20, 20 being virtually no lag protection.
