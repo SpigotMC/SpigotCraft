@@ -1,0 +1,5 @@
+useMaven: true
+mavenRepositoryUrl: http://maven.sk89q.com/artifactory/repo/
+mavenGroupId: com.sk89q.worldedit
+mavenArtifactId: worldedit-bukkit
+mavenVersion: 6.1

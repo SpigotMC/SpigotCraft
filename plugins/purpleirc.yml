@@ -1,0 +1,3 @@
+useMaven: false
+name: PurpleIRC
+downloadUrl: http://h.cnaude.org:8081/jenkins/job/PurpleIRC-Spigot/lastSuccessfulBuild/artifact/target/PurpleIRC-1.0-160.jar
