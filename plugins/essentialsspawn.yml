@@ -1,0 +1,3 @@
+useMaven: false
+name: EssentialsSpawn
+downloadUrl: https://hub.spigotmc.org/jenkins/job/Spigot-Essentials/lastSuccessfulBuild/artifact/EssentialsSpawn/target/EssentialsSpawn-2.x-SNAPSHOT.jar

@@ -1,0 +1,5 @@
+useMaven: true
+mavenRepositoryUrl: http://ci.ac3-servers.eu/plugin/repository/everything/
+mavenGroupId: com.intellectualcrafters
+mavenArtifactId: PlotSquared
+mavenVersion: 3.2.23
