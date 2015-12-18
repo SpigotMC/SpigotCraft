@@ -2,10 +2,15 @@
 GriefPrevention:
   SeaLevelOverrides:
     world: -1
+    world_nether: -1
+    world_the_end: -1
+    creative: -1
   Claims:
     Mode:
+      world_the_end: Disabled
       world: Survival
-      creative: Disabled
+      world_nether: Disabled
+      creative: Creative
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -51,6 +56,9 @@ GriefPrevention:
   PvP:
     RulesEnabledInWorld:
       world: true
+      world_nether: true
+      world_the_end: true
+      creative: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 10

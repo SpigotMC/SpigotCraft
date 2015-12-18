@@ -1,6 +1,10 @@
 # SpigotCraft
 Make a server!
 
+Server
+-----
+play.spigotmc.org
+
 Rules
 -----
 * Do not submit content which you do not hold a license for.
