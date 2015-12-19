@@ -1,6 +1,7 @@
 groups:
   Default:
     permissions:
+    - herochat.speak.Global
     - essentials.spawn
     - essentials.rules
     - essentials.motd
