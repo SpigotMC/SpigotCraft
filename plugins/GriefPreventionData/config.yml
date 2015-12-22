@@ -77,13 +77,13 @@ GriefPrevention:
     PvPWorlds: false
     NonPvPWorlds: true
   BlockLandClaimExplosions: true
-  BlockSurfaceCreeperExplosions: true
-  BlockSurfaceOtherExplosions: true
+  BlockSurfaceCreeperExplosions: false
+  BlockSurfaceOtherExplosions: false
   LimitSkyTrees: true
   LimitTreeGrowth: false
-  LimitPistonsToLandClaims: true
-  FireSpreads: false
-  FireDestroys: false
+  LimitPistonsToLandClaims: false
+  FireSpreads: true
+  FireDestroys: true
   AdminsGetWhispers: true
   AdminsGetSignNotifications: true
   SmartBan: true
