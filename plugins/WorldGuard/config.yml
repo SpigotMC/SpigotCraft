@@ -84,7 +84,7 @@ physics:
 ignition:
     block-tnt: true
     block-tnt-block-damage: false
-    block-lighter: true
+    block-lighter: false
 fire:
     disable-lava-fire-spread: true
     disable-all-fire-spread: true
