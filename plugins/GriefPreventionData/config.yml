@@ -43,6 +43,7 @@ GriefPrevention:
     VillagerTradingRequiresPermission: true
     CommandsRequiringAccessTrust: /sethome
     DeliverManuals: true
+    ManualDeliveryDelaySeconds: 30
   Spam:
     Enabled: true
     LoginCooldownSeconds: 3
@@ -70,6 +71,7 @@ GriefPrevention:
       AdministrativeSubdivisions: true
     AllowLavaDumpingNearOtherPlayers: true
     AllowFlintAndSteelNearOtherPlayers: true
+    ProtectPetsOutsideLandClaims: false
   Economy:
     ClaimBlocksPurchaseCost: 0.0
     ClaimBlocksSellValue: 0.0
@@ -111,6 +113,8 @@ GriefPrevention:
     URL: ''
     UserName: ''
     Password: ''
+  UseBanCommand: false
+  BanCommandPattern: ban %name% %reason%
   Mods:
     BlockIdsRequiringAccessTrust: []
     BlockIdsRequiringContainerTrust:
