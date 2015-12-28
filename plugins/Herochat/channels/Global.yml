@@ -6,7 +6,7 @@ color: DARK_GREEN
 distance: 0
 shortcut: false
 verbose: true
-crossworld: false
+crossworld: true
 muted: false
 worlds: []
 bans: []
