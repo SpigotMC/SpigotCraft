@@ -12,6 +12,16 @@ groups:
     - essentials.msg
     - essentials.reply
     - plots.permpack.basic
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.info
+    - essentials.sethome
+    - essentials.home
+    - essentials.me
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
     - plots.plot.1
     options:
       build: false
@@ -21,7 +31,6 @@ groups:
   Builder:
     permissions:
     - plots.plot.4
-    - essentials.afk
     - essentials.back
     - essentials.back.ondeath
     - essentials.balance
@@ -38,7 +47,6 @@ groups:
     - essentials.kits.tools
     - essentials.mail
     - essentials.mail.send
-    - essentials.me
     - essentials.nick
     - essentials.pay
     - essentials.ping
@@ -56,12 +64,6 @@ groups:
     - essentials.signs.break.trade
     - essentials.suicide
     - essentials.time
-    - essentials.tpa
-    - essentials.tpaccept
-    - essentials.tpahere
-    - essentials.tpdeny
-    - essentials.warp
-    - essentials.warp.list
     - essentials.worth
     inheritance:
     - default
