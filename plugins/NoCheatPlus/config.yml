@@ -12,7 +12,7 @@ logging:
   backend:
     console:
       active: true
-      prefix: '[NoCheatPlus] '
+      prefix: '(!)'
       asynchronous: true
     file:
       active: true
@@ -20,7 +20,7 @@ logging:
       filename: nocheatplus.log
     ingamechat:
       active: true
-      prefix: '&cNCP: &f'
+      prefix: '&7(&c!&7)'
       subscriptions: false
 data:
   expiration:
@@ -37,18 +37,18 @@ protection:
     hide:
       active: true
       nopermission:
-        message: '&cI''m sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.'
+        message: '&4You do not have permission to perform this command.'
         commands:
         - plugins
         - version
         - icanhasbukkit
       unknowncommand:
-        message: Unknown command. Type "/help" for help.
+        message: Invalid command. Did you spell it right?
         commands: []
   commands:
     consoleonly:
       active: false
-      message: '&cI''m sorry, but this command can''t be executed in chat. Use the console instead!'
+      message: '&cThis command is not executable in-game.'
       commands:
       - op
       - deop
@@ -212,7 +212,7 @@ checks:
       active: false
       timeout: 5000
       warning:
-        message: '&cYou relogged really fast! If you keep doing that, you''re going to be banned.'
+        message: '&4You have relogged too fast. Continually doing this will result in a ban.'
         number: 1
         timeout: 60000
       kickmessage: Too fast re-login, try with a little delay.
@@ -223,7 +223,7 @@ checks:
       perworldcount: false
       seconds: 10
       limit: 10
-      kickmessage: Too many people logging in, retry soon.
+      kickmessage: Server has detected too many people logging, please try again later!
   combined:
     bedleave:
       active: true
@@ -510,9 +510,9 @@ strings:
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
   passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
-  tellchatnormal: 'ncp tell [player] &cNCP: &eToo many messages, slow down...'
-  tempkick1: ncp tempkick [player] 1 Wait a minute!
-  tempkick5: ncp tempkick [player] 5 You have five minutes to think about it!
+  tellchatnormal: 'ncp tell [player] &7(&c!&7) &aYou are chatting too fast. Please slow down.'
+  tempkick1: ncp tempkick [player] 1 You have been temporarily banned for 1 minute.
+  tempkick5: ncp tempkick [player] 5 You have been temporarily banned for 5 minutes.
 compatibility:
   exemptions:
     remove:

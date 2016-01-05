@@ -1,0 +1,12 @@
+To view a topic, simply run &6/einfo <topic name>
+&6Claim&f: How to claim land
+#claim
+With a &6wood shovel,&r right-click two opposing corners to claim.
+&rRight-click with a &6stick &rto view your claim.
+&rRight-click a corner with a wood shovel to resize.
+For additional information, see this video: &b&nbit.ly/mcgpuser
+Some useful commands:
+&6/trust <player>
+&6/trustlist
+&6/claimlist
+&6/abandonclaim
