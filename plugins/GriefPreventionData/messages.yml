@@ -197,7 +197,7 @@ Messages:
     Text: 'Click for Land Claim Help: {0}'
     Notes: '{0}: video URL'
   SurvivalBasicsVideo2:
-    Text: 'For Land Claim Help, see /einfo claim'
+    Text: For Land Claim Help, see /einfo claim
     Notes: '{0}: video URL'
   TrappedChatKeyword:
     Text: trapped

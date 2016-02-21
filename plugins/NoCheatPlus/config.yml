@@ -12,7 +12,7 @@ logging:
   backend:
     console:
       active: true
-      prefix: '(!)'
+      prefix: (!)
       asynchronous: true
     file:
       active: true
@@ -510,7 +510,7 @@ strings:
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
   passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
-  tellchatnormal: 'ncp tell [player] &7(&c!&7) &aYou are chatting too fast. Please slow down.'
+  tellchatnormal: ncp tell [player] &7(&c!&7) &aYou are chatting too fast. Please slow down.
   tempkick1: ncp tempkick [player] 1 You have been temporarily banned for 1 minute.
   tempkick5: ncp tempkick [player] 5 You have been temporarily banned for 5 minutes.
 compatibility:
