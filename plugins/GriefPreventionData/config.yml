@@ -9,7 +9,7 @@ GriefPrevention:
     Mode:
       world_the_end: Disabled
       world: Survival
-      world_nether: Disabled
+      world_nether: Survival
       creative: Disabled
     PreventTheft: true
     ProtectCreatures: true
