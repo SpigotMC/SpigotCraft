@@ -1,0 +1,5 @@
+# This file is for discount management. You are able to do that:
+# group1: 75
+# That means that the person with ChestShop.discount.group1 permission will pay only 75% of the price. 
+# For example, if the price is 100 dollars, the player pays only 75 dollars.
+# (Only works in buy-only Admin Shops!)
