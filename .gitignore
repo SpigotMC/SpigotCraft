@@ -6,9 +6,13 @@
 *.log
 *.sqlite
 
-plugins/Essentials/userdata
+plugins/Essentials/userdata/
 plugins/Essentials/usermap.csv
-plugins/GriefPreventionData/ClaimData
-plugins/GriefPreventionData/PlayerData
-plugins/Herochat/chatters
+plugins/GriefPreventionData/ClaimData/
+plugins/GriefPreventionData/PlayerData/
+plugins/Herochat/chatters/
+plugins/Multiverse-Core/scripts/
 plugins/Multiverse-Core/worlds.yml
+plugins/PurpleIRC/bots/
+plugins/WorldEdit/schematics/
+plugins/WorldGuard/worlds/
