@@ -23,6 +23,8 @@ groups:
     - essentials.tpahere
     - essentials.tpdeny
     - plots.plot.1
+    - herochat.create
+    -herochat.join.*
     options:
       build: false
       rank: '1000'
