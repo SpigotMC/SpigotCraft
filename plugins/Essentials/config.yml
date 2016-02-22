@@ -246,7 +246,7 @@ kits:
     delay: 600
     items:
       - 320 8 name:&4Bacon lore:&c&lYUM
-      - 297 8 name:French Bread lore:&cH&6O&cT
+      - 297 8 name:&6French_Bread lore:&cH&6O&cT
   notch:
     delay: 6000
     items:
