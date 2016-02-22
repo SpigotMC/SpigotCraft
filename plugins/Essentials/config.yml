@@ -242,6 +242,11 @@ kits:
       - 277 1 digspeed:3 name:Dwarf lore:Diggy|Diggy|Hole
       - 298 1 color:255,255,255 name:Top_Hat lore:Good_day,_Good_day
       - 279:780 1
+ Food:
+    delay: 600
+    items:
+      - 320 64 name:&4Bacon lore:&c&lYUM
+      - 297 64 name:French Bread lore:&cH&6O&cT
   notch:
     delay: 6000
     items:
