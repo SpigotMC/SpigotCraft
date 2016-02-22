@@ -24,9 +24,9 @@ groups:
     - essentials.tpdeny
     - plots.plot.1
     - herochat.create
-    -herochat.join.*
-    -herochat.leave.*
-    -herochat.speak.*
+    - herochat.join.*
+    - herochat.leave.*
+    - herochat.speak.*
     options:
       build: false
       rank: '1000'
