@@ -1,27 +1,27 @@
 groups:
   Default:
     permissions:
-    - herochat.speak.Global
-    - essentials.spawn
-    - essentials.rules
-    - essentials.motd
-    - essentials.list
-    - essentials.helpop
-    - essentials.help
-    - modifyworld.*
-    - essentials.msg
-    - essentials.reply
-    - plots.permpack.basic
+    - ChestShop.shop.*
     - essentials.afk
     - essentials.afk.auto
-    - essentials.info
-    - essentials.sethome
+    - essentials.help
+    - essentials.helpop
     - essentials.home
+    - essentials.info
+    - essentials.list
     - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.reply
+    - essentials.rules
+    - essentials.sethome
+    - essentials.spawn
     - essentials.tpa
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
+    - herochat.speak.Global
+    - plots.permpack.basic
     - plots.plot.1
     options:
       build: false
@@ -30,15 +30,14 @@ groups:
       default: true
   Builder:
     permissions:
-    - plots.plot.4
     - essentials.back
     - essentials.back.ondeath
     - essentials.balance
     - essentials.balance.others
     - essentials.balancetop
     - essentials.chat.color
-    - essentials.chat.shout
     - essentials.chat.question
+    - essentials.chat.shout
     - essentials.compass
     - essentials.depth
     - essentials.home
@@ -53,18 +52,19 @@ groups:
     - essentials.powertool
     - essentials.protect
     - essentials.sethome
-    - essentials.signs.use.*
-    - essentials.signs.create.disposal
-    - essentials.signs.create.mail
-    - essentials.signs.create.protection
-    - essentials.signs.create.trade
     - essentials.signs.break.disposal
     - essentials.signs.break.mail
     - essentials.signs.break.protection
     - essentials.signs.break.trade
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.trade
+    - essentials.signs.use.*
     - essentials.suicide
     - essentials.time
     - essentials.worth
+    - plots.plot.4
     inheritance:
     - default
     options:
@@ -73,6 +73,7 @@ groups:
       prefix: '&2'
   Moderator:
     permissions:
+    - ChestShop.admin
     - essentials.ban
     - essentials.ban.notify
     - essentials.banip
@@ -92,19 +93,19 @@ groups:
     - essentials.kill
     - essentials.mute
     - essentials.nick.others
+    - essentials.protect.admin
+    - essentials.protect.alerts
+    - essentials.protect.ownerinfo
+    - essentials.ptime
+    - essentials.ptime.others
     - essentials.realname
     - essentials.setwarp
-    - essentials.signs.create.*
     - essentials.signs.break.*
+    - essentials.signs.create.*
     - essentials.spawner
     - essentials.thunder
     - essentials.time
     - essentials.time.set
-    - essentials.protect.alerts
-    - essentials.protect.admin
-    - essentials.protect.ownerinfo
-    - essentials.ptime
-    - essentials.ptime.others
     - essentials.togglejail
     - essentials.top
     - essentials.tp
@@ -117,12 +118,12 @@ groups:
     - essentials.whois
     - essentials.world
     - essentials.worlds.*
-    - permissions.user.promote.default
-    - permissions.user.demote.default
-    - permissions.manage.membership
+    - logblock.lookup
     - logblock.spawnTools
     - logblock.tools.toolblock
-    - logblock.lookup
+    - permissions.manage.membership
+    - permissions.user.demote.default
+    - permissions.user.promote.default
     inheritance:
     - builder
     options:
