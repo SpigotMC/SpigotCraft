@@ -1,0 +1,50 @@
+prefix: "§a[Shop] §r"
+iteminfo: "§aItem Information: §r"
+
+ACCESS_DENIED: "You don't have permission to do that!"
+
+NOT_ENOUGH_MONEY: "You don't have enough money!"
+NOT_ENOUGH_MONEY_SHOP: "Shop owner doesn't have enough money!"
+
+CLIENT_DEPOSIT_FAILED: "Money deposit to your account failed!"
+SHOP_DEPOSIT_FAILED: "Money deposit to shop owner failed!"
+
+NO_BUYING_HERE: "You can't buy here!"
+NO_SELLING_HERE: "You can't sell here!"
+
+NOT_ENOUGH_SPACE_IN_INVENTORY: "You haven't got enough space in inventory!"
+NOT_ENOUGH_SPACE_IN_CHEST: "There isn't enough space in chest!"
+NOT_ENOUGH_ITEMS_TO_SELL: "You don't have enough items to sell!"
+
+NOT_ENOUGH_STOCK: "This shop is out of stock."
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: "Your %material shop is out of stock!"
+
+YOU_BOUGHT_FROM_SHOP: "You bought %item from %owner for %price."
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: "%buyer bought %item for %price from you."
+
+YOU_SOLD_TO_SHOP: "You sold %item to %buyer for %price."
+SOMEBODY_SOLD_TO_YOUR_SHOP: "%seller sold %item for %price to you."
+
+YOU_CANNOT_CREATE_SHOP: "You can't create this type of shop!"
+NO_CHEST_DETECTED: "Couldn't find a chest!"
+INVALID_SHOP_DETECTED: "The shop cannot be used!"
+CANNOT_ACCESS_THE_CHEST: "You don't have permissions to access this chest!"
+
+PROTECTED_SHOP: "Successfully protected the shop with LWC!"
+SHOP_CREATED: "Shop successfully created!"
+SHOP_FEE_PAID: "You have been charged %amount"
+SHOP_REFUNDED: "You have been refunded %amount."
+ITEM_GIVEN: "Given %item to %player."
+
+RESTRICTED_SIGN_CREATED: "Sign successfully created!"
+
+PLAYER_NOT_FOUND: "Player not found!"
+NO_PERMISSION: "You don't have permissions to do that!"
+INCORRECT_ITEM_ID: "You have specified invalid item id!"
+NOT_ENOUGH_PROTECTIONS: "Could not create a protection!"
+
+CANNOT_CREATE_SHOP_HERE: "You can't create shop here!"
+
+TOGGLE_MESSAGES_OFF: "You will no longer receive messages from your shop(s)."
+TOGGLE_MESSAGES_ON: "You will now receive messages from your shop(s)."
+

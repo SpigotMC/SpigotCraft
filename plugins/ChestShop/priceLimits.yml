@@ -1,0 +1,12 @@
+# In this file you can configure maximum and minimum prices for items (when creating a shop).
+max:
+  buy_price:
+    itemID: 5.53
+    '988': 3.51
+  sell_price:
+    '978': 3.52
+min:
+  buy_price:
+    '979': 1.03
+  sell_price:
+    '989': 0.51
