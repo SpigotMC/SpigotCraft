@@ -18,10 +18,10 @@ moderator-permissions:
 default-channel: Global
 censors: []
 format:
-  default: '{color}[{nick}] &f{prefix}{sender}{suffix}{color}: {msg}'
-  announce: '{color}[{nick}] {msg}'
-  emote: '{color}[{nick}] * {msg}'
-  private-message: '&d{convoaddress} {convopartner}&d: {msg}'
+  default: '{color}[{nick}] &f{prefix}{sender}{suffix}&7: &f{msg}'
+  announce: '{color}[{nick}] &f{msg}'
+  emote: '{color}[{nick}] &7* {msg}'
+  private-message: '&d{convoaddress} {convopartner}&7: &f{msg}'
 use-channel-emotes: true
 locale: en_US
 log-chat: true
