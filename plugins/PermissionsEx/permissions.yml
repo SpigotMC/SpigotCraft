@@ -20,6 +20,8 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
+    - essentials.ping
+    - essentials.back
     - herochat.speak.Global
     - plots.permpack.basic
     - plots.plot.1
@@ -35,7 +37,6 @@ groups:
       default: true
   Builder:
     permissions:
-    - essentials.back
     - essentials.back.ondeath
     - essentials.balance
     - essentials.balance.others
@@ -53,7 +54,6 @@ groups:
     - essentials.mail.send
     - essentials.nick
     - essentials.pay
-    - essentials.ping
     - essentials.powertool
     - essentials.protect
     - essentials.sethome
@@ -143,7 +143,7 @@ groups:
     options:
       build: true
       rank: '100'
-      prefix: '&c'
+      prefix: '&0[&cAdmin&0] &c'
 users:
   c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
