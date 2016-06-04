@@ -66,7 +66,7 @@ message-format:
   titan-chat: '[%CHANNEL%]<%NAME%> %MESSAGE%'
   irc-titan-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
   valid-irc-commands: 'Valid commands: %COMMANDS%'
-  invalid-irc-command: I'm sorry '%NICK%' I can't do that. Type '%CMDPREFIX%help' for a list of commands I might respond to.
+  invalid-irc-command: ''
   no-perm-for-irc-command: I'm sorry '%NICK%' you are not authorized to do that. Type '%CMDPREFIX%help' for a list of commands I might respond to.
   rts-notify: '[RTS:New] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
   rts-complete: '[RTS:Complete] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
