@@ -6,7 +6,7 @@ moderator-permissions:
   can-modify-nick: true
   can-modify-color: true
   can-modify-distance: true
-  can-modify-password: true
+  can-modify-password: false
   can-modify-format: false
   can-modify-shortcut: false
   can-modify-verbose: true

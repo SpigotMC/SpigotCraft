@@ -25,6 +25,9 @@ groups:
     - herochat.speak.Global
     - plots.permpack.basic
     - plots.plot.1
+    - essentials.pay
+    - essentials.mail.send
+    - essentials.mail.read    
     options:
       build: false
       rank: '1000'
