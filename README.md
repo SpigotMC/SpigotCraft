@@ -1,9 +1,9 @@
-# SpigotCraft
+# ForkedSpigotCraft
 Make a server!
 
 Server
 -----
-play.spigotmc.org
+I'll add a new domain later!
 
 Rules
 -----
@@ -17,7 +17,6 @@ Recommended Setup
 -----------------
 * Clone this repo
 * symlink the plugins dir into your test server: `ln -s SpigotCraft/plugins .`
-
-IRC
----
-Join us on [irc.spi.gt, #spigot-server](https://irc.spi.gt/iris/?nick=&channels=spigot-server)
+* (Update/add plugins if neccessary)
+* 
+Maintained by DJ_1420/GoliathLabs.
