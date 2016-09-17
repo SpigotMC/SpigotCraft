@@ -21,8 +21,12 @@ port: 6667
 tls: false
 # Attempt ssl connection to IRC server
 ssl: false
+# Disable DHE. See: http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7044060
+disable-diffie-hellman: false
 # Trust all SSL certs
 trust-all-certs: false
+# Enabled ciphers - To get a list of available ciphers run "/irc test sslcpihers"
+ciphers: []
 # Bind address
 bind: ''
 # Auto split length for long messages
@@ -37,7 +41,7 @@ autoconnect: 'false'
 password: ''
 # identify password (sent to NickServ)
 ident-password: ''
-# command-prefix - The bot will listen for commands that start with this. 
+# command-prefix - The bot will listen for commands that start with this.
 command-prefix: '.'
 # quit-message - Message the bot will send when it quits the server
 quit-message: '&r[&5PurpleIRC&r] &rGood bye!'
@@ -49,8 +53,12 @@ finger-reply: ''
 raw-message-on-connect: false
 # the raw message
 raw-message: auth name pass
+# Additional raw messages to send
+raw-message-list: []
 # relay-private-chat - Allow private chat to the bot to relay to the game
 relay-private-chat: false
+# Log private chat messages
+log-private-chat: true
 # notify channels or users when a player uses commands
 command-notify:
   enabled: false
@@ -61,7 +69,20 @@ command-notify:
     - '#minecraft-test'
     - example
   ignore:
-    - /example
+    - /login
+    - /register
+    - /auth
+# File tailer
+file-tailer:
+    enabled: false
+    file: 'server.log'
+    extra_files: []
+    recipient: '#minecraft-test'
+    ctcp: false
+    # If a line matches then it is excluded from being sent to IRC.
+    # Place slashes around a pattern to use regular expressions. 
+    excludes:
+        - '/\s+\[PurpleIRC\]\s+/'
 # Messaging flood control (game and IRC)
 flood-control:
     # Enable or disable flood control
@@ -71,11 +92,13 @@ flood-control:
     # Time interval in milliseconds
     time-interval: 1000
     # Cooldown in milliseconds. If user is spamming then this cooldown takes effect.
-    cooldown: 60000    
+    cooldown: 60000
 # Automatically part invalid channels
 part-invalid-channels: false
 # Message when leaving invalid channel
 part-invalid-channels-message: 'I should not be here! Bye!'
+# Insert zero width space into nicks of IRC output to prevent client pings
+zero-width-space: false
 # Channel auto join delay in server ticks (20 ticks = 1 second)
 channel-auto-join-delay: 20
 # If your irc-chat message has a %CUSTOMPREFIX% then these custom prefixes can replace them.
@@ -89,12 +112,33 @@ custom-prefix-default: '[IRC]'
 replace-first-occurrences:
     - 'AwesomeNick : &r:'
     - '*!*sarah@example.com : &r:'
+# Action commands
+action-commands:
+    - /me
+    - /eme
+# Bot linking
+bot-linking-enabled: false
+# Map of remote linked bots and codes. Use /irc link and /irc linkaccept
+bot-links:
+#    - remotebot: 249505593790847552435733176657146971496
+# rejoin if kicked from a channel
+join-on-kick: true
 # channels - List the channels your bot will join here
 channels:
   # Channel name must be surrounded by sing quotes to be YAML compliant.
   # Use %2E instead of dots in the channel names.
-  # Example: minecraft%2Etest == minecraft.test  
+  # Example: minecraft%2Etest == minecraft.test
   '#minecraft-test':
+    permissions: 
+      chat: 'irc.message.chat'
+      kick: 'irc.message.kick'
+      action: 'irc.message.action'
+      mode: 'irc.message.mode'
+      notice: 'irc.message.notice'
+      join: 'irc.message.join'
+      part: 'irc.message.part'
+      quit: 'irc.message.quit'
+      topic: 'irc.message.topic'
     # message prefix (replaces %CHANNELPREFIX%
     prefix: ''
     # worlds we listen to for this channel
@@ -109,7 +153,7 @@ channels:
     # topic - Channel topic
     topic: New topic
     # topic-protect - Prevent others from changing the topic
-    topic-protect: false    
+    topic-protect: false
     # Enable chanserve mode for topic set command (/msg chanserv topic #channel <topic>
     topic-chanserv: false
     # If the Shortify plugin is installed then shoten URLs sent from IRC
@@ -117,10 +161,10 @@ channels:
     # Enable or disable message filtering
     enable-filtering: false
     # Filters. These wll be removed from IRC to game messages.
-    filter-list: 
+    filter-list:
        - AwesomeBot
     # enabled-messages - These are the message types that are either sent to the game or IRC
-    # config.yml. Remove or comment the messages you don't want.       
+    # config.yml. Remove or comment the messages you don't want.
     enabled-messages:
     # These messages are sent from game to IRC (see permissions)
     - console-chat
@@ -128,12 +172,14 @@ channels:
     - game-chat
     - game-death
     - game-kick
+    - game-first-join
     - game-join
     - game-quit
-    - fake-join
-    - fake-quit
+    - game-achievement
     - game-mode
-    # Essentials helpop messages (/helpop /amsg /ac)   
+    - fake-join
+    - fake-quit    
+    # Essentials helpop messages (/helpop /amsg /ac)
     - ess-helpop
     # Prism
     #- prism-rollback
@@ -166,6 +212,9 @@ channels:
     - mcmmo-admin-chat
     - mcmmo-party-chat
     - mcmmo-chat
+    # mcMMO messages sent from IRC. Replace [PARTY] with destination mcMMO party
+    - irc-mcmmo-admin-chat
+    - irc-mcmmo-party-[PARTY]-chat
     # FactionChat messages sent to IRC
     - faction-public-chat
     - faction-ally-chat
@@ -188,6 +237,20 @@ channels:
     #- irc-hero-join
     #- irc-hero-part
     #- irc-hero-topic
+    # Venture chat. Uncomment these to enable venture chat 
+    # Replace [CHANNEL] with the channel name from Venture Chat
+    #venture-[CHANNEL]-chat
+    #venture-[CHANNEL]-action
+    # All vc channels
+    #venture-chat
+    #venture-action
+    #irc-venture-action
+    #irc-venture-chat
+    #irc-venture-kick
+    #irc-venture-join
+    #irc-venture-part
+    #irc-venture-quit
+    #irc-venture-topic
     # CleverNotch bot messages will be sent to the IRC channel
     - clever-chat
     # OreBroadcast messages
@@ -201,6 +264,11 @@ channels:
     #- titan-[CHANNEL]-chat
     # ReportRTS ticket notifications to irc
     - rts-notify
+    # SimpleTicketManager notifications to irc
+    - stm-create
+    - stm-claim
+    - stm-close
+    - stm-comment
     # Catch /broadcast messages
     #- broadcast-console-message
     #- broadcast-message
@@ -210,17 +278,19 @@ channels:
     #- game-a-chat
     # AdminPrivateChat messages IRC to game
     #- irc-a-chat
-    # Hero channel destination for IRC messages    
+    # Hero channel destination for IRC messages
     hero-channel: admin
+    # Venture channel destination for IRC messages
+    venture-channel: global
     # Towny channel destination for IRC messages
     towny-channel: irc
-    # Log all messages from IRC to HeroChat    
+    # Log all messages from IRC to HeroChat
     log-irc-to-hero-chat: false
     # ops - IRC hostname mask styled ops list
-    ops:    
+    ops:
     - '*!*sarah@example.com'
     # muted - IRC users that should not be heard in game
-    muted:      
+    muted:
     - KuShy
     # Set ignore-irc-chat to true if you are using @chat and don't want regular IRC chat in your game
     ignore-irc-chat: false
@@ -263,6 +333,7 @@ channels:
     #  @ochat - send message to game (overrides irc-chat)
     #  @motd - display minecraft server motd
     #  @msg - send private message to player
+    #  @r - quickly reply to private message
     #  @query - query remote minecraft server
     #  @rtsmb - Send ReportRTS broadcast message to mods
     #  @a - Send message to AdminPrivateChat
@@ -278,82 +349,135 @@ channels:
         private: false
         ctcp: false
         game_command: '@chat'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       ochat:
         modes: '*'
         private: false
         ctcp: false
-        game_command: '@ochat'   
+        game_command: '@ochat'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       h:
         modes: '*'
         private: false
         ctcp: false
-        game_command: '@hchat'   
+        game_command: '@hchat'
+        extras_commands: []
         private_listen: true
-        channel_listen: true  
+        channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       msg:
         modes: '*'
         private: true
         ctcp: false
         game_command: '@msg'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
+      r:
+        modes: '*'
+        private: 'true'
+        ctcp: 'false'
+        game_command: '@r'
+        private_listen: 'true'
+        channel_listen: 'true'
+        perm: ''
+        sender: CONSOLE
+        game_command_usage: ''
+        extra_commands: []
+        user_masks: []
+        output: '%RESULT%'
+        cool_down: 0;
       list:
         modes: '*'
         private: false
         ctcp: false
-        game_command: '@list'        
+        game_command: '@list'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       help:
         modes: '*'
         private: false
         ctcp: false
         game_command: '@help'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       uptime:
         modes: '*'
         private: false
         ctcp: false
-        game_command: '@uptime'        
+        game_command: '@uptime'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       version:
         modes: '*'
         private: false
         ctcp: false
         game_command: '@versionfull'
+        extras_commands: []
         private_listen: true
         channel_listen: true
+        user_masks: []
+        perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       lag:
         modes: '*'
         private: false
         ctcp: false
-        game_command: lag   
+        game_command: lag
+        extras_commands: []
         private_listen: true
         channel_listen: true
-      mb:
-        modes: 'o'
-        private: 'false'
-        ctcp: 'false'
-        game_command: '@rtsmb'
-        private_listen: 'true'
-        channel_listen: 'true'
+        user_masks: []
         perm: ''
+        output: '%RESULT%'
+        cool_down: 0;
       lv:
         modes: 'o'
         private: 'false'
         ctcp: 'false'
         game_command: '@list'
-        extra_commands: 
+        extra_commands:
             - '@version'
         private_listen: 'true'
         channel_listen: 'true'
+        user_masks: []
         perm: ''
+        cool_down: 0;
 ## Uncomment this if you want to hook into AdminPrivateChat
 #      a:
 #        modes: '*'
@@ -362,6 +486,7 @@ channels:
 #        game_command: '@a'
 #        private_listen: true
 #        channel_listen: true
+#        user_masks: []
 ## Uncomment this to allow gamemode changes via IRC
 #      gamemode:
 #        modes: 'o'
@@ -370,3 +495,31 @@ channels:
 #        game_command: 'gamemode %ARGS%'
 #        private_listen: true
 #        channel_listen: true
+#        user_masks: []
+#        output: '%RESULT%'
+## Sample of %ARGX% and %ARGX+% with game_command_usage
+#      mute:
+#        modes: o
+#        private: 'false'
+#        ctcp: 'false'
+#        game_command: mute %ARG1% %ARG2% %ARG3+%
+#        extra_commands:
+#        - 'irc say SpigBot #PurpleIRC Muted %ARG1% for %ARG2%. [Reason %ARG3+%]'
+#        game_command_usage: 'Usage: .mute <player> <time> <reason>'
+#        private_listen: 'true'
+#        channel_listen: 'true'
+#        perm: ''
+#        sender: CONSOLE
+#        user_masks: []
+#        output: '%RESULT%'
+## Uncomment this if you want to hook into ReportRTS mod broadcast command
+#      mb:
+#        modes: 'o'
+#        private: 'false'
+#        ctcp: 'false'
+#        game_command: '@rtsmb'
+#        extras_commands: []
+#        private_listen: 'true'
+#        channel_listen: 'true'
+#        user_masks: []
+#        perm: ''

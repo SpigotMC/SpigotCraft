@@ -494,3 +494,25 @@ Messages:
     Text: Land claims always extend to max build height.
   ClaimsAutoExtendDownward:
     Text: Land claims auto-extend deeper into the ground when you place blocks under them.
+  NoSiegeYourself:
+    Text: You cannot siege yourself, don't be silly
+  PlayerTooCloseForFire2:
+    Text: You can't start a fire this close to another player.
+  MinimumRadius:
+    Text: Minimum radius is {0}.
+    Notes: '0: minimum radius'
+  RadiusRequiresGoldenShovel:
+    Text: You must be holding a golden shovel when specifying a radius.
+  ClaimTooSmallForActiveBlocks:
+    Text: This claim isn't big enough to support any active block types (hoppers, spawners, beacons...).  Make the claim bigger first.
+  TooManyActiveBlocksInClaim:
+    Text: This claim is at its limit for active block types (hoppers, spawners, beacons...).  Either make it bigger, or remove other active blocks first.
+  ConsoleOnlyCommand:
+    Text: That command may only be executed from the server console.
+  WorldNotFound:
+    Text: World not found.
+  AdjustBlocksAllSuccess:
+    Text: Adjusted all online players' bonus claim blocks by {0}.
+    Notes: '0: adjustment amount'
+  TooMuchIpOverlap:
+    Text: Sorry, there are too many players logged in with your IP address.

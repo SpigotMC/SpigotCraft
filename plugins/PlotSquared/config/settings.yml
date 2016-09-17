@@ -1,158 +1,159 @@
-version: 3.2.16
-platform: Bukkit
-clear:
-  'on':
-    ban: false
-  auto:
+# These first 4 aren't configurable
+issues: "https://github.com/IntellectualSites/PlotSquared/issues"
+wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
+version: "3.4.5"
+platform: "Bukkit"
+# Show additional information in console
+debug: true
+# The big annoying text that appears when you enter a plot
+# For a single plot: `/plot flag set titles false`
+# For just you: `/plot toggle titles`
+titles: false
+
+# Enable or disable part of the plugin
+# Note: A cache will use some memory if enabled
+enabled-components:
+  # The database stores all the plots
+  database: true
+  # Events are needed to track a lot of things
+  events: true
+  # Commands are used to interact with the plugin
+  commands: true
+  # The UUID cacher is used to resolve player names
+  uuid-cache: true
+  # Notify players of updates
+  updater: false
+  # Stores user metadata in a database
+  persistent-meta: true
+  # Optimizes permission checks
+  permission-cache: false
+  # Optimizes block changing code
+  block-cache: true
+  # Getting a rating won't need the database
+  rating-cache: true
+  # The converter will attempt to convert the PlotMe database
+  plotme-converter: false
+  # Allow WorldEdit to be restricted to plots
+  worldedit-restrictions: true
+  # Allow economy to be used
+  economy: true
+  # Send anonymous usage statistics. Bukkit only setting.
+  metrics: true
+  # Expiry will clear old or simplistic plots
+  plot-expiry: true
+  # Processes chunks (trimming, or entity/tile limits) 
+  chunk-processor: false
+  # Kill mobs or vehicles on roads
+  kill-road-mobs: true
+  kill-road-vehicles: true
+  # Notify a player of any missed comments upon plot entry
+  comment-notifier: false
+  # Actively purge invalid database entries
+  database-purger: false
+  # Delete plots when a player is banned
+  ban-deleter: false
+
+ratings:
+  categories: []
+
+claim:
+  # The max plots claimed in a single `/plot auto <size>` command
+  max-auto-area: 4
+
+redstone:
+  # Disable redstone in unoccupied plots
+  disable-unoccupied: false
+  # Disable redstone when all owners/trusted/members are offline
+  disable-offline: false
+
+teleport:
+  # Teleport to your plot on death
+  on-death: false
+  # Teleport to your plot on login
+  on-login: false
+  # Add a teleportation delay to all commands
+  delay: 0
+
+# Switching from PlotMe?
+plotme:
+  # Cache the uuids from the PlotMe database
+  cache-uuds: false
+  # Have `/plotme` as a command alias
+  alias: false
+
+# Relating to how many plots someone can claim  
+limit:
+  # Should the limit be global (over multiple worlds)
+  global: false
+  # The range of permissions to check e.g. plots.plot.127
+  max-plots: 127
+
+chat:
+  # Sometimes console color doesn't work, you can disable it here
+  console-color: false
+  # Should chat be interactive
+  interactive: false
+
+done:
+  # Require a done plot to download
+  required-for-download: false
+  # Only done plots can be rated
+  required-for-ratings: false
+  # Restrict building when a plot is done
+  restrict-building: false
+  # The limit being how many plots a player can claim
+  counts-towards-limit: false
+
+web:
+  # We are already hosting a web interface for you:
+  url: "http://empcraft.com/plots/"
+  # The ip that will show up in the interface
+  server-ip: "your.ip.here"
+
+# Configure the paths PlotSquared will use
+paths:
+  schematics: "plugins/PlotSquared/schematics"
+  bo3: "BO3"
+  scripts: "scripts"
+  templates: "templates"
+  translations: "translations"
+
+uuid:
+  # Force PlotSquared to use offline UUIDs (it usually detects the right mode)
+  offline: false
+  # Force PlotSquared to use lowercase UUIDs
+  force-lowercase: false
+  # Use a database to store UUID/name info
+  use-sqluuidhandler: false
+
+chunk-processor:
+  # Auto trim will not save chunks which aren't claimed
+  auto-trim: false
+  # Max tile entities per chunk
+  max-tiles: 4096
+  # Max entities per chunk
+  max-entities: 512
+  # Disable block physics
+  disable-physics: false
+
+# This is an auto clearing task called `task1`
+auto-clear:
+  task1:
+    threshold: 1
+    required-plots: -1
+    confirmation: true
+    days: 7
+    worlds: 
+    - "*"
+    # See: https://github.com/IntellectualSites/PlotSquared/wiki/Plot-analysis
     calibration:
       variety: 0
-      changes_sd: 1
+      variety-sd: 0
+      changes: 0
+      changes-sd: 1
       faces: 0
-      data_sd: 0
+      faces-sd: 0
+      data-sd: 0
       air: 0
-      air_sd: 0
-      faces_sd: 0
+      air-sd: 0
       data: 0
-      variety_sd: 0
-      changes: 1
-    days: 7
-    clear-interval-seconds: 120
-    threshold: 1
-    enabled: true
-  fastmode: false
-confirmation:
-  clear: true
-  delete: true
-  unlink: true
-UUID:
-  offline: false
-  force-lowercase: false
-cache:
-  permissions: false
-  ratings: true
-chunk-processor:
-  auto-trim: false
-  auto-unload: false
-  enabled: false
-  max-blockstates: 4096
-  experimental-fast-async-worldedit: false
-  max-entities: 512
-  disable-physics: false
-worldedit:
-  require-selection-in-mask: true
-  max-volume: 500000
-  enable-for-helpers: false
-  queue-commands: false
-  max-iterations: 1000
-  blacklist:
-  - cs
-  - .s
-  - restore
-  - snapshot
-  - delchunks
-  - listchunks
-schematics:
-  save_path: plugins/PlotSquared/schematics
-web:
-  url: http://empcraft.com/plots/
-  server-ip: your.ip.here
-approval:
-  done:
-    required-for-download: false
-    restrict-building: false
-    counts-towards-limit: false
-  ratings:
-    require-done: false
-chat:
-  fancy: false
-console:
-  color: false
-kill_road_mobs: true
-mob_pathfinding: true
-plotme-alias: false
-plotme-convert:
-  enabled: false
-  cache-uuids: false
-global_limit: false
-update-notifications: false
-metrics: true
-comments:
-  notifications:
-    enabled: false
-protection:
-  redstone:
-    disable-unoccupied: false
-    disable-offline: false
-  piston:
-    falling-blocks: true
-teleport:
-  on_login: false
-  delay: 0
-claim:
-  max-auto-area: 4
-uuid:
-  use_sqluuidhandler: false
-  read-from-disk: false
-max_plots: 127
-bo3:
-  save_path: BO3
-kill_road_vehicles: true
-debug: true
-clusters:
-  enabled: false
-titles: false
-worlds:
-  creative:
-    plot:
-      height: 64
-      biome: FOREST
-      size: 42
-      filling:
-      - '1:0'
-      auto_merge: false
-      bedrock: true
-      create_signs: true
-      floor:
-      - '2:0'
-    wall:
-      filling: '1:0'
-      block_claimed: '44:1'
-      height: 64
-      block: '44:0'
-    event:
-      pve: false
-      pvp: false
-      spawn:
-        egg: false
-        breeding: false
-        custom: true
-    road:
-      block: '155:0'
-      height: 64
-      width: 7
-    home:
-      default: side
-      allow-nonmembers: false
-    schematic:
-      specify_on_claim: false
-      on_claim: false
-      file: 'null'
-    economy:
-      prices:
-        merge: 100.0
-        sell: 75.0
-        claim: 100.0
-      use: false
-    chat:
-      enabled: false
-    limits:
-      max-members: 128
-    world:
-      max_height: 256
-      gamemode: creative
-      min_height: 1
-      border: true
-    natural_mob_spawning: false
-    flags:
-      vehicle-cap: '32'
-      entity-cap: '32'

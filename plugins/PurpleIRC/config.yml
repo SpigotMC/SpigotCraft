@@ -1,14 +1,23 @@
 # Global configuration for PurpleIRC
 # NOTE: If you make changes to this file while the server is running use "/irc reloadconfig" to load the changes into memory.
-# Check for updates
+# Automatically save configurations on shutdown or reload
+save-on-shutdown: false
 update-checker: false
 update-checker-mode: stable
 conn-check-interval: 1000
 reconnect-fail-message-count: 10
 enable-ident-server: false
 channel-check-interval: 100
+override-msg-cmd: false
+join-delay: 20
+quit-delay: 20
+smsg-alias: /m
+smsg-reply-alias: /r
+chat-ping-fix: false
 message-format:
   console-chat: '[&dServer&r] %MESSAGE%'
+  cross-chat: '[&4%SERVER%&r] %MESSAGE%'
+  command-sent: 'Command sent: %COMMAND%'
   game-achievement: '[&2%WORLD%&r] %NAME% has just earned the achievement [%MESSAGE%]'
   game-mode: '[&2%WORLD%&r] %NAME% has changed game mode: [%MESSAGE%]'
   game-action: '[&2%WORLD%&r]***%NAME% %MESSAGE%'
@@ -19,6 +28,7 @@ message-format:
   game-death: '[&2%WORLD%&r] %MESSAGE%'
   game-kick: '[&2%WORLD%&r] %MESSAGE%: %REASON%'
   game-join: '[&2%WORLD%&r] %NAME% joined the game.'
+  game-first-join: '[&2%WORLD%&r] %NAME% joined the game for the very first time.'
   game-quit: '[&2%WORLD%&r] %NAME% left the game.'
   fake-join: '[&2%WORLD%&r] %NAME% joined the game.'
   fake-quit: '[&2%WORLD%&r] %NAME% left the game.'
@@ -50,6 +60,8 @@ message-format:
   mcmmo-admin-chat: '[admin:%WORLD%]<%NAME%> %MESSAGE%'
   mcmmo-party-chat: '[party:%PARTY%]<%NAME%> %MESSAGE%'
   mcmmo-chat: '[mcMMO]<%NAME%> %MESSAGE%'
+  irc-mcmmo-admin-chat: '[&4IRC&r]<%NAME%> %MESSAGE%'
+  irc-mcmmo-party-chat: '[&4IRC&r]<%NAME%> %MESSAGE%'
   faction-public-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
   faction-ally-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
   faction-enemy-chat: '[%FACTIONMODE%&r][%FACTIONTAG%]<%NAME%> %MESSAGE%'
@@ -63,6 +75,14 @@ message-format:
   irc-hero-part: '[&3IRC&r] %NAME% has left %CHANNEL%.'
   irc-hero-quit: '[&3IRC&r] %NAME% has left %CHANNEL%.'
   irc-hero-topic: '[&3IRC&r] Topic changed by %NAME%: %TOPIC%.'
+  irc-venture-action: '[&3IRC&r] ***%NAME% %MESSAGE%'
+  irc-venture-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
+  irc-venture-join: '[&3IRC&r] %NAME% has joined %CHANNEL%.'
+  irc-venture-kick: '[&3IRC&r] %NAME% was kicked from %CHANNEL% by %KICKER%. (Reason-
+    %REASON%)'
+  irc-venture-part: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-venture-quit: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-venture-topic: '[&3IRC&r] Topic changed by %NAME%: %TOPIC%.'
   titan-chat: '[%CHANNEL%]<%NAME%> %MESSAGE%'
   irc-titan-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
   valid-irc-commands: 'Valid commands: %COMMANDS%'
@@ -75,6 +95,10 @@ message-format:
   rts-held: '[RTS:Held] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
   rts-assign: '[RTS:Assign] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
   rts-reopen: '[RTS:Reopen] #%TICKETNUMBER% <%NAME%> %MESSAGE%'
+  stm-create: '[STM] Ticket #%TICKETNUMBER% created by %NAME%: %REASON% %MESSAGE%'
+  stm-claim: '[STM] Ticket #%TICKETNUMBER% claim by %MODNAME%: %REASON% %MESSAGE%'
+  stm-close: '[STM] Ticket #%TICKETNUMBER% closed by %MODNAME%: %REASON% %MESSAGE%'
+  stm-comment: '[STM] Ticket #%TICKETNUMBER% new comment by %MODNAME%: %REASON% %MESSAGE%'
   dynmap-web-chat: '[Dynmap] <%NAME%> %MESSAGE%'
   irc-dynmap-web-chat: '[IRC] %MESSAGE%'
   irc-action-dynmap-web-chat: '[IRC] ***%NAME% %MESSAGE%'
@@ -90,6 +114,42 @@ message-format:
     Global: '[%CHANNEL%]<%NAME%> %MESSAGE%'
   hero-action-channels:
     Global: '[&2%CHANNEL%&r]***%NAME% %MESSAGE%'
+  irc-venture-channels:
+    Global: '&f[&2Global&f] [&4IRC&f] <%NAME%>&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] [&4IRC&f] <%NAME%>&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] [&4IRC&f] <%NAME%>&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] [&4IRC&f] <%NAME%>&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] [&4IRC&f] <%NAME%>&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] [&4IRC&f] <%NAME%>&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] [&4IRC&f] <%NAME%>&e: %MESSAGE%'
+    Network: '&f[&6Network&f] [&4IRC&f] <%NAME%>&6: %MESSAGE%'
+  irc-venture-action-channels:
+    Global: '&f[&2Global&f] [&4IRC&f]***%NAME%&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] [&4IRC&f]***%NAME%&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] [&4IRC&f]***%NAME%&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] [&4IRC&f]***%NAME%&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] [&4IRC&f]***%NAME%&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] [&4IRC&f]***%NAME%&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] [&4IRC&f]***%NAME%&e: %MESSAGE%'
+    Network: '&f[&6Network&f] [&4IRC&f]***%NAME%&6: %MESSAGE%'
+  venture-channels:
+    Global: '&f[&2Global&f] <%NAME%>&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] <%NAME%>&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] <%NAME%>&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] <%NAME%>&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] <%NAME%>&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] <%NAME%>&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] <%NAME%>&e: %MESSAGE%'
+    Network: '&f[&6Network&f] <%NAME%>&6: %MESSAGE%'
+  venture-action-channels:
+    Global: '&f[&2Global&f]***%NAME%&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f]***%NAME%&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f]***%NAME%&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f]***%NAME%&d: %MESSAGE%'
+    Help: '&f[&bHelp&f]***%NAME%&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f]***%NAME%&3: %MESSAGE%'
+    Local: '&f[&eLocal&f]***%NAME%&e: %MESSAGE%'
+    Network: '&f[&6Network&f]***%NAME%&6: %MESSAGE%'
   towny-channel-chat: '%TOWNYCHANNELTAG%[%TOWNYCHANNEL%]<%NAME%> %MESSAGE%'
   irc-towny-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
   irc-towny-channels:
@@ -105,6 +165,9 @@ message-format:
   prism-custom: '[PrismCustom] [Player: %NAME%] [Action: %ACTION%] [Message: %MESSAGE%]
     [Plugin: %PLUGIN%]'
   reddit-messages: '[R] %MESSAGE%'
+  ntheendagain-hard: '[NTheEndAgain] %MESSAGE%'
+  ntheendagain-soft: '[NTheEndAgain]  %MESSAGE%'
+  ntheendagain-crystal: '[NTheEndAgain] %MESSAGE%'
   default-player-suffix: ''
   default-player-prefix: ''
   default-group-suffix: ''
@@ -113,6 +176,51 @@ message-format:
   default-player-group: ''
   game-flood-warning: '&3Message not sent to IRC due to spamming. &rCooldown: %COOLDOWN%s'
   irc-flood-warning: '&3Message not sent to game due to spamming. &rCooldown: %COOLDOWN%s'
+  log-tailer: '[LOG: %FILE%] %LINE%'
+  irc-mineverse-action: '[&3IRC&r] ***%NAME% %MESSAGE%'
+  irc-mineverse-chat: '[&3IRC&r]<%NAME%> %MESSAGE%'
+  irc-mineverse-join: '[&3IRC&r] %NAME% has joined %CHANNEL%.'
+  irc-mineverse-kick: '[&3IRC&r] %NAME% was kicked from %CHANNEL% by %KICKER%. (Reason-
+    %REASON%)'
+  irc-mineverse-part: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-mineverse-quit: '[&3IRC&r] %NAME% has left %CHANNEL%.'
+  irc-mineverse-topic: '[&3IRC&r] Topic changed by %NAME%: %TOPIC%.'
+  irc-mineverse-channels:
+    Global: '&f[&2Global&f] [&4IRC&f] <%NAME%>&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] [&4IRC&f] <%NAME%>&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] [&4IRC&f] <%NAME%>&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] [&4IRC&f] <%NAME%>&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] [&4IRC&f] <%NAME%>&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] [&4IRC&f] <%NAME%>&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] [&4IRC&f] <%NAME%>&e: %MESSAGE%'
+    Network: '&f[&6Network&f] [&4IRC&f] <%NAME%>&6: %MESSAGE%'
+  irc-mineverse-action-channels:
+    Global: '&f[&2Global&f] [&4IRC&f]***%NAME%&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] [&4IRC&f]***%NAME%&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] [&4IRC&f]***%NAME%&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] [&4IRC&f]***%NAME%&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] [&4IRC&f]***%NAME%&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] [&4IRC&f]***%NAME%&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] [&4IRC&f]***%NAME%&e: %MESSAGE%'
+    Network: '&f[&6Network&f] [&4IRC&f]***%NAME%&6: %MESSAGE%'
+  mineverse-channels:
+    Global: '&f[&2Global&f] <%NAME%>&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f] <%NAME%>&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f] <%NAME%>&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f] <%NAME%>&d: %MESSAGE%'
+    Help: '&f[&bHelp&f] <%NAME%>&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f] <%NAME%>&3: %MESSAGE%'
+    Local: '&f[&eLocal&f] <%NAME%>&e: %MESSAGE%'
+    Network: '&f[&6Network&f] <%NAME%>&6: %MESSAGE%'
+  mineverse-action-channels:
+    Global: '&f[&2Global&f]***%NAME%&2: %MESSAGE%'
+    Staff: '&f[&aStaff&f]***%NAME%&a: %MESSAGE%'
+    Admin: '&f[&cAdmin&f]***%NAME%&c: %MESSAGE%'
+    Donator: '&f[&dDonator&f]***%NAME%&d: %MESSAGE%'
+    Help: '&f[&bHelp&f]***%NAME%&b: %MESSAGE%'
+    Trade: '&f[&3Trade&f]***%NAME%&3: %MESSAGE%'
+    Local: '&f[&eLocal&f]***%NAME%&e: %MESSAGE%'
+    Network: '&f[&6Network&f]***%NAME%&6: %MESSAGE%'
 list-format: '[&9Minecraft&r] &2Online &r(%COUNT%/%MAX%): %PLAYERS%'
 list-separator: ', '
 list-player: '%GROUPPREFIX%%NAME%'
@@ -120,12 +228,14 @@ list-sort-by-name: true
 strip-game-colors: false
 strip-irc-colors: false
 strip-irc-bg-colors: true
+strip-game-colors-from-irc: true
 custom-tab-list: false
 custom-tab-prefix: '[I] '
 custom-tab-gamemode: SPECTATOR
 nick-exact-match: true
 nick-prefixes:
   ircop: '&4~'
+  owner: '&5@'
   ircsuperop: '&6&&'
   op: '&c@'
   halfop: '&3%'
@@ -150,6 +260,7 @@ irc-color-map:
   YELLOW: YELLOW
   WHITE: WHITE
   RESET: NORMAL
+  ITALIC: ITALIC
 game-color-map:
   BLACK: BLACK
   BLUE: BLUE
@@ -170,6 +281,7 @@ game-color-map:
   UNDERLINE: UNDERLINE
   WHITE: WHITE
   YELLOW: YELLOW
+  ITALIC: ITALIC
 Debug: false
 ignore-chat-cancel: false
 broadcast-chat-to-console: true

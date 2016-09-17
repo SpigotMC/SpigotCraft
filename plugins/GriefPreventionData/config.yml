@@ -4,13 +4,11 @@ GriefPrevention:
     world: -1
     world_nether: -1
     world_the_end: -1
-    creative: -1
   Claims:
     Mode:
-      world_nether: Disabled
       world_the_end: Disabled
-      creative: Creative
       world: Survival
+      world_nether: Disabled
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -18,11 +16,16 @@ GriefPrevention:
     LockTrapDoors: false
     LockFenceGates: true
     EnderPearlsRequireAccessTrust: true
-    ProtectFires: false
     ProtectHorses: true
     InitialBlocks: 1000
-    BlocksAccruedPerHour: 500
-    MaxAccruedBlocks: 80000
+    Claim Blocks Accrued Per Hour:
+      Default: 500
+      With 'fasteraccrual' Permission: 110
+      With 'fastestaccrual' Permission: 125
+    Max Accrued Claim Blocks:
+      Default: 80000
+      With 'moreaccrued' Permission: 5000
+      With 'mostaccrued' Permission: 10000
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
     ExtendIntoGroundDistance: 5
@@ -34,7 +37,10 @@ GriefPrevention:
     Expiration:
       ChestClaimDays: 7
       UnusedClaimDays: 14
-      AllClaimDays: 0
+      AllClaims:
+        DaysInactive: 60
+        ExceptWhenOwnerHasTotalClaimBlocks: 10000
+        ExceptWhenOwnerHasBonusClaimBlocks: 5000
       AutomaticNatureRestoration:
         SurvivalWorlds: false
     MaximumNumberOfClaimsPerPlayer: 0
@@ -54,12 +60,12 @@ GriefPrevention:
     BanMessage: Punted for spam.
     AllowedIpAddresses: 1.2.3.4; 5.6.7.8
     DeathMessageCooldownSeconds: 60
+    Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
       world: true
       world_nether: true
       world_the_end: true
-      creative: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 10
@@ -89,6 +95,7 @@ GriefPrevention:
   AdminsGetWhispers: true
   AdminsGetSignNotifications: true
   SmartBan: true
+  Mute New Players Using Banned Words: true
   MaxPlayersPerIpAddress: 0
   Siege:
     Worlds: []
@@ -128,3 +135,4 @@ GriefPrevention:
       Suspicious Activity: true
       Administrative Activity: false
       Debug: false
+      Muted Chat Messages: false

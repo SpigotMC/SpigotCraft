@@ -1,0 +1,532 @@
+plot:
+  aliases:
+  - plot
+  - plots
+  - p
+  - plotsquared
+  - plot2
+  - p2
+  - ps
+  - '2'
+  - plotme
+  - plotz
+  - ap
+  usage: ''
+  description: ''
+  confirmation: false
+buy:
+  aliases:
+  - buy
+  - b
+  usage: /plot buy
+  description: Buy the plot you are standing on
+  confirmation: false
+save:
+  aliases:
+  - save
+  - backup
+  usage: ''
+  description: Save your plot
+  confirmation: false
+load:
+  aliases:
+  - load
+  - restore
+  usage: /plot restore
+  description: Load your plot
+  confirmation: false
+confirm:
+  aliases:
+  - confirm
+  usage: ''
+  description: Confirm an action
+  confirmation: false
+template:
+  aliases:
+  - template
+  usage: /plot template [import|export] <world> <template>
+  description: Create or use a world template
+  confirmation: false
+download:
+  aliases:
+  - download
+  - dl
+  usage: /plot download [schematic|bo3|world]
+  description: Download your plot
+  confirmation: false
+update:
+  aliases:
+  - update
+  - updateplugin
+  usage: /plot update
+  description: Update PlotSquared
+  confirmation: false
+setup:
+  aliases:
+  - setup
+  - create
+  usage: /plot setup
+  description: Setup wizard for plot worlds
+  confirmation: false
+area:
+  aliases:
+  - area
+  - world
+  usage: /plot area <create|info|list|tp|regen>
+  description: Create a new PlotArea
+  confirmation: true
+debugsavetest:
+  aliases:
+  - debugsavetest
+  usage: /plot debugsavetest
+  description: This command will force the recreation of all plots in the DB
+  confirmation: false
+debugloadtest:
+  aliases:
+  - debugloadtest
+  usage: /plot debugloadtest
+  description: This debug command will force the reload of all plots in the DB
+  confirmation: false
+createroadschematic:
+  aliases:
+  - createroadschematic
+  - crs
+  usage: /plot createroadschematic
+  description: Add a road schematic to your world using the roads around your current plot
+  confirmation: false
+debugallowunsafe:
+  aliases:
+  - debugallowunsafe
+  usage: /plot debugallowunsafe
+  description: Allow unsafe actions until toggled off
+  confirmation: false
+regenallroads:
+  aliases:
+  - regenallroads
+  - rgar
+  usage: /plot regenallroads <world> [height]
+  description: Regenerate all roads in the map using the set road schematic
+  confirmation: false
+claim:
+  aliases:
+  - claim
+  - c
+  usage: /plot claim
+  description: Claim the current plot you're standing on
+  confirmation: false
+auto:
+  aliases:
+  - auto
+  - a
+  usage: /plot auto [length,width]
+  description: Claim the nearest plot
+  confirmation: false
+visit:
+  aliases:
+  - visit
+  - v
+  - tp
+  - teleport
+  - goto
+  - home
+  - h
+  usage: /plot visit [<player>|<alias>|<world>|<id>] [#]
+  description: Visit someones plot
+  confirmation: false
+set:
+  aliases:
+  - set
+  - s
+  usage: /plot set <biome|alias|home|flag> <value...>
+  description: Set a plot value
+  confirmation: false
+clear:
+  aliases:
+  - clear
+  - reset
+  usage: /plot clear
+  description: Clear a plot
+  confirmation: true
+delete:
+  aliases:
+  - delete
+  - dispose
+  - del
+  usage: /plot delete
+  description: Delete a plot
+  confirmation: true
+trust:
+  aliases:
+  - trust
+  - t
+  usage: /plot trust <player>
+  description: Allow a player to build in a plot
+  confirmation: false
+add:
+  aliases:
+  - add
+  - a
+  usage: /plot add <player>
+  description: Allow a user to build while you are online
+  confirmation: false
+deny:
+  aliases:
+  - deny
+  - d
+  - ban
+  usage: /plot deny <player>
+  description: Deny a user from a plot
+  confirmation: false
+remove:
+  aliases:
+  - remove
+  - r
+  - untrust
+  - ut
+  - undeny
+  - ud
+  usage: /plot remove <player>
+  description: Remove a player from a plot
+  confirmation: false
+info:
+  aliases:
+  - info
+  - i
+  usage: /plot info <id>
+  description: Display plot info
+  confirmation: false
+list:
+  aliases:
+  - list
+  - l
+  - find
+  - search
+  usage: /plot list <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy <search...>> [#]
+  description: List plots
+  confirmation: false
+debug:
+  aliases:
+  - debug
+  usage: /plot debug [msg]
+  description: Show debug information
+  confirmation: false
+schematic:
+  aliases:
+  - schematic
+  - sch
+  usage: /plot schematic <arg...>
+  description: Schematic command
+  confirmation: false
+plugin:
+  aliases:
+  - plugin
+  - version
+  usage: ''
+  description: Show plugin information
+  confirmation: false
+purge:
+  aliases:
+  - purge
+  usage: /plot purge world:<world> area:<area> id:<id> owner:<owner> shared:<shared> unknown:[true|false]
+  description: Purge all plots for a world
+  confirmation: true
+reload:
+  aliases:
+  - reload
+  usage: /plot reload
+  description: Reload configurations
+  confirmation: false
+relight:
+  aliases:
+  - relight
+  usage: ''
+  description: Relight your plot
+  confirmation: false
+merge:
+  aliases:
+  - merge
+  - m
+  usage: /plot merge <all|n|e|s|w> [removeroads]
+  description: Merge the plot you are standing on, with another plot
+  confirmation: true
+debugpaste:
+  aliases:
+  - debugpaste
+  - dp
+  usage: /plot debugpaste
+  description: Upload settings.yml, worlds.yml, commands.yml and latest.log to www.hastebin.com
+  confirmation: false
+unlink:
+  aliases:
+  - unlink
+  - u
+  - unmerge
+  usage: /plot unlink
+  description: Unlink a mega-plot
+  confirmation: true
+kick:
+  aliases:
+  - kick
+  - k
+  usage: <player>
+  description: Kick a player from your plot
+  confirmation: false
+rate:
+  aliases:
+  - rate
+  - rt
+  usage: /plot rate [#|next]
+  description: Rate the plot
+  confirmation: false
+debugclaimtest:
+  aliases:
+  - debugclaimtest
+  usage: ''
+  description: If you accidentally delete your database, this command will attempt to restore all plots based on the data from plot signs. Execution time may vary
+  confirmation: false
+inbox:
+  aliases:
+  - inbox
+  usage: /plot inbox [inbox] [delete <index>|clear|page]
+  description: Review the comments for a plot
+  confirmation: false
+comment:
+  aliases:
+  - comment
+  - msg
+  usage: ''
+  description: Comment on a plot
+  confirmation: false
+database:
+  aliases:
+  - database
+  - convert
+  usage: /plots database [area] <sqlite|mysql|import>
+  description: Convert/Backup Storage
+  confirmation: false
+swap:
+  aliases:
+  - swap
+  - switch
+  usage: /plot swap <X;Z>
+  description: Swap two plots
+  confirmation: false
+music:
+  aliases:
+  - music
+  usage: /plot music
+  description: Player music in a plot
+  confirmation: false
+debugroadregen:
+  aliases:
+  - debugroadregen
+  usage: /plot debugroadregen
+  description: Regenerate all roads based on the road schematic
+  confirmation: false
+debugexec:
+  aliases:
+  - debugexec
+  - exec
+  - $
+  usage: ''
+  description: Mutli-purpose debug command
+  confirmation: false
+setflag:
+  aliases:
+  - setflag
+  - f
+  - flag
+  - setf
+  - setflag
+  usage: /plot flag <set|remove|add|list|info> <flag> <value>
+  description: Set plot flags
+  confirmation: false
+target:
+  aliases:
+  - target
+  usage: /plot target <<plot>|nearest>
+  description: Target a plot with your compass
+  confirmation: false
+debugfixflags:
+  aliases:
+  - debugfixflags
+  usage: /plot debugfixflags <world>
+  description: Attempt to fix all flags for a world
+  confirmation: false
+move:
+  aliases:
+  - move
+  - debugmove
+  usage: /plot move <X;Z>
+  description: Move a plot
+  confirmation: false
+condense:
+  aliases:
+  - condense
+  usage: ''
+  description: Condense a plotworld
+  confirmation: false
+copy:
+  aliases:
+  - copy
+  - copypaste
+  usage: /plot copy <X;Z>
+  description: Copy a plot
+  confirmation: false
+chat:
+  aliases:
+  - chat
+  usage: /plot chat [on|off]
+  description: Toggle plot chat on or off
+  confirmation: false
+trim:
+  aliases:
+  - trim
+  usage: /plot trim <world> [regenerate]
+  description: Delete unmodified portions of your plotworld
+  confirmation: false
+done:
+  aliases:
+  - done
+  - submit
+  usage: ''
+  description: Mark a plot as done
+  confirmation: false
+continue:
+  aliases:
+  - continue
+  usage: ''
+  description: Continue a plot that was previously marked as done
+  confirmation: false
+bo3:
+  aliases:
+  - bo3
+  - bo2
+  usage: ''
+  description: Mark a plot as done
+  confirmation: false
+middle:
+  aliases:
+  - middle
+  - center
+  - centre
+  usage: /plot middle
+  description: Teleports you to the center of the plot
+  confirmation: false
+grant:
+  aliases:
+  - grant
+  usage: /plot grant <check|add> [player]
+  description: ''
+  confirmation: false
+setowner:
+  aliases:
+  - setowner
+  - owner
+  - so
+  - seto
+  usage: /plot setowner <player>
+  description: Set the plot owner
+  confirmation: true
+setdescription:
+  aliases:
+  - setdescription
+  - desc
+  - setdesc
+  - setd
+  - description
+  usage: /plot desc <description>
+  description: Set the plot description
+  confirmation: false
+setbiome:
+  aliases:
+  - setbiome
+  - biome
+  - sb
+  - setb
+  - b
+  usage: /plot biome [biome]
+  description: Set the plot biome
+  confirmation: false
+setalias:
+  aliases:
+  - setalias
+  - alias
+  - sa
+  - name
+  - rename
+  - setname
+  - seta
+  usage: /plot alias <alias>
+  description: Set the plot name
+  confirmation: false
+sethome:
+  aliases:
+  - sethome
+  - sh
+  - seth
+  usage: /plot sethome [none]
+  description: Set the plot home
+  confirmation: false
+cluster:
+  aliases:
+  - cluster
+  - clusters
+  usage: ''
+  description: Manage a plot cluster
+  confirmation: false
+toggle:
+  aliases:
+  - toggle
+  - attribute
+  usage: ''
+  description: Toggle per user settings
+  confirmation: false
+  worldedit:
+    aliases:
+    - worldedit
+    - we
+    - wea
+    usage: ''
+    description: Toggle worldedit area restrictions
+    confirmation: false
+  titles:
+    aliases:
+    - titles
+    usage: ''
+    description: Toggle plot title messages
+    confirmation: false
+  chatspy:
+    aliases:
+    - chatspy
+    - spy
+    usage: ''
+    description: Toggle admin chat spying
+    confirmation: false
+  chat:
+    aliases:
+    - chat
+    usage: ''
+    description: Toggle plot chat
+    confirmation: false
+help:
+  aliases:
+  - help
+  - he
+  - '?'
+  usage: help [category|#]
+  description: Get this help menu
+  confirmation: false
+uuidconvert:
+  aliases:
+  - uuidconvert
+  usage: /plot uuidconvert <lower|offline|online>
+  description: Debug UUID conversion
+  confirmation: false
+weanywhere:
+  aliases:
+  - weanywhere
+  - wea
+  usage: /plot weanywhere
+  description: Force bypass of WorldEdit
+  confirmation: false

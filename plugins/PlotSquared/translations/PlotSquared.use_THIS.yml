@@ -40,7 +40,6 @@ cluster:
   cluster_teleporting: $4Teleporting...
   cluster_info: '$1Current cluster: $2%id%&-$1Name: $2%name%&-$1Owner: $2%owner%&-$1Size:
     $2%size%&-$1Rights: $2%rights%'
-  cluster_current_plotid: '$1Current plot: $2%s'
 border:
   border: $2You are outside the current map border
 unclaim:
@@ -128,6 +127,7 @@ economy:
   cannot_afford_merge: $2You cannot afford to merge the plots. It costs $1%s
   added_balance: $1%s $2has been added to your balance
   removed_balance: $1%s $2has been taken from your balance
+  removed_granted_plot: $2You used %s plot grant(s), you've got $1%s $2left
 setup:
   setup_init: '$1Usage: $2/plot setup <value>'
   setup_step: '$3[$1Step %s0$3] $1%s1 $2- $1Expecting: $2%s2 $1Default: $2%s3'
@@ -146,6 +146,7 @@ schematics:
   schematic_valid: $2That is a valid schematic
   schematic_paste_failed: $2Failed to paste the schematic
   schematic_paste_success: $4The schematic pasted successfully
+  schematic_too_large: $2The plot is too large for this action!
 titles:
   title_entered_plot: '$1Plot: %world%;%x%;%z%'
   title_entered_plot_sub: $4Owned by %s
@@ -155,12 +156,9 @@ core:
   task_start: Starting task...
   prefix: $3[$1P2$3] $2
   enabled: $1PlotSquared is now enabled
-  example_message: $2This is an example message &k!!!
 reload:
   reloaded_configs: $1Translations and world settings have been reloaded
   reload_failed: $2Failed to reload file configurations
-bar api:
-  bossbar_clearing: '$2Clearing plot: $1%id%'
 desc:
   desc_set: $2Plot description set
   desc_unset: $2Plot description unset
@@ -198,14 +196,6 @@ merge:
   unlink_required: $2An unlink is required to do this.
   unlink_impossible: $2You can only unlink a mega-plot
   unlink_success: $2Successfully unlinked plots.
-commands:
-  not_valid_subcommand: $2That is not a valid subcommand
-  did_you_mean: '$2Did you mean: $1%s'
-  name_little: $2%s0 name is too short, $1%s1$2<$1%s3
-  no_commands: $2I'm sorry, but you're not permitted to use any subcommands.
-  subcommand_set_options_header: '$2Possible Values: '
-  command_syntax: '$1Usage: $2%s'
-  flag_tutorial_usage: '$1Have an admin set the flag: $2%s'
 errors:
   invalid_player_wait: '$2Player not found: $1%s$2, fetching it. Try again soon.'
   invalid_player: '$2Player not found: $1%s.'
@@ -220,13 +210,13 @@ errors:
   no_plots: $2You don't have any plots
   not_using_plotme: $2This server uses the far superior $1PlotSquared $2plot management system. Please use the $1/ps $2or $1/p2 $2or $1/plots $2instead
   wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please wait for it to finish
+  invalid_player_offline: '$2The player must be online: $1%s.'
+  error: '$2An error occurred: %s'
 paste:
   debug_report_created: '$1Uploaded a full debug to: $1%url%'
 purge:
-  purge_syntax: Use /plot purge <x;z|player|unowned|unknown|all> <world>
   purge_success: $4Successfully purged %s plots
 trim:
-  trim_syntax: Use /plot trim <all|x;y> <world>
   trim_in_progress: A world trim task is already in progress!
   not_valid_hybrid_plot_world: The hybrid plot manager is required to perform this action
 block list:
@@ -291,6 +281,10 @@ info:
   plot_info_size: $1Size:$2 %size%
   plot_user_list: ' $1%user%$2,'
   info_syntax_console: $2/plot info X;Y
+  now: Now
+  never: Never
+  plot_info_seen: $1Seen:$2 %seen%
+  plot_flag_list: $1%s0:%s1$2
 working:
   generating_component: $1Started generating component from your settings
   clearing_plot: $2Clearing plot async.
@@ -306,6 +300,7 @@ list:
   plot_list_item: $2>> $1%id$2:$1%world $2- $1%owner
   plot_list_item_ordered: $2[$1%in$2] >> $1%id$2:$1%world $2- $1%owner
   plot_list_footer: $2>> $1%word% a total of $2%num% $1claimed %plot%.
+  area_list_header_paged: $2(Page $1%cur$2/$1%max$2) $1List of %amount% areas
 left:
   left_plot: $2You left a plot
 chat:
@@ -333,6 +328,7 @@ flag:
   flag_not_added: $2The flag could not be added
   flag_removed: $4Successfully removed flag
   flag_added: $4Successfully added flag
+  not_valid_flag_suggested: '$2That is not a valid flag. Did you mean: $1%s'
 trusted:
   trusted_added: $4You successfully trusted a user to the plot
   trusted_removed: $4You successfully removed a trusted user from the plot
@@ -363,3 +359,21 @@ help:
   direction: '$1Current direction: %dir%'
 '-':
   custom_string: '-'
+commandconfig:
+  not_valid_subcommand: $2That is not a valid subcommand
+  did_you_mean: '$2Did you mean: $1%s'
+  name_little: $2%s0 name is too short, $1%s1$2<$1%s3
+  no_commands: $2I'm sorry, but you're not permitted to use any subcommands.
+  subcommand_set_options_header: '$2Possible Values: '
+  command_syntax: '$1Usage: $2%s'
+  flag_tutorial_usage: '$1Have an admin set the flag: $2%s'
+set:
+  set_attribute: $4Successfully set %s0 set to %s1
+cap:
+  entity_cap: $2You are not allowed to spawn more mobs
+kick:
+  you_got_kicked: $4You got kicked!
+grants:
+  granted_plots: '$1Result: $2%s $1grants left'
+  granted_plot: $1You granted %s0 plot to $2%s1
+  granted_plot_failed: '$1Grant failed: $2%s'
