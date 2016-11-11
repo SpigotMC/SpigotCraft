@@ -1,0 +1,29 @@
+#  ----------------------------------------------------
+#  AutoMessage Configuration File
+#  ----------------------------------------------------
+#  Message Configuration:
+#     Messages are handled in lists to allow for advanced customization!
+#     Feel free to add color codes by using & in your messages!
+#     To split a message onto multiple lines use the \n delimiter!
+#     Lines starting with / will be run as a command!
+#     To add single apostrophes into a message use ''.
+#     For a complete tutorial go to http://dev.bukkit.org/server-mods/automessage.
+#     If you are unfamiliar with YAML use the in-game commands: /am help
+
+settings:
+  enabled: true
+  min-players: 1
+  log-to-console: false
+message-lists:
+  regular:
+    enabled: true
+    interval: 45
+    expiry: -1
+    random: true
+    messages:
+    - '&3[AutoMessage]&r The server is currently in testing mode. The map will be
+      reset frequently. Please don''t break things.'
+    - '&3[AutoMessage]&r All actions are logged - abuse will result in a 1 month ban
+      from SpigotMC.'
+    - '&3[AutoMessage]&r This server is open source - submit your own changes here:
+      https://github.com/SpigotMC/SpigotCraft'

@@ -2,6 +2,7 @@ groups:
   Default:
     permissions:
     - ChestShop.shop.*
+    - automessage.receive.regular
     - essentials.afk
     - essentials.afk.auto
     - essentials.back
