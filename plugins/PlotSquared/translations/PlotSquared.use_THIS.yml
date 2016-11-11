@@ -40,6 +40,7 @@ cluster:
   cluster_teleporting: $4Teleporting...
   cluster_info: '$1Current cluster: $2%id%&-$1Name: $2%name%&-$1Owner: $2%owner%&-$1Size:
     $2%size%&-$1Rights: $2%rights%'
+  cluster_outside: '$2The proposed area is outside the plot area: %s0'
 border:
   border: $2You are outside the current map border
 unclaim:
@@ -186,6 +187,7 @@ permission:
   cant_claim_more_plots_num: $2You can't claim more than $1%s $2plots at once
   you_be_denied: $2You are not allowed to enter this plot
   merge_request_confirm: merge request from %s
+  cant_claim_more_clusters: $2You can't claim more clusters.
 merge:
   merge_not_valid: $2This merge request is no longer valid.
   merge_accepted: $2The merge request has been accepted
@@ -208,7 +210,6 @@ errors:
   not_valid_world: $2That is not a valid world (case sensitive)
   not_valid_plot_world: $2That is not a valid plot world (case sensitive)
   no_plots: $2You don't have any plots
-  not_using_plotme: $2This server uses the far superior $1PlotSquared $2plot management system. Please use the $1/ps $2or $1/p2 $2or $1/plots $2instead
   wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please wait for it to finish
   invalid_player_offline: '$2The player must be online: $1%s.'
   error: '$2An error occurred: %s'
@@ -377,3 +378,5 @@ grants:
   granted_plots: '$1Result: $2%s $1grants left'
   granted_plot: $1You granted %s0 plot to $2%s1
   granted_plot_failed: '$1Grant failed: $2%s'
+near:
+  plot_near: '$1Players: %s0'

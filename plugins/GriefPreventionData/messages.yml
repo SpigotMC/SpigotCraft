@@ -516,3 +516,8 @@ Messages:
     Notes: '0: adjustment amount'
   TooMuchIpOverlap:
     Text: Sorry, there are too many players logged in with your IP address.
+  DropUnlockOthersConfirmation:
+    Text: Unlocked {0}'s drops.
+    Notes: '0: The owner of the unlocked drops.'
+  RescuedFromPortalTrap:
+    Text: Automatically rescued you from a nether portal. If this was a mistake, use /UndoRescue to return to your prior location.

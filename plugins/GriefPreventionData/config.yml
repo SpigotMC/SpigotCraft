@@ -45,6 +45,7 @@ GriefPrevention:
         ExceptWhenOwnerHasBonusClaimBlocks: 5000
       AutomaticNatureRestoration:
         SurvivalWorlds: false
+    AllowTrappedInAdminClaims: false
     MaximumNumberOfClaimsPerPlayer: 0
     CreationRequiresWorldGuardBuildPermission: true
     PortalGenerationRequiresPermission: false

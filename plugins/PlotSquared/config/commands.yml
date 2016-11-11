@@ -530,3 +530,10 @@ weanywhere:
   usage: /plot weanywhere
   description: Force bypass of WorldEdit
   confirmation: false
+near:
+  aliases:
+  - near
+  - n
+  usage: /plot near
+  description: Display nearby players
+  confirmation: false

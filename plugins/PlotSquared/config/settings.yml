@@ -1,7 +1,7 @@
 # These first 4 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-version: "3.4.5"
+version: "3.4.6"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -78,8 +78,6 @@ teleport:
 plotme:
   # Cache the uuids from the PlotMe database
   cache-uuds: false
-  # Have `/plotme` as a command alias
-  alias: false
 
 # Relating to how many plots someone can claim  
 limit:
@@ -110,7 +108,7 @@ web:
   # The ip that will show up in the interface
   server-ip: "your.ip.here"
 
-# Configure the paths PlotSquared will use
+# Configure the paths that will be used
 paths:
   schematics: "plugins/PlotSquared/schematics"
   bo3: "BO3"
@@ -119,9 +117,9 @@ paths:
   translations: "translations"
 
 uuid:
-  # Force PlotSquared to use offline UUIDs (it usually detects the right mode)
+  # Force using offline UUIDs (it usually detects the right mode)
   offline: false
-  # Force PlotSquared to use lowercase UUIDs
+  # Force using lowercase UUIDs
   force-lowercase: false
   # Use a database to store UUID/name info
   use-sqluuidhandler: false
