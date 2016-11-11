@@ -4,14 +4,19 @@ groups:
     - ChestShop.shop.*
     - essentials.afk
     - essentials.afk.auto
+    - essentials.back
     - essentials.help
     - essentials.helpop
     - essentials.home
     - essentials.info
     - essentials.list
+    - essentials.mail.read
+    - essentials.mail.send
     - essentials.me
     - essentials.motd
     - essentials.msg
+    - essentials.pay
+    - essentials.ping
     - essentials.reply
     - essentials.rules
     - essentials.sethome
@@ -20,18 +25,11 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
-    - essentials.ping
-    - essentials.back
     - herochat.speak.Global
     - plots.permpack.basic
     - plots.plot.1
-    - essentials.pay
-    - essentials.mail.send
-    - essentials.mail.read    
     options:
-      build: false
-      rank: '1000'
-      prefix: '&e'
+      rank: 1000
       default: true
   Builder:
     permissions:
@@ -52,7 +50,6 @@ groups:
     - essentials.mail.send
     - essentials.nick
     - essentials.pay
-    - essentials.powertool
     - essentials.protect
     - essentials.sethome
     - essentials.signs.break.disposal
@@ -69,11 +66,42 @@ groups:
     - essentials.worth
     - plots.plot.4
     inheritance:
-    - default
+    - Default
     options:
-      build: true
-      rank: '500'
-      prefix: '&2'
+      rank: 500
+      prefix: '&f[&bBuilder&f] '
+  Tester:
+    permissions:
+    - essentials.gamemode
+    - essentials.give
+    - essentials.god
+    - essentials.item
+    - essentials.potion
+    - essentials.spawner
+    - essentials.spawnmob
+    - essentials.tp
+    - minecraft.blockdata
+    - minecraft.effect
+    - minecraft.enchant
+    - minecraft.gamemode
+    - minecraft.give
+    - minecraft.locate
+    - minecraft.summon
+    - minecraft.tp
+    inheritance:
+    - Builder
+    options:
+      rank: 400
+      prefix: '&f[&aTester&f] '
+  Helper:
+    permissions:
+    - permissions.user.demote.default
+    - permissions.user.promote.default
+    inheritance:
+    - Tester
+    options:
+      rank: 300
+      prefix: '&f[&6Helper&f] '
   Moderator:
     permissions:
     - ChestShop.admin
@@ -123,29 +151,32 @@ groups:
     - essentials.worlds.*
     - logblock.lookup
     - logblock.spawnTools
+    - logblock.tools.tool
     - logblock.tools.toolblock
     - permissions.manage.membership
-    - permissions.user.demote.default
-    - permissions.user.promote.default
     inheritance:
-    - builder
+    - Builder
     options:
-      build: true
-      rank: '200'
-      prefix: '&5'
+      rank: 200
+      prefix: '&f[&5Moderator&f] '
   Admin:
     permissions:
     - '*'
     inheritance:
-    - moderator
+    - Moderator
     options:
       build: true
-      rank: '100'
-      prefix: '&0[&cAdmin&0] &c'
+      rank: 100
+      prefix: '&f[&cAdmin&f] '
 users:
   c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
     - Admin
     options:
       name: md_5
+  7b8cfc96-10cd-4315-a1fd-e8cae3d80190:
+    group:
+    - Admin
+    options:
+      name: SpigotMC
 schema-version: 1
