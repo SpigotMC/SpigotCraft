@@ -72,6 +72,8 @@ groups:
       prefix: '&f[&bBuilder&f] '
   Tester:
     permissions:
+    - essentials.clearinventory
+    - essentials.fly
     - essentials.gamemode
     - essentials.give
     - essentials.god
@@ -79,16 +81,19 @@ groups:
     - essentials.potion
     - essentials.spawner
     - essentials.spawnmob
+    - essentials.speed
     - essentials.tp
     - minecraft.command.blockdata
     - minecraft.command.effect
     - minecraft.command.enchant
+    - minecraft.command.entitydata
     - minecraft.command.gamemode
     - minecraft.command.give
     - minecraft.command.help
     - minecraft.command.locate
     - minecraft.command.summon
     - minecraft.command.tp
+    - multiverse.teleport.self.*
     inheritance:
     - Builder
     options:
@@ -110,7 +115,6 @@ groups:
     - essentials.ban.notify
     - essentials.banip
     - essentials.broadcast
-    - essentials.clearinventory
     - essentials.delwarp
     - essentials.eco.loan
     - essentials.ext
