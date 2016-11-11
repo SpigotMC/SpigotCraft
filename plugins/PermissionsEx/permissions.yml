@@ -80,14 +80,15 @@ groups:
     - essentials.spawner
     - essentials.spawnmob
     - essentials.tp
-    - minecraft.blockdata
-    - minecraft.effect
-    - minecraft.enchant
-    - minecraft.gamemode
-    - minecraft.give
-    - minecraft.locate
-    - minecraft.summon
-    - minecraft.tp
+    - minecraft.command.blockdata
+    - minecraft.command.effect
+    - minecraft.command.enchant
+    - minecraft.command.gamemode
+    - minecraft.command.give
+    - minecraft.command.help
+    - minecraft.command.locate
+    - minecraft.command.summon
+    - minecraft.command.tp
     inheritance:
     - Builder
     options:
@@ -176,7 +177,7 @@ users:
       name: md_5
   7b8cfc96-10cd-4315-a1fd-e8cae3d80190:
     group:
-    - Admin
+    - Tester
     options:
       name: SpigotMC
 schema-version: 1
