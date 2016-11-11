@@ -3,6 +3,7 @@ groups:
     permissions:
     - ChestShop.shop.*
     - automessage.receive.regular
+    - bukkit.command.plugins
     - essentials.afk
     - essentials.afk.auto
     - essentials.back
