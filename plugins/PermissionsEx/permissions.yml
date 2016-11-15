@@ -162,7 +162,7 @@ groups:
     - logblock.tools.toolblock
     - permissions.manage.membership
     inheritance:
-    - Builder
+    - Helper
     options:
       rank: 200
       prefix: '&f[&5Moderator&f] '
