@@ -81,7 +81,7 @@ rollback:
   - 10
   - 11
   - 51
-version: '1.94'
+version: 1.10.0
 debug: false
 safety:
   id:

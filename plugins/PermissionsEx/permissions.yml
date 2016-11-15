@@ -186,4 +186,19 @@ users:
     - Tester
     options:
       name: SpigotMC
+  af74a02d-19cb-445b-b07f-6866a861f783:
+    group:
+    - Admin
+    options:
+      name: md_5
+  a7a1c3b3-8c30-4bea-bd2e-0600e7a5b82b:
+    group:
+    - Admin
+    options:
+      name: cindy_k
+  c10cd9e9-2c4a-49de-9f18-898cc9cfb9fe:
+    group:
+    - Moderator
+    options:
+      name: Wun
 schema-version: 1
