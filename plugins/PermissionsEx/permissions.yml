@@ -103,6 +103,8 @@ groups:
       prefix: '&f[&aTester&f] '
   Helper:
     permissions:
+    - permissions.user.demote.default
+    - permissions.user.promote.default
     - permissions.user.rank.demote
     - permissions.user.rank.promote
     inheritance:
