@@ -96,7 +96,7 @@ GriefPrevention:
   LimitPistonsToLandClaims: true
   FireSpreads: false
   FireDestroys: false
-  AdminsGetWhispers: true
+  AdminsGetWhispers: false
   AdminsGetSignNotifications: true
   SmartBan: true
   Mute New Players Using Banned Words: true
