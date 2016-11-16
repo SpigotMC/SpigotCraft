@@ -5,12 +5,14 @@ GriefPrevention:
     world_nether: -1
     world_the_end: -1
     creative: -1
+    flatworld: -1
   Claims:
     Mode:
       world_the_end: Disabled
       world: Survival
       creative: Creative
       world_nether: Disabled
+      flatworld: Survival
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -70,6 +72,7 @@ GriefPrevention:
       world_nether: true
       world_the_end: true
       creative: true
+      flatworld: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 10
