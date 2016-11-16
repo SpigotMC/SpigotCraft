@@ -50,7 +50,6 @@ groups:
     - essentials.kits.tools
     - essentials.mail
     - essentials.mail.send
-    - essentials.nick
     - essentials.pay
     - essentials.protect
     - essentials.sethome
