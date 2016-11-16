@@ -19,7 +19,7 @@ tools:
     params: area 0 all sum none limit 15 desc silent
   tool:
     leftClickBehavior: NONE
-    item: 79
+    item: 270
     defaultEnabled: true
     mode: LOOKUP
     aliases:

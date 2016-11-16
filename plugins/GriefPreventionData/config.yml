@@ -7,8 +7,8 @@ GriefPrevention:
     creative: -1
   Claims:
     Mode:
-      world: Survival
       world_the_end: Disabled
+      world: Survival
       creative: Creative
       world_nether: Disabled
     PreventTheft: true

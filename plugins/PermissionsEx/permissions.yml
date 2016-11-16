@@ -70,10 +70,10 @@ groups:
     inheritance:
     - Default
     options:
-      rank: 500
       prefix: '&f[&bBuilder&f] '
   Tester:
     permissions:
+    - essentials.tp.position
     - essentials.clearinventory
     - essentials.fly
     - essentials.gamemode
@@ -103,6 +103,7 @@ groups:
       prefix: '&f[&aTester&f] '
   Helper:
     permissions:
+    - essentials.joinfullserver
     - permissions.user.demote.default
     - permissions.user.promote.default
     - permissions.user.rank.demote
@@ -210,7 +211,7 @@ users:
       name: electronicboy
   76a0fb2f-5db1-4346-8e35-7294cf625c38:
     group:
-    - Helper
+    - Admin
     options:
       name: ScruffyRules
   1f6b955a-34f4-4f2e-af66-86e5d5bbfe3a:
@@ -253,7 +254,7 @@ users:
       name: MyFlatEarth
   f723cefa-bb36-43c8-a123-015b2b58e4d7:
     group:
-    - Helper
+    - Admin
     options:
       name: ssamjh
   0b19b2fd-7bbe-4da4-a061-eb308bfbf120:
@@ -303,9 +304,6 @@ users:
   minidigger:
     group:
     - Tester
-  mrwouter:
-    group:
-    - Tester
   6a7a9c7d-1003-471b-9936-14ce0b035a51:
     group:
     - Tester
@@ -325,15 +323,12 @@ users:
   classic36:
     group:
     - Helper
-  justin57754:
-    group:
-    - Tester
   xcodcraftx:
     group:
     - Tester
   2c7c20f7-8472-4780-9b35-4cd4fae460c6:
     group:
-    - Default
+    - Tester
     options:
       name: Okx
   0946ef02-50fd-43fb-a723-bf0823ce07bf:
@@ -353,4 +348,180 @@ users:
   3445231c-699b-4f67-8880-54a041d04907:
     options:
       name: Lutandar
+  simagdo:
+    group:
+    - Tester
+  jessegeerts:
+    group:
+    - Helper
+  spacepuppeh:
+    group:
+    - Helper
+  weby:
+    group:
+    - Tester
+  kaime29010:
+    group:
+    - Tester
+  minecraft7net:
+    group:
+    - Tester
+  0e5846d6-a0f8-423f-bdb1-6c023b6e2b67:
+    group:
+    - Tester
+    options:
+      name: v_M_v
+  jamesj:
+    group:
+    - Helper
+  2011fb4b-4818-4d76-a4bb-0ab1deb8fb6e:
+    group:
+    - Moderator
+    options:
+      name: Thinkofname
+  e3355d44-be70-43e2-8fe0-f730c0e65dc7:
+    group:
+    - Helper
+    options:
+      name: WolfezzBlazer
+  de9eca79-6e36-4b1c-b6de-92aee28c6002:
+    group:
+    - Tester
+    options:
+      name: Yamakaja
+  1f89080a-dd54-4c39-a3c2-68b2842b3fa8:
+    group:
+    - Tester
+    options:
+      name: Natural_Enemy
+  d5928931-5761-4811-a038-f55f3a9b7d51:
+    group:
+    - Tester
+    options:
+      name: mockerofchaos
+  md5:
+    group:
+    - Admin
+  836ce767-0e25-45a0-8012-fa1864d2b6aa:
+    group:
+    - Tester
+    options:
+      name: MrWouter
+  masterclaus:
+    group:
+    - Tester
+  tiippex:
+    group:
+    - Tester
+  1f7e8060-9cf0-4d7c-a937-55a05110b3bb:
+    group:
+    - Tester
+    options:
+      name: Cynic
+  c7aae94b-ebf5-4b55-ad33-ebc3e2ecaff2:
+    group:
+    - Helper
+    options:
+      name: kvqq
+  baff9a8a-29e3-4916-9fc4-7bd0c21bb617:
+    group:
+    - Helper
+    options:
+      name: _Krono
+  b218f96b-559e-46fe-8822-4bd585dc6b04:
+    group:
+    - Helper
+    options:
+      name: McLive
+  c602b1b7-cbc8-4e5b-9c1e-dc50e0971fe3:
+    group:
+    - Tester
+    options:
+      name: 4a2e532e
+  shane1199:
+    group:
+    - Tester
+  eabbaca0-e4f8-4371-aab6-a3bfbb530973:
+    group:
+    - Tester
+    options:
+      name: LacherZz
+  4b319cd4-e827-4dcf-a303-9a3fce310755:
+    group:
+    - Helper
+    options:
+      name: SamB440
+  antal1609:
+    group:
+    - Tester
+  stevethedog:
+    group:
+    - Tester
+  qballl_:
+    group:
+    - Tester
+  61ef3f71-9424-44c2-9f30-ac176616192c:
+    group:
+    - Tester
+    options:
+      name: Gianluca
+  zedwick:
+    group:
+    - Tester
+  98b59a50-7b46-4fdb-8f05-32f184a0574d:
+    group:
+    - Tester
+    options:
+      name: andrei1058
+  4ed4ac82-512c-404f-be74-3b2e22b5a425:
+    group:
+    - Tester
+    options:
+      name: PlayBossWar
+  theevil:
+    group:
+    - Default
+  94cb88bc-42fd-460b-a267-4342eb644ac3:
+    group:
+    - Tester
+    options:
+      name: ysl3000
+  c5351027-b0a0-48db-b817-f3b9a3469bfc:
+    group:
+    - Tester
+    options:
+      name: TheCrystalStar
+  ben12345rocks:
+    group:
+    - Helper
+  fc2c12f9-0da7-4157-8475-5a0485b7b8d5:
+    group:
+    - Tester
+    options:
+      name: Citrus
+  57091d6f-839f-48b7-a4b1-4474222d4ad1:
+    group:
+    - Tester
+    options:
+      name: WolverinDEV
+  676b8aea-e521-43a5-be6e-d79b6f55b05f:
+    group:
+    - Helper
+    options:
+      name: rignpolice
+  dd6f3d9b-86e6-497f-b22a-2fc99e046e65:
+    group:
+    - Helper
+    options:
+      name: Shynixn
+  1e3d3b1d-97e1-47dd-9183-52369216ec6b:
+    group:
+    - Default
+    options:
+      name: quadbamber
+  ecd0c3db-43ee-4d7a-9eb9-c326d7c9d25a:
+    group:
+    - Tester
+    options:
+      name: justin57754
 schema-version: 1
