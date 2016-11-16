@@ -110,7 +110,7 @@ checks:
       active: true
       actions: cancel
     autosign:
-      active: true
+      active: false
       skipempty: false
       actions: cancel vl>10 log:bautosign:0:3:if cancel
     direction:
