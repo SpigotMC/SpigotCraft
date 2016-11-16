@@ -73,6 +73,14 @@ groups:
       prefix: '&f[&bBuilder&f] '
   Tester:
     permissions:
+    - essentials.enchant.*
+    - essentials.feed
+    - essentials.feed.others
+    - essentials.heal
+    - essentials.heal.others
+    - essentials.skull
+    - essentials.skull.others
+    - essentials.enchant
     - essentials.clearinventory
     - essentials.fly
     - essentials.gamemode
