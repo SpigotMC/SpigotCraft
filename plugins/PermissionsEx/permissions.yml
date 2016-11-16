@@ -201,4 +201,154 @@ users:
     - Moderator
     options:
       name: Wun
+  a7b06441-908f-4f06-a323-3032d9c484b8:
+    group:
+    - Moderator
+    options:
+      name: electronicboy
+  76a0fb2f-5db1-4346-8e35-7294cf625c38:
+    group:
+    - Helper
+    options:
+      name: ScruffyRules
+  1f6b955a-34f4-4f2e-af66-86e5d5bbfe3a:
+    group:
+    - Moderator
+    options:
+      name: I9hdkill
+  drpiggy:
+    group:
+    - Tester
+  b133dec0-2ac8-4ff3-b8cc-60644099174a:
+    group:
+    - Helper
+    options:
+      name: TheMojangAdmin
+  67b15d00-8142-42a6-b9d7-cef171643b30:
+    group:
+    - Tester
+    options:
+      name: nayosushi
+  57826431-3be5-4564-b378-69cabcd7f6f6:
+    group:
+    - Helper
+    options:
+      name: minelux
+  768ef24f-79ab-481e-b50f-45b0466933c1:
+    group:
+    - Helper
+    options:
+      name: SimpleAuthority
+  570bfcdf-5cd5-463e-9301-0c580e086744:
+    group:
+    - Helper
+    options:
+      name: TNTUP
+  fa0394a7-c4c1-49fc-8818-76cba963525d:
+    group:
+    - Tester
+    options:
+      name: MyFlatEarth
+  f723cefa-bb36-43c8-a123-015b2b58e4d7:
+    group:
+    - Helper
+    options:
+      name: ssamjh
+  0b19b2fd-7bbe-4da4-a061-eb308bfbf120:
+    group:
+    - Helper
+    options:
+      name: Ayush_03
+  borlea:
+    group:
+    - Tester
+  f8ced1f2-83cf-4525-94e9-7887a811143e:
+    group:
+    - Tester
+    options:
+      name: Hades909
+  sbinder93:
+    group:
+    - Tester
+  jul1o:
+    group:
+    - Helper
+  bys1:
+    group:
+    - Tester
+  120689d5-d43a-4e58-9390-0484b665a55b:
+    group:
+    - Tester
+    options:
+      name: Toxic_Waste
+  ed18b4f5-f547-4e00-a435-e302597d378a:
+    group:
+    - Tester
+    options:
+      name: nicecube
+  mrclevertrevor:
+    group:
+    - Helper
+  sikatsu:
+    group:
+    - Helper
+  czaromirus333:
+    group:
+    - Tester
+  scurok:
+    group:
+    - Tester
+  minidigger:
+    group:
+    - Tester
+  mrwouter:
+    group:
+    - Tester
+  6a7a9c7d-1003-471b-9936-14ce0b035a51:
+    group:
+    - Tester
+    options:
+      name: Yottazoid
+  eb25e4e0-93ad-41a7-81ac-fd6619df91ec:
+    group:
+    - Tester
+    options:
+      name: ChooHan
+  jannik8500:
+    group:
+    - Tester
+  vk2gpz:
+    group:
+    - Helper
+  classic36:
+    group:
+    - Helper
+  justin57754:
+    group:
+    - Tester
+  xcodcraftx:
+    group:
+    - Tester
+  2c7c20f7-8472-4780-9b35-4cd4fae460c6:
+    group:
+    - Default
+    options:
+      name: Okx
+  0946ef02-50fd-43fb-a723-bf0823ce07bf:
+    group:
+    - Tester
+    options:
+      name: Arektor
+  1b0a896a-66a3-460f-bf12-83b8be6ae31d:
+    options:
+      name: Lbleu
+  2e2dfb1d-714b-4e30-9c21-52b4d8acb555:
+    options:
+      name: _Syntax_Error
+  59f95892-a4ec-4c8b-b7cb-72ac5d058009:
+    options:
+      name: timelord_shamus
+  3445231c-699b-4f67-8880-54a041d04907:
+    options:
+      name: Lutandar
 schema-version: 1
