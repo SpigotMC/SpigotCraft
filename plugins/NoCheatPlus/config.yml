@@ -42,10 +42,7 @@ protection:
       active: true
       nopermission:
         message: '&4You do not have permission to perform this command.'
-        commands:
-        - plugins
-        - version
-        - icanhasbukkit
+        commands: []
       unknowncommand:
         message: Invalid command. Did you spell it right?
         commands: []
