@@ -35,6 +35,7 @@ groups:
       default: true
   Builder:
     permissions:
+    - herochat.pm
     - essentials.back.ondeath
     - essentials.balance
     - essentials.balance.others
@@ -261,9 +262,6 @@ users:
     - Helper
     options:
       name: Ayush_03
-  borlea:
-    group:
-    - Tester
   f8ced1f2-83cf-4525-94e9-7887a811143e:
     group:
     - Tester
@@ -350,9 +348,6 @@ users:
   kaime29010:
     group:
     - Tester
-  minecraft7net:
-    group:
-    - Tester
   0e5846d6-a0f8-423f-bdb1-6c023b6e2b67:
     group:
     - Tester
@@ -437,9 +432,6 @@ users:
     - Tester
     options:
       name: Gianluca
-  zedwick:
-    group:
-    - Tester
   98b59a50-7b46-4fdb-8f05-32f184a0574d:
     group:
     - Tester
@@ -511,9 +503,6 @@ users:
     - Helper
     options:
       name: Qballl_
-  genome:
-    group:
-    - Tester
   0b54d4f1-8ce9-46b3-a723-4ffdeeae3d7d:
     group:
     - Helper
@@ -759,6 +748,8 @@ users:
   3636b446-de6f-4cba-ba6b-071d17dc701f:
     group:
     - Tester
+    options:
+      name: Ryandw11
   1ecc5aba-a916-426d-92bb-51e0c58372b2:
     group:
     - Tester
@@ -779,6 +770,8 @@ users:
   ba0ea4f6-1f36-4f13-9dec-9cbf6cf77c22:
     group:
     - Tester
+    options:
+      name: RezzedUp
   9c8f2898-1c01-4034-9cbf-60b0e666f7ff:
     group:
     - Helper
@@ -799,7 +792,9 @@ users:
       name: cODEpOETRY
   5988eecd-1dcd-4080-a843-785b62419abb:
     group:
-    - Tester
+    - Helper
+    options:
+      name: tastybento
   7bbf0f4c-783e-46d8-8094-fac6f4f34cdd:
     group:
     - Tester
@@ -873,4 +868,117 @@ users:
     - Helper
     options:
       name: xcfzxdsc
+  08cc0b7a-2367-49d9-b206-9eb391da91b2:
+    group:
+    - Tester
+    options:
+      name: Redned
+  dcc59984-4d03-47c8-8a65-9659d704e48a:
+    group:
+    - Helper
+    options:
+      name: jaimymaster
+  3ee096c5-39f9-4d5e-aff8-ea82dc01d71d:
+    group:
+    - Helper
+    options:
+      name: Michel_0
+  10cab4f8-91ae-438e-b51d-8fbb730f0423:
+    group:
+    - Tester
+    options:
+      name: Borlea
+  6c780b81-d087-485e-8786-b0a500d7c224:
+    group:
+    - Moderator
+    options:
+      name: Z750
+  eric:
+    group:
+    - Tester
+  990804c9-e8e9-4b4b-adc1-d3e070a8b9be:
+    group:
+    - Tester
+    options:
+      name: Eric
+  6c8976e3-99a9-4d8b-a98e-d4c0c09b305b:
+    group:
+    - Tester
+    options:
+      name: pokechu22
+  fc3267b5-c3d9-4468-95ff-aa14769fd21c:
+    group:
+    - Tester
+    options:
+      name: BlackScorpion1
+  7732f412-30e4-4093-8202-3d1d3a59e84a:
+    group:
+    - Helper
+    options:
+      name: RoboMWM
+  b8f05d46-6b80-46d1-aea1-926e557d62ad:
+    group:
+    - Tester
+    options:
+      name: TBlacKnight
+  94cf9dcf-e536-4952-b1dc-90b66943094a:
+    group:
+    - Tester
+    options:
+      name: Medius_Echo
+  ac297aee-93a9-49f7-8179-ec620fad4aae:
+    group:
+    - Tester
+    options:
+      name: Leniency
+  437569a4-508d-486d-9a37-db4375e51100:
+    group:
+    - Tester
+    options:
+      name: ManBearCat
+  7e58f95e-8090-4df7-9148-54aac91d7dd9:
+    group:
+    - Helper
+    options:
+      name: starwarsfreak219
+  2c553e4d-1dd2-4a0c-b8e4-3bc7991592a3:
+    group:
+    - Tester
+    options:
+      name: Genome
+  1c78f2d5-36cb-4f1d-a95d-541535e0f558:
+    group:
+    - Tester
+    options:
+      name: minecraft7net
+  3bb806c5-753b-4ffb-a393-19c99701294c:
+    group:
+    - Tester
+    options:
+      name: SuperHammy3
+  petersoj:
+    group:
+    - Tester
+  braydongames:
+    group:
+    - Tester
+  a5095f99-23ef-411e-a83c-508c1dd0492f:
+    group:
+    - Tester
+    options:
+      name: Snailz
+  speaw:
+    group:
+    - Tester
+  fleetpaw:
+    group:
+    - Tester
+  funnycube:
+    group:
+    - Tester
+  886abfe1-b015-4b64-8de8-0c39bc308cb5:
+    group:
+    - Tester
+    options:
+      name: Zedwick
 schema-version: 1
