@@ -5,12 +5,10 @@ GriefPrevention:
     world_nether: -1
     world_the_end: -1
     flatworld: -1
-    ineedajungle: -1
     creative: -1
   Claims:
     Mode:
       world_the_end: Disabled
-      ineedajungle: Survival
       world: Survival
       creative: Creative
       world_nether: Disabled
@@ -74,7 +72,6 @@ GriefPrevention:
       world_nether: true
       world_the_end: true
       flatworld: true
-      ineedajungle: true
       creative: true
     ProtectFreshSpawns: true
     PunishLogout: true

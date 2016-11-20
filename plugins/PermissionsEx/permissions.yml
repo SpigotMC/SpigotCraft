@@ -311,9 +311,6 @@ users:
   vk2gpz:
     group:
     - Helper
-  classic36:
-    group:
-    - Helper
   xcodcraftx:
     group:
     - Tester
@@ -424,9 +421,6 @@ users:
     - Helper
     options:
       name: SamB440
-  stevethedog:
-    group:
-    - Tester
   61ef3f71-9424-44c2-9f30-ac176616192c:
     group:
     - Tester
@@ -742,7 +736,7 @@ users:
       name: Tiippex
   54d23814-998e-4f74-9a3f-b3ccc5ee8c0b:
     group:
-    - Tester
+    - Helper
     options:
       name: Aderm
   3636b446-de6f-4cba-ba6b-071d17dc701f:
@@ -850,6 +844,8 @@ users:
   9877873b-7948-4a46-a7ed-229eb1099069:
     group:
     - Tester
+    options:
+      name: Funnytom118
   9779df3e-d3e9-44d5-aaba-78700bf4946f:
     group:
     - Helper
@@ -956,9 +952,6 @@ users:
     - Tester
     options:
       name: SuperHammy3
-  petersoj:
-    group:
-    - Tester
   braydongames:
     group:
     - Tester
@@ -967,18 +960,68 @@ users:
     - Tester
     options:
       name: Snailz
-  speaw:
-    group:
-    - Tester
-  fleetpaw:
-    group:
-    - Tester
-  funnycube:
-    group:
-    - Tester
   886abfe1-b015-4b64-8de8-0c39bc308cb5:
     group:
     - Tester
     options:
       name: Zedwick
+  4dbfefc8-62d0-4a40-8399-bd2837252682:
+    group:
+    - Tester
+    options:
+      name: Petersoj
+  92dfd492-088a-409a-a796-fcf532cb52be:
+    group:
+    - Tester
+    options:
+      name: FleetPaw
+  35b3a6a8-ac17-4a5e-9483-655f3bbc81d7:
+    group:
+    - Tester
+    options:
+      name: sunglasses
+  3128288e-d27c-422f-aa24-b657836c4188:
+    group:
+    - Tester
+    options:
+      name: funnycube
+  5090cdd1-4482-4c83-a7c8-fc4ce04a20ec:
+    group:
+    - Tester
+    options:
+      name: Speaw
+  84073907-0b9e-4ea0-ba15-0c763585b1a1:
+    group:
+    - Helper
+    options:
+      name: Classic36
+  16b355fb-4d12-4bbf-865b-ca8bb7e4fd8d:
+    group:
+    - Tester
+    options:
+      name: lenis
+  ca817560-e87c-454e-bb2d-dd6b49708d97:
+    group:
+    - Helper
+    options:
+      name: Empire92
+  8c00ab0a-4719-40fc-9e01-5c3561ff775b:
+    group:
+    - Tester
+    options:
+      name: DJ_1420
+  kainzo:
+    group:
+    - Helper
+  1fb63df4-6017-4b54-ba28-addccb25cb89:
+    group:
+    - Tester
+    options:
+      name: SteveTheDog
+  nick2017:
+    group:
+    - Helper
+  lori00:
+    group:
+    - Helper
 schema-version: 1
