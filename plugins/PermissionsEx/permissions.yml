@@ -774,6 +774,8 @@ users:
   e6505ed0-eacb-4bbc-a6f6-adc2b753f02a:
     group:
     - Tester
+    options:
+      name: HeroCC
   f303862e-8eb0-4679-8ebf-86be15d0c4ee:
     group:
     - Tester
@@ -1021,7 +1023,24 @@ users:
   nick2017:
     group:
     - Helper
-  lori00:
+  e296bc43-2972-4111-9843-48fc32302fd4:
     group:
     - Helper
+    options:
+      name: Lori00
+  45658774-3119-40f8-8260-05c59178ae41:
+    group:
+    - Helper
+    options:
+      name: PickNChew
+  97ba24fe-1985-416d-842a-63ce17a2c138:
+    group:
+    - Tester
+    options:
+      name: ExecutiveTrump
+  ab8cf73b-4387-41ca-b807-dbdce71dfd35:
+    group:
+    - Tester
+    options:
+      name: Clyv
 schema-version: 1
