@@ -470,6 +470,8 @@ checks:
     assumesprint: true
     speedgrace: 4.0
     enforcelocation: default
+    setback:
+      method: default
     vehicle:
       preventdestroyown: true
       enforcelocation: default
@@ -543,6 +545,7 @@ strings:
   fdirection: '[player] failed [check]: tried to hit an entity out of line of sight. VL [violations].'
   flyshort: '[player] failed [check]: tried to move unexpectedly. VL [violations].'
   flylong: '[player] failed [check]: tried to move from [locationfrom] to [locationto] over a distance of [distance] block(s). VL [violations].'
+  flyfile: '[player] failed [check]: tried to move: [locationfrom] -> [locationto], d=[distance] ([tags]). VL [violations].'
   freach: '[player] failed [check]: tried to attack entity out of reach. VL [violations].'
   fselfhit: '[player] failed [check]: tried to self-hit. VL [violations].'
   fspeed: '[player] failed [check]: tried to attack with too high a frequency. VL [violations].'

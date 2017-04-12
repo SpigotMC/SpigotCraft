@@ -269,6 +269,10 @@ channels:
     - stm-claim
     - stm-close
     - stm-comment
+    # Messages from Discord
+    - discord-chat
+    # Messages from IRC to discord
+    - irc-discord-chat
     # Catch /broadcast messages
     #- broadcast-console-message
     #- broadcast-message
@@ -284,6 +288,8 @@ channels:
     venture-channel: global
     # Towny channel destination for IRC messages
     towny-channel: irc
+    # Discord channel destination for IRC messages
+    discord-channel: general
     # Log all messages from IRC to HeroChat
     log-irc-to-hero-chat: false
     # ops - IRC hostname mask styled ops list
@@ -320,6 +326,8 @@ channels:
         private: true
         # If true then message will be sent via ctcp. if false then normal msg
         ctcp: true
+        # send a notice message (overrides ctcp)
+        notice: false
         # The actual message sent to the user when joining the channel.
         # If the message starts with a / then a command will be run and the output sent as the message.
         message: '/list'
@@ -348,6 +356,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@chat'
         extras_commands: []
         private_listen: true
@@ -360,6 +369,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@ochat'
         extras_commands: []
         private_listen: true
@@ -372,6 +382,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@hchat'
         extras_commands: []
         private_listen: true
@@ -384,6 +395,7 @@ channels:
         modes: '*'
         private: true
         ctcp: false
+        notice: false
         game_command: '@msg'
         extras_commands: []
         private_listen: true
@@ -396,6 +408,7 @@ channels:
         modes: '*'
         private: 'true'
         ctcp: 'false'
+        notice: false
         game_command: '@r'
         private_listen: 'true'
         channel_listen: 'true'
@@ -410,6 +423,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@list'
         extras_commands: []
         private_listen: true
@@ -422,6 +436,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@help'
         extras_commands: []
         private_listen: true
@@ -434,6 +449,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@uptime'
         extras_commands: []
         private_listen: true
@@ -446,6 +462,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: '@versionfull'
         extras_commands: []
         private_listen: true
@@ -458,6 +475,7 @@ channels:
         modes: '*'
         private: false
         ctcp: false
+        notice: false
         game_command: lag
         extras_commands: []
         private_listen: true
@@ -470,6 +488,7 @@ channels:
         modes: 'o'
         private: 'false'
         ctcp: 'false'
+        notice: false
         game_command: '@list'
         extra_commands:
             - '@version'

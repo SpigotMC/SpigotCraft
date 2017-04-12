@@ -213,6 +213,7 @@ errors:
   wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please wait for it to finish
   invalid_player_offline: '$2The player must be online: $1%s.'
   error: '$2An error occurred: %s'
+  invalid_command_flag: '$2Invalid command flag: %s0'
 paste:
   debug_report_created: '$1Uploaded a full debug to: $1%url%'
 purge:
@@ -293,6 +294,7 @@ working:
   plot_not_claimed: $2Plot not claimed
   plot_is_claimed: $2This plot is already claimed
   claimed: $4You successfully claimed the plot
+  deleting_done: $4Delete completed! Took %sms.
 list:
   comment_list_header_paged: $2(Page $1%cur$2/$1%max$2) $1List of %amount% comments
   clickable: ' (interactive)'

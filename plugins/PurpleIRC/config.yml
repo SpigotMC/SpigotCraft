@@ -56,6 +56,8 @@ message-format:
   irc-a-response: ' &6-> &7[AdminChat]: %MESSAGE%'
   game-a-chat: '[%WORLD%] <%NAME%> -> [AdminChat]: %MESSAGE%'
   irc-a-chat: '[AdminChat] [&4IRC&r] %MESSAGE%'
+  discord-chat: '[Discord] %MESSAGE%'
+  irc-discord-chat: '[&4IRC&r]<%NAME%> %MESSAGE%'
   clever-send: '[&4BOT]<%NAME%> %MESSAGE%'
   mcmmo-admin-chat: '[admin:%WORLD%]<%NAME%> %MESSAGE%'
   mcmmo-party-chat: '[party:%PARTY%]<%NAME%> %MESSAGE%'

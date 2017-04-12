@@ -4,15 +4,13 @@ GriefPrevention:
     world: -1
     world_nether: -1
     world_the_end: -1
-    flatworld: -1
     creative: -1
   Claims:
     Mode:
-      world_the_end: Disabled
       world: Survival
-      creative: Creative
+      world_the_end: Disabled
       world_nether: Disabled
-      flatworld: Survival
+      creative: Creative
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -24,12 +22,9 @@ GriefPrevention:
     InitialBlocks: 1000
     Claim Blocks Accrued Per Hour:
       Default: 500
-      With 'fasteraccrual' Permission: 110
-      With 'fastestaccrual' Permission: 125
     Max Accrued Claim Blocks:
       Default: 80000
-      With 'moreaccrued' Permission: 5000
-      With 'mostaccrued' Permission: 10000
+    Accrued Idle Threshold: 0
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
     ExtendIntoGroundDistance: 5
@@ -71,7 +66,6 @@ GriefPrevention:
       world: true
       world_nether: true
       world_the_end: true
-      flatworld: true
       creative: true
     ProtectFreshSpawns: true
     PunishLogout: true

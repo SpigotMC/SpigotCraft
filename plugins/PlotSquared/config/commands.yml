@@ -509,6 +509,12 @@ toggle:
     usage: ''
     description: Toggle plot chat
     confirmation: false
+  clear-confirmation:
+    aliases:
+    - clear-confirmation
+    usage: ''
+    description: Toggle autoclear confirmation
+    confirmation: false
 help:
   aliases:
   - help
