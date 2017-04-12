@@ -92,7 +92,8 @@ createroadschematic:
   - createroadschematic
   - crs
   usage: /plot createroadschematic
-  description: Add a road schematic to your world using the roads around your current plot
+  description: Add a road schematic to your world using the roads around your current
+    plot
   confirmation: false
 debugallowunsafe:
   aliases:
@@ -201,7 +202,8 @@ list:
   - l
   - find
   - search
-  usage: /plot list <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy <search...>> [#]
+  usage: /plot list <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy
+    <search...>> [#]
   description: List plots
   confirmation: false
 debug:
@@ -227,7 +229,8 @@ plugin:
 purge:
   aliases:
   - purge
-  usage: /plot purge world:<world> area:<area> id:<id> owner:<owner> shared:<shared> unknown:[true|false]
+  usage: /plot purge world:<world> area:<area> id:<id> owner:<owner> shared:<shared>
+    unknown:[true|false]
   description: Purge all plots for a world
   confirmation: true
 reload:
@@ -282,7 +285,8 @@ debugclaimtest:
   aliases:
   - debugclaimtest
   usage: ''
-  description: If you accidentally delete your database, this command will attempt to restore all plots based on the data from plot signs. Execution time may vary
+  description: If you accidentally delete your database, this command will attempt
+    to restore all plots based on the data from plot signs. Execution time may vary
   confirmation: false
 inbox:
   aliases:
