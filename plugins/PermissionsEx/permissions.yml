@@ -461,7 +461,7 @@ users:
     group:
     - Helper
     options:
-      name: rignpolice
+      name: rsRingpolice
   dd6f3d9b-86e6-497f-b22a-2fc99e046e65:
     group:
     - Helper
@@ -557,7 +557,7 @@ users:
     group:
     - Tester
     options:
-      name: ShadyPaws
+      name: ShadyCarpet
   69dbdb9f-dc4d-4858-a9c0-963d465071a8:
     group:
     - Helper
@@ -856,7 +856,7 @@ users:
     - Helper
   73c62196-2af7-463d-8be1-a7a2270f4696:
     group:
-    - Helper
+    - Moderator
     options:
       name: 2008Choco
   91a98a7b-9637-48d8-9576-a348e209cde0:
@@ -1041,4 +1041,24 @@ users:
     - Tester
     options:
       name: Clyv
+  f33c2842-0706-49b5-b8c7-3584e18a35a0:
+    group:
+    - Helper
+    options:
+      name: SainttX
+  2626974f-5838-44c6-994d-f6c723d40b79:
+    group:
+    - Helper
+    options:
+      name: Songoda
+  e64b3386-879f-4317-8316-f83aa10620d7:
+    group:
+    - Helper
+    options:
+      name: BadBones69
+  7ed37355-9b49-4963-ba8c-b68d3e0f138a:
+    group:
+    - Tester
+    options:
+      name: Klemms
 schema-version: 1
