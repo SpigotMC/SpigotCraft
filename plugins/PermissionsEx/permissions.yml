@@ -27,7 +27,6 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
-    - herochat.speak.Global
     - plots.permpack.basic
     - plots.plot.1
     options:
@@ -35,7 +34,6 @@ groups:
       default: true
   Builder:
     permissions:
-    - herochat.pm
     - essentials.back.ondeath
     - essentials.balance
     - essentials.balance.others
