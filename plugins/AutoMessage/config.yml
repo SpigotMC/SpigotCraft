@@ -21,13 +21,13 @@ message-lists:
     expiry: -1
     random: true
     messages:
-    - '&3[AutoMessage]&r The server is currently in testing mode. The map will be
+    - '&6SpigotCraft &8»&r The server is currently in testing mode. The map will be
       reset frequently. Please don''t break things.'
-    - '&3[AutoMessage]&r All actions are logged - abuse will result in a 1 month ban
+    - '&6SpigotCraft &8»&r All actions are logged - abuse will result in a 1 month ban
       from SpigotMC.'
-    - '&3[AutoMessage]&r This server is open source - submit your own changes here:
+    - '&6SpigotCraft &8»&r This server is open source - submit your own changes here:
       https://github.com/SpigotMC/SpigotCraft'
-    - '&3[AutoMessage]&r Helpers may use /promote to promote users if they have given
+    - '&6SpigotCraft &8»&r Helpers may use /promote to promote users if they have given
       their name in the forum thread'
-    - '&3[AutoMessage]&r The aim of this excercise is to find release-critical 1.12
+    - '&6SpigotCraft &8»&r The aim of this excercise is to find release-critical 1.12
       bugs'
