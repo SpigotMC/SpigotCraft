@@ -7,7 +7,7 @@ GriefPrevention:
     creative: -1
   Claims:
     Mode:
-      creative: Disabled
+      plots: Disabled
       world_nether: Disabled
       world_the_end: Disabled
       world: Survival
