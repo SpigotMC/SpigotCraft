@@ -1,0 +1,59 @@
+##############
+# WORLD INFO #
+##############
+random_world: false
+
+valid_worlds:
+  - world
+
+radius:
+  max_X: 10000
+  max_Z: 10000
+  min_X: -10000
+  min_Z: -10000
+  
+######################
+# PRICE AND COOLDOWN #
+######################
+price: 0.0
+
+cooldown: 300
+ 
+portal:
+  price: false
+  cooldown: false
+sign:
+  price: false
+  cooldown: false
+self:
+  price: false
+  cooldown: true
+cmd:
+  price: false
+  cooldown: true
+  
+##############
+# BLACK LIST #
+##############
+biomes:
+  - OCEAN
+  - RIVER
+  - DEEP_OCEAN
+blocks:
+  - CACTUS
+
+######################
+# PLUGIN INTEGRATION #
+######################
+towny: false
+factions: false
+worldguard: false
+worldborder: false
+
+########
+# MISC #
+########
+debug: false
+send_message_on_tp: false
+anticheat: false
+preventPortalUpdate: true
