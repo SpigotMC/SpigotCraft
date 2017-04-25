@@ -2,7 +2,7 @@ savebackconfig: true
 configversion:
   notify: true
   created: 785
-  saved: 785
+  saved: 1080
 logging:
   active: true
   maxqueuesize: 5000
