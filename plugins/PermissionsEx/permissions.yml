@@ -31,6 +31,11 @@ groups:
     - essentials.tpdeny
     - plots.permpack.basic
     - plots.plot.1
+    - essentials.kit.*
+    - herochat.create
+    - herochat.join.*
+    - herochat.leave.*
+    - herochat.speak.*
     options:
       rank: 1000
       default: true
