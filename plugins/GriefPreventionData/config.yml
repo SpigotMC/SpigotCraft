@@ -90,7 +90,7 @@ GriefPrevention:
   BlockSurfaceOtherExplosions: true
   LimitSkyTrees: true
   LimitTreeGrowth: false
-  LimitPistonsToLandClaims: true
+  LimitPistonsToLandClaims: false
   FireSpreads: false
   FireDestroys: false
   AdminsGetWhispers: false
