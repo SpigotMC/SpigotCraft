@@ -529,7 +529,7 @@ chat:
   # Or you can give a group specific chat format, to give some extra variation.
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '{DISPLAYNAME}: {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
 
   group-formats:

@@ -1,6 +1,8 @@
 groups:
   Default:
     permissions:
+    - essentials.warps.*
+    - essentials.warp
     - ChestShop.shop.*
     - automessage.receive.regular
     - bukkit.command.plugins
@@ -91,7 +93,6 @@ groups:
     - minecraft.command.give
     - minecraft.command.help
     - minecraft.command.locate
-    - minecraft.command.summon
     - minecraft.command.tp
     - multiverse.teleport.self.*
     inheritance:
@@ -101,6 +102,8 @@ groups:
       prefix: '&f[&aTester&f] '
   Helper:
     permissions:
+    - essentials.spawnmob.*
+    - minecraft.command.summon
     - essentials.joinfullserver
     - permissions.user.demote.default
     - permissions.user.promote.default
@@ -217,9 +220,6 @@ users:
     - Moderator
     options:
       name: I9hdkill
-  drpiggy:
-    group:
-    - Tester
   b133dec0-2ac8-4ff3-b8cc-60644099174a:
     group:
     - Helper
@@ -439,7 +439,7 @@ users:
     - Default
   94cb88bc-42fd-460b-a267-4342eb644ac3:
     group:
-    - Tester
+    - Helper
     options:
       name: ysl3000
   c5351027-b0a0-48db-b817-f3b9a3469bfc:
@@ -461,7 +461,7 @@ users:
     group:
     - Helper
     options:
-      name: rignpolice
+      name: rsRingpolice
   dd6f3d9b-86e6-497f-b22a-2fc99e046e65:
     group:
     - Helper
@@ -557,7 +557,7 @@ users:
     group:
     - Tester
     options:
-      name: ShadyPaws
+      name: ShadyCarpet
   69dbdb9f-dc4d-4858-a9c0-963d465071a8:
     group:
     - Helper
@@ -797,6 +797,8 @@ users:
   2b5187c9-dc5d-480e-ab6f-e884e92fce45:
     group:
     - Tester
+    options:
+      name: ItzDennisz
   28ba1f9a-fd01-4157-962e-58ad986aaae9:
     group:
     - Helper
@@ -856,7 +858,7 @@ users:
     - Helper
   73c62196-2af7-463d-8be1-a7a2270f4696:
     group:
-    - Helper
+    - Moderator
     options:
       name: 2008Choco
   91a98a7b-9637-48d8-9576-a348e209cde0:
@@ -1041,4 +1043,71 @@ users:
     - Tester
     options:
       name: Clyv
+  f33c2842-0706-49b5-b8c7-3584e18a35a0:
+    group:
+    - Helper
+    options:
+      name: SainttX
+  2626974f-5838-44c6-994d-f6c723d40b79:
+    group:
+    - Helper
+    options:
+      name: Songoda
+  e64b3386-879f-4317-8316-f83aa10620d7:
+    group:
+    - Helper
+    options:
+      name: BadBones69
+  7ed37355-9b49-4963-ba8c-b68d3e0f138a:
+    group:
+    - Tester
+    options:
+      name: Klemms
+  e7ec6c61-f69f-437f-89f8-88c4d1536395:
+    group:
+    - Helper
+    options:
+      name: mathhulk
+  36bb3189-c2e9-407a-a01c-62a7bb07bb5b:
+    group:
+    - Tester
+    options:
+      name: Max604
+  a94706a4-bf46-4f44-a7db-bfd866dc09b4:
+    group:
+    - Tester
+    options:
+      name: JULI0
+  a0957f51-94ed-44f9-94da-cc50c3fb66e0:
+    group:
+    - Moderator
+    options:
+      name: floory565
+  arvindir:
+    group:
+    - Helper
+  918fc6c4-d836-4c76-bdfc-c725107f3dbf:
+    group:
+    - Tester
+    options:
+      name: Veao_
+  help:
+    group:
+    - Tester
+  638c6b28-2d71-44d4-9c8f-b514e8f7f306:
+    group:
+    - Tester
+    options:
+      name: WizardPulse
+  b52a26dd-3a2d-4bb2-a3ee-ecc85480f998:
+    group:
+    - Tester
+    options:
+      name: kman505
+      prefix: '[&7ALT&r] '
+  46f58e67-502e-4d90-9c8d-9528b6c65bef:
+    group:
+    - Tester
+    options:
+      name: DrPiggy
 schema-version: 1

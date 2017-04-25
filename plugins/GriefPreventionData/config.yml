@@ -7,10 +7,10 @@ GriefPrevention:
     creative: -1
   Claims:
     Mode:
-      world: Survival
-      world_the_end: Disabled
-      world_nether: Disabled
       creative: Creative
+      world_nether: Disabled
+      world_the_end: Disabled
+      world: Survival
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
