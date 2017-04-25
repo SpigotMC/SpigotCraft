@@ -29,5 +29,4 @@ message-lists:
       https://github.com/SpigotMC/SpigotCraft'
     - '&3[AutoMessage]&r Helpers may use /promote to promote users if they have given
       their name in the forum thread'
-    - '&3[AutoMessage]&r The aim of this excercise is to find release-critical 1.12
-      bugs'
+    - '&3[AutoMessage]&r The aim of this excercise is to find release-critical 1.12 bugs. Report to bug-tracker: https://hub.spigotmc.org/jira'
