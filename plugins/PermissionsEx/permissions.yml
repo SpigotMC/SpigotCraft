@@ -31,6 +31,7 @@ groups:
     - essentials.tpdeny
     - plots.permpack.basic
     - plots.plot.1
+    - essentials.msg.url
     options:
       rank: 1000
       default: true
