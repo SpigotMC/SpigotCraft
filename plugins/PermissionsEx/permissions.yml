@@ -1,13 +1,14 @@
 groups:
   Default:
     permissions:
+    - essentials.afk.auto
+    - essentials.afk
+    - randomtp.tp
     - essentials.warps.*
     - essentials.warp
     - ChestShop.shop.*
     - automessage.receive.regular
     - bukkit.command.plugins
-    - essentials.afk
-    - essentials.afk.auto
     - essentials.back
     - essentials.help
     - essentials.helpop
@@ -117,6 +118,7 @@ groups:
       prefix: '&f[&6Helper&f] '
   Moderator:
     permissions:
+    - essentials.joinfullserver
     - ChestShop.admin
     - essentials.ban
     - essentials.ban.notify
@@ -240,7 +242,7 @@ users:
     group:
     - Helper
     options:
-      name: SimpleAuthority
+      name: simpleauthority
   570bfcdf-5cd5-463e-9301-0c580e086744:
     group:
     - Helper
@@ -563,7 +565,7 @@ users:
     group:
     - Helper
     options:
-      name: Ploxh4D
+      name: Phloxz
   aa72a2ff-cf9e-4de3-a0dd-edec5b645d9e:
     group:
     - Tester
@@ -626,7 +628,7 @@ users:
     group:
     - Tester
     options:
-      name: antiPerson_
+      name: BaconPied
   8da044fd-bb95-49cf-9e04-5e3cdf07bf73:
     group:
     - Helper
@@ -779,7 +781,7 @@ users:
     group:
     - Tester
     options:
-      name: Engeland
+      name: c69
   29a83c85-c420-4210-ba9c-dfb780b2b2c4:
     group:
     - Tester
@@ -922,7 +924,7 @@ users:
       name: TBlacKnight
   94cf9dcf-e536-4952-b1dc-90b66943094a:
     group:
-    - Tester
+    - Default
     options:
       name: Medius_Echo
   ac297aee-93a9-49f7-8179-ec620fad4aae:
@@ -1111,4 +1113,114 @@ users:
     - Tester
     options:
       name: DrPiggy
+  112madgamer:
+    group:
+    - Tester
+  4b28ac86-d77c-4c5e-a629-90c3096bb4f9:
+    options:
+      name: Quasindro
+  09b68673-7f8c-4ccc-b60f-7112cca29c2a:
+    options:
+      name: Thijsssss
+    group:
+    - Tester
+  cfe184f7-4d64-4a15-bcac-bde7c9677cea:
+    options:
+      name: timr2000
+  30e4e490-f842-4ec9-8630-4c597030adc8:
+    options:
+      name: iCodinqs
+  0e5ff250-4c32-45ac-a077-87f4d16382e0:
+    group:
+    - Helper
+    options:
+      name: PvPdog
+  a34d9cbd-1c17-4be5-b7b3-eb4c88dc07ee:
+    group:
+    - Tester
+    options:
+      name: Checkium
+  2837834c-5052-44b8-a4f6-90b8fd41bff1:
+    group:
+    - Tester
+    options:
+      name: SpiderMan31
+  fatpigsarefat:
+    group:
+    - Tester
+  e19446ff-e9e1-48e9-992c-83ea301deb4f:
+    group:
+    - Tester
+    options:
+      name: Gaxan
+  bcd2033c-63ec-4bf8-8aca-680b22461340:
+    group:
+    - Helper
+    options:
+      name: inventivetalent
+  0865364d-13b0-491e-8dce-4cc233b0006c:
+    group:
+    - Tester
+    options:
+      name: matrix033
+  8c123c25-49ed-49ea-a7a5-b5e4ef3108f9:
+    group:
+    - Helper
+    options:
+      name: Proximyst
+  815bc63d-125a-4074-89ab-df851dce4f5e:
+    group:
+    - Helper
+    options:
+      name: ItzSomebody
+  31f5ccef-13e4-4793-bcd2-77e30e1734b5:
+    group:
+    - Helper
+    options:
+      name: maldahleh
+  a60ebed6-9554-4a79-bb06-052f7dbeeb05:
+    group:
+    - Helper
+    options:
+      name: ChemCorps
+  cef8d077-5994-4671-a3c9-d8b0f6cbcda5:
+    group:
+    - Helper
+    options:
+      name: dniym
+  10cb0514-3d04-4acd-aaf3-a58aa9b18adb:
+    group:
+    - Helper
+    options:
+      name: BrettPlayMC
+  8ec3ef85-3ca6-4317-a74c-91cb1979bcc4:
+    group:
+    - Tester
+    options:
+      name: ExplosiveNight
+  88b0e334-a9f1-40c6-a37d-774ef21577a5:
+    group:
+    - Tester
+    options:
+      name: Im_Digger
+  661348e9-56b6-4c4f-ad2b-7874683cf1d4:
+    group:
+    - Tester
+    options:
+      name: Bobcat00
+  49059600-26d6-45ac-8b43-86a14f7d96ac:
+    group:
+    - Tester
+    options:
+      name: TreyRuffy
+  55308348-096d-4798-bed6-99f831b75f97:
+    group:
+    - Tester
+    options:
+      name: IroN1CK
+  681307bd-d7fc-44f7-8f32-f268666dda56:
+    group:
+    - Helper
+    options:
+      name: Papa_Franku_
 schema-version: 1
