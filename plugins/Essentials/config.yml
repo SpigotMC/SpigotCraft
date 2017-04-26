@@ -336,7 +336,7 @@ auto-afk: 300
 # After this timeout in seconds, the user will be kicked from the server.
 # essentials.afk.kickexempt node overrides this feature.
 # Set to -1 for no timeout.
-auto-afk-kick: -1
+auto-afk-kick: 300
 
 # Set this to true, if you want to freeze the player, if the player is AFK.
 # Other players or monsters can't push the player out of AFK mode then.
