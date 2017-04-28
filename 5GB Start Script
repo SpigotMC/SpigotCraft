@@ -1,0 +1,18 @@
+#To use this you must run the command chmod a+x /path/to/this/script in terminal.
+#This script is provided as is with out any waranty. It took me a while to get it to it's current state.
+#You may use it in any server as it now exsists to help the minecraft server comunity, it requires BASH to run.
+#!/bin/bash
+cd "$( dirname "$0" )"
+while true
+do
+spigot=$(find spigot*.jar)
+	java -Djava.awt.headless=true -d64 -Xms3072m -Xmx5632m -XX:ReservedCodeCacheSize=1024m -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:NewRatio=4 -XX:SurvivorRatio=3 -XX:TargetSurvivorRatio=50 -XX:SoftRefLRUPolicyMSPerMB=0 -XX:+BindGCTaskThreadsToCPUs -XX:+TieredCompilation -XX:Tier0ProfilingStartPercentage=0 -XX:Tier3InvocationThreshold=3 -XX:Tier3MinInvocationThreshold=2 -XX:Tier3CompileThreshold=2 -XX:Tier3BackEdgeThreshold=10 -XX:Tier4InvocationThreshold=4 -XX:Tier4MinInvocationThreshold=3 -XX:Tier4CompileThreshold=2 -XX:Tier4BackEdgeThreshold=8 -XX:TieredCompileTaskTimeout=5000 -XX:Tier3DelayOn=50 -XX:Tier3DelayOff=25 -XX:+UseFastEmptyMethods -XX:-DontCompileHugeMethods -XX:+AlwaysCompileLoopMethods -XX:+CICompilerCountPerCPU -XX:+UseNUMA -XX:+AggressiveOpts -XX:+HeapDumpOnOutOfMemoryError -jar ${spigot}
+    echo -e 'If you want to completely stop the server process now, press ctrl-C before the\ntime is up!'
+    echo "Rebooting in:"
+    for i in {5..1}
+    do
+        echo "$i..."
+        sleep 1
+    done
+    echo 'Restarting now!'
+done
