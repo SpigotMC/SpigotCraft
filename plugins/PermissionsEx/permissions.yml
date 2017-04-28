@@ -38,6 +38,7 @@ groups:
     options:
       rank: 1000
       default: true
+      prefix: '&f[&3Player&f] &7'
   Builder:
     permissions:
     - essentials.back.ondeath
@@ -74,7 +75,7 @@ groups:
     inheritance:
     - Default
     options:
-      prefix: '&f[&bBuilder&f] '
+      prefix: '&f[&bBuilder&f] &7'
   Tester:
     permissions:
     - essentials.tp.position
@@ -103,7 +104,7 @@ groups:
     - Builder
     options:
       rank: 400
-      prefix: '&f[&aTester&f] '
+      prefix: '&f[&aTester&f] &7'
   Helper:
     permissions:
     - essentials.spawnmob.*
@@ -117,7 +118,7 @@ groups:
     - Tester
     options:
       rank: 300
-      prefix: '&f[&6Helper&f] '
+      prefix: '&f[&6Helper&f] &7'
   Moderator:
     permissions:
     - essentials.joinfullserver
@@ -174,7 +175,7 @@ groups:
     - Helper
     options:
       rank: 200
-      prefix: '&f[&5Moderator&f] '
+      prefix: '&f[&5Moderator&f] &7'
   Admin:
     permissions:
     - '*'
@@ -183,7 +184,7 @@ groups:
     options:
       build: true
       rank: 100
-      prefix: '&f[&cAdmin&f] '
+      prefix: '&f[&cAdmin&f] &7'
 users:
   c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
@@ -1109,7 +1110,7 @@ users:
     - Tester
     options:
       name: kman505
-      prefix: '[&7ALT&r] '
+      prefix: '[&7ALT&r] &7'
   46f58e67-502e-4d90-9c8d-9528b6c65bef:
     group:
     - Tester
