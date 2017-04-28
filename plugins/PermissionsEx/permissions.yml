@@ -1,11 +1,13 @@
 groups:
   Default:
     permissions:
+    - essentials.warp.list
+    - essentials.warp
+    - essentials.chat.url
     - essentials.afk.auto
     - essentials.afk
     - randomtp.tp
     - essentials.warps.*
-    - essentials.warp
     - ChestShop.shop.*
     - automessage.receive.regular
     - bukkit.command.plugins
@@ -1113,9 +1115,6 @@ users:
     - Tester
     options:
       name: DrPiggy
-  112madgamer:
-    group:
-    - Tester
   4b28ac86-d77c-4c5e-a629-90c3096bb4f9:
     options:
       name: Quasindro
@@ -1223,4 +1222,59 @@ users:
     - Helper
     options:
       name: Papa_Franku_
+  fccdb9cb-0fb0-4b2d-873f-d3375796cf67:
+    group:
+    - Tester
+    options:
+      name: 112madGamer
+  29ce1721-7764-4c15-9f71-a19d81f33927:
+    group:
+    - Helper
+    options:
+      name: PiggyPiglet
+  5256580b-d888-4bff-b01b-b1eac1eb13b2:
+    group:
+    - Tester
+    options:
+      name: InstantlyMoist
+  5758de66-9ef6-4761-8346-b54ecc758d61:
+    group:
+    - Tester
+    options:
+      name: ElieTGM
+  8303e3c1-2896-44ae-b0f1-f1618641c199:
+    group:
+    - Tester
+    options:
+      name: AlphaHelix
+  b600b71b-9a31-4a33-b290-ac217921c41a:
+    group:
+    - Tester
+    options:
+      name: Instantout
+  631e3896-da2a-4077-974b-d047859d76bc:
+    group:
+    - Tester
+    options:
+      name: mrfloris
+  9cccf499-cca5-4137-b520-597f438d3ce7:
+    group:
+    - Tester
+    options:
+      name: CodeRida
+  51137b33-aa8d-4009-8e39-f495a4544e46:
+    group:
+    - Helper
+    options:
+      name: NacOJerk
+  7912eb5f-5c9b-44bc-9d9b-df8fe165f902:
+    group:
+    - Helper
+    options:
+      name: OfficerJava
+  1bcce830-d165-4c4d-8034-4d11bec8de7e:
+    group:
+    - Tester
+    options:
+      name: Islandscout
 schema-version: 1
