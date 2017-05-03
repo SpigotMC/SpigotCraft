@@ -1,0 +1,31 @@
+usingConfig: true
+config-version: 3
+using-bungeecord: false
+legacy-client-support: false
+updater:
+  check-automatically: false
+tabmenu:
+  enabled: true
+  header: '&6SpigotCraft!'
+  footer: animation:footer
+welcome_message:
+  enabled: true
+  title: '&7Welcome back to &6SpigotCraft&7!'
+  subtitle: '&6{PLAYER}'
+  fadeIn: 20
+  stay: 60
+  fadeOut: 20
+  first-join:
+    title: '&7Welcome to &6SpigotCraft'
+    subtitle: '&6{PLAYER}'
+actionbar-welcome:
+  enabled: false
+  message: '&a&lWelcome!'
+  first-join:
+    message: '&2&lWelcome It''s your first time!'
+number-format:
+  enabled: true
+  format: '#,###.##'
+date-format:
+  format: EEE, dd MMM yyyy HH:mm:ss z
+disabled-variables: []
