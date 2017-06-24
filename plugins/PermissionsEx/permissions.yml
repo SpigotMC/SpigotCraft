@@ -114,6 +114,8 @@ groups:
     - permissions.user.rank.demote
     - permissions.user.rank.promote
     - logblock.lookup
+    - logblock.tools.tool
+    - logblock.tools.toolblock
     inheritance:
     - Tester
     options:
@@ -167,8 +169,6 @@ groups:
     - essentials.world
     - essentials.worlds.*
     - logblock.spawnTools
-    - logblock.tools.tool
-    - logblock.tools.toolblock
     - permissions.manage.membership
     inheritance:
     - Helper
