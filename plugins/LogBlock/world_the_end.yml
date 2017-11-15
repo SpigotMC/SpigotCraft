@@ -38,4 +38,5 @@ logging:
   CREATURECROPTRAMPLE: false
   LOCKEDCHESTDECAY: false
   NATURALSTRUCTUREGROW: false
+  ENDERCRYSTALEXPLOSION: true
 table: lb-world_the_end

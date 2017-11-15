@@ -2,6 +2,7 @@ confirm:
   failed_confirm: $2You have no pending actions to confirm!
   requires_confirm: '$2Are you sure you wish to execute: $1%s$2?&-$2This cannot be
     undone! If you are sure: $1/plot confirm'
+  expired_confirm: $2Confirmation has expired, please run the command again!
 move:
   move_success: $4Successfully moved plot.
   copy_success: $4Successfully copied plot.
@@ -49,9 +50,12 @@ unclaim:
 worldedit masks:
   worldedit_delayed: $2Please wait while we process your WorldEdit action...
   worldedit_run: '$2Apologies for the delay. Now executing: %s'
-  require_selection_in_mask: $2%s of your selection is not within your plot mask. You can only make edits within your plot.
-  worldedit_volume: $2You cannot select a volume of %current%. The maximum volume you can modify is %max%.
-  worldedit_iterations: $2You cannot iterate %current% times. The maximum number of iterations allowed is %max%.
+  require_selection_in_mask: $2%s of your selection is not within your plot mask.
+    You can only make edits within your plot.
+  worldedit_volume: $2You cannot select a volume of %current%. The maximum volume
+    you can modify is %max%.
+  worldedit_iterations: $2You cannot iterate %current% times. The maximum number of
+    iterations allowed is %max%.
   worldedit_unsafe: $2Access to that command has been blocked
   worldedit_bypass: $2&oTo bypass your restrictions use $4/plot wea
   worldedit_bypassed: $2Currently bypassing WorldEdit restriction.
@@ -92,8 +96,10 @@ inventory:
   inventory_desc: '&cDescription: &6{desc}'
   inventory_category: '&cCategory: &6{category}'
 clipboard:
-  clipboard_set: $2The current plot is now copied to your clipboard, use $1/plot paste$2 to paste it
-  pasted: $4The plot selection was successfully pasted. It has been cleared from your clipboard.
+  clipboard_set: $2The current plot is now copied to your clipboard, use $1/plot paste$2
+    to paste it
+  pasted: $4The plot selection was successfully pasted. It has been cleared from your
+    clipboard.
   paste_failed: '$2Failed to paste the selection. Reason: $2%s'
   no_clipboard: $2You don't have a selection in your clipboard
   clipboard_info: '$2Current Selection - Plot ID: $1%id$2, Width: $1%width$2, Total
@@ -106,7 +112,8 @@ blocked command:
 done:
   done_already_done: $2This plot is already marked as done
   done_not_done: $2This plot is not marked as done.
-  done_insufficient_complexity: $2This plot is too simple. Please add more detail before using this command.
+  done_insufficient_complexity: $2This plot is too simple. Please add more detail
+    before using this command.
   done_success: $1Successfully marked this plot as done.
   done_removed: $1You may now continue building in this plot.
 ratings:
@@ -116,6 +123,7 @@ ratings:
   rating_not_your_own: $2You cannot rate your own plot
   rating_not_done: $2You can only rate finished plots.
   rating_not_owned: $2You cannot rate a plot that is not claimed by anyone
+  ratings_purged: $2Purged ratings for this plot
 tutorial:
   rate_this: $2Rate this plot!
   comment_this: '$2Leave some feedback on this plot: %s'
@@ -135,10 +143,16 @@ setup:
   setup_invalid_arg: '$2%s0 is not a valid argument for step %s1. To cancel setup
     use: $1/plot setup cancel'
   setup_valid_arg: $2Value $1%s0 $2set to %s1
-  setup_finished: $4You should have been teleported to the created world. Otherwise you will need to set the generator manually using the bukkit.yml or your chosen world management plugin.
+  setup_finished: $4You should have been teleported to the created world. Otherwise
+    you will need to set the generator manually using the bukkit.yml or your chosen
+    world management plugin.
   setup_world_taken: $2%s is already a registered plotworld
-  setup_missing_world: $2You need to specify a world name ($1/plot setup &l<world>$1 <generator>$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot setup back&-$2 - $1/plot setup cancel
-  setup_missing_generator: $2You need to specify a generator ($1/plot setup <world> &l<generator>&r$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot setup back&-$2 - $1/plot setup cancel
+  setup_missing_world: $2You need to specify a world name ($1/plot setup &l<world>$1
+    <generator>$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot
+    setup back&-$2 - $1/plot setup cancel
+  setup_missing_generator: $2You need to specify a generator ($1/plot setup <world>
+    &l<generator>&r$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot
+    setup back&-$2 - $1/plot setup cancel
   setup_invalid_generator: '$2Invalid generator. Possible options: %s'
 schematics:
   schematic_missing_arg: '$2You need to specify an argument. Possible values: $1test
@@ -178,7 +192,8 @@ position:
 time:
   time_format: $1%hours%, %min%, %sec%
 permission:
-  no_schematic_permission: $2You don't have the permission required to use schematic $1%s
+  no_schematic_permission: $2You don't have the permission required to use schematic
+    $1%s
   no_permission: '$2You are lacking the permission node: $1%s'
   no_permission_event: '$2You are lacking the permission node: $1%s'
   no_plot_perms: $2You must be the plot owner to perform this action
@@ -194,7 +209,8 @@ merge:
   success_merge: $2Plots have been merged!
   merge_requested: $2Successfully sent a merge request
   no_perm_merge: '$2You are not the owner of the plot: $1%plot%'
-  no_available_automerge: $2You do not own any adjacent plots in the specified direction or are not allowed to merge to the required size.
+  no_available_automerge: $2You do not own any adjacent plots in the specified direction
+    or are not allowed to merge to the required size.
   unlink_required: $2An unlink is required to do this.
   unlink_impossible: $2You can only unlink a mega-plot
   unlink_success: $2Successfully unlinked plots.
@@ -210,17 +226,20 @@ errors:
   not_valid_world: $2That is not a valid world (case sensitive)
   not_valid_plot_world: $2That is not a valid plot world (case sensitive)
   no_plots: $2You don't have any plots
-  wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please wait for it to finish
+  wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please
+    wait for it to finish
   invalid_player_offline: '$2The player must be online: $1%s.'
   error: '$2An error occurred: %s'
   invalid_command_flag: '$2Invalid command flag: %s0'
+  not_loaded: $2The plot could not be loaded
 paste:
   debug_report_created: '$1Uploaded a full debug to: $1%url%'
 purge:
   purge_success: $4Successfully purged %s plots
 trim:
   trim_in_progress: A world trim task is already in progress!
-  not_valid_hybrid_plot_world: The hybrid plot manager is required to perform this action
+  not_valid_hybrid_plot_world: The hybrid plot manager is required to perform this
+    action
 block list:
   block_list_separater: '$1,$2 '
 biome:
@@ -311,12 +330,15 @@ chat:
   plot_chat_forced: $2This world forces everyone to use plot chat.
   plot_chat_on: $4Plot chat enabled.
   plot_chat_off: $4Plot chat disabled.
+  plot_chat_spy_format: '$2[$1Plot Spy$2][$1%plot_id%$2] $1%sender%$2: $1%msg%'
 deny:
   denied_removed: $4You successfully undenied the player from this plot
   denied_added: $4You successfully denied the player from this plot
-  denied_need_argument: $2Arguments are missing. $1/plot denied add <name> $2or $1/plot denied remove <name>
+  denied_need_argument: $2Arguments are missing. $1/plot denied add <name> $2or $1/plot
+    denied remove <name>
   was_not_denied: $2That player was not denied on this plot
-  you_got_denied: $4You are denied from the plot you were previously on, and got teleported to spawn
+  you_got_denied: $4You are denied from the plot you were previously on, and got teleported
+    to spawn
 rain:
   need_on_off: '$2You need to specify a value. Possible values: $1on$2, $1off'
   setting_updated: $4You successfully updated the setting
@@ -336,7 +358,8 @@ trusted:
   trusted_added: $4You successfully trusted a user to the plot
   trusted_removed: $4You successfully removed a trusted user from the plot
   was_not_added: $2That player was not trusted on this plot
-  plot_removed_user: $1Plot %s of which you were added to has been deleted due to owner inactivity
+  plot_removed_user: $1Plot %s of which you were added to has been deleted due to
+    owner inactivity
 member:
   removed_players: $2Removed %s players from this plot.
   already_owner: $2That user is already the plot owner.

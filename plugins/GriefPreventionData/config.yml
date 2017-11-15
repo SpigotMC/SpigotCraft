@@ -7,10 +7,11 @@ GriefPrevention:
     plots: -1
   Claims:
     Mode:
-      world_nether: Disabled
-      world_the_end: Disabled
-      plots: Disabled
       world: Survival
+      world_the_end: Disabled
+      world_nether: Disabled
+      plots: Survival
+    PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
@@ -25,6 +26,7 @@ GriefPrevention:
     Max Accrued Claim Blocks:
       Default: 80000
     Accrued Idle Threshold: 0
+    AccruedIdlePercent: 0
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
     ExtendIntoGroundDistance: 5
@@ -53,6 +55,7 @@ GriefPrevention:
   Spam:
     Enabled: true
     LoginCooldownSeconds: 3
+    LoginLogoutNotificationsPerMinute: 5
     ChatSlashCommands: /me;/tell;/global;/local;/w;/msg;/r;/t
     WhisperSlashCommands: /tell;/pm;/r;/w;/whisper;/t;/msg
     WarningMessage: Please reduce your noise level.  Spammers will be punted.

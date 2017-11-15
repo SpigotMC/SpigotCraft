@@ -1,13 +1,16 @@
 savebackconfig: true
 configversion:
   notify: true
+  notifymaxpaths: 5
   created: 785
-  saved: 1080
+  saved: 1104
 logging:
   active: true
   maxqueuesize: 5000
   extended:
     status: false
+    commands:
+      actions: false
     allviolations:
       debug: true
       debugonly: false
@@ -333,6 +336,9 @@ checks:
       active: true
       strict: true
       delay: 130
+      improbable:
+        feedonly: false
+        weight: 0.6
       actions: cancel vl>15 log:instantbow:2:5:if cancel
     instanteat:
       active: true
@@ -407,6 +413,7 @@ checks:
         packets: 40
         directviolation: 60
         epmviolation: 180
+      setbackage: 40
       actions: cancel vl>10 log:morepackets:0:2:if cancel vl>100 log:morepackets:0:2:if cancel cmd:kickpackets
     nofall:
       active: true
@@ -419,9 +426,6 @@ checks:
       actions: log:nofall:0:5:if cancel vl>30 log:nofall:0:5:icf cancel
     passable:
       active: true
-      raytracing:
-        active: true
-        blockchangeonly: false
       actions: cancel vl>10 log:passable:0:5:if cancel vl>50 log:passable:0:5:icf cancel
       untracked:
         teleport:
@@ -515,6 +519,9 @@ checks:
     sounddistance:
       active: true
       maxdistance: 320
+    superseded:
+      flying:
+        cancelwaiting: true
 strings:
   angle: '[player] failed [check]: tried to hit multiple entities at the same time. VL [violations].'
   attackfrequency: '[player] failed [check]: attacks with too high a frequency ([packets]/[limit], [tags]). VL [violations].'

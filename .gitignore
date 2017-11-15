@@ -13,5 +13,6 @@ plugins/GriefPreventionData/PlayerData/
 plugins/Multiverse-Core/scripts/
 plugins/Multiverse-Core/worlds.yml
 plugins/PurpleIRC/bots/
+plugins/RandomTP/portals.yml
 plugins/WorldEdit/schematics/
 plugins/WorldGuard/worlds/
