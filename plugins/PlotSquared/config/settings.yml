@@ -40,7 +40,7 @@ enabled-components:
   # Send anonymous usage statistics. Bukkit only setting.
   metrics: true
   # Expiry will clear old or simplistic plots
-  plot-expiry: true
+  plot-expiry: false
   # Processes chunks (trimming, or entity/tile limits) 
   chunk-processor: false
   # Kill mobs or vehicles on roads

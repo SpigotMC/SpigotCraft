@@ -27,6 +27,7 @@ worlds:
       specify_on_claim: false
       on_claim: false
       file: 'null'
+      schematics: []
     economy:
       prices:
         merge: 100
