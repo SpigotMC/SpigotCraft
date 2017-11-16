@@ -40,7 +40,7 @@ enabled-components:
   # Allow economy to be used
   economy: true
   # Send anonymous usage statistics. Bukkit only setting.
-  metrics: true
+  metrics: false
   # Expiry will clear old or simplistic plots
   plot-expiry: false
   # Processes chunks (trimming, or entity/tile limits) 
