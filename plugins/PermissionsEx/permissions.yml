@@ -35,6 +35,7 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
+    - essentials.realname
     - plots.permpack.basic
     - plots.plot.1
     - essentials.msg.url
@@ -94,6 +95,8 @@ groups:
     - essentials.spawnmob
     - essentials.speed
     - essentials.tp
+    - essentials.tp.toggle
+    - essentials.nick
     - minecraft.command.blockdata
     - minecraft.command.effect
     - minecraft.command.enchant
@@ -104,6 +107,7 @@ groups:
     - minecraft.command.locate
     - minecraft.command.tp
     - multiverse.teleport.self.*
+    - plots.plot.2
     inheritance:
     - Builder
     options:
@@ -165,6 +169,7 @@ groups:
     - essentials.togglejail
     - essentials.top
     - essentials.tp
+    - essentials.tpo
     - essentials.tphere
     - essentials.tppos
     - essentials.tptoggle
