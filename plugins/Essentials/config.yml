@@ -228,13 +228,19 @@ player-commands:
 # Set delay to -1 for a one time kit.
 # For more information, visit http://wiki.ess3.net/wiki/Kits
 kits:
-  tools:
+  starter:
     delay: 10
     items:
-      - 272 1
-      - 273 1
-      - 274 1
-      - 275 1
+      - 268 1
+      - 261 1
+      - 270 1
+      - 269 1
+      - 271 1
+      - 262 16
+      - 298 1
+      - 299 1
+      - 300 1
+      - 301 1
   dtools:
     delay: 600
     items:
@@ -724,7 +730,7 @@ newbies:
   # Do we want to give users anything on first join? Set to '' to disable
   # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
   #kit: ''
-  kit: tools
+  kit: starter
 
 # Set this to lowest, if you want Multiverse to handle the respawning.
 # Set this to high, if you want EssentialsSpawn to handle the respawning.
