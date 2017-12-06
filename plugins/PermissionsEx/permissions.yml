@@ -1,6 +1,8 @@
 groups:
   Default:
     permissions:
+    - essentials.heal
+    - essentails.feed
     - essentials.signs.use.*
     - essentials.warp.sign
     - essentials.sign.warp
