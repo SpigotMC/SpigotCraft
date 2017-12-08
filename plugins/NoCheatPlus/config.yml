@@ -70,7 +70,7 @@ checks:
       actions: cancel vl>10 log:bdirection:0:3:if cancel
     fastbreak:
       active: true
-      strict: true
+      strict: false
       delay: 100
       intervalsurvival: 100
       grace: 2000
