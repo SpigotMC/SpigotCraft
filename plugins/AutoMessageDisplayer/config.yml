@@ -1,0 +1,19 @@
+#Time between 2 messages (minutes)
+Time: 15
+#Auto-Messages !
+Enable: true
+
+#Broadcast randomly your messages
+Random enabled: false
+
+Messages:
+  - "A simple string"
+  - "Another string"
+  - "Don't forget to support/rate LotuxPunk on Curse/Bukkit website !"
+  
+Prefix: "[&9Server&r]"
+  
+Min player to enable: 1
+
+Message on player join enabled: true
+Message on player join: "&9Welcome !"
