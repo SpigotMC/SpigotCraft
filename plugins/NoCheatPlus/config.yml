@@ -291,7 +291,7 @@ checks:
       penalty: 500
       actions: cancel vl>5 log:fdirection:3:5:f cancel vl>20 log:fdirection:0:5:if cancel vl>50 log:fdirection:0:5:cif cancel
     fastheal:
-      active: true
+      active: false
       interval: 4000
       buffer: 1000
       actions: cancel vl>10 cancel log:fastheal:0:10:i vl>30 cancel log:fastheal:0:10:if
