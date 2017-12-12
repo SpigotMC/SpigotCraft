@@ -1,0 +1,55 @@
+# 
+# SpawnerNameFormat is the what the color codes for a spawner name in inventories should be
+# this will include the buy gui
+CostMsg: '&4${cost} has been removed for purchasing a {mob} spawner'
+NotEnoughMoney: '&2You do not have enough money for that spawner'
+SpawnerChangeMsg: '&2 You may not change the spawner type'
+NoPermission: '&2You may not purchase a {mob} spawner'
+NotYourSpawnerClick: '&2This spawner is not yours it belongs to {owner}'
+NoOwnerClick: This spawner does not belong to you or anyone
+NotYourSpawner: '&2This is not your spawner so you may not break it'
+UseGui: '&2Please use the GUI to pickup your spawner to open the gui right click on
+  the spawner'
+SpecifySpawner: '&2You must specify a spawner'
+NotAcceptable: '&2Spawner type not acceptable'
+PreventSpawnerExplosion: true
+PreventNaturalSpawnerExplosion: true
+SilkSpawner: true
+SilkNaturalSpawner: false
+SpawnerNameFormat: '&6&l'
+Spawner_Costs:
+  bat_spawner: 100
+  blaze_spawner: 200
+  chicken_spawner: 300
+  cow_spawner: 400
+  creeper_spawner: 500
+  enderman_spawner: 600
+  endermite_spawner: 700
+  ghast_spawner: 800
+  guardian_spawner: 900
+  pig_spawner: 1000
+  rabbit_spawner: 1100
+  sheep_spawner: 1200
+  silverfish_spawner: 1300
+  skeleton_spawner: 1400
+  spider_spawner: 1500
+  squid_spawner: 1600
+  slime_spawner: 1700
+  villager_spawner: 1800
+  witch_spawner: 1900
+  wolf_spawner: 2000
+  cavespider_spawner: 2100
+  zombie_spawner: 2200
+  enderdragon_spawner: 2300
+  giant_spawner: 2400
+  snowman_spawner: 2500
+  horse_spawner: 2600
+  mooshroom_spawner: 2700
+  ocelot_spawner: 2800
+  pigman_spawner: 2900
+  magmacube_spawner: 3000
+  wither_spawner: 3100
+  irongolem_spawner: 3200
+  shulker_spawner: 3200
+  polarbear_spawner: 2000
+  llama_spawner: 2500
