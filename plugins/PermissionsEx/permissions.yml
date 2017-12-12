@@ -41,8 +41,8 @@ groups:
     - plots.permpack.basic
     - plots.plot.1
     - essentials.msg.url
-    - spawnerprotections.spawners.buy
-    - spawnerprotections.spawners.buy.*
+    - spawnerprotection.spawners.buy
+    - spawnerprotection.spawners.buy.*
     options:
       rank: 1000
       default: true
@@ -127,7 +127,7 @@ groups:
     - permissions.user.promote.default
     - permissions.user.rank.demote
     - permissions.user.rank.promote
-    - spawnerprotections.spawners.get
+    - spawnerprotection.spawners.get
     inheritance:
     - Tester
     options:
