@@ -43,6 +43,9 @@ groups:
     - essentials.msg.url
     - spawnerprotection.spawners.buy
     - spawnerprotection.spawners.buy.*
+    - animatedframes.create
+    - animatedframes.remove
+    - animatedframes.list
     options:
       rank: 1000
       default: true
