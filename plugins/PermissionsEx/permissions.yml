@@ -1,6 +1,8 @@
 groups:
   Default:
     permissions:
+    - bukkit.command.tps
+    - bukkit.command.timings
     - veinminer.veinmine.*
     - essentials.heal
     - essentails.feed
