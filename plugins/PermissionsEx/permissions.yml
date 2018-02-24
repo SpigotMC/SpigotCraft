@@ -3,6 +3,7 @@ groups:
     permissions:
     - bukkit.command.tps
     - bukkit.command.timings
+    - essentials.gc
     - veinminer.veinmine.*
     - essentials.heal
     - essentails.feed
