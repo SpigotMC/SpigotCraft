@@ -571,3 +571,15 @@ Messages:
   RescuedFromPortalTrap:
     Text: Automatically rescued you from a nether portal. If this was a mistake, use
       /UndoRescue to return to your prior location.
+  HasSubclaimRestriction:
+    Text: This subclaim does not inherit permissions from the parent
+  StandInSubclaim:
+    Text: You need to be standing in a subclaim to restrict it
+  SubclaimRestricted:
+    Text: This subclaim's permissions will no longer inherit from the parent claim
+  SubclaimUnrestricted:
+    Text: This subclaim's permissions will now inherit from the parent claim
+  NetherPortalTrapDetectionMessage:
+    Text: It seems you might be stuck inside a nether portal. We will rescue you in
+      a few seconds if that is the case!
+    Notes: Sent to player on join, if they left while inside a nether portal.

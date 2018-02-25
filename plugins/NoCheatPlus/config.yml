@@ -547,7 +547,7 @@ strings:
   critical: '[player] failed [check]: tried to do a critical hit but wasn''t technically jumping [tags]. VL [violations].'
   drop: '[player] failed [check]: tried to drop more items than allowed. VL [violations].'
   dropkick: ncp delay ncp kick [player] Dropping items too fast.
-  fastbreak: '[player] failed [check]: tried to break blocks ([blockid]) faster than possible. VL [violations].'
+  fastbreak: '[player] failed [check]: tried to break blocks ([blocktype]) faster than possible. VL [violations].'
   fastclick: '[player] failed [check]: tried to move items in their inventory too quickly. VL [violations].'
   fastconsume: '[player] failed [check]: consumes [food] [tags] too fast. VL [violations].'
   fastheal: '[player] failed [check]: regenerates health faster than usual (health [health]). VL [violations].'
@@ -591,7 +591,7 @@ strings:
   nofall: '[player] failed [check]: tried to alter fall damage ([tags]). VL [violations].'
   chatfast: '[player] failed [check]: acted like spamming (IP: [ip]). VL [violations].'
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
-  passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
+  passable: '[player] failed [check]: moved into a block ([blocktype]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
   tellchatnormal: 'ncp tell [player] &cNCP: &eToo many messages, slow down...'
   tempkick1: ncp tempkick [player] 1 Wait a minute!
@@ -624,6 +624,8 @@ compatibility:
   blocks:
     allowinstantbreak: []
     overrideflags:
+      legacy_snow: default
+      legacy_piston_moving_piece: default+ign_passable+ground_height
       snow: default
       piston_moving_piece: default+ign_passable+ground_height
     changetracker:

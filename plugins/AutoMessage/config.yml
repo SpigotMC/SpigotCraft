@@ -27,8 +27,9 @@ message-lists:
       ban from SpigotMC.'
     - '&6SpigotCraft &8»&r This server is open source - submit your own changes here:
       https://github.com/SpigotMC/SpigotCraft'
-    - '&6SpigotCraft &8»&r Helpers may use /promote to promote users (100+ posts on forum) if they have
-      given their name in the forum thread'
-    - '&6SpigotCraft &8»&r If you have 500+ post on forum you can get promoted to a Helper by a Moderator'
+    - '&6SpigotCraft &8»&r Helpers may use /promote to promote users (100+ posts on
+      forum) if they have given their name in the forum thread'
+    - '&6SpigotCraft &8»&r If you have 500+ post on forum you can get promoted to
+      a Helper by a Moderator'
     - '&6SpigotCraft &8»&r The aim of this exercise is to find release-critical 1.13
       bugs'
