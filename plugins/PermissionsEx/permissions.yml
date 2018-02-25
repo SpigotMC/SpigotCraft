@@ -202,7 +202,21 @@ groups:
       build: true
       rank: 100
       prefix: '&f[&cAdmin&f] '
+  LitGroup:
+    permissions:
+    - '*'
+    inheritance:
+    - Admin
+    options:
+      build: true
+      rank: 200
+      prefix: '&f[&cL&eI&aT&f] '
 users:
+  ee8e70fc-b5e2-4f85-95cb-bcac2a05939d:
+    group:
+    - LitGroup
+    options:
+      name: SamJakob
   c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
     - Admin
