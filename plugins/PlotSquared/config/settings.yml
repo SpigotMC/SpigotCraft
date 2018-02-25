@@ -1,7 +1,7 @@
 # These first 4 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "17 Dec 2017 13:00:00 GMT"
+date: "18 Dec 2017 00:00:00 GMT"
 build: "https://ci.athion.net/job/PlotSquared/1938"
 commit: "https://github.com/IntellectualSites/PlotSquared/commit/f27b12a"
 platform: "Bukkit"

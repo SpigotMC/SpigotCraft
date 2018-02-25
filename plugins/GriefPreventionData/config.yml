@@ -4,13 +4,13 @@ GriefPrevention:
     world: -1
     world_nether: -1
     world_the_end: -1
-    plots: -1
+    aquatic: -1
   Claims:
     Mode:
       world: Survival
       world_the_end: Disabled
+      aquatic: Survival
       world_nether: Disabled
-      plots: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -69,7 +69,7 @@ GriefPrevention:
       world: true
       world_nether: true
       world_the_end: true
-      plots: true
+      aquatic: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 10

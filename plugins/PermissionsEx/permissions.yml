@@ -4,6 +4,7 @@ groups:
     - bukkit.command.tps
     - bukkit.command.timings
     - essentials.gc
+    - -minecraft.command.locate
     - veinminer.veinmine.*
     - essentials.heal
     - essentails.feed
@@ -89,6 +90,7 @@ groups:
       prefix: '&f[&bBuilder&f] '
   Tester:
     permissions:
+    - lesign.signer
     - essentials.fly.safelogin
     - essentials.tp.position
     - essentials.clearinventory
@@ -138,6 +140,7 @@ groups:
       prefix: '&f[&6Helper&f] '
   Moderator:
     permissions:
+    - essentials.skull
     - essentials.joinfullserver
     - ChestShop.admin
     - essentials.ban
@@ -315,7 +318,7 @@ users:
     group:
     - Tester
     options:
-      name: Yottazoid
+      name: ToolaRoola
   eb25e4e0-93ad-41a7-81ac-fd6619df91ec:
     group:
     - Tester
@@ -324,9 +327,6 @@ users:
   jannik8500:
     group:
     - Tester
-  vk2gpz:
-    group:
-    - Helper
   xcodcraftx:
     group:
     - Tester
@@ -352,9 +352,6 @@ users:
   3445231c-699b-4f67-8880-54a041d04907:
     options:
       name: Lutandar
-  spacepuppeh:
-    group:
-    - Helper
   weby:
     group:
     - Tester
@@ -479,7 +476,7 @@ users:
     group:
     - Helper
     options:
-      name: rsRingpolice
+      name: aRingpolice
   dd6f3d9b-86e6-497f-b22a-2fc99e046e65:
     group:
     - Helper
@@ -605,7 +602,7 @@ users:
     group:
     - Tester
     options:
-      name: partydragen
+      name: Partydragen
   ecb89d57-eb73-488e-a0c8-0c5e05e58994:
     group:
     - Tester
@@ -643,7 +640,7 @@ users:
     group:
     - Tester
     options:
-      name: BaconPied
+      name: pas_francais
   8da044fd-bb95-49cf-9e04-5e3cdf07bf73:
     group:
     - Helper
@@ -1038,9 +1035,6 @@ users:
     - Tester
     options:
       name: SteveTheDog
-  nick2017:
-    group:
-    - Helper
   e296bc43-2972-4111-9843-48fc32302fd4:
     group:
     - Helper
@@ -1133,7 +1127,7 @@ users:
       name: Quasindro
   09b68673-7f8c-4ccc-b60f-7112cca29c2a:
     options:
-      name: DynamicThijs
+      name: TouchBar
     group:
     - Tester
   cfe184f7-4d64-4a15-bcac-bde7c9677cea:
@@ -1157,9 +1151,6 @@ users:
     - Tester
     options:
       name: SpiderMan31
-  fatpigsarefat:
-    group:
-    - Tester
   e19446ff-e9e1-48e9-992c-83ea301deb4f:
     group:
     - Tester
@@ -1202,7 +1193,7 @@ users:
       name: dniym
   10cb0514-3d04-4acd-aaf3-a58aa9b18adb:
     group:
-    - Helper
+    - Tester
     options:
       name: BrettPlayMC
   8ec3ef85-3ca6-4317-a74c-91cb1979bcc4:
@@ -1262,12 +1253,12 @@ users:
       name: AlphaHelix
   b600b71b-9a31-4a33-b290-ac217921c41a:
     group:
-    - Tester
+    - Helper
     options:
       name: Instantout
   631e3896-da2a-4077-974b-d047859d76bc:
     group:
-    - Tester
+    - Helper
     options:
       name: mrfloris
   9cccf499-cca5-4137-b520-597f438d3ce7:
@@ -1412,4 +1403,267 @@ users:
     - Tester
     options:
       name: ystrike099
+  d9ac0934-382c-4030-953a-d3520e31de81:
+    group:
+    - Tester
+    options:
+      name: klugemonkey
+  85abce19-1b92-4a6e-9063-6d832a417c40:
+    group:
+    - Tester
+    options:
+      name: YourMCGeek
+  9a4abbc5-b003-471e-bbeb-0eaf4337cf09:
+    group:
+    - Tester
+    options:
+      name: WitherSkeleton
+  90307207-a0a4-43f3-9a30-4a3e896bc55c:
+    group:
+    - Helper
+    options:
+      name: LaxWasThere
+  9cd14f22-d879-4815-8e12-4e01855487af:
+    group:
+    - Tester
+    options:
+      name: Tedstar
+  9d311c0a-e4cd-4bc6-aec5-a79f3381d19e:
+    group:
+    - Helper
+    options:
+      name: Perotin
+  946dba0a-1eee-489a-ab6d-516927fb2df7:
+    options:
+      name: RubbaBoy
+    group:
+    - Helper
+  94264fcc-0467-4adc-8099-3567b30a7577:
+    group:
+    - Helper
+    options:
+      name: Nebzei
+  e6afa162-d808-44f5-9107-5868dc20c476:
+    group:
+    - Tester
+    options:
+      name: abandoncaptian
+  daad3fe9-3ee6-4f2d-871e-579e333277d5:
+    group:
+    - Tester
+    options:
+      name: Romaq
+  3cf9b867-2577-49d1-affb-7ba8196a0d39:
+    group:
+    - Tester
+    options:
+      name: rambeau
+  db123bee-8749-459d-b7a0-4241e7ef01a5:
+    group:
+    - Tester
+    options:
+      name: _bc
+  f92e5fa6-ed61-4d17-a59f-47e91aca80f5:
+    group:
+    - Tester
+    options:
+      name: _NoEYEs_
+  c883f59d-6621-4243-b64b-3781d9fd9530:
+    group:
+    - Tester
+    options:
+      name: Malachiel
+  d7e82027-23a3-4785-983a-8cff7f547258:
+    group:
+    - Tester
+    options:
+      name: MSWS
+  marido:
+    group:
+    - Tester
+  a33cad7e-7cd7-44e9-99ba-892f58c0c0f1:
+    group:
+    - Tester
+    options:
+      name: NavyDev
+  d2002765-92a9-4df2-ae10-9de6a39bff5e:
+    group:
+    - Tester
+    options:
+      name: MrSpock78
+  79a432b7-f364-49a2-b075-fd64168a403e:
+    group:
+    - Tester
+    options:
+      name: PluginerTR
+  5e2abf27-37ab-45fa-a99d-0d00c32da42d:
+    group:
+    - Tester
+    options:
+      name: Homework
+  c0c42ef6-ec1b-4386-9484-6c21355bdf69:
+    group:
+    - Tester
+    options:
+      name: extended_clip
+  abd32081-864c-4df0-8d7a-7f068cb7bf98:
+    group:
+    - Tester
+    options:
+      name: davidcubesvk
+  ed6daf33-575b-460b-a2f3-e208a1004c10:
+    group:
+    - Tester
+    options:
+      name: Siri
+  78c81244-1867-4f73-86d0-43ff4c42d8d2:
+    group:
+    - Tester
+    options:
+      name: MyzelYam
+  fa75e09f-68f9-4407-8753-ea06bc4fb1e8:
+    group:
+    - Helper
+    options:
+      name: Mas281
+  3a99a21e-2d05-4f12-bf61-13805a946e63:
+    group:
+    - Tester
+    options:
+      name: TheJayZ
+  20da5e60-1264-42b9-b9e9-d52fb9f2749b:
+    group:
+    - Tester
+    options:
+      name: nicuch
+  e2ce704e-ec4a-4b18-a3eb-0814b37fa1d4:
+    group:
+    - Tester
+    options:
+      name: fatpigsarefat
+  191d4a18-a6f0-49b5-a2ef-456c80cc3a33:
+    group:
+    - Tester
+    options:
+      name: TheLukeGuy
+  5dcee3cc-526d-4a57-a198-731e304902c3:
+    group:
+    - Helper
+    options:
+      name: nfell2009
+  012ca32d-ad51-4f34-b68c-7b69a7960bac:
+    group:
+    - Helper
+    options:
+      name: ScarabCoder
+  c4904cb1-8f34-4cf7-94dd-216a081679c6:
+    group:
+    - Tester
+    options:
+      name: DeeaRinocerb
+  6e7940df-0922-400e-bd57-a723460d88ca:
+    group:
+    - Tester
+    options:
+      name: SkytAsul
+  321b2caf-cf66-48d7-a0b9-3f54b2f9d4b6:
+    group:
+    - Tester
+    options:
+      name: coltonj96
+  81e42dd8-d8c2-4605-9a93-e0a2682a50a6:
+    group:
+    - Helper
+    options:
+      name: MartenM
+  e510511b-d159-4ee2-978c-c15316c3a768:
+    group:
+    - Tester
+    options:
+      name: FrankHeijden
+  c71c5cb7-318d-44e7-99af-e8164f2eb859:
+    group:
+    - Tester
+    options:
+      name: Howhit
+  1293f9f3-5908-4534-897b-2881158e6831:
+    group:
+    - Helper
+    options:
+      name: 1010bob
+  4cb358ae-719c-4423-93c7-8769ce46e9c3:
+    group:
+    - Helper
+    options:
+      name: NathanWolf
+  9c340828-56e9-43af-9beb-bdbf5465ffa5:
+    group:
+    - Helper
+    options:
+      name: vk2gpz
+  558b4316-befb-4b24-8193-141862025c3f:
+    group:
+    - Helper
+    options:
+      name: SpacePuppeh
+  675e1556-ec67-4294-b536-f294a348ee9f:
+    group:
+    - Tester
+    options:
+      name: WheezyGold
+  e74ff9ca-1cf1-41d8-8e3c-faeeeeefebf0:
+    group:
+    - Tester
+    options:
+      name: Elecast
+  8a2991a9-96f5-41a8-b72c-a16663ebf2be:
+    group:
+    - Helper
+    options:
+      name: avistah
+  7330fd3a-c9e6-4146-8974-0d775f275d33:
+    group:
+    - Helper
+    options:
+      name: nick2017
+  c5bd97a0-f581-44d5-8d25-1d2ced89580a:
+    group:
+    - Tester
+    options:
+      name: Lustigkurre
+  d4fef1ba-6fce-44a6-b859-d51d6ba65197:
+    group:
+    - Tester
+    options:
+      name: SystemEncryption
+  cab90873-150a-4b02-8bc4-3a841ca188bd:
+    group:
+    - Tester
+    options:
+      name: Deactivation
+  ccec5c8b-a3d0-4550-ae06-9e76a6612ea7:
+    group:
+    - Tester
+    options:
+      name: cookieman768
+  eacf41bc-82cb-4466-ba3b-f5fc6a82e38a:
+    group:
+    - Tester
+    options:
+      name: HappyPikachu
+  431efb7e-1f60-4c6a-859a-e712de392d66:
+    group:
+    - Tester
+    options:
+      name: ItzSkizzy
+  0bf577bb-cf5b-45b3-825f-48fce95db924:
+    group:
+    - Helper
+    options:
+      name: Banbeucmas
+  a55c2b2f-6366-4043-85f7-c1b20d717688:
+    group:
+    - Helper
+    options:
+      name: Karamatsu
 schema-version: 1
