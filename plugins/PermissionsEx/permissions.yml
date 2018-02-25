@@ -211,6 +211,7 @@ groups:
       build: true
       rank: 200
       prefix: '&f[&cL&eI&aT&f] '
+      suffix: '&f[&cGroup&f]'
 users:
   ee8e70fc-b5e2-4f85-95cb-bcac2a05939d:
     group:
