@@ -6,8 +6,10 @@
 *.log
 *.sqlite
 
+plugins/Essentials/spawn.yml
 plugins/Essentials/userdata/
 plugins/Essentials/usermap.csv
+plugins/Essentials/warps/
 plugins/GriefPreventionData/ClaimData/
 plugins/GriefPreventionData/PlayerData/
 plugins/Multiverse-Core/scripts/
