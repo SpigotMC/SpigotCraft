@@ -111,6 +111,8 @@ groups:
     - minecraft.command.locate
     - minecraft.command.tp
     - multiverse.teleport.self.*
+    - essentials.skull.*
+    - essentials.skull
     inheritance:
     - Builder
     options:
