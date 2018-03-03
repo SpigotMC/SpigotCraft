@@ -111,6 +111,11 @@ groups:
     - minecraft.command.locate
     - minecraft.command.tp
     - multiverse.teleport.self.*
+    - essentials.more
+    - essentials.oversizedstacks
+    - essentials.ptime
+    - essentials.repair
+    - essentials.repair.*
     inheritance:
     - Builder
     options:
