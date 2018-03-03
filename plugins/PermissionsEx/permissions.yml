@@ -2,7 +2,6 @@ groups:
   Default:
     permissions:
     - bukkit.command.tps
-    - bukkit.command.timings
     - essentials.gc
     - -minecraft.command.locate
     - veinminer.veinmine.*
