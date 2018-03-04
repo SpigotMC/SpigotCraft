@@ -1,6 +1,8 @@
 groups:
   Default:
     permissions:
+    - bukkit.command.tps
+    - essentials.gc
     - -minecraft.command.locate
     - veinminer.veinmine.*
     - essentials.heal
@@ -111,6 +113,11 @@ groups:
     - minecraft.command.locate
     - minecraft.command.tp
     - multiverse.teleport.self.*
+    - essentials.more
+    - essentials.oversizedstacks
+    - essentials.ptime
+    - essentials.repair
+    - essentials.repair.*
     inheritance:
     - Builder
     options:
