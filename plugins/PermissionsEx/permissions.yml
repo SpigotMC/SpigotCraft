@@ -103,6 +103,7 @@ groups:
     - essentials.spawnmob
     - essentials.speed
     - essentials.tp
+    - essentials.weather
     - minecraft.command.blockdata
     - minecraft.command.effect
     - minecraft.command.enchant
