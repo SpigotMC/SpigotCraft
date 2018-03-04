@@ -210,6 +210,7 @@ groups:
       build: true
       rank: 100
       prefix: '&f[&cAdmin&f] '
+users:
   c70f922a-984d-37b1-94a2-58bf198a55e5:
     group:
     - Admin
