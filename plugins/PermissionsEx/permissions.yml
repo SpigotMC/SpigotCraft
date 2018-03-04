@@ -1024,9 +1024,6 @@ users:
     - Tester
     options:
       name: DJ_1420
-  kainzo:
-    group:
-    - Helper
   1fb63df4-6017-4b54-ba28-addccb25cb89:
     group:
     - Tester
@@ -1046,7 +1043,7 @@ users:
     group:
     - Tester
     options:
-      name: ExecutiveTrump
+      name: z609
   ab8cf73b-4387-41ca-b807-dbdce71dfd35:
     group:
     - Tester
@@ -1222,7 +1219,7 @@ users:
     group:
     - Helper
     options:
-      name: Papa_Franku_
+      name: MODEM_Hunter
   fccdb9cb-0fb0-4b2d-873f-d3375796cf67:
     group:
     - Tester
@@ -1242,7 +1239,7 @@ users:
     group:
     - Helper
     options:
-      name: ElieTGM
+      name: Compilable
   8303e3c1-2896-44ae-b0f1-f1618641c199:
     group:
     - Tester
@@ -1475,9 +1472,6 @@ users:
     - Tester
     options:
       name: MSWS
-  marido:
-    group:
-    - Tester
   a33cad7e-7cd7-44e9-99ba-892f58c0c0f1:
     group:
     - Tester
@@ -1663,4 +1657,136 @@ users:
     - Helper
     options:
       name: Karamatsu
+  888eaeb9-9729-41d0-aa34-69afc6b40abb:
+    group:
+    - Default
+    options:
+      name: 2yn
+  3f03fc68-870c-45c2-94e9-ae670bad9195:
+    group:
+    - Tester
+    options:
+      name: stifflered
+  konsolas:
+    group:
+    - Tester
+  maximvdw:
+    group:
+    - Tester
+  c7cf950f-543b-4d7c-ad09-ae8e2dacd2d1:
+    group:
+    - Tester
+    options:
+      name: _Cr4fty
+  ee8e70fc-b5e2-4f85-95cb-bcac2a05939d:
+    group:
+    - Tester
+    options:
+      name: SamJakob
+  1f8ac485-73e6-45ea-a4a5-d42287e5f15d:
+    group:
+    - Tester
+    options:
+      name: Zoltus
+  bbd08417-3bfe-4ed8-baf5-e5fa31267ef6:
+    group:
+    - Tester
+    options:
+      name: Feeps
+  el_gray:
+    group:
+    - Tester
+  719e29f6-dfaf-44a7-a2c9-952b6154e6d6:
+    group:
+    - Tester
+    options:
+      name: Drkmaster83
+  2a7c9774-fdd3-4994-bec7-b553f8d951c6:
+    group:
+    - Tester
+    options:
+      name: JanTuck
+  d5928066-4503-4228-87bb-994138cba8cb:
+    group:
+    - Tester
+    options:
+      name: AllPlayed
+  soppejam:
+    group:
+    - Tester
+  xenons:
+    group:
+    - Tester
+  benprog19:
+    group:
+    - Tester
+  9f8fc6a8-1c2f-4a5f-b57e-31e7780b2ef7:
+    group:
+    - Tester
+    options:
+      name: SreamingEagel
+  nomad1134:
+    group:
+    - Tester
+  ishadey:
+    group:
+    - Tester
+  7bab350f-13f1-443c-9f22-0122a14bb4df:
+    group:
+    - Tester
+    options:
+      name: swede37
+  2aa56101-4907-485d-8abc-ba04d40c1c9c:
+    group:
+    - Tester
+    options:
+      name: Marido
+  e3n:
+    group:
+    - Tester
+  1bc6b8e9-57b8-4665-8eed-9a4f81c0b09e:
+    group:
+    - Tester
+    options:
+      name: SkyVox_
+  knoapp:
+    group:
+    - Tester
+  thejacklc:
+    group:
+    - Tester
+  004204f2-3c19-4446-9794-d09d1f015d59:
+    group:
+    - Helper
+    options:
+      name: Kainzo
+  cruz:
+    group:
+    - Tester
+  thedartmc_yt:
+    group:
+    - Tester
+  vaquine:
+    group:
+    - Tester
+  '2918492749102759':
+    group:
+    - Tester
+  7f16643c-0cd3-42ee-ad07-4d72f1508c0c:
+    group:
+    - Tester
+    options:
+      name: GamerDuck123
+  mooncooki:
+    group:
+    - Default
+  portgasmc:
+    group:
+    - Tester
+  ugg:
+    group:
+    - Tester
+  the_craft:
+    group:
+    - Tester
 schema-version: 1
