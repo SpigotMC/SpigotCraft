@@ -41,6 +41,12 @@ autoconnect: 'false'
 password: ''
 # identify password (sent to NickServ)
 ident-password: ''
+# Attempt sasl connection
+sasl: false
+# SASL password
+sasl-password: ''
+# SASL username
+sasl-username: ''
 # command-prefix - The bot will listen for commands that start with this.
 command-prefix: '.'
 # quit-message - Message the bot will send when it quits the server
@@ -163,6 +169,9 @@ channels:
     # Filters. These wll be removed from IRC to game messages.
     filter-list:
        - AwesomeBot
+    # List of Factions tags to filter out of chat
+    faction-tag-filters:
+       - FactionNameToFilter
     # enabled-messages - These are the message types that are either sent to the game or IRC
     # config.yml. Remove or comment the messages you don't want.
     enabled-messages:
@@ -256,12 +265,15 @@ channels:
     # OreBroadcast messages
     #- ore-broadcast
     - titan-chat
+    - ultimatechat-chat
     - towny-chat
     # Specific TownyChat channel or tag
     #- towny-[CHANNEL]-chat
     #- towny-[CHANNELTAG]-chat
     # Specific TitanChat channel
     #- titan-[CHANNEL]-chat
+    # Specific UltimateChat channel
+    #- ultimatechat-[CHANNEL]-chat
     # ReportRTS ticket notifications to irc
     - rts-notify
     # SimpleTicketManager notifications to irc
@@ -271,6 +283,7 @@ channels:
     - stm-comment
     # Messages from Discord
     - discord-chat
+    #- discord-[CHANNEL]-chat
     # Messages from IRC to discord
     - irc-discord-chat
     # Catch /broadcast messages

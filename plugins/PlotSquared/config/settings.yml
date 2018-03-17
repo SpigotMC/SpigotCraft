@@ -1,7 +1,9 @@
 # These first 4 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-version: "3.5.0"
+date: "18 Dec 2017 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/1938"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/f27b12a"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -21,7 +23,7 @@ enabled-components:
   commands: true
   # The UUID cacher is used to resolve player names
   uuid-cache: true
-  # Notify players of updates
+  # The plugin auto updater
   updater: false
   # Stores user metadata in a database
   persistent-meta: true
@@ -38,16 +40,19 @@ enabled-components:
   # Allow economy to be used
   economy: true
   # Send anonymous usage statistics. Bukkit only setting.
-  metrics: true
+  metrics: false
   # Expiry will clear old or simplistic plots
-  plot-expiry: true
+  plot-expiry: false
   # Processes chunks (trimming, or entity/tile limits) 
   chunk-processor: false
-  # Kill mobs or vehicles on roads
+  # Kill mobs on roads
   kill-road-mobs: true
+  # Kill vehicles on roads
   kill-road-vehicles: true
   # Notify a player of any missed comments upon plot entry
   comment-notifier: false
+  # Let player's claim entire worlds with PlotSquared
+  worlds: false
   # Actively purge invalid database entries
   database-purger: false
   # Delete plots when a player is banned
@@ -75,6 +80,10 @@ teleport:
   delay: 0
   # The visit command is ordered by world instead of globally
   per-world-visit: false
+
+confirmation:
+  # Teleport to your plot on death
+  confirmation-timeout-seconds: 20
 
 # Switching from PlotMe?
 plotme:
@@ -105,10 +114,15 @@ done:
   counts-towards-limit: false
 
 web:
-  # We are already hosting a web interface for you:
+  # The web interface for schematics
+  #  - All schematics are anonymous and private
+  #  - Downloads can be deleted by the user
+  #  - Supports plot uploads, downloads and saves
   url: "http://empcraft.com/plots/"
-  # The ip that will show up in the interface
-  server-ip: "your.ip.here"
+  # The web interface for assets
+  #  - All schematics are organized and public
+  #  - Assets can be searched, selected and downloaded
+  assets: "http://empcraft.com/assetpack/"
 
 # Configure the paths that will be used
 paths:

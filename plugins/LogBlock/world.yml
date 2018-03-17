@@ -24,7 +24,7 @@ logging:
   CREEPEREXPLOSION: true
   MISCEXPLOSION: true
   LAVAFLOW: true
-  CHESTACCESS: true
+  CHESTACCESS: false
   CHAT: true
   WITHER_SKULL: true
   CROPTRAMPLE: true
@@ -38,4 +38,5 @@ logging:
   CREATURECROPTRAMPLE: true
   LOCKEDCHESTDECAY: true
   NATURALSTRUCTUREGROW: true
+  ENDERCRYSTALEXPLOSION: true
 table: lb-world

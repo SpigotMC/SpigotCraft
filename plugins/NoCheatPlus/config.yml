@@ -1,13 +1,16 @@
 savebackconfig: true
 configversion:
   notify: true
-  created: 785
-  saved: 785
+  notifymaxpaths: 5
+  created: 1104
+  saved: 1104
 logging:
   active: true
   maxqueuesize: 5000
   extended:
     status: false
+    commands:
+      actions: false
     allviolations:
       debug: true
       debugonly: false
@@ -24,7 +27,7 @@ logging:
       filename: nocheatplus.log
     ingamechat:
       active: true
-      prefix: '&7(&c!&7)'
+      prefix: '&cNCP: &f'
       subscriptions: false
 data:
   expiration:
@@ -39,17 +42,20 @@ data:
 protection:
   plugins:
     hide:
-      active: true
+      active: false
       nopermission:
-        message: '&4You do not have permission to perform this command.'
-        commands: []
+        message: '&cI''m sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.'
+        commands:
+        - plugins
+        - version
+        - icanhasbukkit
       unknowncommand:
-        message: Invalid command. Did you spell it right?
+        message: Unknown command. Type "/help" for help.
         commands: []
   commands:
     consoleonly:
       active: false
-      message: '&cThis command is not executable in-game.'
+      message: '&cI''m sorry, but this command can''t be executed in chat. Use the console instead!'
       commands:
       - op
       - deop
@@ -61,9 +67,9 @@ checks:
   blockbreak:
     direction:
       active: true
-      actions: cancel vl>10 log:bdirection:0:5:if cancel
+      actions: cancel vl>10 log:bdirection:0:3:if cancel
     fastbreak:
-      active: true
+      active: false
       strict: true
       delay: 100
       intervalsurvival: 100
@@ -217,7 +223,7 @@ checks:
       active: false
       timeout: 5000
       warning:
-        message: '&4You have relogged too fast. Continually doing this will result in a ban.'
+        message: '&cYou relogged really fast! If you keep doing that, you''re going to be banned.'
         number: 1
         timeout: 60000
       kickmessage: Too fast re-login, try with a little delay.
@@ -228,7 +234,7 @@ checks:
       perworldcount: false
       seconds: 10
       limit: 10
-      kickmessage: Server has detected too many people logging, please try again later!
+      kickmessage: Too many people logging in, retry soon.
   combined:
     bedleave:
       active: true
@@ -285,7 +291,7 @@ checks:
       penalty: 500
       actions: cancel vl>5 log:fdirection:3:5:f cancel vl>20 log:fdirection:0:5:if cancel vl>50 log:fdirection:0:5:cif cancel
     fastheal:
-      active: true
+      active: false
       interval: 4000
       buffer: 1000
       actions: cancel vl>10 cancel log:fastheal:0:10:i vl>30 cancel log:fastheal:0:10:if
@@ -311,7 +317,7 @@ checks:
     speed:
       active: true
       limit: 15
-      actions: log:fspeed:0:5:if cancel
+      actions: cancel vl>50 log:fspeed:0:5:if cancel
       shortterm:
         ticks: 7
         limit: 6
@@ -333,6 +339,9 @@ checks:
       active: true
       strict: true
       delay: 130
+      improbable:
+        feedonly: false
+        weight: 0.6
       actions: cancel vl>15 log:instantbow:2:5:if cancel
     instanteat:
       active: true
@@ -363,17 +372,17 @@ checks:
       model:
         creative:
           horizontal:
-            speed: 150
+            speed: 100
           vertical:
             ascend:
               speed: 100
             maxheight: 128
         spectator:
           horizontal:
-            speed: 400
+            speed: 450
           vertical:
             ascend:
-              speed: 100
+              speed: 170
             maxheight: 128
           gravity: false
           ground: false
@@ -383,7 +392,7 @@ checks:
           vertical:
             ascend:
               speed: 10
-            maxheight: 32
+            maxheight: 128
             gravity: false
           modifiers: false
           gravity: false
@@ -395,9 +404,9 @@ checks:
           vertical:
             ascend:
               speed: 0
-            maxheight: 8
+            maxheight: 128
           modifiers: false
-      actions: log:flyshort:3:5:f cancel vl>100 log:flyshort:0:5:if cancel vl>400 log:flylong:0:5:cif cancel
+      actions: log:flyfile:3:5:f cancel vl>100 log:flyshort:0:5:i log:flyfile:0:5:f cancel vl>400 log:flylong:0:5:i log:flyfile:0:5:cf cancel
     morepackets:
       active: true
       seconds: 6
@@ -407,6 +416,7 @@ checks:
         packets: 40
         directviolation: 60
         epmviolation: 180
+      setbackage: 40
       actions: cancel vl>10 log:morepackets:0:2:if cancel vl>100 log:morepackets:0:2:if cancel cmd:kickpackets
     nofall:
       active: true
@@ -418,10 +428,7 @@ checks:
       anticriticals: true
       actions: log:nofall:0:5:if cancel vl>30 log:nofall:0:5:icf cancel
     passable:
-      active: true
-      raytracing:
-        active: true
-        blockchangeonly: false
+      active: false
       actions: cancel vl>10 log:passable:0:5:if cancel vl>50 log:passable:0:5:icf cancel
       untracked:
         teleport:
@@ -446,12 +453,12 @@ checks:
       setbackpolicy:
         falldamage: true
         voidtovoid: true
-      actions: log:flyshort:3:10:f cancel vl>100 log:flyshort:0:10:if cancel vl>400 log:flylong:0:5:cif cancel vl>1500 log:flylong:0:5:cif cancel cmd:kickfly
+      actions: log:flyfile:3:10:f cancel vl>100 log:flyshort:0:10:i log:flyfile:0:10:f cancel vl>400 log:flylong:0:5:i log:flyfile:0:5:cf cancel vl>1500 log:flylong:0:5:i log:flyfile:0:5:cf cancel cmd:kickfly
       hover:
         active: true
         step: 5
         ticks: 85
-        loginticks: 0
+        loginticks: 60
         falldamage: true
         sfviolation: 500
     velocity:
@@ -515,6 +522,9 @@ checks:
     sounddistance:
       active: true
       maxdistance: 320
+    superseded:
+      flying:
+        cancelwaiting: true
 strings:
   angle: '[player] failed [check]: tried to hit multiple entities at the same time. VL [violations].'
   attackfrequency: '[player] failed [check]: attacks with too high a frequency ([packets]/[limit], [tags]). VL [violations].'
@@ -537,20 +547,20 @@ strings:
   critical: '[player] failed [check]: tried to do a critical hit but wasn''t technically jumping [tags]. VL [violations].'
   drop: '[player] failed [check]: tried to drop more items than allowed. VL [violations].'
   dropkick: ncp delay ncp kick [player] Dropping items too fast.
-  fastbreak: '[player] failed [check]: tried to break blocks ([blockid]) faster than possible. VL [violations].'
+  fastbreak: '[player] failed [check]: tried to break blocks ([blocktype]) faster than possible. VL [violations].'
   fastclick: '[player] failed [check]: tried to move items in their inventory too quickly. VL [violations].'
   fastconsume: '[player] failed [check]: consumes [food] [tags] too fast. VL [violations].'
-  fastheal: '[player] failed [check]: regenerates health faster than usual. VL [violations].'
+  fastheal: '[player] failed [check]: regenerates health faster than usual (health [health]). VL [violations].'
   fastplace: '[player] failed [check]: tried to place too many blocks. VL [violations].'
   fdirection: '[player] failed [check]: tried to hit an entity out of line of sight. VL [violations].'
   flyshort: '[player] failed [check]: tried to move unexpectedly. VL [violations].'
-  flylong: '[player] failed [check]: tried to move from [locationfrom] to [locationto] over a distance of [distance] block(s). VL [violations].'
+  flylong: '[player] failed [check]: tried to move: [locationfrom] -> [locationto], d=[distance] ([tags]). VL [violations].'
   flyfile: '[player] failed [check]: tried to move: [locationfrom] -> [locationto], d=[distance] ([tags]). VL [violations].'
   freach: '[player] failed [check]: tried to attack entity out of reach. VL [violations].'
   fselfhit: '[player] failed [check]: tried to self-hit. VL [violations].'
   fspeed: '[player] failed [check]: tried to attack with too high a frequency. VL [violations].'
   gutenberg: '[player] failed [check]: created a book with too many pages. VL [violations].'
-  godmode: '[player] failed [check]: avoided taking damage or lagging. VL [violations].'
+  godmode: '[player] failed [check]: avoided taking damage or lagging (health [health]). VL [violations].'
   improbable: '[player] failed [check]: meets the improbable more than expected. VL [violations].'
   instantbow: '[player] failed [check]: fires bow too fast. VL [violations].'
   instanteat: '[player] failed [check]: eats food [food] too fast. VL [violations].'
@@ -578,14 +588,14 @@ strings:
   morepackets: '[player] failed [check]: sent too many moves ([packets] [tags]). VL [violations].'
   msgtempdenylogin: You are temporarily denied to join this server.
   munchhausen: '[player] failed [check]: almost made it off the pit. VL [violations].'
-  nofall: '[player] failed [check]: tried to avoid fall damage. VL [violations].'
+  nofall: '[player] failed [check]: tried to alter fall damage ([tags]). VL [violations].'
   chatfast: '[player] failed [check]: acted like spamming (IP: [ip]). VL [violations].'
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
-  passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
+  passable: '[player] failed [check]: moved into a block ([blocktype]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
-  tellchatnormal: ncp tell [player] &7(&c!&7) &aYou are chatting too fast. Please slow down.
-  tempkick1: ncp tempkick [player] 1 You have been temporarily banned for 1 minute.
-  tempkick5: ncp tempkick [player] 5 You have been temporarily banned for 5 minutes.
+  tellchatnormal: 'ncp tell [player] &cNCP: &eToo many messages, slow down...'
+  tempkick1: ncp tempkick [player] 1 Wait a minute!
+  tempkick5: ncp tempkick [player] 5 You have five minutes to think about it!
   vehicleenvelope: '[player] failed [check]: moved a vehicle too fast ([tags]). VL [violations].'
 compatibility:
   managelisteners: false
@@ -614,6 +624,8 @@ compatibility:
   blocks:
     allowinstantbreak: []
     overrideflags:
+      legacy_snow: default
+      legacy_piston_moving_piece: default+ign_passable+ground_height
       snow: default
       piston_moving_piece: default+ign_passable+ground_height
     changetracker:

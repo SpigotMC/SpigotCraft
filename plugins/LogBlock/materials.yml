@@ -86,31 +86,31 @@
   '2': cracked stone brick
   '3': chiseled stone brick
 '125':
-  '0': wood double step generic
-  '1': wood double step redwood
-  '2': wood double step birch
-  '3': wood double step jungle
-  '4': wood double step generic
-  '5': wood double step redwood
+  '0': generic wood double step
+  '1': redwood wood double step
+  '2': birch wood double step
+  '3': jungle wood double step
+  '4': acacia wood double step
+  '5': dark oak wood double step
 '126':
-  '0': wood step generic
-  '1': wood step redwood
-  '2': wood step birch
-  '3': wood step jungle
-  '4': wood step generic
-  '5': wood step redwood
+  '0': generic wood step generic
+  '1': redwood wood step redwood
+  '2': birch wood step birch
+  '3': jungle wood step jungle
+  '4': acacia wood step acacia
+  '5': dark oak wood step dark oak
   '8': oak step
   '9': spruce step
   '10': birch step
   '11': jungle step
   '12': acacia step
   '13': dark oak step
-  '08': wood step generic
-  '18': wood step redwood
-  '28': wood step birch
-  '38': wood step jungle
-  '48': wood step generic
-  '58': wood step redwood
+  '08': generic wood step generic
+  '18': redwood wood step redwood
+  '28': birch wood step birch
+  '38': jungle wood step jungle
+  '48': acacia wood step acacia
+  '58': dark oak wood step dark oak
 '139':
   '1': mossy cobble wall
 '155':
@@ -223,22 +223,22 @@
   '14': red wool
   '15': black wool
 '159':
-  '0': white stained clay
-  '1': orange stained clay
-  '2': magenta stained clay
-  '3': light blue stained clay
-  '4': yellow stained clay
-  '5': lime stained clay
-  '6': pink stained clay
-  '7': gray stained clay
-  '8': silver stained clay
-  '9': cyan stained clay
-  '10': purple stained clay
-  '11': blue stained clay
-  '12': brown stained clay
-  '13': green stained clay
-  '14': red stained clay
-  '15': black stained clay
+  '0': white stained terracotta
+  '1': orange stained terracotta
+  '2': magenta stained terracotta
+  '3': light blue stained terracotta
+  '4': yellow stained terracotta
+  '5': lime stained terracotta
+  '6': pink stained terracotta
+  '7': gray stained terracotta
+  '8': silver stained terracotta
+  '9': cyan stained terracotta
+  '10': purple stained terracotta
+  '11': blue stained terracotta
+  '12': brown stained terracotta
+  '13': green stained terracotta
+  '14': red stained terracotta
+  '15': black stained terracotta
 '95':
   '0': white stained glass
   '1': orange stained glass
@@ -290,3 +290,37 @@
   '13': green carpet
   '14': red carpet
   '15': black carpet
+'251':
+  '0': white concrete
+  '1': orange concrete
+  '2': magenta concrete
+  '3': light blue concrete
+  '4': yellow concrete
+  '5': lime concrete
+  '6': pink concrete
+  '7': gray concrete
+  '8': silver concrete
+  '9': cyan concrete
+  '10': purple concrete
+  '11': blue concrete
+  '12': brown concrete
+  '13': green concrete
+  '14': red concrete
+  '15': black concrete
+'252':
+  '0': white concrete powder
+  '1': orange concrete powder
+  '2': magenta concrete powder
+  '3': light blue concrete powder
+  '4': yellow concrete powder
+  '5': lime concrete powder
+  '6': pink concrete powder
+  '7': gray concrete powder
+  '8': silver concrete powder
+  '9': cyan concrete powder
+  '10': purple concrete powder
+  '11': blue concrete powder
+  '12': brown concrete powder
+  '13': green concrete powder
+  '14': red concrete powder
+  '15': black concrete powder

@@ -1,44 +1,39 @@
 worlds:
-  creative:
+  plots:
     plot:
       height: 64
-      biome: FOREST
       size: 42
       filling:
       - '1:0'
-      auto_merge: false
-      bedrock: true
-      create_signs: true
       floor:
       - '2:0'
+      bedrock: true
+      biome: FOREST
+      auto_merge: false
+      create_signs: true
     wall:
-      filling: '1:0'
-      block_claimed: '44:1'
-      height: 64
       block: '44:0'
-    event:
-      pve: false
-      pvp: false
-      spawn:
-        egg: false
-        breeding: false
-        custom: true
-    road:
-      block: '155:0'
+      block_claimed: '44:1'
+      filling: '1:0'
       height: 64
+    road:
       width: 7
+      height: 64
+      block: '155:0'
     home:
       default: side
       allow-nonmembers: false
+      nonmembers: side
     schematic:
       specify_on_claim: false
       on_claim: false
       file: 'null'
+      schematics: []
     economy:
       prices:
-        merge: 100.0
-        sell: 75.0
-        claim: 100.0
+        merge: 100
+        sell: 100
+        claim: 100
       use: false
     chat:
       enabled: false
@@ -48,9 +43,13 @@ worlds:
       max_height: 256
       gamemode: creative
       min_height: 1
-      border: true
+      border: false
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
     natural_mob_spawning: false
-    flags:
-      vehicle-cap: '32'
-      entity-cap: '32'
     mob_spawner_spawning: false
+    flags: {}
+    misc_spawn_unowned: false

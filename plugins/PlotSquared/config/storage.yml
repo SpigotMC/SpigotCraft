@@ -16,3 +16,6 @@ mysql:
   user: "root"
   password: "password"
   database: "plot_db"
+  # Set additional properties: https://goo.gl/wngtN8
+  properties: 
+  - "useSSL=false"

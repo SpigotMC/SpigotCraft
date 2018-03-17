@@ -547,3 +547,22 @@ near:
   usage: /plot near
   description: Display nearby players
   confirmation: false
+changelog:
+  aliases:
+  - changelog
+  - cl
+  usage: /plot changelog
+  description: View the changelog
+  confirmation: false
+leave:
+  aliases:
+  - leave
+  usage: ''
+  description: Leave a plot
+  confirmation: false
+debugimportworlds:
+  aliases:
+  - debugimportworlds
+  usage: ''
+  description: Import worlds by player name
+  confirmation: false

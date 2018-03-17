@@ -48,3 +48,5 @@ CANNOT_CREATE_SHOP_HERE: "You can't create shop here!"
 TOGGLE_MESSAGES_OFF: "You will no longer receive messages from your shop(s)."
 TOGGLE_MESSAGES_ON: "You will now receive messages from your shop(s)."
 
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: "%material&7 shop at &r%world/%x/%y/%z&7 is full! (%seller tried to sell)"
+
