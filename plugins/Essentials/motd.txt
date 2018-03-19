@@ -1,2 +1,3 @@
 &7Welcome to &6Spigot&eCraft&7!
 &7We currently have &6{ONLINE} &7community members online.
+&7Feel free to join our community TeamSpeak3 server on: talk.spigotmc.org!
