@@ -5,6 +5,7 @@ random_world: false
 
 valid_worlds:
   - world
+  - aquatic
 
 radius:
   max_X: 10000
