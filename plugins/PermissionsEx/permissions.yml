@@ -827,7 +827,7 @@ users:
     group:
     - Tester
     options:
-      name: JDev_
+      name: JJ99_
   262d327f-34e3-42be-87f5-235068661f30:
     group:
     - Helper
@@ -1456,7 +1456,7 @@ users:
       name: Romaq
   3cf9b867-2577-49d1-affb-7ba8196a0d39:
     group:
-    - Tester
+    - Helper
     options:
       name: rambeau
   db123bee-8749-459d-b7a0-4241e7ef01a5:
@@ -1666,9 +1666,9 @@ users:
       name: Karamatsu
   888eaeb9-9729-41d0-aa34-69afc6b40abb:
     group:
-    - Default
+    - Tester
     options:
-      name: 2yn
+      name: 1byte
   3f03fc68-870c-45c2-94e9-ae670bad9195:
     group:
     - Tester
@@ -1767,9 +1767,6 @@ users:
     - Helper
     options:
       name: Kainzo
-  cruz:
-    group:
-    - Tester
   thedartmc_yt:
     group:
     - Tester
@@ -1793,7 +1790,65 @@ users:
   ugg:
     group:
     - Tester
-  the_craft:
+  flynrod:
     group:
     - Tester
+  d2398809-dae2-4880-b8f0-8b87edd02129:
+    group:
+    - Tester
+    options:
+      name: The_Craft
+  7a8e93e9-07e9-4afc-8831-38f4a462157c:
+    group:
+    - Tester
+    options:
+      name: Cruz
+  kennytv:
+    group:
+    - Tester
+  7f9e2c40-dbad-4ab3-ac70-fc4f17f579d9:
+    group:
+    - Tester
+    options:
+      name: 25GB
+  f43ad6ed-f106-4303-8c7d-7fa04166e75a:
+    group:
+    - Tester
+    options:
+      name: XXLuigiMario
+  xknat:
+    group:
+    - Tester
+  technerder:
+    group:
+    - Tester
+  14096949-e746-455b-82dc-c78f4f43b8f6:
+    group:
+    - Tester
+    options:
+      name: The947thTokay
+  slimedog:
+    group:
+    - Default
+  subsidenl:
+    group:
+    - Tester
+  myokan:
+    group:
+    - Tester
+  04e05a4b-80a0-47c4-8097-cb78d233e89f:
+    group:
+    - Tester
+    options:
+      name: Jumbo_1907
+  0add19fa-6bf4-4a24-9f97-7eb69b9b692a:
+    group:
+    - Tester
+    options:
+      name: petomka
+  6b554e39-a599-4f2d-87fe-7b09412d4a9a:
+    group:
+    - Tester
+    options:
+      name: YT_Legoman99573
 schema-version: 1

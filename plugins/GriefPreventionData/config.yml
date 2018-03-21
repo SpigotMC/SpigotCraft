@@ -9,8 +9,8 @@ GriefPrevention:
     Mode:
       world: Survival
       world_the_end: Disabled
-      aquatic: Survival
       world_nether: Disabled
+      aquatic: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
