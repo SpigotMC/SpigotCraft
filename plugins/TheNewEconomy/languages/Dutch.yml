@@ -1,0 +1,201 @@
+# The New Economy v0.1.0.0
+# Author: creatorfromhell
+# License: AGPLv3
+# If you would like to contribute to the plugin
+# you can do so via Github at https://github.com/TheNewEconomy/TNE-Bukkit
+# To view a commented version of this file, visit https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/TNE/src/net/tnemc/resources/messages.yml.
+# All configurable messages in TNE
+# Colour characters are supported, just use the colour code preceded by an ampersand character('&')
+# An alternate colouring format is also viable, just oldtype out the name of the colour inside a less than and greater than symbol
+# 
+# Colour chart
+# Char  |   Alt
+# ------|-----------
+#  &b   |  <aqua>
+#  &0   |  <black>
+#  &9   |  <blue>
+#  &3   |  <dark_aqua>
+#  &1   |  <dark_blue>
+#  &8   |  <dark_gray>
+#  &2   |  <dark_green>
+#  &5   |  <dark_purple>
+#  &4   |  <dark_red>
+#  &6   |  <gold>
+#  &7   |  <gray>
+#  &a   |  <green>
+#  &d   |  <purple>
+#  &c   |  <red>
+#  &f   |  <white>
+#  &e   |  <yellow>
+#  &k   |  <magic>
+#  &l   |  <bold>
+#  &o   |  <italic>
+#  &r   |  <reset>
+#  &m   |  <strike>
+#  &n   |  <underline>
+
+Messages:
+    
+    Command:
+       Unable: "<red>Excuses, je hebt niet de juiste bevoegdheden voor het uitvoeren van deze opdracht."
+       None: "<yellow>Opdracht $command $arguments is niet gevonden! Probeer $command help voor meer informatie."
+       InActive: "<red>Opdracht $command $arguments is gedeactiveerd! Probeer $command help voor meer informatie."
+       Charge: "<gold>$amount<white> is in rekening gebracht voor het gebruik van $command."
+    
+    General:
+       NoPerm: "<red>Excuses, je hebt niet de juiste bevoegdheden om dit te doen."
+       Saved: "<yellow>Alle TNE Data was succesvol opgeslagen!"
+       NoPlayer: "<red>Het is niet mogelijk om \"$player\" te vinden!"
+       Disabled: "<red>Economische functies zijn op dit moment uitgeschakeld in deze wereld!"
+
+    Item:
+      Invalid: "<red>De ingevoerde item naam en/of levensduur is ongeldig."
+      InvalidAmount: "<red>De ingevoerde item hoeveelheid is ongeldig."
+       
+    Admin:
+       NoHoldings: "<red>$player heeft geen bezittingen in de wereld \"$world\"!"
+       Holdings: "<white>$player heeft op dit moment <gold>$amount <white>in de wereld \"$world\"!"
+       NoTransactions: "<white>$player heeft geen transacties om weer te geven."
+       Configuration: "<white>De waarde van $node is op dit moment $value."
+       SetConfiguration: "<white>De waarde $node is veranderd naar $value."
+       ID: "<white>De UUID van $player is $id."
+       Exists: "<red>Een speler met dezelfde naam bestaat al."
+       Created: "<white>Het aanmaken van de rekening voor $player was succesvol."
+       Deleted: "<white>Het opheven van de rekening voor $player was succesvol."
+       PurgeWorld: "<white>Alle rekeningen in $world zijn succesvol opgeschoond."
+       StatusChange: "<white>De status van $player is veranderd naar <green>$status<white>."
+       Status: "<white>De status van $player is <green>$status<white>."
+       Reset: "<white>De economie is opnieuw ingesteld met de waarde - wereld = $world, valuta = $currency, en speler = $player."
+
+    Account:
+       Locked: "<red>Het is niet mogelijk om dat te doen met een geblokkeerde rekening!"
+       NoTransactions: "<white>Je hebt op dit moment geen transacties om weer te geven."
+       StatusChange: "<white>De status van je rekening is veranderd naar <green>$status<white>."
+
+    Configuration:
+       NoSuch: "Het configuratieknooppunt $node bestaat niet."
+       Invalid: "De waarde die je hebt opgegeven voor $node is ongeldig."
+       InvalidFile: "Het configuratiebestand die je hebt opgegeven is ongeldig."
+       Get: "De waarde van knooppunt $node is $value."
+       Set: "De waarde van $node was succesvol veranderd naar $value."
+       TNEGet: "De opgegeven waarde voor knooppunt $node is $value."
+       Saved: "Alle gewijzigde knooppuntwaardes van bestand $configuration zijn succesvol opgeslagen."
+       SavedAll: "Alle gewijzigde configuratiebestanden zijn succesvol opgeslagen."
+       Undone: "Het terugzetten gewijzigde configuratiebestanden naar $modified was succesvol."
+       UndoneAll: "Het terugzetten van alle gewijzigde configuratiebestanden was succesvol."
+
+    Currency:
+       List: "<white>De huidige valuta van $world zijn: $currencies."
+       Tiers: "<white>De valuta \"$currency\" heeft de volgende ordening;<newline>Hoofdeenheid: $major_tiers<newline>Secundaire eenheid: $minor_tiers"
+       AlreadyExists: "<white>A currency with the name $currency already exists in world $world."
+       Renamed: "<white>De valuta $currency in wereld $world is hernoemd naar $new_Name."
+
+    Language:
+       Current: "<white>De taal is op dit moment ingesteld op $language."
+       List: "<white>De beschikbare talen zijn $languages."
+       None: "<red>Er is geen taal aanwezig met de naam \"$language\"."
+       Reload: "<white>Het herladen van de taalbestanden was succesvol."
+       Set: "<white>De taal is succesvol veranderd naar $language."
+
+    Module:
+       Info: "<white>==== Module Info van $module ====<newline>Auteur: $author<newline>Versie: $version"
+       Invalid: "<red>Kan module met de naam \"$module\" niet vinden."
+       List: "<white>De server gebruikt op dit moment deze TNE modules: $modules."
+       Loaded: "<white>Module \"$module\" $version door \"$author\" is ingeschakeld."
+       Reloaded: "<white>Module \"$module\" is herladen."
+       Unloaded: "<white>Module \"$module\" is uitgeschakeld."
+
+    Money:
+       Failed: "<red>Op dit moment is het niet mogelijk om je transactie te verwerken."
+       Given: "<white>Je hebt <gold>$amount<white> ontvangen."
+       Received: "<white>Je hebt <gold>$amount <white> ontvangen van <white> $player."
+       Taken: "<white>$player heeft <gold>$amount<white> bij jouw in rekening gebracht."
+       Insufficient: "<red>Excuses, maar het bedrag <gold>$amount<red> staat niet meer op je rekening."
+       HoldingsMulti: "<white>Je huidige saldo voor wereld \"$world\" is: "
+       HoldingsMultiSingle: "<white>$currency: <gold>$amount"
+       Holdings: "<white>Je huidige saldo is: <gold>$amount<white>."
+       Gave: "<white>Het bedrag <gold>$amount<white> is succesvol bijgeschreven naar het saldo van $player.."
+       RecipientSet: "<white>Je saldo is veranderd naar <gold>$amount<white> door $player."
+       Set: "<white>Het saldo van $player is succesvol veranderd naar <gold>$amount<white>."
+       Paid: "<white>Het bedrag <gold>$amount<white> is succesvol overgemaakt naar $player."
+       Took: "<white><white>Het bedrag <gold>$amount<white> is succesvol afgeschreven van het saldo van $player."
+       Negative: "<red>Het bedrag kan geen negatieve waarde betreffen!"
+       SelfPay: "<red>Je kan geen geld overmaken naar jezelf!"
+       NoCurrency: "<red>De valuta \"$currency\" kan niet worden gevonden in wereld \"$world\"."
+       Noted: "<white>Je hebt een biljet ter waarde van <gold>$amount<white> ontvangen voor de valuta <green>$currency<white>."
+       NoteClaimed: "<white>Je hebt het biljet succesvol ingewisseld voor <green>$currency<white> met een betreffende waarde van <gold>$amount<white>.<newline>Je nieuwe saldo is <gold>$balance<white>."
+       NoteFailed: "<red>Excuses, het is op dit moment niet mogelijk om dit biljet in te wisselen!."
+       Converted: "<white>Het bedrag \"<gold>$from_amount<white>\" is succesvol omgewisseld naar \"<gold>$amount<white>\"."
+       Top: "<white>=====[<gold>Economische Top<white>]===== $page/$page_top"
+       InvalidFormat: "<red>Excuses, maar de financiële waarde is incorrect."
+       ExceedsCurrencyMaximum: "<red>Excuses, maar de financiële waarde overschrijdt het maximale saldo."
+       ExceedsPlayerMaximum: "<red>Excuses, maar het uitvoeren van deze transactie zal je saldo over het maximale bedrag brengen."
+       ExceedsOtherPlayerMaximum: "<red>Excuses, maar het uitvoeren van deze transactie zal het saldo van $player over het maximale bedrag brengen."
+
+    Transaction:
+       Already: "<red>De transactie met het ID $transaction is al gestorneerd."
+       Away: "<white>=====[<green>Gemiste Transacties<white>]===== $page/$page_top<newline>ID | Type"
+       AwayEntry: "<green>$id <white>| <green>$type"
+       AwayNone: "<red>Er vonden geen transacties plaats tijdens je afwezigheid."
+       History: "<white>=====[<green>Transacties<white>]===== $page/$page_top<newline>ID | Type | Aanvrager | Recipiënt"
+       HistoryEntry: "<green>$id <white>| <green>$type <white>| <green>$initiator <white>| <green>$recipient"
+       Info: "<white>Informatie over de transactie:<newline><white>ID: <green>$id<newline><white>Type: <green>$type"
+       Invalid: "<red>De transactie met ID $transaction is niet gevonden."
+       Unable: "<red>Het is op dit moment niet mogelijk om de transactie te storneren."
+       Voided: "<white>De transactie met ID <green>$transaction<white> is succesvol gestorneerd."
+
+    Commands:
+       Admin:
+          Backup: "/tne backup - Maakt een reservekopie van alle TNE-bestanden."
+          Balance: "/tne balance <speler> [wereld] [valuta] - Geeft het saldo van een speler weer.<newline>- Speler ~ De eigenaar van de rekening.<newline>- World ~ De wereld waar het saldo zich in bevindt.<newline>- valuta ~ De te gebruiken valuta"
+          Caveats: "/tne caveats - Geeft een lijst van alle mogelijke problem die kunnen onstaan door TNE."
+          Create: "/tne create <speler> [saldo] - Maakt een nieuwe rekening aan.<newline>- Speler ~ De eigenaar van de rekening.<newline>- Saldo ~ Het startsaldo van de rekening."
+          Delete: "/tne delete <speler> - Verwijdert de rekening van een speler.<newline>- Speler ~ De eigenaar van de rekening."
+          ID: "/tne id <speler> - Geeft de TNE UUID weer van de opgegeven speler.<newline>- Player ~ De speler waar je de TNE UUID van wilt weergeven."
+          Menu: "/tne menu <speler> - Opent een menu om simpele transacties uit te voeren met de gespecificeerde speler.<newline>-Player ~ De naam of UUID van de speler waar je transacties mee wilt uitvoeren."
+          Purge: "/tne purge - Verwijdert alle rekeningen met het startsaldo."
+          Recreate: "/tne recreate - Stelt de TNE database opnieuw in naar de standaardwaarden. WAARSCHUWING: Alle data in de database zullen verloren gaan."
+          Reload: "/tne reload <configuratiebestand> - Slaat wijzingen via opdrachten op en herlaadt het configuratiebestand.<newline>- Configuratiebestand ~ Het bestand dat opnieuw in het systeem moet worden geladen. Standaard zijn dit alle configuratiebestanden."
+          Report: "/tne report <foutenrapport> - Dient een foutenrapport in.<newline>- Foutenrapport ~ De link naar het foutenrapport, met de correcte opmaak beschreven in de volgende link: https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/Report%20Format.md."
+          Save: "/tne save - Slaat alle TNE-bestanden op."
+          Status: "/tne status <speler> [status] - Geeft de status van een rekening weer met de mogelijkheid deze aan te passen.<newline>- Speler ~ De eigenaar van de rekening."
+          Version: "/tne version - Geeft de versie van TNE weer."
+       Config:
+          Get: "/tnec get <knooppunt> [configuratiebestand] - Geeft de waarde van een configuratiebestand weer.<newline>- Knooppunt ~ Het knooppunt dat wordt weergegeven.<newline>- Configuratiebestand ~ Het configuratiebestand waarin de waardes in worden opgezocht. Dit kan automatisch gebeuren."
+          Save: "/tnec save [configuratiebestand] - Sla wijzingen aan configuratiewaardes via opdrachten op.<newline>- Configuratiebestand ~ Het configuratiebestand dat moet worden opgeslagen."
+          Set: "/tnec set <knooppunt> <waarde> [configuratiebestand] - Veranderd de waarde van een knooppunt in een configuratiebestand. Dit wordt niet opgeslagen totdat de opdracht /tnec save gegeven is."
+          TNEGet: "/tnec tneget <knooppunt> [wereld] [speler] - Geeft de waarde van een configuratiebestand nadat TNE rekening heeft gehouden met bepaalde wereld- en spelersinstellingen.<newline>- Knooppunt ~ Het te gebruiken knooppunt.<newline>- Wereld ~ De naam van de te gebruiken wereld .<newline>- Speler ~ De naam van de te gebruiken speler."
+          Undo: "/tnec undo [configuratiebestand/all] - Zet wijzingen aan een configuratiebestand terug.<newline>- Configuratiebestand ~ Het configuratiebestand dat moet worden teruggezet.<newline>- All ~ Zet wijzingen aan alle bestanden terug."
+       Currency:
+          Rename: "/currency rename <valuta> <nieuwe naam> - Hernoemd een valuta naar een nieuwe naam."
+          List: "/currency list [wereld] - Geeft alle beschikbare valuta aan van een wereld.<newline> - World ~ De te gebruiken wereld."
+          Tiers: "/currency tiers [valuta] [wereld] - Geeft de ordening van een valuta aan.<newline>- Valuta ~ De te gebruiken valuta.<newline>- World ~ De wereld waar de valuta zich bevindt."
+       Language:
+          Current: "/language current - Geeft de ingestelde taal van je account weer."
+          List: "/language list - Geeft een lijst van de beschikbare talen weer."
+          Reload: "/language reload - Herlaadt alle taalbestandenm"
+          Set: "/language set <taal> - Veranderdt de taalinstellingen naar de gespecificeerde taal."
+       Module:
+          Info: "/tnem info <module> - Geeft informatie weer over de opgegeven module.<newline>- Module ~ De te gebruiken module."
+          List: "/tnem list - Geeft een lijst weer van alle geladen modules."
+          Load: "/tnem load <module> - Schakelt een gespecificeerde module uit het register in.<newline>- Module ~ De te gebruiken module."
+          Reload: "/tnem reload <module> - Herlaad een gespecificeerde module uit het register.<newline>- Module ~ De te gebruiken module."
+          Unload: "/tnem unload <module> - Schakelt een gespecificeerde module uit het register uit.<newline>- Module ~ De te gebruiken module."
+       Money:
+          Balance: "/money balance [wereld] [valuta] - Geeft een overzicht van je huidige saldo weer."
+          Convert: "/money convert <hoeveelheid> <naar valuta[:in wereld]> [van valuta[:in wereld]] - Wisselt je saldo om voor een andere valuta."
+          Give: "/money give <spelerr> <hoeveelheid> [wereld] [valuta] - Voegt geld toe aan de economie, en geeft dit aan een speler."
+          Note: "/money note <hoeveelheid> [valuta] - Maakt een fysieke versie van de munteenheid, handig voor opslag of de handel tussen spelers."
+          Pay: "/money pay <speler> <hoeveelheid> [valuta] - Gebruikt jouw saldo om geld naar een andere speler over te boeken."
+          Set: "/money set <speler> <hoeveelheid> [wereld] [valuta] - Verandert het saldo van een speler."
+          Take: "/money take <speler> <hoeveelheid> [wereld] [valuta - Haalt geld uit omloop door het af te schrijven van het saldo van een gespecificeerde speler."
+          Top: "/money top [pagina] [valuta:valuta] [wereld:wereld] [limiet:#] - Geeft een lijst van spelers met het hoogste saldo weer.<newline>[pagina] - Het paginanummer om te weergeven, standaard is dit 1.<newline>[valuta:valuta] - De te gebruiken valuta, indien leeg is dit de standaardvaluta. Het is ook mogelijk om alle valuta weer te geven, dit kan door de waarde overall op te geven.<newline>[wereld:wereld] - De te gebruiken wereld, indien leeg is dit de wereld waarin je je bevindt. Het is ook mogelijk om alle werelden weer te geven, dit door de waarde overall op te geven.<newline>[limiet] - Het limiet van de hoeveelspeed weer te geven spelers, standaard is dit 10."
+       Transaction:
+          Away: "/transaction away [pagina #] - Geeft transacties weer die plaatsvonden tijdens je afwezigheid."
+          History: "/transaction history [pagina:#] [wereld:naam/all] - Geeft een gedetailleerde versie van je transactiegeschiedenis weer.<newline>- Pagina ~ Het paginanummer om te weergeven.<newline>- Wereld ~ De wereld die gebruikt wordt als filter, of all om voor alle werelden. Standaard is dit de wereld waarin je je bevindt."
+          Info: "/transaction info <uuid> - Geeft informatie over de transactie weer.<newline>- UUID ~ Het ID van de transactie."
+          Void: "/transaction void <uuid> - Storneert een transactie.<newline>- UUID ~ Het ID van de transactie."
+
+    World:
+       Change: "<red>Er is <gold> $amount<red> in rekening gebracht voor het veranderen van wereld."
+       ChangeFailed: "<red>Excuses, maar je komt <gold>$amount<red> te kort om van wereld te veranderen."

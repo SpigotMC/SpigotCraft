@@ -1,0 +1,206 @@
+# The New Economy v0.1.0.0
+# Author: creatorfromhell
+# License: AGPLv3
+# If you would like to contribute to the plugin
+# you can do so via Github at https://github.com/TheNewEconomy/TNE-Bukkit
+# To view a commented version of this file, visit https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/TNE/src/net/tnemc/resources/messages.yml.
+#All configurable messages in TNE
+# Colour characters are supported, just use the colour code preceded by an ampersand character('&')
+# An alternate colouring format is also viable, just oldtype out the name of the colour inside a less than and greater than symbol
+# 
+# Colour chart
+# Char  |   Alt
+# ------|-----------
+#  &b   |  <aqua>
+#  &0   |  <black>
+#  &9   |  <blue>
+#  &3   |  <dark_aqua>
+#  &1   |  <dark_blue>
+#  &8   |  <dark_gray>
+#  &2   |  <dark_green>
+#  &5   |  <dark_purple>
+#  &4   |  <dark_red>
+#  &6   |  <gold>
+#  &7   |  <gray>
+#  &a   |  <green>
+#  &d   |  <purple>
+#  &c   |  <red>
+#  &f   |  <white>
+#  &e   |  <yellow>
+#  &k   |  <magic>
+#  &l   |  <bold>
+#  &o   |  <italic>
+#  &r   |  <reset>
+#  &m   |  <strike>
+#  &n   |  <underline>
+
+Messages:
+    
+    Command:
+       Unable: "<red>Du får inte använda det här kommandot."
+       None: "<yellow>Kommandot $command $arguments kunde inte hittas! Försök använda $command help."
+       InActive: "<red>Kommandot $command $arguments har blivit avaktiverat! Försök använda $command help."
+       Charge: "<white>Du har betalat <gold>$amount<white> för att använda $command."
+    
+    General:
+       NoPerm: "<red>Du får inte göra detta."
+       Saved: "<yellow>All TNE data har sparats!"
+       NoPlayer: "<red>Kunde inte hitta spelare \"$player\"!"
+       Disabled: "<red>Ekonomifunktioner är avstängda i den här världen!"
+
+    Item:
+      Invalid: "<red>Felaktigt objektnamn och/eller hållbarhetskombination."
+      InvalidAmount: "<red>Felaktigt antal."
+       
+    Admin:
+       NoHoldings: "<red>$players saldo är tomt i den här världen. \"$world\"!"
+       Holdings: "<white>$players har <gold>$amount <white>i världen \"$world\"!"
+       NoTransactions: "<white>$player har inga transaktioner."
+       Configuration: "<white>Värdet av $node är $value."
+       SetConfiguration: "<white>Värdet av $node har satts till $value."
+       ID: "<white>UUID't för $player är $id."
+       Exists: "<red>En spelare med det namnet finns redan."
+       Created: "<white>Konto för $player skapat."
+       Deleted: "<white>Konto för $player borttaget."
+       PurgeWorld: "<white>Alla konton i $world borttagna."
+       StatusChange: "<white>Status för $player har ändrats till <green>$status<white>."
+       Status: "<white>Status för $player är <green>$status<white>."
+       Reset: "<white>Utförde en ekonomireset med dessa parametrar - värld = $world, valuta = $currency, och spelare = $player."
+
+    Account:
+       Locked: "<red>Du kan inte göra det med ett låst konto($player)!"
+       NoTransactions: "<white>Du har inga transaktioner att visa."
+       StatusChange: "<white>Ditt kontos status har ändrats till <green>$status<white>."
+
+    Configuration:
+       NoSuch: "Konfigurationsnoden $node existerar inte."
+       Invalid: "Värdet du specificerade för $node är felaktigt."
+       InvalidFile: "Konfigurationsfilen är felaktig."
+       Get: "Värdet för $node är $value."
+       Set: "Värdet för $node satt till $value."
+       TNEGet: "Värdet för $node är $value."
+       Saved: "Sparade alla modifierade noder för $configuration."
+       SavedAll: "Sparade alla noder för alla konfigurationer."
+       Undone: "Tog bort alla modifikationer av $modified."
+       UndoneAll: "Tog bort alla konfigurationsmodifikationer."
+
+    Currency:
+       List: "<white>Valutorna för $world är: $currencies."
+       Tiers: "<white>Valutan \"$currency\" har dessa nivåer;<newline>Större: $major_tiers<newline>Mindre: $minor_tiers"
+       AlreadyExists: "<white>En valuta med namnet $currency finns redan i världen $world."
+       Renamed: "<white>Ändrade namnet på valutan $currency i världen $world till $new_Name."
+
+    Language:
+       Current: "<white>Ditt språk är just nu $language."
+       List: "<white>Tillgängliga språk är $languages."
+       None: "<red>Det finns inga språk med namnet \"$language\"."
+       Reload: "<white>Laddade om alla språkfiler."
+       Set: "<white>Ditt språk har satts till $language."
+
+    Module:
+       Info: "<white>==== Modulinfo för $module ====<newline>Skapare: $author<newline>Version: $version"
+       Invalid: "<red>Kunde inte hitta en modul med namnet \"$module\"."
+       List: "<white>Den här servern använder just nu dessa TNE plugins: $modules."
+       Loaded: "<white>Laddade modulen \"$module\" $version skapad av \"$author\"."
+       Reloaded: "<white>Laddade om modul \"$module\"."
+       Unloaded: "<white>Stängde av modul \"$module\"."
+
+    Money:
+       Failed: "<red>Kunde inte genomföra din transaktion just nu."
+       Given: "<white>Du har fått <gold>$amount<white>."
+       Received: "<white>Du blev betald <gold>$amount <white> av <white> $player."
+       Taken: "<white>$player tog <gold>$amount<white> från dig."
+       Insufficient: "<red>Du har inte <gold>$amount<red>."
+       HoldingsMulti: "<white>Dina saldon i världen \"$world\" är: "
+       HoldingsMultiSingle: "<white>$currency: <gold>$amount"
+       Holdings: "<white>You currently have <gold>$amount<white> on you."
+       Gave: "<white>Gav $player <gold>$amount<white>."
+       RecipientSet: "<white>Ditt saldo har satts till <gold>$amount<white> av $player."
+       Set: "<white>Satte $player's saldo till <gold>$amount<white>."
+       Paid: "<white>Betalade $player <gold>$amount<white>."
+       Took: "<white>Tog <gold>$amount<white> från $player."
+       Negative: "<red>Antalet kan inte vara ett negativt värde!"
+       SelfPay: "<red>Du kan inte betala dig själv!"
+       NoCurrency: "<red>Valutan \"$currency\" kunde inte hittas i \"$world\"."
+       Noted: "<white>Du har fått en sedel värd <gold>$amount<white> i valutan <green>$currency<white>."
+       NoteClaimed: "<white>Du har tagit en sedel i valutan <green>$currency<white> med värdet <gold>$amount<white>.<newline>Du har nu <gold>$balance<white>."
+       NoteFailed: "<red>Du kunde inte ta den här sedeln!."
+       Converted: "<white>Växlade \"<gold>$from_amount<white>\" till \"<gold>$amount<white>\"."
+       Top: "<white>=====[<gold>Ekonomitopp<white>]===== $page/$page_top"
+       InvalidFormat: "<red>Pengavärdet du skrev in är inte giltigt."
+       ExceedsCurrencyMaximum: "<red>Värdet du skrev in är större än det maximalt möjliga värdet."
+       ExceedsPlayerMaximum: "<red>Att genomföra den här transaktionen skulle sätta ditt saldo till högre än det maximalt möjliga värdet."
+       ExceedsOtherPlayerMaximum: "<red>Att genomföra den här transaktionen skulle sätta $players saldo till högre än det maximalt mäjliga värdet."
+
+    Transaction:
+       Already: "<red>Transaktionen med ID't $transaction har redan ogiltigförklarats."
+       Away: "<white>=====[<green>Missade Transaktioner<white>]===== $page/$page_top<newline>ID | Type"
+       AwayEntry: "<green>$id <white>| <green>$type"
+       AwayNone: "<red>Inga transaktioner hände medans du var borta."
+       History: "<white>=====[<green>Transaktioner<white>]===== $page/$page_top<newline>ID | Typ | Sändare | Mottagare"
+       HistoryEntry: "<green>$id <white>| <green>$type <white>| <green>$initiator <white>| <green>$recipient"
+       Info: "<white>Transaktionsinformation:<newline><white>ID: <green>$id<newline><white>Typ: <green>$type"
+       Invalid: "<red>Det finns ingen transaktion med ID $transaction."
+       Unable: "<red>Kunde inte ogiltigförklara transaktionen just nu."
+       Voided: "<white>Ogiltigförklarade transaktionen med ID <green>$transaction<white>."
+
+    Commands:
+       Admin:
+          Backup: "/tne backup - Skapar en backup av all serverdata."
+          Balance: "/tne balance <spelare> [värld] [valuta] - Visar en spelares saldo.<newline>- Spelare ~ Kontoägaren.<newline>- Värld ~ Världen att hämta saldot från.<newline>- Valuta ~ Valutan att hämta saldot från."
+          Build: "/tne build - Visar TNE versionen."
+          Caveats: "/tne caveats - Visar alla varningar för denna versionen av TNE."
+          Create: "/tne create <spelare> [saldo] - Skapar ett nytt ekonomikonto.<newline>- Spelare ~ Kontoägaren.<newline>- Saldo ~ Startsaldot för kontot."
+          Delete: "/tne delete <spelare> - Tar bort en spelares konto.<newline>- Spelare ~ Kontoägaren."
+          Extract: "/tne extract - Extraherar alla användares saldon för databasrelaterad debugging."
+          ID: "/tne id <spelare> - Hämtar en spelares TNE UUID.<newline>- Spelare ~ Spelaren du vill ha UUID från."
+          Menu: "/tne menu <spelare> - Öppnar ett gränssnitt för att göra transaktioner till ett spelare.<newline>-Spelare ~ Namn/UUID för spelaren du vill göra en transaktion med."
+          Purge: "/tne purge - Tar bort alla spelares konton som har standard saldo-värdet"
+          Recreate: "/tne recreate - Försöker återskapa alla databas-tables. VARNING: All data i databasen kommer tas bort"
+          Reload: "/tne reload <konfiguration> - Sparar modifikationer gjorda via kommando, och laddar om konfigurationsfilen.<newline>- Konfiguration ~ Konfigurationsfilen som ska laddas om. Standard är alla."
+          Report: "/tne report <rapport> - Skicka en bugrapport.<newline>- Rapport ~ Länk till pastebin sidan med din rapport, här är rapportformatet: https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/Report%20Format.md."
+          Reset: "/tne reset - Tar bort all ekonomirelaterad data från databasen."
+          Restore: "/tne restore - Återskapar all data från extracted.yml efter /tne extract."
+          Save: "/tne save - Sparar all TNE data."
+          Status: "/tne status <spelare> [status] - Visar eller sätter statusen för ett spelarkonto.<newline>- Spelare ~ Kontoägaren."
+          Upload: "/tne upload - Laddar upp TNE debug och server log till pastebin och visar en länk till båda."
+          Version: "/tne version - Visar versionen av TNE."
+       Config:
+          Get: "/tnec get <nod> [konfiguration] - Visar värdet för en konfiguration.<newline>- Nod ~ Konfigurationsnoden att använda.<newline>- Konfiguration ~ Konfiguurationsidentifieraren att hämta värdet från. Detta kan hämtas automatiskt."
+          Save: "/tnec save [konfiguration] - Sparar modifikationer gjorda på ett konfigurationsvärde via kommandon.<newline>- Konfiguration ~ Konfiguurationsidentifieraren att hämta värdet från."
+          Set: "/tnec set <node> <värde> [konfiguration] - Sätter ett konfigurationsvärde. Det kommer inte sparas innan du gör /tnec save."
+          TNEGet: "/tnec tneget <node> [värld] [spelare] - Visar värdet för en konfiguration för en specifik spelare i en specifik värld.<newline>- Nod ~ Konfigurationsnoden som ska användas.<newline>- Värld ~ Namnet för världen som ska användas.<newline>- Spelare ~ Namnet för spelaren som ska användas."
+          Undo: "/tnec undo [konfiguration/all] - Tar bort modifikationer gjorda på en konfiguration.<newline>- Konfiguration ~ Konfigurationsidentifieraren att hämta värdet från. Detta kan hämtas automatiskt"
+       Currency:
+          Rename: "/currency rename <valuta> <nytt namn> - Döper om en valuta."
+          List: "/currency list [värld] - Visar valutorna som finns i en värld.<newline> - Värld ~ Världen att använda."
+          Tiers: "/currency tiers [valuta] [värld] - Visar nivåerna för en valuta.<newline>- valuta ~ Valutan som ska användas.<newline>- Värld ~ Världen som ska användas."
+       Language:
+          Current: "/language current - Visar nuvarands språk för ditt konto."
+          List: "/language list - Visar alla språk på den här servern."
+          Reload: "/language reload - Laddar om alla språkfiler."
+          Set: "/language set <namn> - Sätter ditt språk."
+       Module:
+          Info: "/tnem info <modul> - Visar information om en modul.<newline>- Modul ~ Modulen att visa."
+          List: "/tnem list - Visar alla laddade TNE moduler."
+          Load: "/tnem load <modul> - Laddar en modul från modulmappen.<newline>- Modul ~ Modulen att ladda."
+          Reload: "/tnem reload <modul> - Laddar om en modul från modulmappen.<newline>- Modul ~ Modulen att ladda om."
+          Unload: "/tnem unload <modul> - Stänger av en modul.<newline>- Modul ~ Modulen att stänga av."
+       Money:
+          Balance: "/money balance [värld] [valuta] - Visar nuvarande saldo."
+          Convert: "/money convert <antal> <till valuta[:värld]> [från valuta[:värld]] - Konvertera från en valuta till en annan."
+          Give: "/money give <spelare> <antal> [värld] [valuta] - Lägger till pengar i ekonomin och ger det till en spelare."
+          Note: "/money note <antal> [valuta] - Gör din virtuella valuta fysisk, för att lagring eller byte."
+          Pay: "/money pay <spelare> <antal> [valuta] - Använd en del av din saldo för att betala en annan spelare."
+          Set: "/money set <spelare> <antal> [värld] [valuta] - Sätt saldo för en spelare."
+          Take: "/money take <spelare> <antal> [värld] [valuta] - Tar bort pengar från ekonomin, specifikt från en spelare."
+          Top: "/money top [sida] [valuta:namn] [värld:värld] [begränsning:#] - En lista av spelare med mest pengar.<newline>[sida] - Sidonummer. Standard är 1.<newline>[valuta] - Namnet av valutan att hämta saldon från. Standard är världens standardvaluta. Använd overall för alla valutor.<newline>[värld] - Världens namn du vill filtrera. Standard är nuvarande värld. Använd overall för alla världar.<newline>[begränsning] - Hur många spelare som visas per sida, standard är 10."
+       Transaction:
+          Away: "/transaction away [sida] - Visar transaktioner du har missat"
+          History: "/transaction history [sida] [värld:namn/all] - Se din transaktionshistorik.<newline>- Sida ~ Sidonummer du vill se.<newline>- Värld ~ Världsnamn du vill se eller all för alla världar. Standard är nuvarande värld."
+          Info: "/transaction info <uuid> - Visar information om en transaktion.<newline>- UUID ~ ID för transaktionen."
+          Void: "/transaction void <uuid> - Tar tillbaka en tidigare transaktion.<newline>- UUID ~ ID för transaktionen."
+
+    World:
+       Change: "<red>Du har betalat <gold> $amount<red> för att byta värld."
+       ChangeFailed: "<red>Du behöver minst <gold>$amount<red> för att byta värld."

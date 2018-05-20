@@ -1,0 +1,107 @@
+# The New Economy v0.1.0.0
+# Author: creatorfromhell
+# License: AGPLv3
+# If you would like to contribute to the plugin
+# you can do so via Github at https://github.com/TheNewEconomy/TNE-Bukkit
+# To donate to the continued development of TNE with perks, https://patreon.com/creatorfromhell
+# To view a commented version of this file, visit https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/TNE/src/net/tnemc/resources/config.yml.
+Core:
+  UUID: true
+  Multiworld: false
+  Metrics: true
+  Server:
+    MenuMaterial: GOLD_INGOT
+    MobDrop: true
+    Consolidate: false
+    Name: Main Server
+    Account:
+      Enabled: true
+      Name: Server_Account
+      Balance: 500
+    ThirdParty:
+      Town: town-
+      Nation: nation-
+      Faction: faction-
+      McMMORewards: true
+  Commands:
+    Triggers: /
+    PayShort: true
+    BalanceShort: true
+    TopShort: true
+  Update:
+    Check: true
+    Notify: true
+  Transactions:
+    Format: M, d y
+    Timezone: US/Eastern
+  AutoSaver:
+    Enabled: true
+    Interval: 600
+  Currency:
+    Default:
+      Name:
+        Major:
+          Single: Dollar
+          Plural: Dollars
+        Minor:
+          Single: Cent
+          Plural: Cents
+      Disabled: false
+      Format: <symbol><major.amount><decimal><minor.amount><shorten>
+      MaxBalance: 900000000000000000000000000000000000
+      Prefixes: kMGTPEZYXWV
+      Balance: 200.0
+      Notable: false
+      Default: true
+      Conversion: 1.0
+      Symbol: $
+      Decimal: .
+      DecimalPlaces: 2
+      ItemCurrency: false
+      EnderChest: true
+      Tiers:
+        One:
+          Type: Major
+          Weight: 1
+          Item:
+            Material: PAPER
+            Damage: 0
+            Name: One
+            Lore: Server Currency
+            Enchantments:
+              ExampleEnchantment: '*'
+          Name:
+            Single: Ones
+            Plural: One
+        Penny:
+          Type: Minor
+          Weight: 1
+          Item:
+            Material: PAPER
+            Damage: 0
+            Name: Penny
+            Lore: Server Currency
+            Enchantments:
+              ExampleEnchantment: '*'
+          Name:
+            Single: Penny
+            Plural: Pennies
+      Major:
+        Separate: true
+        Separator: ','
+      Minor:
+        Weight: 100
+  World:
+    EnableChangeFee: false
+    ChangeFee: 5.0
+  Database:
+    Type: h2
+    Prefix: TNE
+    Backup: true
+    File: Economy
+    MySQL:
+      Host: localhost
+      Port: 3306
+      Database: TheNewEconomy
+      User: user
+      Password: password
