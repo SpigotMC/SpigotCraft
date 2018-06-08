@@ -16,7 +16,7 @@ Rules
 Recommended Setup
 -----------------
 * Clone this repo
-* symlink the plugins dir into your test server: `ln -s SpigotCraft/plugins .`
+* copy the plugins into your server: `cp -R SpigotCraft/plugins/* plugins/`
 
 IRC
 ---
