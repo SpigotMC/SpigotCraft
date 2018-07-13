@@ -1,0 +1,2997 @@
+# The New Economy v0.0.5.6
+# Author: creatorfromhell
+# License: AGPLv3
+# If you would like to contribute to the plugin
+# you can do so via Github at https://github.com/TheNewEconomy/TNE-Bukkit
+# To donate to the continued development of TNE with perks, https://patreon.com/creatorfromhell
+# To view a commented version of this file, visit https://github.com/TheNewEconomy/TNE-Bukkit/blob/master/TNE/src/net/tnemc/resources/items.yml.
+Items:
+  STONE:
+    Sign: tne.item.stone.sign
+    Buy: tne.item.stone.buy
+    Sell: tne.item.stone.sell
+    Names:
+    - Stone
+  GRASS:
+    Sign: tne.item.grass.sign
+    Buy: tne.item.grass.buy
+    Sell: tne.item.grass.sell
+    Names:
+    - Grass
+  DIRT:
+    Sign: tne.item.dirt.sign
+    Buy: tne.item.dirt.buy
+    Sell: tne.item.dirt.sell
+    Names:
+    - Dirt
+  COBBLESTONE:
+    Sign: tne.item.cobblestone.sign
+    Buy: tne.item.cobblestone.buy
+    Sell: tne.item.cobblestone.sell
+    Names:
+    - Cobblestone
+  WOOD:
+    Sign: tne.item.wood.sign
+    Buy: tne.item.wood.buy
+    Sell: tne.item.wood.sell
+    Names:
+    - Wood
+  SAPLING:
+    Sign: tne.item.sapling.sign
+    Buy: tne.item.sapling.buy
+    Sell: tne.item.sapling.sell
+    Names:
+    - Sapling
+  BEDROCK:
+    Sign: tne.item.bedrock.sign
+    Buy: tne.item.bedrock.buy
+    Sell: tne.item.bedrock.sell
+    Names:
+    - Bedrock
+  WATER:
+    Sign: tne.item.water.sign
+    Buy: tne.item.water.buy
+    Sell: tne.item.water.sell
+    Names:
+    - Water
+  STATIONARY_WATER:
+    Sign: tne.item.stationary_water.sign
+    Buy: tne.item.stationary_water.buy
+    Sell: tne.item.stationary_water.sell
+    Names:
+    - StationaryWater
+    - Stationary Water
+  LAVA:
+    Sign: tne.item.lava.sign
+    Buy: tne.item.lava.buy
+    Sell: tne.item.lava.sell
+    Names:
+    - Lava
+  STATIONARY_LAVA:
+    Sign: tne.item.stationary_lava.sign
+    Buy: tne.item.stationary_lava.buy
+    Sell: tne.item.stationary_lava.sell
+    Names:
+    - StationaryLava
+    - Stationary Lava
+  SAND:
+    Sign: tne.item.sand.sign
+    Buy: tne.item.sand.buy
+    Sell: tne.item.sand.sell
+    Names:
+    - Sand
+  GRAVEL:
+    Sign: tne.item.gravel.sign
+    Buy: tne.item.gravel.buy
+    Sell: tne.item.gravel.sell
+    Names:
+    - Gravel
+  GOLD_ORE:
+    Sign: tne.item.gold_ore.sign
+    Buy: tne.item.gold_ore.buy
+    Sell: tne.item.gold_ore.sell
+    Names:
+    - GoldOre
+    - Gold Ore
+  IRON_ORE:
+    Sign: tne.item.iron_ore.sign
+    Buy: tne.item.iron_ore.buy
+    Sell: tne.item.iron_ore.sell
+    Names:
+    - IronOre
+    - Iron Ore
+  COAL_ORE:
+    Sign: tne.item.coal_ore.sign
+    Buy: tne.item.coal_ore.buy
+    Sell: tne.item.coal_ore.sell
+    Names:
+    - CoalOre
+    - Coal Ore
+  LOG:
+    Sign: tne.item.log.sign
+    Buy: tne.item.log.buy
+    Sell: tne.item.log.sell
+    Names:
+    - Log
+  LEAVES:
+    Sign: tne.item.leaves.sign
+    Buy: tne.item.leaves.buy
+    Sell: tne.item.leaves.sell
+    Names:
+    - Leaves
+  SPONGE:
+    Sign: tne.item.sponge.sign
+    Buy: tne.item.sponge.buy
+    Sell: tne.item.sponge.sell
+    Names:
+    - Sponge
+  GLASS:
+    Sign: tne.item.glass.sign
+    Buy: tne.item.glass.buy
+    Sell: tne.item.glass.sell
+    Names:
+    - Glass
+  LAPIS_ORE:
+    Sign: tne.item.lapis_ore.sign
+    Buy: tne.item.lapis_ore.buy
+    Sell: tne.item.lapis_ore.sell
+    Names:
+    - LapisOre
+    - Lapis Ore
+  LAPIS_BLOCK:
+    Sign: tne.item.lapis_block.sign
+    Buy: tne.item.lapis_block.buy
+    Sell: tne.item.lapis_block.sell
+    Names:
+    - LapisBlock
+    - Lapis Block
+  DISPENSER:
+    Sign: tne.item.dispenser.sign
+    Buy: tne.item.dispenser.buy
+    Sell: tne.item.dispenser.sell
+    Names:
+    - Dispenser
+  SANDSTONE:
+    Sign: tne.item.sandstone.sign
+    Buy: tne.item.sandstone.buy
+    Sell: tne.item.sandstone.sell
+    Names:
+    - Sandstone
+  NOTE_BLOCK:
+    Sign: tne.item.note_block.sign
+    Buy: tne.item.note_block.buy
+    Sell: tne.item.note_block.sell
+    Names:
+    - NoteBlock
+    - Note Block
+  BED_BLOCK:
+    Sign: tne.item.bed_block.sign
+    Buy: tne.item.bed_block.buy
+    Sell: tne.item.bed_block.sell
+    Names:
+    - BedBlock
+    - Bed Block
+  POWERED_RAIL:
+    Sign: tne.item.powered_rail.sign
+    Buy: tne.item.powered_rail.buy
+    Sell: tne.item.powered_rail.sell
+    Names:
+    - PoweredRail
+    - Powered Rail
+  DETECTOR_RAIL:
+    Sign: tne.item.detector_rail.sign
+    Buy: tne.item.detector_rail.buy
+    Sell: tne.item.detector_rail.sell
+    Names:
+    - DetectorRail
+    - Detector Rail
+  PISTON_STICKY_BASE:
+    Sign: tne.item.piston_sticky_base.sign
+    Buy: tne.item.piston_sticky_base.buy
+    Sell: tne.item.piston_sticky_base.sell
+    Names:
+    - PistonStickyBase
+    - Piston Sticky Base
+  WEB:
+    Sign: tne.item.web.sign
+    Buy: tne.item.web.buy
+    Sell: tne.item.web.sell
+    Names:
+    - Web
+  LONG_GRASS:
+    Sign: tne.item.long_grass.sign
+    Buy: tne.item.long_grass.buy
+    Sell: tne.item.long_grass.sell
+    Names:
+    - LongGrass
+    - Long Grass
+  DEAD_BUSH:
+    Sign: tne.item.dead_bush.sign
+    Buy: tne.item.dead_bush.buy
+    Sell: tne.item.dead_bush.sell
+    Names:
+    - DeadBush
+    - Dead Bush
+  PISTON_BASE:
+    Sign: tne.item.piston_base.sign
+    Buy: tne.item.piston_base.buy
+    Sell: tne.item.piston_base.sell
+    Names:
+    - PistonBase
+    - Piston Base
+  PISTON_EXTENSION:
+    Sign: tne.item.piston_extension.sign
+    Buy: tne.item.piston_extension.buy
+    Sell: tne.item.piston_extension.sell
+    Names:
+    - PistonExtension
+    - Piston Extension
+  WOOL:
+    Sign: tne.item.wool.sign
+    Buy: tne.item.wool.buy
+    Sell: tne.item.wool.sell
+    Names:
+    - Wool
+  PISTON_MOVING_PIECE:
+    Sign: tne.item.piston_moving_piece.sign
+    Buy: tne.item.piston_moving_piece.buy
+    Sell: tne.item.piston_moving_piece.sell
+    Names:
+    - PistonMovingPiece
+    - Piston Moving Piece
+  YELLOW_FLOWER:
+    Sign: tne.item.yellow_flower.sign
+    Buy: tne.item.yellow_flower.buy
+    Sell: tne.item.yellow_flower.sell
+    Names:
+    - YellowFlower
+    - Yellow Flower
+  RED_ROSE:
+    Sign: tne.item.red_rose.sign
+    Buy: tne.item.red_rose.buy
+    Sell: tne.item.red_rose.sell
+    Names:
+    - RedRose
+    - Red Rose
+  BROWN_MUSHROOM:
+    Sign: tne.item.brown_mushroom.sign
+    Buy: tne.item.brown_mushroom.buy
+    Sell: tne.item.brown_mushroom.sell
+    Names:
+    - BrownMushroom
+    - Brown Mushroom
+  RED_MUSHROOM:
+    Sign: tne.item.red_mushroom.sign
+    Buy: tne.item.red_mushroom.buy
+    Sell: tne.item.red_mushroom.sell
+    Names:
+    - RedMushroom
+    - Red Mushroom
+  GOLD_BLOCK:
+    Sign: tne.item.gold_block.sign
+    Buy: tne.item.gold_block.buy
+    Sell: tne.item.gold_block.sell
+    Names:
+    - GoldBlock
+    - Gold Block
+  IRON_BLOCK:
+    Sign: tne.item.iron_block.sign
+    Buy: tne.item.iron_block.buy
+    Sell: tne.item.iron_block.sell
+    Names:
+    - IronBlock
+    - Iron Block
+  DOUBLE_STEP:
+    Sign: tne.item.double_step.sign
+    Buy: tne.item.double_step.buy
+    Sell: tne.item.double_step.sell
+    Names:
+    - DoubleStep
+    - Double Step
+  STEP:
+    Sign: tne.item.step.sign
+    Buy: tne.item.step.buy
+    Sell: tne.item.step.sell
+    Names:
+    - Step
+  BRICK:
+    Sign: tne.item.brick.sign
+    Buy: tne.item.brick.buy
+    Sell: tne.item.brick.sell
+    Names:
+    - Brick
+  TNT:
+    Sign: tne.item.tnt.sign
+    Buy: tne.item.tnt.buy
+    Sell: tne.item.tnt.sell
+    Names:
+    - Tnt
+  BOOKSHELF:
+    Sign: tne.item.bookshelf.sign
+    Buy: tne.item.bookshelf.buy
+    Sell: tne.item.bookshelf.sell
+    Names:
+    - Bookshelf
+  MOSSY_COBBLESTONE:
+    Sign: tne.item.mossy_cobblestone.sign
+    Buy: tne.item.mossy_cobblestone.buy
+    Sell: tne.item.mossy_cobblestone.sell
+    Names:
+    - MossyCobblestone
+    - Mossy Cobblestone
+  OBSIDIAN:
+    Sign: tne.item.obsidian.sign
+    Buy: tne.item.obsidian.buy
+    Sell: tne.item.obsidian.sell
+    Names:
+    - Obsidian
+  TORCH:
+    Sign: tne.item.torch.sign
+    Buy: tne.item.torch.buy
+    Sell: tne.item.torch.sell
+    Names:
+    - Torch
+  FIRE:
+    Sign: tne.item.fire.sign
+    Buy: tne.item.fire.buy
+    Sell: tne.item.fire.sell
+    Names:
+    - Fire
+  MOB_SPAWNER:
+    Sign: tne.item.mob_spawner.sign
+    Buy: tne.item.mob_spawner.buy
+    Sell: tne.item.mob_spawner.sell
+    Names:
+    - MobSpawner
+    - Mob Spawner
+  WOOD_STAIRS:
+    Sign: tne.item.wood_stairs.sign
+    Buy: tne.item.wood_stairs.buy
+    Sell: tne.item.wood_stairs.sell
+    Names:
+    - WoodStairs
+    - Wood Stairs
+  CHEST:
+    Sign: tne.item.chest.sign
+    Buy: tne.item.chest.buy
+    Sell: tne.item.chest.sell
+    Names:
+    - Chest
+  REDSTONE_WIRE:
+    Sign: tne.item.redstone_wire.sign
+    Buy: tne.item.redstone_wire.buy
+    Sell: tne.item.redstone_wire.sell
+    Names:
+    - RedstoneWire
+    - Redstone Wire
+  DIAMOND_ORE:
+    Sign: tne.item.diamond_ore.sign
+    Buy: tne.item.diamond_ore.buy
+    Sell: tne.item.diamond_ore.sell
+    Names:
+    - DiamondOre
+    - Diamond Ore
+  DIAMOND_BLOCK:
+    Sign: tne.item.diamond_block.sign
+    Buy: tne.item.diamond_block.buy
+    Sell: tne.item.diamond_block.sell
+    Names:
+    - DiamondBlock
+    - Diamond Block
+  WORKBENCH:
+    Sign: tne.item.workbench.sign
+    Buy: tne.item.workbench.buy
+    Sell: tne.item.workbench.sell
+    Names:
+    - Workbench
+  CROPS:
+    Sign: tne.item.crops.sign
+    Buy: tne.item.crops.buy
+    Sell: tne.item.crops.sell
+    Names:
+    - Crops
+  SOIL:
+    Sign: tne.item.soil.sign
+    Buy: tne.item.soil.buy
+    Sell: tne.item.soil.sell
+    Names:
+    - Soil
+  FURNACE:
+    Sign: tne.item.furnace.sign
+    Buy: tne.item.furnace.buy
+    Sell: tne.item.furnace.sell
+    Names:
+    - Furnace
+  BURNING_FURNACE:
+    Sign: tne.item.burning_furnace.sign
+    Buy: tne.item.burning_furnace.buy
+    Sell: tne.item.burning_furnace.sell
+    Names:
+    - BurningFurnace
+    - Burning Furnace
+  SIGN_POST:
+    Sign: tne.item.sign_post.sign
+    Buy: tne.item.sign_post.buy
+    Sell: tne.item.sign_post.sell
+    Names:
+    - SignPost
+    - Sign Post
+  WOODEN_DOOR:
+    Sign: tne.item.wooden_door.sign
+    Buy: tne.item.wooden_door.buy
+    Sell: tne.item.wooden_door.sell
+    Names:
+    - WoodenDoor
+    - Wooden Door
+  LADDER:
+    Sign: tne.item.ladder.sign
+    Buy: tne.item.ladder.buy
+    Sell: tne.item.ladder.sell
+    Names:
+    - Ladder
+  RAILS:
+    Sign: tne.item.rails.sign
+    Buy: tne.item.rails.buy
+    Sell: tne.item.rails.sell
+    Names:
+    - Rails
+  COBBLESTONE_STAIRS:
+    Sign: tne.item.cobblestone_stairs.sign
+    Buy: tne.item.cobblestone_stairs.buy
+    Sell: tne.item.cobblestone_stairs.sell
+    Names:
+    - CobblestoneStairs
+    - Cobblestone Stairs
+  WALL_SIGN:
+    Sign: tne.item.wall_sign.sign
+    Buy: tne.item.wall_sign.buy
+    Sell: tne.item.wall_sign.sell
+    Names:
+    - WallSign
+    - Wall Sign
+  LEVER:
+    Sign: tne.item.lever.sign
+    Buy: tne.item.lever.buy
+    Sell: tne.item.lever.sell
+    Names:
+    - Lever
+  STONE_PLATE:
+    Sign: tne.item.stone_plate.sign
+    Buy: tne.item.stone_plate.buy
+    Sell: tne.item.stone_plate.sell
+    Names:
+    - StonePlate
+    - Stone Plate
+  IRON_DOOR_BLOCK:
+    Sign: tne.item.iron_door_block.sign
+    Buy: tne.item.iron_door_block.buy
+    Sell: tne.item.iron_door_block.sell
+    Names:
+    - IronDoorBlock
+    - Iron Door Block
+  WOOD_PLATE:
+    Sign: tne.item.wood_plate.sign
+    Buy: tne.item.wood_plate.buy
+    Sell: tne.item.wood_plate.sell
+    Names:
+    - WoodPlate
+    - Wood Plate
+  REDSTONE_ORE:
+    Sign: tne.item.redstone_ore.sign
+    Buy: tne.item.redstone_ore.buy
+    Sell: tne.item.redstone_ore.sell
+    Names:
+    - RedstoneOre
+    - Redstone Ore
+  GLOWING_REDSTONE_ORE:
+    Sign: tne.item.glowing_redstone_ore.sign
+    Buy: tne.item.glowing_redstone_ore.buy
+    Sell: tne.item.glowing_redstone_ore.sell
+    Names:
+    - GlowingRedstoneOre
+    - Glowing Redstone Ore
+  REDSTONE_TORCH_OFF:
+    Sign: tne.item.redstone_torch_off.sign
+    Buy: tne.item.redstone_torch_off.buy
+    Sell: tne.item.redstone_torch_off.sell
+    Names:
+    - RedstoneTorchOff
+    - Redstone Torch Off
+  REDSTONE_TORCH_ON:
+    Sign: tne.item.redstone_torch_on.sign
+    Buy: tne.item.redstone_torch_on.buy
+    Sell: tne.item.redstone_torch_on.sell
+    Names:
+    - RedstoneTorchOn
+    - Redstone Torch On
+  STONE_BUTTON:
+    Sign: tne.item.stone_button.sign
+    Buy: tne.item.stone_button.buy
+    Sell: tne.item.stone_button.sell
+    Names:
+    - StoneButton
+    - Stone Button
+  SNOW:
+    Sign: tne.item.snow.sign
+    Buy: tne.item.snow.buy
+    Sell: tne.item.snow.sell
+    Names:
+    - Snow
+  ICE:
+    Sign: tne.item.ice.sign
+    Buy: tne.item.ice.buy
+    Sell: tne.item.ice.sell
+    Names:
+    - Ice
+  SNOW_BLOCK:
+    Sign: tne.item.snow_block.sign
+    Buy: tne.item.snow_block.buy
+    Sell: tne.item.snow_block.sell
+    Names:
+    - SnowBlock
+    - Snow Block
+  CACTUS:
+    Sign: tne.item.cactus.sign
+    Buy: tne.item.cactus.buy
+    Sell: tne.item.cactus.sell
+    Names:
+    - Cactus
+  CLAY:
+    Sign: tne.item.clay.sign
+    Buy: tne.item.clay.buy
+    Sell: tne.item.clay.sell
+    Names:
+    - Clay
+  SUGAR_CANE_BLOCK:
+    Sign: tne.item.sugar_cane_block.sign
+    Buy: tne.item.sugar_cane_block.buy
+    Sell: tne.item.sugar_cane_block.sell
+    Names:
+    - SugarCaneBlock
+    - Sugar Cane Block
+  JUKEBOX:
+    Sign: tne.item.jukebox.sign
+    Buy: tne.item.jukebox.buy
+    Sell: tne.item.jukebox.sell
+    Names:
+    - Jukebox
+  FENCE:
+    Sign: tne.item.fence.sign
+    Buy: tne.item.fence.buy
+    Sell: tne.item.fence.sell
+    Names:
+    - Fence
+  PUMPKIN:
+    Sign: tne.item.pumpkin.sign
+    Buy: tne.item.pumpkin.buy
+    Sell: tne.item.pumpkin.sell
+    Names:
+    - Pumpkin
+  NETHERRACK:
+    Sign: tne.item.netherrack.sign
+    Buy: tne.item.netherrack.buy
+    Sell: tne.item.netherrack.sell
+    Names:
+    - Netherrack
+  SOUL_SAND:
+    Sign: tne.item.soul_sand.sign
+    Buy: tne.item.soul_sand.buy
+    Sell: tne.item.soul_sand.sell
+    Names:
+    - SoulSand
+    - Soul Sand
+  GLOWSTONE:
+    Sign: tne.item.glowstone.sign
+    Buy: tne.item.glowstone.buy
+    Sell: tne.item.glowstone.sell
+    Names:
+    - Glowstone
+  PORTAL:
+    Sign: tne.item.portal.sign
+    Buy: tne.item.portal.buy
+    Sell: tne.item.portal.sell
+    Names:
+    - Portal
+  JACK_O_LANTERN:
+    Sign: tne.item.jack_o_lantern.sign
+    Buy: tne.item.jack_o_lantern.buy
+    Sell: tne.item.jack_o_lantern.sell
+    Names:
+    - JackOLantern
+    - Jack O Lantern
+  CAKE_BLOCK:
+    Sign: tne.item.cake_block.sign
+    Buy: tne.item.cake_block.buy
+    Sell: tne.item.cake_block.sell
+    Names:
+    - CakeBlock
+    - Cake Block
+  DIODE_BLOCK_OFF:
+    Sign: tne.item.diode_block_off.sign
+    Buy: tne.item.diode_block_off.buy
+    Sell: tne.item.diode_block_off.sell
+    Names:
+    - DiodeBlockOff
+    - Diode Block Off
+  DIODE_BLOCK_ON:
+    Sign: tne.item.diode_block_on.sign
+    Buy: tne.item.diode_block_on.buy
+    Sell: tne.item.diode_block_on.sell
+    Names:
+    - DiodeBlockOn
+    - Diode Block On
+  STAINED_GLASS:
+    Sign: tne.item.stained_glass.sign
+    Buy: tne.item.stained_glass.buy
+    Sell: tne.item.stained_glass.sell
+    Names:
+    - StainedGlass
+    - Stained Glass
+  TRAP_DOOR:
+    Sign: tne.item.trap_door.sign
+    Buy: tne.item.trap_door.buy
+    Sell: tne.item.trap_door.sell
+    Names:
+    - TrapDoor
+    - Trap Door
+  MONSTER_EGGS:
+    Sign: tne.item.monster_eggs.sign
+    Buy: tne.item.monster_eggs.buy
+    Sell: tne.item.monster_eggs.sell
+    Names:
+    - MonsterEggs
+    - Monster Eggs
+  SMOOTH_BRICK:
+    Sign: tne.item.smooth_brick.sign
+    Buy: tne.item.smooth_brick.buy
+    Sell: tne.item.smooth_brick.sell
+    Names:
+    - SmoothBrick
+    - Smooth Brick
+  HUGE_MUSHROOM_1:
+    Sign: tne.item.huge_mushroom_1.sign
+    Buy: tne.item.huge_mushroom_1.buy
+    Sell: tne.item.huge_mushroom_1.sell
+    Names:
+    - HugeMushroom1
+    - Huge Mushroom 1
+  HUGE_MUSHROOM_2:
+    Sign: tne.item.huge_mushroom_2.sign
+    Buy: tne.item.huge_mushroom_2.buy
+    Sell: tne.item.huge_mushroom_2.sell
+    Names:
+    - HugeMushroom2
+    - Huge Mushroom 2
+  IRON_FENCE:
+    Sign: tne.item.iron_fence.sign
+    Buy: tne.item.iron_fence.buy
+    Sell: tne.item.iron_fence.sell
+    Names:
+    - IronFence
+    - Iron Fence
+  THIN_GLASS:
+    Sign: tne.item.thin_glass.sign
+    Buy: tne.item.thin_glass.buy
+    Sell: tne.item.thin_glass.sell
+    Names:
+    - ThinGlass
+    - Thin Glass
+  MELON_BLOCK:
+    Sign: tne.item.melon_block.sign
+    Buy: tne.item.melon_block.buy
+    Sell: tne.item.melon_block.sell
+    Names:
+    - MelonBlock
+    - Melon Block
+  PUMPKIN_STEM:
+    Sign: tne.item.pumpkin_stem.sign
+    Buy: tne.item.pumpkin_stem.buy
+    Sell: tne.item.pumpkin_stem.sell
+    Names:
+    - PumpkinStem
+    - Pumpkin Stem
+  MELON_STEM:
+    Sign: tne.item.melon_stem.sign
+    Buy: tne.item.melon_stem.buy
+    Sell: tne.item.melon_stem.sell
+    Names:
+    - MelonStem
+    - Melon Stem
+  VINE:
+    Sign: tne.item.vine.sign
+    Buy: tne.item.vine.buy
+    Sell: tne.item.vine.sell
+    Names:
+    - Vine
+  FENCE_GATE:
+    Sign: tne.item.fence_gate.sign
+    Buy: tne.item.fence_gate.buy
+    Sell: tne.item.fence_gate.sell
+    Names:
+    - FenceGate
+    - Fence Gate
+  BRICK_STAIRS:
+    Sign: tne.item.brick_stairs.sign
+    Buy: tne.item.brick_stairs.buy
+    Sell: tne.item.brick_stairs.sell
+    Names:
+    - BrickStairs
+    - Brick Stairs
+  SMOOTH_STAIRS:
+    Sign: tne.item.smooth_stairs.sign
+    Buy: tne.item.smooth_stairs.buy
+    Sell: tne.item.smooth_stairs.sell
+    Names:
+    - SmoothStairs
+    - Smooth Stairs
+  MYCEL:
+    Sign: tne.item.mycel.sign
+    Buy: tne.item.mycel.buy
+    Sell: tne.item.mycel.sell
+    Names:
+    - Mycel
+  WATER_LILY:
+    Sign: tne.item.water_lily.sign
+    Buy: tne.item.water_lily.buy
+    Sell: tne.item.water_lily.sell
+    Names:
+    - WaterLily
+    - Water Lily
+  NETHER_BRICK:
+    Sign: tne.item.nether_brick.sign
+    Buy: tne.item.nether_brick.buy
+    Sell: tne.item.nether_brick.sell
+    Names:
+    - NetherBrick
+    - Nether Brick
+  NETHER_FENCE:
+    Sign: tne.item.nether_fence.sign
+    Buy: tne.item.nether_fence.buy
+    Sell: tne.item.nether_fence.sell
+    Names:
+    - NetherFence
+    - Nether Fence
+  NETHER_BRICK_STAIRS:
+    Sign: tne.item.nether_brick_stairs.sign
+    Buy: tne.item.nether_brick_stairs.buy
+    Sell: tne.item.nether_brick_stairs.sell
+    Names:
+    - NetherBrickStairs
+    - Nether Brick Stairs
+  NETHER_WARTS:
+    Sign: tne.item.nether_warts.sign
+    Buy: tne.item.nether_warts.buy
+    Sell: tne.item.nether_warts.sell
+    Names:
+    - NetherWarts
+    - Nether Warts
+  ENCHANTMENT_TABLE:
+    Sign: tne.item.enchantment_table.sign
+    Buy: tne.item.enchantment_table.buy
+    Sell: tne.item.enchantment_table.sell
+    Names:
+    - EnchantmentTable
+    - Enchantment Table
+  BREWING_STAND:
+    Sign: tne.item.brewing_stand.sign
+    Buy: tne.item.brewing_stand.buy
+    Sell: tne.item.brewing_stand.sell
+    Names:
+    - BrewingStand
+    - Brewing Stand
+  CAULDRON:
+    Sign: tne.item.cauldron.sign
+    Buy: tne.item.cauldron.buy
+    Sell: tne.item.cauldron.sell
+    Names:
+    - Cauldron
+  ENDER_PORTAL:
+    Sign: tne.item.ender_portal.sign
+    Buy: tne.item.ender_portal.buy
+    Sell: tne.item.ender_portal.sell
+    Names:
+    - EnderPortal
+    - Ender Portal
+  ENDER_PORTAL_FRAME:
+    Sign: tne.item.ender_portal_frame.sign
+    Buy: tne.item.ender_portal_frame.buy
+    Sell: tne.item.ender_portal_frame.sell
+    Names:
+    - EnderPortalFrame
+    - Ender Portal Frame
+  ENDER_STONE:
+    Sign: tne.item.ender_stone.sign
+    Buy: tne.item.ender_stone.buy
+    Sell: tne.item.ender_stone.sell
+    Names:
+    - EnderStone
+    - Ender Stone
+  DRAGON_EGG:
+    Sign: tne.item.dragon_egg.sign
+    Buy: tne.item.dragon_egg.buy
+    Sell: tne.item.dragon_egg.sell
+    Names:
+    - DragonEgg
+    - Dragon Egg
+  REDSTONE_LAMP_OFF:
+    Sign: tne.item.redstone_lamp_off.sign
+    Buy: tne.item.redstone_lamp_off.buy
+    Sell: tne.item.redstone_lamp_off.sell
+    Names:
+    - RedstoneLampOff
+    - Redstone Lamp Off
+  REDSTONE_LAMP_ON:
+    Sign: tne.item.redstone_lamp_on.sign
+    Buy: tne.item.redstone_lamp_on.buy
+    Sell: tne.item.redstone_lamp_on.sell
+    Names:
+    - RedstoneLampOn
+    - Redstone Lamp On
+  WOOD_DOUBLE_STEP:
+    Sign: tne.item.wood_double_step.sign
+    Buy: tne.item.wood_double_step.buy
+    Sell: tne.item.wood_double_step.sell
+    Names:
+    - WoodDoubleStep
+    - Wood Double Step
+  WOOD_STEP:
+    Sign: tne.item.wood_step.sign
+    Buy: tne.item.wood_step.buy
+    Sell: tne.item.wood_step.sell
+    Names:
+    - WoodStep
+    - Wood Step
+  COCOA:
+    Sign: tne.item.cocoa.sign
+    Buy: tne.item.cocoa.buy
+    Sell: tne.item.cocoa.sell
+    Names:
+    - Cocoa
+  SANDSTONE_STAIRS:
+    Sign: tne.item.sandstone_stairs.sign
+    Buy: tne.item.sandstone_stairs.buy
+    Sell: tne.item.sandstone_stairs.sell
+    Names:
+    - SandstoneStairs
+    - Sandstone Stairs
+  EMERALD_ORE:
+    Sign: tne.item.emerald_ore.sign
+    Buy: tne.item.emerald_ore.buy
+    Sell: tne.item.emerald_ore.sell
+    Names:
+    - EmeraldOre
+    - Emerald Ore
+  ENDER_CHEST:
+    Sign: tne.item.ender_chest.sign
+    Buy: tne.item.ender_chest.buy
+    Sell: tne.item.ender_chest.sell
+    Names:
+    - EnderChest
+    - Ender Chest
+  TRIPWIRE_HOOK:
+    Sign: tne.item.tripwire_hook.sign
+    Buy: tne.item.tripwire_hook.buy
+    Sell: tne.item.tripwire_hook.sell
+    Names:
+    - TripwireHook
+    - Tripwire Hook
+  TRIPWIRE:
+    Sign: tne.item.tripwire.sign
+    Buy: tne.item.tripwire.buy
+    Sell: tne.item.tripwire.sell
+    Names:
+    - Tripwire
+  EMERALD_BLOCK:
+    Sign: tne.item.emerald_block.sign
+    Buy: tne.item.emerald_block.buy
+    Sell: tne.item.emerald_block.sell
+    Names:
+    - EmeraldBlock
+    - Emerald Block
+  SPRUCE_WOOD_STAIRS:
+    Sign: tne.item.spruce_wood_stairs.sign
+    Buy: tne.item.spruce_wood_stairs.buy
+    Sell: tne.item.spruce_wood_stairs.sell
+    Names:
+    - SpruceWoodStairs
+    - Spruce Wood Stairs
+  BIRCH_WOOD_STAIRS:
+    Sign: tne.item.birch_wood_stairs.sign
+    Buy: tne.item.birch_wood_stairs.buy
+    Sell: tne.item.birch_wood_stairs.sell
+    Names:
+    - BirchWoodStairs
+    - Birch Wood Stairs
+  JUNGLE_WOOD_STAIRS:
+    Sign: tne.item.jungle_wood_stairs.sign
+    Buy: tne.item.jungle_wood_stairs.buy
+    Sell: tne.item.jungle_wood_stairs.sell
+    Names:
+    - JungleWoodStairs
+    - Jungle Wood Stairs
+  COMMAND:
+    Sign: tne.item.command.sign
+    Buy: tne.item.command.buy
+    Sell: tne.item.command.sell
+    Names:
+    - Command
+  BEACON:
+    Sign: tne.item.beacon.sign
+    Buy: tne.item.beacon.buy
+    Sell: tne.item.beacon.sell
+    Names:
+    - Beacon
+  COBBLE_WALL:
+    Sign: tne.item.cobble_wall.sign
+    Buy: tne.item.cobble_wall.buy
+    Sell: tne.item.cobble_wall.sell
+    Names:
+    - CobbleWall
+    - Cobble Wall
+  FLOWER_POT:
+    Sign: tne.item.flower_pot.sign
+    Buy: tne.item.flower_pot.buy
+    Sell: tne.item.flower_pot.sell
+    Names:
+    - FlowerPot
+    - Flower Pot
+  CARROT:
+    Sign: tne.item.carrot.sign
+    Buy: tne.item.carrot.buy
+    Sell: tne.item.carrot.sell
+    Names:
+    - Carrot
+  POTATO:
+    Sign: tne.item.potato.sign
+    Buy: tne.item.potato.buy
+    Sell: tne.item.potato.sell
+    Names:
+    - Potato
+  WOOD_BUTTON:
+    Sign: tne.item.wood_button.sign
+    Buy: tne.item.wood_button.buy
+    Sell: tne.item.wood_button.sell
+    Names:
+    - WoodButton
+    - Wood Button
+  SKULL:
+    Sign: tne.item.skull.sign
+    Buy: tne.item.skull.buy
+    Sell: tne.item.skull.sell
+    Names:
+    - Skull
+  ANVIL:
+    Sign: tne.item.anvil.sign
+    Buy: tne.item.anvil.buy
+    Sell: tne.item.anvil.sell
+    Names:
+    - Anvil
+  TRAPPED_CHEST:
+    Sign: tne.item.trapped_chest.sign
+    Buy: tne.item.trapped_chest.buy
+    Sell: tne.item.trapped_chest.sell
+    Names:
+    - TrappedChest
+    - Trapped Chest
+  GOLD_PLATE:
+    Sign: tne.item.gold_plate.sign
+    Buy: tne.item.gold_plate.buy
+    Sell: tne.item.gold_plate.sell
+    Names:
+    - GoldPlate
+    - Gold Plate
+  IRON_PLATE:
+    Sign: tne.item.iron_plate.sign
+    Buy: tne.item.iron_plate.buy
+    Sell: tne.item.iron_plate.sell
+    Names:
+    - IronPlate
+    - Iron Plate
+  REDSTONE_COMPARATOR_OFF:
+    Sign: tne.item.redstone_comparator_off.sign
+    Buy: tne.item.redstone_comparator_off.buy
+    Sell: tne.item.redstone_comparator_off.sell
+    Names:
+    - RedstoneComparatorOff
+    - Redstone Comparator Off
+  REDSTONE_COMPARATOR_ON:
+    Sign: tne.item.redstone_comparator_on.sign
+    Buy: tne.item.redstone_comparator_on.buy
+    Sell: tne.item.redstone_comparator_on.sell
+    Names:
+    - RedstoneComparatorOn
+    - Redstone Comparator On
+  DAYLIGHT_DETECTOR:
+    Sign: tne.item.daylight_detector.sign
+    Buy: tne.item.daylight_detector.buy
+    Sell: tne.item.daylight_detector.sell
+    Names:
+    - DaylightDetector
+    - Daylight Detector
+  REDSTONE_BLOCK:
+    Sign: tne.item.redstone_block.sign
+    Buy: tne.item.redstone_block.buy
+    Sell: tne.item.redstone_block.sell
+    Names:
+    - RedstoneBlock
+    - Redstone Block
+  QUARTZ_ORE:
+    Sign: tne.item.quartz_ore.sign
+    Buy: tne.item.quartz_ore.buy
+    Sell: tne.item.quartz_ore.sell
+    Names:
+    - QuartzOre
+    - Quartz Ore
+  HOPPER:
+    Sign: tne.item.hopper.sign
+    Buy: tne.item.hopper.buy
+    Sell: tne.item.hopper.sell
+    Names:
+    - Hopper
+  QUARTZ_BLOCK:
+    Sign: tne.item.quartz_block.sign
+    Buy: tne.item.quartz_block.buy
+    Sell: tne.item.quartz_block.sell
+    Names:
+    - QuartzBlock
+    - Quartz Block
+  QUARTZ_STAIRS:
+    Sign: tne.item.quartz_stairs.sign
+    Buy: tne.item.quartz_stairs.buy
+    Sell: tne.item.quartz_stairs.sell
+    Names:
+    - QuartzStairs
+    - Quartz Stairs
+  ACTIVATOR_RAIL:
+    Sign: tne.item.activator_rail.sign
+    Buy: tne.item.activator_rail.buy
+    Sell: tne.item.activator_rail.sell
+    Names:
+    - ActivatorRail
+    - Activator Rail
+  DROPPER:
+    Sign: tne.item.dropper.sign
+    Buy: tne.item.dropper.buy
+    Sell: tne.item.dropper.sell
+    Names:
+    - Dropper
+  STAINED_CLAY:
+    Sign: tne.item.stained_clay.sign
+    Buy: tne.item.stained_clay.buy
+    Sell: tne.item.stained_clay.sell
+    Names:
+    - StainedClay
+    - Stained Clay
+  STAINED_GLASS_PANE:
+    Sign: tne.item.stained_glass_pane.sign
+    Buy: tne.item.stained_glass_pane.buy
+    Sell: tne.item.stained_glass_pane.sell
+    Names:
+    - StainedGlassPane
+    - Stained Glass Pane
+  LEAVES_2:
+    Sign: tne.item.leaves_2.sign
+    Buy: tne.item.leaves_2.buy
+    Sell: tne.item.leaves_2.sell
+    Names:
+    - Leaves2
+    - Leaves 2
+  LOG_2:
+    Sign: tne.item.log_2.sign
+    Buy: tne.item.log_2.buy
+    Sell: tne.item.log_2.sell
+    Names:
+    - Log2
+    - Log 2
+  ACACIA_STAIRS:
+    Sign: tne.item.acacia_stairs.sign
+    Buy: tne.item.acacia_stairs.buy
+    Sell: tne.item.acacia_stairs.sell
+    Names:
+    - AcaciaStairs
+    - Acacia Stairs
+  DARK_OAK_STAIRS:
+    Sign: tne.item.dark_oak_stairs.sign
+    Buy: tne.item.dark_oak_stairs.buy
+    Sell: tne.item.dark_oak_stairs.sell
+    Names:
+    - DarkOakStairs
+    - Dark Oak Stairs
+  SLIME_BLOCK:
+    Sign: tne.item.slime_block.sign
+    Buy: tne.item.slime_block.buy
+    Sell: tne.item.slime_block.sell
+    Names:
+    - SlimeBlock
+    - Slime Block
+  BARRIER:
+    Sign: tne.item.barrier.sign
+    Buy: tne.item.barrier.buy
+    Sell: tne.item.barrier.sell
+    Names:
+    - Barrier
+  IRON_TRAPDOOR:
+    Sign: tne.item.iron_trapdoor.sign
+    Buy: tne.item.iron_trapdoor.buy
+    Sell: tne.item.iron_trapdoor.sell
+    Names:
+    - IronTrapdoor
+    - Iron Trapdoor
+  PRISMARINE:
+    Sign: tne.item.prismarine.sign
+    Buy: tne.item.prismarine.buy
+    Sell: tne.item.prismarine.sell
+    Names:
+    - Prismarine
+  SEA_LANTERN:
+    Sign: tne.item.sea_lantern.sign
+    Buy: tne.item.sea_lantern.buy
+    Sell: tne.item.sea_lantern.sell
+    Names:
+    - SeaLantern
+    - Sea Lantern
+  HAY_BLOCK:
+    Sign: tne.item.hay_block.sign
+    Buy: tne.item.hay_block.buy
+    Sell: tne.item.hay_block.sell
+    Names:
+    - HayBlock
+    - Hay Block
+  CARPET:
+    Sign: tne.item.carpet.sign
+    Buy: tne.item.carpet.buy
+    Sell: tne.item.carpet.sell
+    Names:
+    - Carpet
+  HARD_CLAY:
+    Sign: tne.item.hard_clay.sign
+    Buy: tne.item.hard_clay.buy
+    Sell: tne.item.hard_clay.sell
+    Names:
+    - HardClay
+    - Hard Clay
+  COAL_BLOCK:
+    Sign: tne.item.coal_block.sign
+    Buy: tne.item.coal_block.buy
+    Sell: tne.item.coal_block.sell
+    Names:
+    - CoalBlock
+    - Coal Block
+  PACKED_ICE:
+    Sign: tne.item.packed_ice.sign
+    Buy: tne.item.packed_ice.buy
+    Sell: tne.item.packed_ice.sell
+    Names:
+    - PackedIce
+    - Packed Ice
+  DOUBLE_PLANT:
+    Sign: tne.item.double_plant.sign
+    Buy: tne.item.double_plant.buy
+    Sell: tne.item.double_plant.sell
+    Names:
+    - DoublePlant
+    - Double Plant
+  STANDING_BANNER:
+    Sign: tne.item.standing_banner.sign
+    Buy: tne.item.standing_banner.buy
+    Sell: tne.item.standing_banner.sell
+    Names:
+    - StandingBanner
+    - Standing Banner
+  WALL_BANNER:
+    Sign: tne.item.wall_banner.sign
+    Buy: tne.item.wall_banner.buy
+    Sell: tne.item.wall_banner.sell
+    Names:
+    - WallBanner
+    - Wall Banner
+  DAYLIGHT_DETECTOR_INVERTED:
+    Sign: tne.item.daylight_detector_inverted.sign
+    Buy: tne.item.daylight_detector_inverted.buy
+    Sell: tne.item.daylight_detector_inverted.sell
+    Names:
+    - DaylightDetectorInverted
+    - Daylight Detector Inverted
+  RED_SANDSTONE:
+    Sign: tne.item.red_sandstone.sign
+    Buy: tne.item.red_sandstone.buy
+    Sell: tne.item.red_sandstone.sell
+    Names:
+    - RedSandstone
+    - Red Sandstone
+  RED_SANDSTONE_STAIRS:
+    Sign: tne.item.red_sandstone_stairs.sign
+    Buy: tne.item.red_sandstone_stairs.buy
+    Sell: tne.item.red_sandstone_stairs.sell
+    Names:
+    - RedSandstoneStairs
+    - Red Sandstone Stairs
+  DOUBLE_STONE_SLAB2:
+    Sign: tne.item.double_stone_slab2.sign
+    Buy: tne.item.double_stone_slab2.buy
+    Sell: tne.item.double_stone_slab2.sell
+    Names:
+    - DoubleStoneSlab2
+    - Double Stone Slab2
+  STONE_SLAB2:
+    Sign: tne.item.stone_slab2.sign
+    Buy: tne.item.stone_slab2.buy
+    Sell: tne.item.stone_slab2.sell
+    Names:
+    - StoneSlab2
+    - Stone Slab2
+  SPRUCE_FENCE_GATE:
+    Sign: tne.item.spruce_fence_gate.sign
+    Buy: tne.item.spruce_fence_gate.buy
+    Sell: tne.item.spruce_fence_gate.sell
+    Names:
+    - SpruceFenceGate
+    - Spruce Fence Gate
+  BIRCH_FENCE_GATE:
+    Sign: tne.item.birch_fence_gate.sign
+    Buy: tne.item.birch_fence_gate.buy
+    Sell: tne.item.birch_fence_gate.sell
+    Names:
+    - BirchFenceGate
+    - Birch Fence Gate
+  JUNGLE_FENCE_GATE:
+    Sign: tne.item.jungle_fence_gate.sign
+    Buy: tne.item.jungle_fence_gate.buy
+    Sell: tne.item.jungle_fence_gate.sell
+    Names:
+    - JungleFenceGate
+    - Jungle Fence Gate
+  DARK_OAK_FENCE_GATE:
+    Sign: tne.item.dark_oak_fence_gate.sign
+    Buy: tne.item.dark_oak_fence_gate.buy
+    Sell: tne.item.dark_oak_fence_gate.sell
+    Names:
+    - DarkOakFenceGate
+    - Dark Oak Fence Gate
+  ACACIA_FENCE_GATE:
+    Sign: tne.item.acacia_fence_gate.sign
+    Buy: tne.item.acacia_fence_gate.buy
+    Sell: tne.item.acacia_fence_gate.sell
+    Names:
+    - AcaciaFenceGate
+    - Acacia Fence Gate
+  SPRUCE_FENCE:
+    Sign: tne.item.spruce_fence.sign
+    Buy: tne.item.spruce_fence.buy
+    Sell: tne.item.spruce_fence.sell
+    Names:
+    - SpruceFence
+    - Spruce Fence
+  BIRCH_FENCE:
+    Sign: tne.item.birch_fence.sign
+    Buy: tne.item.birch_fence.buy
+    Sell: tne.item.birch_fence.sell
+    Names:
+    - BirchFence
+    - Birch Fence
+  JUNGLE_FENCE:
+    Sign: tne.item.jungle_fence.sign
+    Buy: tne.item.jungle_fence.buy
+    Sell: tne.item.jungle_fence.sell
+    Names:
+    - JungleFence
+    - Jungle Fence
+  DARK_OAK_FENCE:
+    Sign: tne.item.dark_oak_fence.sign
+    Buy: tne.item.dark_oak_fence.buy
+    Sell: tne.item.dark_oak_fence.sell
+    Names:
+    - DarkOakFence
+    - Dark Oak Fence
+  ACACIA_FENCE:
+    Sign: tne.item.acacia_fence.sign
+    Buy: tne.item.acacia_fence.buy
+    Sell: tne.item.acacia_fence.sell
+    Names:
+    - AcaciaFence
+    - Acacia Fence
+  SPRUCE_DOOR:
+    Sign: tne.item.spruce_door.sign
+    Buy: tne.item.spruce_door.buy
+    Sell: tne.item.spruce_door.sell
+    Names:
+    - SpruceDoor
+    - Spruce Door
+  BIRCH_DOOR:
+    Sign: tne.item.birch_door.sign
+    Buy: tne.item.birch_door.buy
+    Sell: tne.item.birch_door.sell
+    Names:
+    - BirchDoor
+    - Birch Door
+  JUNGLE_DOOR:
+    Sign: tne.item.jungle_door.sign
+    Buy: tne.item.jungle_door.buy
+    Sell: tne.item.jungle_door.sell
+    Names:
+    - JungleDoor
+    - Jungle Door
+  ACACIA_DOOR:
+    Sign: tne.item.acacia_door.sign
+    Buy: tne.item.acacia_door.buy
+    Sell: tne.item.acacia_door.sell
+    Names:
+    - AcaciaDoor
+    - Acacia Door
+  DARK_OAK_DOOR:
+    Sign: tne.item.dark_oak_door.sign
+    Buy: tne.item.dark_oak_door.buy
+    Sell: tne.item.dark_oak_door.sell
+    Names:
+    - DarkOakDoor
+    - Dark Oak Door
+  END_ROD:
+    Sign: tne.item.end_rod.sign
+    Buy: tne.item.end_rod.buy
+    Sell: tne.item.end_rod.sell
+    Names:
+    - EndRod
+    - End Rod
+  CHORUS_PLANT:
+    Sign: tne.item.chorus_plant.sign
+    Buy: tne.item.chorus_plant.buy
+    Sell: tne.item.chorus_plant.sell
+    Names:
+    - ChorusPlant
+    - Chorus Plant
+  CHORUS_FLOWER:
+    Sign: tne.item.chorus_flower.sign
+    Buy: tne.item.chorus_flower.buy
+    Sell: tne.item.chorus_flower.sell
+    Names:
+    - ChorusFlower
+    - Chorus Flower
+  PURPUR_BLOCK:
+    Sign: tne.item.purpur_block.sign
+    Buy: tne.item.purpur_block.buy
+    Sell: tne.item.purpur_block.sell
+    Names:
+    - PurpurBlock
+    - Purpur Block
+  PURPUR_PILLAR:
+    Sign: tne.item.purpur_pillar.sign
+    Buy: tne.item.purpur_pillar.buy
+    Sell: tne.item.purpur_pillar.sell
+    Names:
+    - PurpurPillar
+    - Purpur Pillar
+  PURPUR_STAIRS:
+    Sign: tne.item.purpur_stairs.sign
+    Buy: tne.item.purpur_stairs.buy
+    Sell: tne.item.purpur_stairs.sell
+    Names:
+    - PurpurStairs
+    - Purpur Stairs
+  PURPUR_DOUBLE_SLAB:
+    Sign: tne.item.purpur_double_slab.sign
+    Buy: tne.item.purpur_double_slab.buy
+    Sell: tne.item.purpur_double_slab.sell
+    Names:
+    - PurpurDoubleSlab
+    - Purpur Double Slab
+  PURPUR_SLAB:
+    Sign: tne.item.purpur_slab.sign
+    Buy: tne.item.purpur_slab.buy
+    Sell: tne.item.purpur_slab.sell
+    Names:
+    - PurpurSlab
+    - Purpur Slab
+  END_BRICKS:
+    Sign: tne.item.end_bricks.sign
+    Buy: tne.item.end_bricks.buy
+    Sell: tne.item.end_bricks.sell
+    Names:
+    - EndBricks
+    - End Bricks
+  BEETROOT_BLOCK:
+    Sign: tne.item.beetroot_block.sign
+    Buy: tne.item.beetroot_block.buy
+    Sell: tne.item.beetroot_block.sell
+    Names:
+    - BeetrootBlock
+    - Beetroot Block
+  GRASS_PATH:
+    Sign: tne.item.grass_path.sign
+    Buy: tne.item.grass_path.buy
+    Sell: tne.item.grass_path.sell
+    Names:
+    - GrassPath
+    - Grass Path
+  END_GATEWAY:
+    Sign: tne.item.end_gateway.sign
+    Buy: tne.item.end_gateway.buy
+    Sell: tne.item.end_gateway.sell
+    Names:
+    - EndGateway
+    - End Gateway
+  COMMAND_REPEATING:
+    Sign: tne.item.command_repeating.sign
+    Buy: tne.item.command_repeating.buy
+    Sell: tne.item.command_repeating.sell
+    Names:
+    - CommandRepeating
+    - Command Repeating
+  COMMAND_CHAIN:
+    Sign: tne.item.command_chain.sign
+    Buy: tne.item.command_chain.buy
+    Sell: tne.item.command_chain.sell
+    Names:
+    - CommandChain
+    - Command Chain
+  FROSTED_ICE:
+    Sign: tne.item.frosted_ice.sign
+    Buy: tne.item.frosted_ice.buy
+    Sell: tne.item.frosted_ice.sell
+    Names:
+    - FrostedIce
+    - Frosted Ice
+  MAGMA:
+    Sign: tne.item.magma.sign
+    Buy: tne.item.magma.buy
+    Sell: tne.item.magma.sell
+    Names:
+    - Magma
+  NETHER_WART_BLOCK:
+    Sign: tne.item.nether_wart_block.sign
+    Buy: tne.item.nether_wart_block.buy
+    Sell: tne.item.nether_wart_block.sell
+    Names:
+    - NetherWartBlock
+    - Nether Wart Block
+  RED_NETHER_BRICK:
+    Sign: tne.item.red_nether_brick.sign
+    Buy: tne.item.red_nether_brick.buy
+    Sell: tne.item.red_nether_brick.sell
+    Names:
+    - RedNetherBrick
+    - Red Nether Brick
+  BONE_BLOCK:
+    Sign: tne.item.bone_block.sign
+    Buy: tne.item.bone_block.buy
+    Sell: tne.item.bone_block.sell
+    Names:
+    - BoneBlock
+    - Bone Block
+  STRUCTURE_VOID:
+    Sign: tne.item.structure_void.sign
+    Buy: tne.item.structure_void.buy
+    Sell: tne.item.structure_void.sell
+    Names:
+    - StructureVoid
+    - Structure Void
+  OBSERVER:
+    Sign: tne.item.observer.sign
+    Buy: tne.item.observer.buy
+    Sell: tne.item.observer.sell
+    Names:
+    - Observer
+  WHITE_SHULKER_BOX:
+    Sign: tne.item.white_shulker_box.sign
+    Buy: tne.item.white_shulker_box.buy
+    Sell: tne.item.white_shulker_box.sell
+    Names:
+    - WhiteShulkerBox
+    - White Shulker Box
+  ORANGE_SHULKER_BOX:
+    Sign: tne.item.orange_shulker_box.sign
+    Buy: tne.item.orange_shulker_box.buy
+    Sell: tne.item.orange_shulker_box.sell
+    Names:
+    - OrangeShulkerBox
+    - Orange Shulker Box
+  MAGENTA_SHULKER_BOX:
+    Sign: tne.item.magenta_shulker_box.sign
+    Buy: tne.item.magenta_shulker_box.buy
+    Sell: tne.item.magenta_shulker_box.sell
+    Names:
+    - MagentaShulkerBox
+    - Magenta Shulker Box
+  LIGHT_BLUE_SHULKER_BOX:
+    Sign: tne.item.light_blue_shulker_box.sign
+    Buy: tne.item.light_blue_shulker_box.buy
+    Sell: tne.item.light_blue_shulker_box.sell
+    Names:
+    - LightBlueShulkerBox
+    - Light Blue Shulker Box
+  YELLOW_SHULKER_BOX:
+    Sign: tne.item.yellow_shulker_box.sign
+    Buy: tne.item.yellow_shulker_box.buy
+    Sell: tne.item.yellow_shulker_box.sell
+    Names:
+    - YellowShulkerBox
+    - Yellow Shulker Box
+  LIME_SHULKER_BOX:
+    Sign: tne.item.lime_shulker_box.sign
+    Buy: tne.item.lime_shulker_box.buy
+    Sell: tne.item.lime_shulker_box.sell
+    Names:
+    - LimeShulkerBox
+    - Lime Shulker Box
+  PINK_SHULKER_BOX:
+    Sign: tne.item.pink_shulker_box.sign
+    Buy: tne.item.pink_shulker_box.buy
+    Sell: tne.item.pink_shulker_box.sell
+    Names:
+    - PinkShulkerBox
+    - Pink Shulker Box
+  GRAY_SHULKER_BOX:
+    Sign: tne.item.gray_shulker_box.sign
+    Buy: tne.item.gray_shulker_box.buy
+    Sell: tne.item.gray_shulker_box.sell
+    Names:
+    - GrayShulkerBox
+    - Gray Shulker Box
+  SILVER_SHULKER_BOX:
+    Sign: tne.item.silver_shulker_box.sign
+    Buy: tne.item.silver_shulker_box.buy
+    Sell: tne.item.silver_shulker_box.sell
+    Names:
+    - SilverShulkerBox
+    - Silver Shulker Box
+  CYAN_SHULKER_BOX:
+    Sign: tne.item.cyan_shulker_box.sign
+    Buy: tne.item.cyan_shulker_box.buy
+    Sell: tne.item.cyan_shulker_box.sell
+    Names:
+    - CyanShulkerBox
+    - Cyan Shulker Box
+  PURPLE_SHULKER_BOX:
+    Sign: tne.item.purple_shulker_box.sign
+    Buy: tne.item.purple_shulker_box.buy
+    Sell: tne.item.purple_shulker_box.sell
+    Names:
+    - PurpleShulkerBox
+    - Purple Shulker Box
+  BLUE_SHULKER_BOX:
+    Sign: tne.item.blue_shulker_box.sign
+    Buy: tne.item.blue_shulker_box.buy
+    Sell: tne.item.blue_shulker_box.sell
+    Names:
+    - BlueShulkerBox
+    - Blue Shulker Box
+  BROWN_SHULKER_BOX:
+    Sign: tne.item.brown_shulker_box.sign
+    Buy: tne.item.brown_shulker_box.buy
+    Sell: tne.item.brown_shulker_box.sell
+    Names:
+    - BrownShulkerBox
+    - Brown Shulker Box
+  GREEN_SHULKER_BOX:
+    Sign: tne.item.green_shulker_box.sign
+    Buy: tne.item.green_shulker_box.buy
+    Sell: tne.item.green_shulker_box.sell
+    Names:
+    - GreenShulkerBox
+    - Green Shulker Box
+  RED_SHULKER_BOX:
+    Sign: tne.item.red_shulker_box.sign
+    Buy: tne.item.red_shulker_box.buy
+    Sell: tne.item.red_shulker_box.sell
+    Names:
+    - RedShulkerBox
+    - Red Shulker Box
+  BLACK_SHULKER_BOX:
+    Sign: tne.item.black_shulker_box.sign
+    Buy: tne.item.black_shulker_box.buy
+    Sell: tne.item.black_shulker_box.sell
+    Names:
+    - BlackShulkerBox
+    - Black Shulker Box
+  STRUCTURE_BLOCK:
+    Sign: tne.item.structure_block.sign
+    Buy: tne.item.structure_block.buy
+    Sell: tne.item.structure_block.sell
+    Names:
+    - StructureBlock
+    - Structure Block
+  IRON_SPADE:
+    Sign: tne.item.iron_spade.sign
+    Buy: tne.item.iron_spade.buy
+    Sell: tne.item.iron_spade.sell
+    Names:
+    - IronSpade
+    - Iron Spade
+  IRON_PICKAXE:
+    Sign: tne.item.iron_pickaxe.sign
+    Buy: tne.item.iron_pickaxe.buy
+    Sell: tne.item.iron_pickaxe.sell
+    Names:
+    - IronPickaxe
+    - Iron Pickaxe
+  IRON_AXE:
+    Sign: tne.item.iron_axe.sign
+    Buy: tne.item.iron_axe.buy
+    Sell: tne.item.iron_axe.sell
+    Names:
+    - IronAxe
+    - Iron Axe
+  FLINT_AND_STEEL:
+    Sign: tne.item.flint_and_steel.sign
+    Buy: tne.item.flint_and_steel.buy
+    Sell: tne.item.flint_and_steel.sell
+    Names:
+    - FlintAndSteel
+    - Flint And Steel
+  APPLE:
+    Sign: tne.item.apple.sign
+    Buy: tne.item.apple.buy
+    Sell: tne.item.apple.sell
+    Names:
+    - Apple
+  BOW:
+    Sign: tne.item.bow.sign
+    Buy: tne.item.bow.buy
+    Sell: tne.item.bow.sell
+    Names:
+    - Bow
+  ARROW:
+    Sign: tne.item.arrow.sign
+    Buy: tne.item.arrow.buy
+    Sell: tne.item.arrow.sell
+    Names:
+    - Arrow
+  COAL:
+    Sign: tne.item.coal.sign
+    Buy: tne.item.coal.buy
+    Sell: tne.item.coal.sell
+    Names:
+    - Coal
+  DIAMOND:
+    Sign: tne.item.diamond.sign
+    Buy: tne.item.diamond.buy
+    Sell: tne.item.diamond.sell
+    Names:
+    - Diamond
+  IRON_INGOT:
+    Sign: tne.item.iron_ingot.sign
+    Buy: tne.item.iron_ingot.buy
+    Sell: tne.item.iron_ingot.sell
+    Names:
+    - IronIngot
+    - Iron Ingot
+  GOLD_INGOT:
+    Sign: tne.item.gold_ingot.sign
+    Buy: tne.item.gold_ingot.buy
+    Sell: tne.item.gold_ingot.sell
+    Names:
+    - GoldIngot
+    - Gold Ingot
+  IRON_SWORD:
+    Sign: tne.item.iron_sword.sign
+    Buy: tne.item.iron_sword.buy
+    Sell: tne.item.iron_sword.sell
+    Names:
+    - IronSword
+    - Iron Sword
+  WOOD_SWORD:
+    Sign: tne.item.wood_sword.sign
+    Buy: tne.item.wood_sword.buy
+    Sell: tne.item.wood_sword.sell
+    Names:
+    - WoodSword
+    - Wood Sword
+  WOOD_SPADE:
+    Sign: tne.item.wood_spade.sign
+    Buy: tne.item.wood_spade.buy
+    Sell: tne.item.wood_spade.sell
+    Names:
+    - WoodSpade
+    - Wood Spade
+  WOOD_PICKAXE:
+    Sign: tne.item.wood_pickaxe.sign
+    Buy: tne.item.wood_pickaxe.buy
+    Sell: tne.item.wood_pickaxe.sell
+    Names:
+    - WoodPickaxe
+    - Wood Pickaxe
+  WOOD_AXE:
+    Sign: tne.item.wood_axe.sign
+    Buy: tne.item.wood_axe.buy
+    Sell: tne.item.wood_axe.sell
+    Names:
+    - WoodAxe
+    - Wood Axe
+  STONE_SWORD:
+    Sign: tne.item.stone_sword.sign
+    Buy: tne.item.stone_sword.buy
+    Sell: tne.item.stone_sword.sell
+    Names:
+    - StoneSword
+    - Stone Sword
+  STONE_SPADE:
+    Sign: tne.item.stone_spade.sign
+    Buy: tne.item.stone_spade.buy
+    Sell: tne.item.stone_spade.sell
+    Names:
+    - StoneSpade
+    - Stone Spade
+  STONE_PICKAXE:
+    Sign: tne.item.stone_pickaxe.sign
+    Buy: tne.item.stone_pickaxe.buy
+    Sell: tne.item.stone_pickaxe.sell
+    Names:
+    - StonePickaxe
+    - Stone Pickaxe
+  STONE_AXE:
+    Sign: tne.item.stone_axe.sign
+    Buy: tne.item.stone_axe.buy
+    Sell: tne.item.stone_axe.sell
+    Names:
+    - StoneAxe
+    - Stone Axe
+  DIAMOND_SWORD:
+    Sign: tne.item.diamond_sword.sign
+    Buy: tne.item.diamond_sword.buy
+    Sell: tne.item.diamond_sword.sell
+    Names:
+    - DiamondSword
+    - Diamond Sword
+  DIAMOND_SPADE:
+    Sign: tne.item.diamond_spade.sign
+    Buy: tne.item.diamond_spade.buy
+    Sell: tne.item.diamond_spade.sell
+    Names:
+    - DiamondSpade
+    - Diamond Spade
+  DIAMOND_PICKAXE:
+    Sign: tne.item.diamond_pickaxe.sign
+    Buy: tne.item.diamond_pickaxe.buy
+    Sell: tne.item.diamond_pickaxe.sell
+    Names:
+    - DiamondPickaxe
+    - Diamond Pickaxe
+  DIAMOND_AXE:
+    Sign: tne.item.diamond_axe.sign
+    Buy: tne.item.diamond_axe.buy
+    Sell: tne.item.diamond_axe.sell
+    Names:
+    - DiamondAxe
+    - Diamond Axe
+  STICK:
+    Sign: tne.item.stick.sign
+    Buy: tne.item.stick.buy
+    Sell: tne.item.stick.sell
+    Names:
+    - Stick
+  BOWL:
+    Sign: tne.item.bowl.sign
+    Buy: tne.item.bowl.buy
+    Sell: tne.item.bowl.sell
+    Names:
+    - Bowl
+  MUSHROOM_SOUP:
+    Sign: tne.item.mushroom_soup.sign
+    Buy: tne.item.mushroom_soup.buy
+    Sell: tne.item.mushroom_soup.sell
+    Names:
+    - MushroomSoup
+    - Mushroom Soup
+  GOLD_SWORD:
+    Sign: tne.item.gold_sword.sign
+    Buy: tne.item.gold_sword.buy
+    Sell: tne.item.gold_sword.sell
+    Names:
+    - GoldSword
+    - Gold Sword
+  GOLD_SPADE:
+    Sign: tne.item.gold_spade.sign
+    Buy: tne.item.gold_spade.buy
+    Sell: tne.item.gold_spade.sell
+    Names:
+    - GoldSpade
+    - Gold Spade
+  GOLD_PICKAXE:
+    Sign: tne.item.gold_pickaxe.sign
+    Buy: tne.item.gold_pickaxe.buy
+    Sell: tne.item.gold_pickaxe.sell
+    Names:
+    - GoldPickaxe
+    - Gold Pickaxe
+  GOLD_AXE:
+    Sign: tne.item.gold_axe.sign
+    Buy: tne.item.gold_axe.buy
+    Sell: tne.item.gold_axe.sell
+    Names:
+    - GoldAxe
+    - Gold Axe
+  STRING:
+    Sign: tne.item.string.sign
+    Buy: tne.item.string.buy
+    Sell: tne.item.string.sell
+    Names:
+    - String
+  FEATHER:
+    Sign: tne.item.feather.sign
+    Buy: tne.item.feather.buy
+    Sell: tne.item.feather.sell
+    Names:
+    - Feather
+  SULPHUR:
+    Sign: tne.item.sulphur.sign
+    Buy: tne.item.sulphur.buy
+    Sell: tne.item.sulphur.sell
+    Names:
+    - Sulphur
+  WOOD_HOE:
+    Sign: tne.item.wood_hoe.sign
+    Buy: tne.item.wood_hoe.buy
+    Sell: tne.item.wood_hoe.sell
+    Names:
+    - WoodHoe
+    - Wood Hoe
+  STONE_HOE:
+    Sign: tne.item.stone_hoe.sign
+    Buy: tne.item.stone_hoe.buy
+    Sell: tne.item.stone_hoe.sell
+    Names:
+    - StoneHoe
+    - Stone Hoe
+  IRON_HOE:
+    Sign: tne.item.iron_hoe.sign
+    Buy: tne.item.iron_hoe.buy
+    Sell: tne.item.iron_hoe.sell
+    Names:
+    - IronHoe
+    - Iron Hoe
+  DIAMOND_HOE:
+    Sign: tne.item.diamond_hoe.sign
+    Buy: tne.item.diamond_hoe.buy
+    Sell: tne.item.diamond_hoe.sell
+    Names:
+    - DiamondHoe
+    - Diamond Hoe
+  GOLD_HOE:
+    Sign: tne.item.gold_hoe.sign
+    Buy: tne.item.gold_hoe.buy
+    Sell: tne.item.gold_hoe.sell
+    Names:
+    - GoldHoe
+    - Gold Hoe
+  SEEDS:
+    Sign: tne.item.seeds.sign
+    Buy: tne.item.seeds.buy
+    Sell: tne.item.seeds.sell
+    Names:
+    - Seeds
+  WHEAT:
+    Sign: tne.item.wheat.sign
+    Buy: tne.item.wheat.buy
+    Sell: tne.item.wheat.sell
+    Names:
+    - Wheat
+  BREAD:
+    Sign: tne.item.bread.sign
+    Buy: tne.item.bread.buy
+    Sell: tne.item.bread.sell
+    Names:
+    - Bread
+  LEATHER_HELMET:
+    Sign: tne.item.leather_helmet.sign
+    Buy: tne.item.leather_helmet.buy
+    Sell: tne.item.leather_helmet.sell
+    Names:
+    - LeatherHelmet
+    - Leather Helmet
+  LEATHER_CHESTPLATE:
+    Sign: tne.item.leather_chestplate.sign
+    Buy: tne.item.leather_chestplate.buy
+    Sell: tne.item.leather_chestplate.sell
+    Names:
+    - LeatherChestplate
+    - Leather Chestplate
+  LEATHER_LEGGINGS:
+    Sign: tne.item.leather_leggings.sign
+    Buy: tne.item.leather_leggings.buy
+    Sell: tne.item.leather_leggings.sell
+    Names:
+    - LeatherLeggings
+    - Leather Leggings
+  LEATHER_BOOTS:
+    Sign: tne.item.leather_boots.sign
+    Buy: tne.item.leather_boots.buy
+    Sell: tne.item.leather_boots.sell
+    Names:
+    - LeatherBoots
+    - Leather Boots
+  CHAINMAIL_HELMET:
+    Sign: tne.item.chainmail_helmet.sign
+    Buy: tne.item.chainmail_helmet.buy
+    Sell: tne.item.chainmail_helmet.sell
+    Names:
+    - ChainmailHelmet
+    - Chainmail Helmet
+  CHAINMAIL_CHESTPLATE:
+    Sign: tne.item.chainmail_chestplate.sign
+    Buy: tne.item.chainmail_chestplate.buy
+    Sell: tne.item.chainmail_chestplate.sell
+    Names:
+    - ChainmailChestplate
+    - Chainmail Chestplate
+  CHAINMAIL_LEGGINGS:
+    Sign: tne.item.chainmail_leggings.sign
+    Buy: tne.item.chainmail_leggings.buy
+    Sell: tne.item.chainmail_leggings.sell
+    Names:
+    - ChainmailLeggings
+    - Chainmail Leggings
+  CHAINMAIL_BOOTS:
+    Sign: tne.item.chainmail_boots.sign
+    Buy: tne.item.chainmail_boots.buy
+    Sell: tne.item.chainmail_boots.sell
+    Names:
+    - ChainmailBoots
+    - Chainmail Boots
+  IRON_HELMET:
+    Sign: tne.item.iron_helmet.sign
+    Buy: tne.item.iron_helmet.buy
+    Sell: tne.item.iron_helmet.sell
+    Names:
+    - IronHelmet
+    - Iron Helmet
+  IRON_CHESTPLATE:
+    Sign: tne.item.iron_chestplate.sign
+    Buy: tne.item.iron_chestplate.buy
+    Sell: tne.item.iron_chestplate.sell
+    Names:
+    - IronChestplate
+    - Iron Chestplate
+  IRON_LEGGINGS:
+    Sign: tne.item.iron_leggings.sign
+    Buy: tne.item.iron_leggings.buy
+    Sell: tne.item.iron_leggings.sell
+    Names:
+    - IronLeggings
+    - Iron Leggings
+  IRON_BOOTS:
+    Sign: tne.item.iron_boots.sign
+    Buy: tne.item.iron_boots.buy
+    Sell: tne.item.iron_boots.sell
+    Names:
+    - IronBoots
+    - Iron Boots
+  DIAMOND_HELMET:
+    Sign: tne.item.diamond_helmet.sign
+    Buy: tne.item.diamond_helmet.buy
+    Sell: tne.item.diamond_helmet.sell
+    Names:
+    - DiamondHelmet
+    - Diamond Helmet
+  DIAMOND_CHESTPLATE:
+    Sign: tne.item.diamond_chestplate.sign
+    Buy: tne.item.diamond_chestplate.buy
+    Sell: tne.item.diamond_chestplate.sell
+    Names:
+    - DiamondChestplate
+    - Diamond Chestplate
+  DIAMOND_LEGGINGS:
+    Sign: tne.item.diamond_leggings.sign
+    Buy: tne.item.diamond_leggings.buy
+    Sell: tne.item.diamond_leggings.sell
+    Names:
+    - DiamondLeggings
+    - Diamond Leggings
+  DIAMOND_BOOTS:
+    Sign: tne.item.diamond_boots.sign
+    Buy: tne.item.diamond_boots.buy
+    Sell: tne.item.diamond_boots.sell
+    Names:
+    - DiamondBoots
+    - Diamond Boots
+  GOLD_HELMET:
+    Sign: tne.item.gold_helmet.sign
+    Buy: tne.item.gold_helmet.buy
+    Sell: tne.item.gold_helmet.sell
+    Names:
+    - GoldHelmet
+    - Gold Helmet
+  GOLD_CHESTPLATE:
+    Sign: tne.item.gold_chestplate.sign
+    Buy: tne.item.gold_chestplate.buy
+    Sell: tne.item.gold_chestplate.sell
+    Names:
+    - GoldChestplate
+    - Gold Chestplate
+  GOLD_LEGGINGS:
+    Sign: tne.item.gold_leggings.sign
+    Buy: tne.item.gold_leggings.buy
+    Sell: tne.item.gold_leggings.sell
+    Names:
+    - GoldLeggings
+    - Gold Leggings
+  GOLD_BOOTS:
+    Sign: tne.item.gold_boots.sign
+    Buy: tne.item.gold_boots.buy
+    Sell: tne.item.gold_boots.sell
+    Names:
+    - GoldBoots
+    - Gold Boots
+  FLINT:
+    Sign: tne.item.flint.sign
+    Buy: tne.item.flint.buy
+    Sell: tne.item.flint.sell
+    Names:
+    - Flint
+  PORK:
+    Sign: tne.item.pork.sign
+    Buy: tne.item.pork.buy
+    Sell: tne.item.pork.sell
+    Names:
+    - Pork
+  GRILLED_PORK:
+    Sign: tne.item.grilled_pork.sign
+    Buy: tne.item.grilled_pork.buy
+    Sell: tne.item.grilled_pork.sell
+    Names:
+    - GrilledPork
+    - Grilled Pork
+  PAINTING:
+    Sign: tne.item.painting.sign
+    Buy: tne.item.painting.buy
+    Sell: tne.item.painting.sell
+    Names:
+    - Painting
+  GOLDEN_APPLE:
+    Sign: tne.item.golden_apple.sign
+    Buy: tne.item.golden_apple.buy
+    Sell: tne.item.golden_apple.sell
+    Names:
+    - GoldenApple
+    - Golden Apple
+  SIGN:
+    Sign: tne.item.sign.sign
+    Buy: tne.item.sign.buy
+    Sell: tne.item.sign.sell
+    Names:
+    - Sign
+  WOOD_DOOR:
+    Sign: tne.item.wood_door.sign
+    Buy: tne.item.wood_door.buy
+    Sell: tne.item.wood_door.sell
+    Names:
+    - WoodDoor
+    - Wood Door
+  BUCKET:
+    Sign: tne.item.bucket.sign
+    Buy: tne.item.bucket.buy
+    Sell: tne.item.bucket.sell
+    Names:
+    - Bucket
+  WATER_BUCKET:
+    Sign: tne.item.water_bucket.sign
+    Buy: tne.item.water_bucket.buy
+    Sell: tne.item.water_bucket.sell
+    Names:
+    - WaterBucket
+    - Water Bucket
+  LAVA_BUCKET:
+    Sign: tne.item.lava_bucket.sign
+    Buy: tne.item.lava_bucket.buy
+    Sell: tne.item.lava_bucket.sell
+    Names:
+    - LavaBucket
+    - Lava Bucket
+  MINECART:
+    Sign: tne.item.minecart.sign
+    Buy: tne.item.minecart.buy
+    Sell: tne.item.minecart.sell
+    Names:
+    - Minecart
+  SADDLE:
+    Sign: tne.item.saddle.sign
+    Buy: tne.item.saddle.buy
+    Sell: tne.item.saddle.sell
+    Names:
+    - Saddle
+  IRON_DOOR:
+    Sign: tne.item.iron_door.sign
+    Buy: tne.item.iron_door.buy
+    Sell: tne.item.iron_door.sell
+    Names:
+    - IronDoor
+    - Iron Door
+  REDSTONE:
+    Sign: tne.item.redstone.sign
+    Buy: tne.item.redstone.buy
+    Sell: tne.item.redstone.sell
+    Names:
+    - Redstone
+  SNOW_BALL:
+    Sign: tne.item.snow_ball.sign
+    Buy: tne.item.snow_ball.buy
+    Sell: tne.item.snow_ball.sell
+    Names:
+    - SnowBall
+    - Snow Ball
+  BOAT:
+    Sign: tne.item.boat.sign
+    Buy: tne.item.boat.buy
+    Sell: tne.item.boat.sell
+    Names:
+    - Boat
+  LEATHER:
+    Sign: tne.item.leather.sign
+    Buy: tne.item.leather.buy
+    Sell: tne.item.leather.sell
+    Names:
+    - Leather
+  MILK_BUCKET:
+    Sign: tne.item.milk_bucket.sign
+    Buy: tne.item.milk_bucket.buy
+    Sell: tne.item.milk_bucket.sell
+    Names:
+    - MilkBucket
+    - Milk Bucket
+  CLAY_BRICK:
+    Sign: tne.item.clay_brick.sign
+    Buy: tne.item.clay_brick.buy
+    Sell: tne.item.clay_brick.sell
+    Names:
+    - ClayBrick
+    - Clay Brick
+  CLAY_BALL:
+    Sign: tne.item.clay_ball.sign
+    Buy: tne.item.clay_ball.buy
+    Sell: tne.item.clay_ball.sell
+    Names:
+    - ClayBall
+    - Clay Ball
+  SUGAR_CANE:
+    Sign: tne.item.sugar_cane.sign
+    Buy: tne.item.sugar_cane.buy
+    Sell: tne.item.sugar_cane.sell
+    Names:
+    - SugarCane
+    - Sugar Cane
+  PAPER:
+    Sign: tne.item.paper.sign
+    Buy: tne.item.paper.buy
+    Sell: tne.item.paper.sell
+    Names:
+    - Paper
+  BOOK:
+    Sign: tne.item.book.sign
+    Buy: tne.item.book.buy
+    Sell: tne.item.book.sell
+    Names:
+    - Book
+  SLIME_BALL:
+    Sign: tne.item.slime_ball.sign
+    Buy: tne.item.slime_ball.buy
+    Sell: tne.item.slime_ball.sell
+    Names:
+    - SlimeBall
+    - Slime Ball
+  STORAGE_MINECART:
+    Sign: tne.item.storage_minecart.sign
+    Buy: tne.item.storage_minecart.buy
+    Sell: tne.item.storage_minecart.sell
+    Names:
+    - StorageMinecart
+    - Storage Minecart
+  POWERED_MINECART:
+    Sign: tne.item.powered_minecart.sign
+    Buy: tne.item.powered_minecart.buy
+    Sell: tne.item.powered_minecart.sell
+    Names:
+    - PoweredMinecart
+    - Powered Minecart
+  EGG:
+    Sign: tne.item.egg.sign
+    Buy: tne.item.egg.buy
+    Sell: tne.item.egg.sell
+    Names:
+    - Egg
+  COMPASS:
+    Sign: tne.item.compass.sign
+    Buy: tne.item.compass.buy
+    Sell: tne.item.compass.sell
+    Names:
+    - Compass
+  FISHING_ROD:
+    Sign: tne.item.fishing_rod.sign
+    Buy: tne.item.fishing_rod.buy
+    Sell: tne.item.fishing_rod.sell
+    Names:
+    - FishingRod
+    - Fishing Rod
+  WATCH:
+    Sign: tne.item.watch.sign
+    Buy: tne.item.watch.buy
+    Sell: tne.item.watch.sell
+    Names:
+    - Watch
+  GLOWSTONE_DUST:
+    Sign: tne.item.glowstone_dust.sign
+    Buy: tne.item.glowstone_dust.buy
+    Sell: tne.item.glowstone_dust.sell
+    Names:
+    - GlowstoneDust
+    - Glowstone Dust
+  RAW_FISH:
+    Sign: tne.item.raw_fish.sign
+    Buy: tne.item.raw_fish.buy
+    Sell: tne.item.raw_fish.sell
+    Names:
+    - RawFish
+    - Raw Fish
+  COOKED_FISH:
+    Sign: tne.item.cooked_fish.sign
+    Buy: tne.item.cooked_fish.buy
+    Sell: tne.item.cooked_fish.sell
+    Names:
+    - CookedFish
+    - Cooked Fish
+  INK_SACK:
+    Sign: tne.item.ink_sack.sign
+    Buy: tne.item.ink_sack.buy
+    Sell: tne.item.ink_sack.sell
+    Names:
+    - InkSack
+    - Ink Sack
+  BONE:
+    Sign: tne.item.bone.sign
+    Buy: tne.item.bone.buy
+    Sell: tne.item.bone.sell
+    Names:
+    - Bone
+  SUGAR:
+    Sign: tne.item.sugar.sign
+    Buy: tne.item.sugar.buy
+    Sell: tne.item.sugar.sell
+    Names:
+    - Sugar
+  CAKE:
+    Sign: tne.item.cake.sign
+    Buy: tne.item.cake.buy
+    Sell: tne.item.cake.sell
+    Names:
+    - Cake
+  BED:
+    Sign: tne.item.bed.sign
+    Buy: tne.item.bed.buy
+    Sell: tne.item.bed.sell
+    Names:
+    - Bed
+  DIODE:
+    Sign: tne.item.diode.sign
+    Buy: tne.item.diode.buy
+    Sell: tne.item.diode.sell
+    Names:
+    - Diode
+  COOKIE:
+    Sign: tne.item.cookie.sign
+    Buy: tne.item.cookie.buy
+    Sell: tne.item.cookie.sell
+    Names:
+    - Cookie
+  MAP:
+    Sign: tne.item.map.sign
+    Buy: tne.item.map.buy
+    Sell: tne.item.map.sell
+    Names:
+    - Map
+  SHEARS:
+    Sign: tne.item.shears.sign
+    Buy: tne.item.shears.buy
+    Sell: tne.item.shears.sell
+    Names:
+    - Shears
+  MELON:
+    Sign: tne.item.melon.sign
+    Buy: tne.item.melon.buy
+    Sell: tne.item.melon.sell
+    Names:
+    - Melon
+  PUMPKIN_SEEDS:
+    Sign: tne.item.pumpkin_seeds.sign
+    Buy: tne.item.pumpkin_seeds.buy
+    Sell: tne.item.pumpkin_seeds.sell
+    Names:
+    - PumpkinSeeds
+    - Pumpkin Seeds
+  MELON_SEEDS:
+    Sign: tne.item.melon_seeds.sign
+    Buy: tne.item.melon_seeds.buy
+    Sell: tne.item.melon_seeds.sell
+    Names:
+    - MelonSeeds
+    - Melon Seeds
+  RAW_BEEF:
+    Sign: tne.item.raw_beef.sign
+    Buy: tne.item.raw_beef.buy
+    Sell: tne.item.raw_beef.sell
+    Names:
+    - RawBeef
+    - Raw Beef
+  COOKED_BEEF:
+    Sign: tne.item.cooked_beef.sign
+    Buy: tne.item.cooked_beef.buy
+    Sell: tne.item.cooked_beef.sell
+    Names:
+    - CookedBeef
+    - Cooked Beef
+  RAW_CHICKEN:
+    Sign: tne.item.raw_chicken.sign
+    Buy: tne.item.raw_chicken.buy
+    Sell: tne.item.raw_chicken.sell
+    Names:
+    - RawChicken
+    - Raw Chicken
+  COOKED_CHICKEN:
+    Sign: tne.item.cooked_chicken.sign
+    Buy: tne.item.cooked_chicken.buy
+    Sell: tne.item.cooked_chicken.sell
+    Names:
+    - CookedChicken
+    - Cooked Chicken
+  ROTTEN_FLESH:
+    Sign: tne.item.rotten_flesh.sign
+    Buy: tne.item.rotten_flesh.buy
+    Sell: tne.item.rotten_flesh.sell
+    Names:
+    - RottenFlesh
+    - Rotten Flesh
+  ENDER_PEARL:
+    Sign: tne.item.ender_pearl.sign
+    Buy: tne.item.ender_pearl.buy
+    Sell: tne.item.ender_pearl.sell
+    Names:
+    - EnderPearl
+    - Ender Pearl
+  BLAZE_ROD:
+    Sign: tne.item.blaze_rod.sign
+    Buy: tne.item.blaze_rod.buy
+    Sell: tne.item.blaze_rod.sell
+    Names:
+    - BlazeRod
+    - Blaze Rod
+  GHAST_TEAR:
+    Sign: tne.item.ghast_tear.sign
+    Buy: tne.item.ghast_tear.buy
+    Sell: tne.item.ghast_tear.sell
+    Names:
+    - GhastTear
+    - Ghast Tear
+  GOLD_NUGGET:
+    Sign: tne.item.gold_nugget.sign
+    Buy: tne.item.gold_nugget.buy
+    Sell: tne.item.gold_nugget.sell
+    Names:
+    - GoldNugget
+    - Gold Nugget
+  NETHER_STALK:
+    Sign: tne.item.nether_stalk.sign
+    Buy: tne.item.nether_stalk.buy
+    Sell: tne.item.nether_stalk.sell
+    Names:
+    - NetherStalk
+    - Nether Stalk
+  POTION:
+    Sign: tne.item.potion.sign
+    Buy: tne.item.potion.buy
+    Sell: tne.item.potion.sell
+    Names:
+    - Potion
+  GLASS_BOTTLE:
+    Sign: tne.item.glass_bottle.sign
+    Buy: tne.item.glass_bottle.buy
+    Sell: tne.item.glass_bottle.sell
+    Names:
+    - GlassBottle
+    - Glass Bottle
+  SPIDER_EYE:
+    Sign: tne.item.spider_eye.sign
+    Buy: tne.item.spider_eye.buy
+    Sell: tne.item.spider_eye.sell
+    Names:
+    - SpiderEye
+    - Spider Eye
+  FERMENTED_SPIDER_EYE:
+    Sign: tne.item.fermented_spider_eye.sign
+    Buy: tne.item.fermented_spider_eye.buy
+    Sell: tne.item.fermented_spider_eye.sell
+    Names:
+    - FermentedSpiderEye
+    - Fermented Spider Eye
+  BLAZE_POWDER:
+    Sign: tne.item.blaze_powder.sign
+    Buy: tne.item.blaze_powder.buy
+    Sell: tne.item.blaze_powder.sell
+    Names:
+    - BlazePowder
+    - Blaze Powder
+  MAGMA_CREAM:
+    Sign: tne.item.magma_cream.sign
+    Buy: tne.item.magma_cream.buy
+    Sell: tne.item.magma_cream.sell
+    Names:
+    - MagmaCream
+    - Magma Cream
+  BREWING_STAND_ITEM:
+    Sign: tne.item.brewing_stand_item.sign
+    Buy: tne.item.brewing_stand_item.buy
+    Sell: tne.item.brewing_stand_item.sell
+    Names:
+    - BrewingStandItem
+    - Brewing Stand Item
+  CAULDRON_ITEM:
+    Sign: tne.item.cauldron_item.sign
+    Buy: tne.item.cauldron_item.buy
+    Sell: tne.item.cauldron_item.sell
+    Names:
+    - CauldronItem
+    - Cauldron Item
+  EYE_OF_ENDER:
+    Sign: tne.item.eye_of_ender.sign
+    Buy: tne.item.eye_of_ender.buy
+    Sell: tne.item.eye_of_ender.sell
+    Names:
+    - EyeOfEnder
+    - Eye Of Ender
+  SPECKLED_MELON:
+    Sign: tne.item.speckled_melon.sign
+    Buy: tne.item.speckled_melon.buy
+    Sell: tne.item.speckled_melon.sell
+    Names:
+    - SpeckledMelon
+    - Speckled Melon
+  MONSTER_EGG:
+    Sign: tne.item.monster_egg.sign
+    Buy: tne.item.monster_egg.buy
+    Sell: tne.item.monster_egg.sell
+    Names:
+    - MonsterEgg
+    - Monster Egg
+  EXP_BOTTLE:
+    Sign: tne.item.exp_bottle.sign
+    Buy: tne.item.exp_bottle.buy
+    Sell: tne.item.exp_bottle.sell
+    Names:
+    - ExpBottle
+    - Exp Bottle
+  FIREBALL:
+    Sign: tne.item.fireball.sign
+    Buy: tne.item.fireball.buy
+    Sell: tne.item.fireball.sell
+    Names:
+    - Fireball
+  BOOK_AND_QUILL:
+    Sign: tne.item.book_and_quill.sign
+    Buy: tne.item.book_and_quill.buy
+    Sell: tne.item.book_and_quill.sell
+    Names:
+    - BookAndQuill
+    - Book And Quill
+  WRITTEN_BOOK:
+    Sign: tne.item.written_book.sign
+    Buy: tne.item.written_book.buy
+    Sell: tne.item.written_book.sell
+    Names:
+    - WrittenBook
+    - Written Book
+  EMERALD:
+    Sign: tne.item.emerald.sign
+    Buy: tne.item.emerald.buy
+    Sell: tne.item.emerald.sell
+    Names:
+    - Emerald
+  ITEM_FRAME:
+    Sign: tne.item.item_frame.sign
+    Buy: tne.item.item_frame.buy
+    Sell: tne.item.item_frame.sell
+    Names:
+    - ItemFrame
+    - Item Frame
+  FLOWER_POT_ITEM:
+    Sign: tne.item.flower_pot_item.sign
+    Buy: tne.item.flower_pot_item.buy
+    Sell: tne.item.flower_pot_item.sell
+    Names:
+    - FlowerPotItem
+    - Flower Pot Item
+  CARROT_ITEM:
+    Sign: tne.item.carrot_item.sign
+    Buy: tne.item.carrot_item.buy
+    Sell: tne.item.carrot_item.sell
+    Names:
+    - CarrotItem
+    - Carrot Item
+  POTATO_ITEM:
+    Sign: tne.item.potato_item.sign
+    Buy: tne.item.potato_item.buy
+    Sell: tne.item.potato_item.sell
+    Names:
+    - PotatoItem
+    - Potato Item
+  BAKED_POTATO:
+    Sign: tne.item.baked_potato.sign
+    Buy: tne.item.baked_potato.buy
+    Sell: tne.item.baked_potato.sell
+    Names:
+    - BakedPotato
+    - Baked Potato
+  POISONOUS_POTATO:
+    Sign: tne.item.poisonous_potato.sign
+    Buy: tne.item.poisonous_potato.buy
+    Sell: tne.item.poisonous_potato.sell
+    Names:
+    - PoisonousPotato
+    - Poisonous Potato
+  EMPTY_MAP:
+    Sign: tne.item.empty_map.sign
+    Buy: tne.item.empty_map.buy
+    Sell: tne.item.empty_map.sell
+    Names:
+    - EmptyMap
+    - Empty Map
+  GOLDEN_CARROT:
+    Sign: tne.item.golden_carrot.sign
+    Buy: tne.item.golden_carrot.buy
+    Sell: tne.item.golden_carrot.sell
+    Names:
+    - GoldenCarrot
+    - Golden Carrot
+  SKULL_ITEM:
+    Sign: tne.item.skull_item.sign
+    Buy: tne.item.skull_item.buy
+    Sell: tne.item.skull_item.sell
+    Names:
+    - SkullItem
+    - Skull Item
+  CARROT_STICK:
+    Sign: tne.item.carrot_stick.sign
+    Buy: tne.item.carrot_stick.buy
+    Sell: tne.item.carrot_stick.sell
+    Names:
+    - CarrotStick
+    - Carrot Stick
+  NETHER_STAR:
+    Sign: tne.item.nether_star.sign
+    Buy: tne.item.nether_star.buy
+    Sell: tne.item.nether_star.sell
+    Names:
+    - NetherStar
+    - Nether Star
+  PUMPKIN_PIE:
+    Sign: tne.item.pumpkin_pie.sign
+    Buy: tne.item.pumpkin_pie.buy
+    Sell: tne.item.pumpkin_pie.sell
+    Names:
+    - PumpkinPie
+    - Pumpkin Pie
+  FIREWORK:
+    Sign: tne.item.firework.sign
+    Buy: tne.item.firework.buy
+    Sell: tne.item.firework.sell
+    Names:
+    - Firework
+  FIREWORK_CHARGE:
+    Sign: tne.item.firework_charge.sign
+    Buy: tne.item.firework_charge.buy
+    Sell: tne.item.firework_charge.sell
+    Names:
+    - FireworkCharge
+    - Firework Charge
+  ENCHANTED_BOOK:
+    Sign: tne.item.enchanted_book.sign
+    Buy: tne.item.enchanted_book.buy
+    Sell: tne.item.enchanted_book.sell
+    Names:
+    - EnchantedBook
+    - Enchanted Book
+  REDSTONE_COMPARATOR:
+    Sign: tne.item.redstone_comparator.sign
+    Buy: tne.item.redstone_comparator.buy
+    Sell: tne.item.redstone_comparator.sell
+    Names:
+    - RedstoneComparator
+    - Redstone Comparator
+  NETHER_BRICK_ITEM:
+    Sign: tne.item.nether_brick_item.sign
+    Buy: tne.item.nether_brick_item.buy
+    Sell: tne.item.nether_brick_item.sell
+    Names:
+    - NetherBrickItem
+    - Nether Brick Item
+  QUARTZ:
+    Sign: tne.item.quartz.sign
+    Buy: tne.item.quartz.buy
+    Sell: tne.item.quartz.sell
+    Names:
+    - Quartz
+  EXPLOSIVE_MINECART:
+    Sign: tne.item.explosive_minecart.sign
+    Buy: tne.item.explosive_minecart.buy
+    Sell: tne.item.explosive_minecart.sell
+    Names:
+    - ExplosiveMinecart
+    - Explosive Minecart
+  HOPPER_MINECART:
+    Sign: tne.item.hopper_minecart.sign
+    Buy: tne.item.hopper_minecart.buy
+    Sell: tne.item.hopper_minecart.sell
+    Names:
+    - HopperMinecart
+    - Hopper Minecart
+  PRISMARINE_SHARD:
+    Sign: tne.item.prismarine_shard.sign
+    Buy: tne.item.prismarine_shard.buy
+    Sell: tne.item.prismarine_shard.sell
+    Names:
+    - PrismarineShard
+    - Prismarine Shard
+  PRISMARINE_CRYSTALS:
+    Sign: tne.item.prismarine_crystals.sign
+    Buy: tne.item.prismarine_crystals.buy
+    Sell: tne.item.prismarine_crystals.sell
+    Names:
+    - PrismarineCrystals
+    - Prismarine Crystals
+  RABBIT:
+    Sign: tne.item.rabbit.sign
+    Buy: tne.item.rabbit.buy
+    Sell: tne.item.rabbit.sell
+    Names:
+    - Rabbit
+  COOKED_RABBIT:
+    Sign: tne.item.cooked_rabbit.sign
+    Buy: tne.item.cooked_rabbit.buy
+    Sell: tne.item.cooked_rabbit.sell
+    Names:
+    - CookedRabbit
+    - Cooked Rabbit
+  RABBIT_STEW:
+    Sign: tne.item.rabbit_stew.sign
+    Buy: tne.item.rabbit_stew.buy
+    Sell: tne.item.rabbit_stew.sell
+    Names:
+    - RabbitStew
+    - Rabbit Stew
+  RABBIT_FOOT:
+    Sign: tne.item.rabbit_foot.sign
+    Buy: tne.item.rabbit_foot.buy
+    Sell: tne.item.rabbit_foot.sell
+    Names:
+    - RabbitFoot
+    - Rabbit Foot
+  RABBIT_HIDE:
+    Sign: tne.item.rabbit_hide.sign
+    Buy: tne.item.rabbit_hide.buy
+    Sell: tne.item.rabbit_hide.sell
+    Names:
+    - RabbitHide
+    - Rabbit Hide
+  ARMOR_STAND:
+    Sign: tne.item.armor_stand.sign
+    Buy: tne.item.armor_stand.buy
+    Sell: tne.item.armor_stand.sell
+    Names:
+    - ArmorStand
+    - Armor Stand
+  IRON_BARDING:
+    Sign: tne.item.iron_barding.sign
+    Buy: tne.item.iron_barding.buy
+    Sell: tne.item.iron_barding.sell
+    Names:
+    - IronBarding
+    - Iron Barding
+  GOLD_BARDING:
+    Sign: tne.item.gold_barding.sign
+    Buy: tne.item.gold_barding.buy
+    Sell: tne.item.gold_barding.sell
+    Names:
+    - GoldBarding
+    - Gold Barding
+  DIAMOND_BARDING:
+    Sign: tne.item.diamond_barding.sign
+    Buy: tne.item.diamond_barding.buy
+    Sell: tne.item.diamond_barding.sell
+    Names:
+    - DiamondBarding
+    - Diamond Barding
+  LEASH:
+    Sign: tne.item.leash.sign
+    Buy: tne.item.leash.buy
+    Sell: tne.item.leash.sell
+    Names:
+    - Leash
+  NAME_TAG:
+    Sign: tne.item.name_tag.sign
+    Buy: tne.item.name_tag.buy
+    Sell: tne.item.name_tag.sell
+    Names:
+    - NameTag
+    - Name Tag
+  COMMAND_MINECART:
+    Sign: tne.item.command_minecart.sign
+    Buy: tne.item.command_minecart.buy
+    Sell: tne.item.command_minecart.sell
+    Names:
+    - CommandMinecart
+    - Command Minecart
+  MUTTON:
+    Sign: tne.item.mutton.sign
+    Buy: tne.item.mutton.buy
+    Sell: tne.item.mutton.sell
+    Names:
+    - Mutton
+  COOKED_MUTTON:
+    Sign: tne.item.cooked_mutton.sign
+    Buy: tne.item.cooked_mutton.buy
+    Sell: tne.item.cooked_mutton.sell
+    Names:
+    - CookedMutton
+    - Cooked Mutton
+  BANNER:
+    Sign: tne.item.banner.sign
+    Buy: tne.item.banner.buy
+    Sell: tne.item.banner.sell
+    Names:
+    - Banner
+  END_CRYSTAL:
+    Sign: tne.item.end_crystal.sign
+    Buy: tne.item.end_crystal.buy
+    Sell: tne.item.end_crystal.sell
+    Names:
+    - EndCrystal
+    - End Crystal
+  SPRUCE_DOOR_ITEM:
+    Sign: tne.item.spruce_door_item.sign
+    Buy: tne.item.spruce_door_item.buy
+    Sell: tne.item.spruce_door_item.sell
+    Names:
+    - SpruceDoorItem
+    - Spruce Door Item
+  BIRCH_DOOR_ITEM:
+    Sign: tne.item.birch_door_item.sign
+    Buy: tne.item.birch_door_item.buy
+    Sell: tne.item.birch_door_item.sell
+    Names:
+    - BirchDoorItem
+    - Birch Door Item
+  JUNGLE_DOOR_ITEM:
+    Sign: tne.item.jungle_door_item.sign
+    Buy: tne.item.jungle_door_item.buy
+    Sell: tne.item.jungle_door_item.sell
+    Names:
+    - JungleDoorItem
+    - Jungle Door Item
+  ACACIA_DOOR_ITEM:
+    Sign: tne.item.acacia_door_item.sign
+    Buy: tne.item.acacia_door_item.buy
+    Sell: tne.item.acacia_door_item.sell
+    Names:
+    - AcaciaDoorItem
+    - Acacia Door Item
+  DARK_OAK_DOOR_ITEM:
+    Sign: tne.item.dark_oak_door_item.sign
+    Buy: tne.item.dark_oak_door_item.buy
+    Sell: tne.item.dark_oak_door_item.sell
+    Names:
+    - DarkOakDoorItem
+    - Dark Oak Door Item
+  CHORUS_FRUIT:
+    Sign: tne.item.chorus_fruit.sign
+    Buy: tne.item.chorus_fruit.buy
+    Sell: tne.item.chorus_fruit.sell
+    Names:
+    - ChorusFruit
+    - Chorus Fruit
+  CHORUS_FRUIT_POPPED:
+    Sign: tne.item.chorus_fruit_popped.sign
+    Buy: tne.item.chorus_fruit_popped.buy
+    Sell: tne.item.chorus_fruit_popped.sell
+    Names:
+    - ChorusFruitPopped
+    - Chorus Fruit Popped
+  BEETROOT:
+    Sign: tne.item.beetroot.sign
+    Buy: tne.item.beetroot.buy
+    Sell: tne.item.beetroot.sell
+    Names:
+    - Beetroot
+  BEETROOT_SEEDS:
+    Sign: tne.item.beetroot_seeds.sign
+    Buy: tne.item.beetroot_seeds.buy
+    Sell: tne.item.beetroot_seeds.sell
+    Names:
+    - BeetrootSeeds
+    - Beetroot Seeds
+  BEETROOT_SOUP:
+    Sign: tne.item.beetroot_soup.sign
+    Buy: tne.item.beetroot_soup.buy
+    Sell: tne.item.beetroot_soup.sell
+    Names:
+    - BeetrootSoup
+    - Beetroot Soup
+  DRAGONS_BREATH:
+    Sign: tne.item.dragons_breath.sign
+    Buy: tne.item.dragons_breath.buy
+    Sell: tne.item.dragons_breath.sell
+    Names:
+    - DragonsBreath
+    - Dragons Breath
+  SPLASH_POTION:
+    Sign: tne.item.splash_potion.sign
+    Buy: tne.item.splash_potion.buy
+    Sell: tne.item.splash_potion.sell
+    Names:
+    - SplashPotion
+    - Splash Potion
+  SPECTRAL_ARROW:
+    Sign: tne.item.spectral_arrow.sign
+    Buy: tne.item.spectral_arrow.buy
+    Sell: tne.item.spectral_arrow.sell
+    Names:
+    - SpectralArrow
+    - Spectral Arrow
+  TIPPED_ARROW:
+    Sign: tne.item.tipped_arrow.sign
+    Buy: tne.item.tipped_arrow.buy
+    Sell: tne.item.tipped_arrow.sell
+    Names:
+    - TippedArrow
+    - Tipped Arrow
+  LINGERING_POTION:
+    Sign: tne.item.lingering_potion.sign
+    Buy: tne.item.lingering_potion.buy
+    Sell: tne.item.lingering_potion.sell
+    Names:
+    - LingeringPotion
+    - Lingering Potion
+  SHIELD:
+    Sign: tne.item.shield.sign
+    Buy: tne.item.shield.buy
+    Sell: tne.item.shield.sell
+    Names:
+    - Shield
+  ELYTRA:
+    Sign: tne.item.elytra.sign
+    Buy: tne.item.elytra.buy
+    Sell: tne.item.elytra.sell
+    Names:
+    - Elytra
+  BOAT_SPRUCE:
+    Sign: tne.item.boat_spruce.sign
+    Buy: tne.item.boat_spruce.buy
+    Sell: tne.item.boat_spruce.sell
+    Names:
+    - BoatSpruce
+    - Boat Spruce
+  BOAT_BIRCH:
+    Sign: tne.item.boat_birch.sign
+    Buy: tne.item.boat_birch.buy
+    Sell: tne.item.boat_birch.sell
+    Names:
+    - BoatBirch
+    - Boat Birch
+  BOAT_JUNGLE:
+    Sign: tne.item.boat_jungle.sign
+    Buy: tne.item.boat_jungle.buy
+    Sell: tne.item.boat_jungle.sell
+    Names:
+    - BoatJungle
+    - Boat Jungle
+  BOAT_ACACIA:
+    Sign: tne.item.boat_acacia.sign
+    Buy: tne.item.boat_acacia.buy
+    Sell: tne.item.boat_acacia.sell
+    Names:
+    - BoatAcacia
+    - Boat Acacia
+  BOAT_DARK_OAK:
+    Sign: tne.item.boat_dark_oak.sign
+    Buy: tne.item.boat_dark_oak.buy
+    Sell: tne.item.boat_dark_oak.sell
+    Names:
+    - BoatDarkOak
+    - Boat Dark Oak
+  TOTEM:
+    Sign: tne.item.totem.sign
+    Buy: tne.item.totem.buy
+    Sell: tne.item.totem.sell
+    Names:
+    - Totem
+  SHULKER_SHELL:
+    Sign: tne.item.shulker_shell.sign
+    Buy: tne.item.shulker_shell.buy
+    Sell: tne.item.shulker_shell.sell
+    Names:
+    - ShulkerShell
+    - Shulker Shell
+  IRON_NUGGET:
+    Sign: tne.item.iron_nugget.sign
+    Buy: tne.item.iron_nugget.buy
+    Sell: tne.item.iron_nugget.sell
+    Names:
+    - IronNugget
+    - Iron Nugget
+  GOLD_RECORD:
+    Sign: tne.item.gold_record.sign
+    Buy: tne.item.gold_record.buy
+    Sell: tne.item.gold_record.sell
+    Names:
+    - GoldRecord
+    - Gold Record
+  GREEN_RECORD:
+    Sign: tne.item.green_record.sign
+    Buy: tne.item.green_record.buy
+    Sell: tne.item.green_record.sell
+    Names:
+    - GreenRecord
+    - Green Record
+  RECORD_3:
+    Sign: tne.item.record_3.sign
+    Buy: tne.item.record_3.buy
+    Sell: tne.item.record_3.sell
+    Names:
+    - Record3
+    - Record 3
+  RECORD_4:
+    Sign: tne.item.record_4.sign
+    Buy: tne.item.record_4.buy
+    Sell: tne.item.record_4.sell
+    Names:
+    - Record4
+    - Record 4
+  RECORD_5:
+    Sign: tne.item.record_5.sign
+    Buy: tne.item.record_5.buy
+    Sell: tne.item.record_5.sell
+    Names:
+    - Record5
+    - Record 5
+  RECORD_6:
+    Sign: tne.item.record_6.sign
+    Buy: tne.item.record_6.buy
+    Sell: tne.item.record_6.sell
+    Names:
+    - Record6
+    - Record 6
+  RECORD_7:
+    Sign: tne.item.record_7.sign
+    Buy: tne.item.record_7.buy
+    Sell: tne.item.record_7.sell
+    Names:
+    - Record7
+    - Record 7
+  RECORD_8:
+    Sign: tne.item.record_8.sign
+    Buy: tne.item.record_8.buy
+    Sell: tne.item.record_8.sell
+    Names:
+    - Record8
+    - Record 8
+  RECORD_9:
+    Sign: tne.item.record_9.sign
+    Buy: tne.item.record_9.buy
+    Sell: tne.item.record_9.sell
+    Names:
+    - Record9
+    - Record 9
+  RECORD_10:
+    Sign: tne.item.record_10.sign
+    Buy: tne.item.record_10.buy
+    Sell: tne.item.record_10.sell
+    Names:
+    - Record10
+    - Record 10
+  RECORD_11:
+    Sign: tne.item.record_11.sign
+    Buy: tne.item.record_11.buy
+    Sell: tne.item.record_11.sell
+    Names:
+    - Record11
+    - Record 11
+  RECORD_12:
+    Sign: tne.item.record_12.sign
+    Buy: tne.item.record_12.buy
+    Sell: tne.item.record_12.sell
+    Names:
+    - Record12
+    - Record 12
