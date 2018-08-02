@@ -21,7 +21,7 @@ block:
   chests: false
   itemPickup: false
   # Could be useful in case a creative player tries to spawn creepers rapidly to kill survival players.
-  spawnEggs: false
+  spawnEggs: true
 
 ## Enable / disable what blocks you are allowed to place.
 block-place-blacklist:
