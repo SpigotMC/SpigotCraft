@@ -30,6 +30,11 @@ block-place-blacklist:
   ### Blocks placing diamond blocks by default.
   blacklist:
   - DIAMOND_BLOCK
+  - IRON_BLOCK
+  - GOLD_BLOCK
+  - DIAMOND_ORE
+  - IRON_ORE
+  - GOLD_ORE
 
 ## Enable / disable what blocks you are allowed to break.
 block-break-blacklist:
