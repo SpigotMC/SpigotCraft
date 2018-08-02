@@ -25,8 +25,8 @@ block:
 
 ## Enable / disable what blocks you are allowed to place.
 block-place-blacklist:
-  enabled: true
-  ### Should be the Material name (1.13 support) for blocks. Use this for reference: http://minecraft-ids.grahamedgecombe.com/
+  enabled: false
+  ### Should be the Material name (1.13 support) for blocks. Use this for reference: https://www.digminecraft.com/lists/item_id_list_pc.php
   ### Blocks placing diamond blocks by default.
   blacklist:
   - DIAMOND_BLOCK
@@ -39,7 +39,7 @@ block-place-blacklist:
 ## Enable / disable what blocks you are allowed to break.
 block-break-blacklist:
   enabled: true
-  ### Should be the numeral IDs for blocks. Use this for reference: http://minecraft-ids.grahamedgecombe.com/
+  ### Should be the numeral IDs for blocks. Use this for reference: https://www.digminecraft.com/lists/item_id_list_pc.php
   ### Blocks breaking diamond blocks by default.
   blacklist:
   - DIAMOND_BLOCK
