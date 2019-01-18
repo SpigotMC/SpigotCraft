@@ -11,5 +11,5 @@ Please fill out the appropriate checkboxes below confirming the testing you have
 
 - [ ] Bug exists on current Vanilla snapshot
 - [ ] Bug does not exist on current Vanilla snapshot
-- [ ] Bug exists on current Spigot version (1.12.2)
-- [ ] Bug does not exist on current Spigot version (1.12.2)
+- [ ] Bug exists on current Spigot version (1.13.2)
+- [ ] Bug does not exist on current Spigot version (1.13.2)
