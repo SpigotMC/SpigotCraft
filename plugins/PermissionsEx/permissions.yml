@@ -1,6 +1,7 @@
 groups:
   Default:
     permissions:
+    - griefprevention.visualizenearbyclaims
     - bukkit.command.tps
     - essentials.gc
     - -minecraft.command.locate
@@ -594,7 +595,7 @@ users:
       name: Pollitoyeye
   116fd1e7-5ad0-4aae-a0f5-cd83ad7446f2:
     group:
-    - Tester
+    - Helper
     options:
       name: GoodAndEvil
   485957ec-732a-4545-87ac-fc9ccf086cf2:
@@ -1674,9 +1675,6 @@ users:
     - Tester
     options:
       name: stifflered
-  maximvdw:
-    group:
-    - Tester
   c7cf950f-543b-4d7c-ad09-ae8e2dacd2d1:
     group:
     - Tester
@@ -1798,9 +1796,6 @@ users:
     - Tester
     options:
       name: XXLuigiMario
-  xknat:
-    group:
-    - Tester
   technerder:
     group:
     - Tester
@@ -2034,9 +2029,6 @@ users:
   ibiza:
     group:
     - Tester
-  shanebee:
-    group:
-    - Tester
   2f07af92-c41e-4186-99dc-5c03606d1400:
     group:
     - Tester
@@ -2050,4 +2042,36 @@ users:
     - Tester
     options:
       name: DeepRobin
+  1748129a-525b-44eb-8fb5-8953d0287507:
+    group:
+    - Helper
+    options:
+      name: ShaneBee
+  8b0fd585-6b4d-43fd-9329-78279e30cba8:
+    group:
+    - Tester
+    options:
+      name: vx8
+  jannyboy11:
+    group:
+    - Tester
+  _itaquito_:
+    group:
+    - Tester
+  escad_:
+    group:
+    - Tester
+  7dcfc130-344a-4719-9fbe-3176bc2075c6:
+    group:
+    - Tester
+    options:
+      name: xknat
+  therealdrawe:
+    group:
+    - Tester
+  3f9820d2-e539-4c63-80a3-1c6af31d7fdd:
+    group:
+    - Tester
+    options:
+      name: Maximvdw
 schema-version: 1

@@ -9,6 +9,8 @@ nick: AwesomeBot
 alt-nicks:
   - '%NICK%_'
   - '%NICK%__'
+# tick interval for attempting to switch back to primary nick. set to 0 to disable.
+alt-nick-timer: 1200
 # login - Your bot's login name
 login: AwesomeName
 # realname
