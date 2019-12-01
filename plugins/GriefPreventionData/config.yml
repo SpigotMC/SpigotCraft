@@ -6,9 +6,9 @@ GriefPrevention:
     world_the_end: -1
   Claims:
     Mode:
-      world_nether: Disabled
-      world_the_end: Disabled
       world: Survival
+      world_the_end: Disabled
+      world_nether: Disabled
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -18,6 +18,8 @@ GriefPrevention:
     LockFenceGates: true
     EnderPearlsRequireAccessTrust: true
     ProtectHorses: true
+    ProtectDonkeys: true
+    ProtectLlamas: true
     InitialBlocks: 1000
     Claim Blocks Accrued Per Hour:
       Default: 500
@@ -32,7 +34,7 @@ GriefPrevention:
     MinimumArea: 100
     MaximumDepth: 0
     InvestigationTool: STICK
-    ModificationTool: WOOD_SPADE
+    ModificationTool: WOODEN_SHOVEL
     Expiration:
       ChestClaimDays: 7
       UnusedClaimDays: 14
@@ -45,20 +47,23 @@ GriefPrevention:
     AllowTrappedInAdminClaims: false
     MaximumNumberOfClaimsPerPlayer: 0
     CreationRequiresWorldGuardBuildPermission: true
-    PortalGenerationRequiresPermission: false
     VillagerTradingRequiresPermission: true
     CommandsRequiringAccessTrust: /sethome
     DeliverManuals: true
     ManualDeliveryDelaySeconds: 30
+    RavagersBreakBlocks: true
+    FireSpreadsInClaims: false
+    FireDamagesInClaims: false
+    LecternReadingRequiresAccessTrust: true
   Spam:
     Enabled: true
     LoginCooldownSeconds: 3
     LoginLogoutNotificationsPerMinute: 5
-    ChatSlashCommands: /me;/tell;/global;/local;/w;/msg;/r;/t
-    WhisperSlashCommands: /tell;/pm;/r;/w;/whisper;/t;/msg
-    WarningMessage: Please reduce your noise level.  Spammers will be punted.
+    ChatSlashCommands: /me;/global;/local
+    WhisperSlashCommands: /tell;/pm;/r;/whisper;/msg
+    WarningMessage: Please reduce your noise level.  Spammers will be banned.
     BanOffenders: false
-    BanMessage: Punted for spam.
+    BanMessage: Banned for spam.
     AllowedIpAddresses: 1.2.3.4; 5.6.7.8
     DeathMessageCooldownSeconds: 60
     Logout Message Delay In Seconds: 0
@@ -76,8 +81,12 @@ GriefPrevention:
       PlayerOwnedClaims: true
       AdministrativeClaims: true
       AdministrativeSubdivisions: true
-    AllowLavaDumpingNearOtherPlayers: true
-    AllowFlintAndSteelNearOtherPlayers: true
+    AllowLavaDumpingNearOtherPlayers:
+      PvPWorlds: true
+      NonPvPWorlds: false
+    AllowFlintAndSteelNearOtherPlayers:
+      PvPWorlds: true
+      NonPvPWorlds: false
     ProtectPetsOutsideLandClaims: false
   Economy:
     ClaimBlocksPurchaseCost: 0.0
@@ -102,16 +111,40 @@ GriefPrevention:
     Worlds: []
     BreakableBlocks:
     - DIRT
+    - GRASS_BLOCK
     - GRASS
-    - LONG_GRASS
+    - FERN
+    - DEAD_BUSH
     - COBBLESTONE
     - GRAVEL
     - SAND
     - GLASS
-    - THIN_GLASS
-    - WOOD
-    - WOOL
+    - GLASS_PANE
+    - OAK_PLANKS
+    - SPRUCE_PLANKS
+    - BIRCH_PLANKS
+    - JUNGLE_PLANKS
+    - ACACIA_PLANKS
+    - DARK_OAK_PLANKS
+    - WHITE_WOOL
+    - ORANGE_WOOL
+    - MAGENTA_WOOL
+    - LIGHT_BLUE_WOOL
+    - YELLOW_WOOL
+    - LIME_WOOL
+    - PINK_WOOL
+    - GRAY_WOOL
+    - LIGHT_GRAY_WOOL
+    - CYAN_WOOL
+    - PURPLE_WOOL
+    - BLUE_WOOL
+    - BROWN_WOOL
+    - GREEN_WOOL
+    - RED_WOOL
+    - BLACK_WOOL
     - SNOW
+    DoorsOpenDelayInSeconds: 300
+    CooldownEndInMinutes: 60
   EndermenMoveBlocks: false
   SilverfishBreakBlocks: false
   CreaturesTrampleCrops: false
@@ -123,12 +156,10 @@ GriefPrevention:
     Password: ''
   UseBanCommand: false
   BanCommandPattern: ban %name% %reason%
-  Mods:
-    BlockIdsRequiringAccessTrust: []
-    BlockIdsRequiringContainerTrust:
-    - 99999:*:Example - ID 99999, all data values.
-    BlockIdsExplodable: []
-    PlayersIgnoringAllClaims: []
+  Advanced:
+    fixNegativeClaimblockAmounts: true
+    ClaimExpirationCheckRate: 60
+    OfflinePlayer_cache_days: 90
   Abridged Logs:
     Days To Keep: 7
     Included Entry Types:
