@@ -1,84 +1,131 @@
-# Please note that REDSTONE_ORE and GLOWING_REDSTONE_ORE are the same blocks, but both are necessary in the list in order for it to work. 
-# |-->  Reason: Touching a redstone block turns it into a glowing redstone ore, and the plugin needs to be able to detect both
-
 # ActivationMode values are as followed:
 # |--> 'SNEAK': Activated upon breaking block whilst sneaking
 # |--> 'STAND': Activated upon breaking block whilst standing up
+# |--> 'ALWAYS': Always active
 
-# Specifying block data values:
-# |--> Simply specify your block ID, and use a semi-colon to promptly place your data value
-# |--> Example: "STONE;1" will specify granite
+# Material values are 1:1 with in-game IDs. The prepending of "minecraft:" is optional
+# To specify states, do so with [brackets]. For example, "minecraft:chest[waterlogged=true]"
+# The above will search for any waterlogged chests. Other states will be ignored when checking.
 
-# For a list of valid material values, please view https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# All tools may have optional tool templates which define a specific item for its category in order to use VeinMiner
+# All values for the template are optional. If not specified, it will not be checked.
+# How templates are checked is based on precedence. All possible precedences are as follows:
+# Precedence: GLOBAL - Only the global template is checked
+# Precedence: CATEGORY_SPECIFIC - Only the category-specific template is checked. If none, it defaults to VeinMiner's original behaviour
+# Precedence: CATEGORY_SPECIFIC_GLOBAL_DEFAULT - The category-specific template is checked first. If it doesn't match, the global template is then checked
+
+# An example of how to create templates is as follows (this goes right in the root of the config as its own option. Don't nest it anywhere)
+# ToolTemplates:
+#   Precedence: CATEGORY_SPECIFIC
+#   Global:
+#     Type: 'stone' <-- This type can be ANY type at all
+#     Name: "&6The VeinMining Stone" <-- Colour codes are supported
+#     Lore:
+#     - "Colours are supported in &8Lore as well!"
+#     - "Here is the second line of lore with &1colour!"
+#   Pickaxe:
+#     Type: 'diamond_pickaxe' <-- This type MUST be one of the tools defined by the Pickaxe category (i.e. wood, stone, gold, iron, etc. pickaxes)
+#     Name: "&cVeinMiner Pickaxe"
 
 MetricsEnabled: false
-ActivationMode: 'SNEAK'
+PerformUpdateChecks: false
+
+ActivationMode: SNEAK
 RepairFriendlyVeinminer: false
 IncludeEdges: true
+SortBlocklistAlphabetically: true
 DisabledWorlds:
 - WorldName
 
 Tools:
   Pickaxe:
     MaxVeinSize: 64
-    UsesDurability: true
   Axe:
     MaxVeinSize: 64
-    UsesDurability: true
   Shovel:
     MaxVeinSize: 64
-    UsesDurability: true
   Hoe:
     MaxVeinSize: 64
-    UsesDurability: true
   Shears:
     MaxVeinSize: 64
-    UsesDurability: true
+  Hand:
+    InheritMaterialsFromAll: false
 
 BlockList:
   Pickaxe:
-    - COAL_ORE
-    - IRON_ORE
-    - GOLD_ORE
-    - LAPIS_ORE
-    - REDSTONE_ORE
-    - GLOWING_REDSTONE_ORE
-    - DIAMOND_ORE
-    - EMERALD_ORE
-    - QUARTZ_ORE
+    - 'minecraft:coal_ore'
+    - 'minecraft:iron_ore'
+    - 'minecraft:gold_ore'
+    - 'minecraft:lapis_ore'
+    - 'minecraft:redstone_ore'
+    - 'minecraft:diamond_ore'
+    - 'minecraft:emerald_ore'
+    - 'minecraft:nether_quartz_ore'
   Axe:
-    - LOG
-    - LOG_2
-    - MELON_BLOCK
-    - PUMPKIN
-    - HUGE_MUSHROOM_1
-    - HUGE_MUSHROOM_2
+    - 'minecraft:acacia_log'
+    - 'minecraft:birch_log'
+    - 'minecraft:dark_oak_log'
+    - 'minecraft:jungle_log'
+    - 'minecraft:oak_log'
+    - 'minecraft:spruce_log'
+    - 'minecraft:acacia_wood'
+    - 'minecraft:birch_wood'
+    - 'minecraft:dark_oak_wood'
+    - 'minecraft:jungle_wood'
+    - 'minecraft:oak_wood'
+    - 'minecraft:spruce_wood'
+    - 'minecraft:melon'
+    - 'minecraft:pumpkin'
+    - 'minecraft:carved_pumpkin'
+    - 'minecraft:red_mushroom_block'
+    - 'minecraft:brown_mushroom_block'
   Shovel:
-    - SAND
-    - GRAVEL
+    - 'minecraft:sand'
+    - 'minecraft:gravel'
   Hoe:
-    - CROPS;7
-    - POTATO;7
-    - CARROT;7
-    - BEETROOT_BLOCK;3
-    - RED_MUSHROOM
-    - BROWN_MUSHROOM
+    - 'minecraft:wheat[age=7]'
+    - 'minecraft:potatoes[age=7]'
+    - 'minecraft:carrots[age=7]'
+    - 'minecraft:beetroots[age=3]'
+    - 'minecraft:red_mushroom'
+    - 'minecraft:brown_mushroom'
   Shears:
-    - WOOL
-    - WEB
-    - LEAVES
-    - LEAVES_2
+    - 'minecraft:black_wool'
+    - 'minecraft:blue_wool'
+    - 'minecraft:brown_wool'
+    - 'minecraft:cyan_wool'
+    - 'minecraft:gray_wool'
+    - 'minecraft:green_wool'
+    - 'minecraft:light_blue_wool'
+    - 'minecraft:light_gray_wool'
+    - 'minecraft:lime_wool'
+    - 'minecraft:magenta_wool'
+    - 'minecraft:orange_wool'
+    - 'minecraft:pink_wool'
+    - 'minecraft:purple_wool'
+    - 'minecraft:red_wool'
+    - 'minecraft:white_wool'
+    - 'minecraft:yellow_wool'
+    - 'minecraft:acacia_leaves'
+    - 'minecraft:birch_leaves'
+    - 'minecraft:dark_oak_leaves'
+    - 'minecraft:jungle_leaves'
+    - 'minecraft:oak_leaves'
+    - 'minecraft:spruce_leaves'
+    - 'minecraft:cobweb'
+  Hand: []
   All:
-    - ICE
-    - PACKED_ICE
+    - 'minecraft:ice'
+    - 'minecraft:packed_ice'
+    - 'minecraft:blue_ice'
     
 Aliases:
-- REDSTONE_ORE,GLOWING_REDSTONE_ORE
-- HUGE_MUSHROOM_1,HUGE_MUSHROOM_2
-- LOG;0,LOG;4,LOG;8,LOG;12
-- LOG;1,LOG;5,LOG;9,LOG;13
-- LOG;2,LOG;6,LOG;10,LOG;14
-- LOG;3,LOG;7,LOG;11,LOG;15
-- LOG_2;0,LOG_2;2,LOG_2;4,LOG_2;6
-- LOG_2;1,LOG_2;3,LOG_2;5,LOG_2;7
-- LONG_GRASS,DOUBLE_PLANT
+- 'minecraft:red_mushroom_block,minecraft:brown_mushroom_block'
+- 'minecraft:grass,minecraft:tall_grass'
+- 'minecraft:pumpkin,minecraft:carved_pumpkin'
+- 'minecraft:acacia_log,minecraft:acacia_wood'
+- 'minecraft:birch_log,minecraft:birch_wood'
+- 'minecraft:dark_oak_log,minecraft:dark_oak_wood'
+- 'minecraft:jungle_log,minecraft:jungle_wood'
+- 'minecraft:oak_log,minecraft:oak_wood'
+- 'minecraft:spruce_log,minecraft:spruce_wood'
