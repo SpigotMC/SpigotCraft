@@ -1,0 +1,4 @@
+# Configuration for the SpigotUpdate system
+# it will inform you about new versions of all plugins which use this updater
+# 'enabled' specifies whether the system is enabled (affects all plugins)
+enabled: false

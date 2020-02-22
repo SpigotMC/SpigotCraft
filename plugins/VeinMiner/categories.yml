@@ -1,0 +1,54 @@
+Axe:
+  MaxVeinSize: 64
+  Items:
+  - 'minecraft:wooden_axe'
+  - 'minecraft:stone_axe'
+  - 'minecraft:golden_axe'
+  - 'minecraft:iron_axe'
+  - 'minecraft:diamond_axe'
+
+Hoe:
+  MaxVeinSize: 64
+  Items:
+  - 'minecraft:wooden_hoe'
+  - 'minecraft:stone_hoe'
+  - 'minecraft:golden_hoe'
+  - 'minecraft:iron_hoe'
+  - 'minecraft:diamond_hoe'
+
+Pickaxe:
+  MaxVeinSize: 64
+  Items:
+  - 'minecraft:wooden_pickaxe'
+  - 'minecraft:stone_pickaxe'
+  - 'minecraft:golden_pickaxe'
+  - 'minecraft:iron_pickaxe'
+  - 'minecraft:diamond_pickaxe'
+
+Shears:
+  MaxVeinSize: 64
+  Items:
+  - 'minecraft:shears'
+
+Shovel:
+  MaxVeinSize: 64
+  Items:
+  - 'minecraft:wooden_shovel'
+  - 'minecraft:stone_shovel'
+  - 'minecraft:golden_shovel'
+  - 'minecraft:iron_shovel'
+  - 'minecraft:diamond_shovel'
+
+# ExampleCategory:
+#   MaxVeinSize: 10
+#   Items:
+#   - 'minecraft:torch'
+#   - 'minecraft:redstone_torch':
+#     Name: "&6My Cool Torch!"
+#     Lore:
+#     - "First line!"
+#     - "&5Second line!"
+#   - 'minecraft:potato':
+#     Name: "&8Special item!"
+#     MaxVeinSize: 128
+#     IncludeEdges: false
