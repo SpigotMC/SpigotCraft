@@ -1,6 +1,8 @@
 groups:
   Default:
     permissions:
+    - multiverse.list.who
+    - multiverse.core.list.who
     - griefprevention.visualizenearbyclaims
     - bukkit.command.tps
     - essentials.gc
@@ -145,6 +147,10 @@ groups:
       prefix: '&f[&6Helper&f] '
   Moderator:
     permissions:
+    - essentials.itemspawn.meta-title
+    - essentials.itemspawn.meta-lore
+    - essentials.enderchest
+    - essentials.feed
     - essentials.skull
     - essentials.joinfullserver
     - ChestShop.admin
@@ -1407,7 +1413,7 @@ users:
       name: ystrike099
   d9ac0934-382c-4030-953a-d3520e31de81:
     group:
-    - Tester
+    - Helper
     options:
       name: klugemonkey
   85abce19-1b92-4a6e-9063-6d832a417c40:
@@ -1931,7 +1937,7 @@ users:
     group:
     - Tester
     options:
-      name: E3N
+      name: test414
   6ccadb8f-18e7-4762-8324-8ea840350347:
     group:
     - Tester
@@ -2114,9 +2120,6 @@ users:
     options:
       name: StealWonders
   noodles_yt:
-    group:
-    - Tester
-  thevernichter1:
     group:
     - Tester
   e23b034b-c2d2-4ae5-ba7a-93fb08de9c69:
@@ -2322,9 +2325,6 @@ users:
   shprqness:
     group:
     - Tester
-  yasinsubasi:
-    group:
-    - Tester
   boomboompower:
     group:
     - Tester
@@ -2339,6 +2339,180 @@ users:
     options:
       name: KraftPlayzMC
   nitome:
+    group:
+    - Tester
+  a680274e-ab83-4f58-b56f-73f9c4f5994a:
+    group:
+    - Tester
+    options:
+      name: Blueeyestar
+  f8170b78-b8ca-49ea-98f8-a9220d59924d:
+    group:
+    - Default
+    options:
+      name: WI5E
+  d9294e83-0893-4769-a771-ef6317fb2ec1:
+    group:
+    - Tester
+    options:
+      name: MxSkillz
+  f41c80ac-acb3-4621-9ee1-26b763c0d83b:
+    group:
+    - Tester
+    options:
+      name: Esquilim
+  158d5b80-69c1-4750-b489-1fbba73522e9:
+    group:
+    - Tester
+    options:
+      name: MiroTcz
+  5903336b-d70f-44f9-82ff-8d1d19ef5ff3:
+    group:
+    - Moderator
+    options:
+      name: SteelPhoenix
+  86f39a70-eda7-44a2-88f8-0ade4e1ec8c0:
+    group:
+    - Tester
+    options:
+      name: WheezyGold7931
+  untuned:
+    group:
+    - Tester
+  kixr:
+    group:
+    - Tester
+  jarfiles:
+    group:
+    - Tester
+  marcoonline:
+    group:
+    - Tester
+  noahvdaa:
+    group:
+    - Tester
+  duccks:
+    group:
+    - Tester
+  9b008434-c75c-4530-8e68-b8ecc00c5704:
+    group:
+    - Tester
+    options:
+      name: ItsSchatten
+  0c88a1d2-eb94-4175-a90f-f57db901937d:
+    group:
+    - Tester
+    options:
+      name: HexedHero
+  97f750f2-bb80-4c98-88a0-275656dcf50a:
+    group:
+    - Tester
+    options:
+      name: YasinSubasi
+  d2b36c11-2515-4d77-8a72-86a675cf98aa:
+    group:
+    - Tester
+    options:
+      name: Kompye
+  doncheadle:
+    group:
+    - Tester
+  lucatjety:
+    group:
+    - Tester
+  skeagle_:
+    group:
+    - Tester
+  mrkylen:
+    group:
+    - Tester
+  d699d123-3565-47b8-9fe3-62c7cc028a35:
+    group:
+    - Tester
+    options:
+      name: JoshuaLovesCode
+  bc8b4993-e8fa-42d9-be60-7ebbe5267c98:
+    group:
+    - Tester
+    options:
+      name: Uxon
+  77a8594b-4e5d-4b5c-a5e6-f353af7604a4:
+    group:
+    - Tester
+    options:
+      name: EnderOffice2k
+  1c5787df-cbdb-40fe-9052-f8adb5000cce:
+    group:
+    - Tester
+    options:
+      name: TheVernichter1
+  3ce49b9c-48ca-41e3-979c-2d62c8765ddd:
+    group:
+    - Tester
+    options:
+      name: Haoshoku
+  d40636bc-1f7a-4f8e-be43-ecff1fe74267:
+    group:
+    - Tester
+    options:
+      name: kamziksvk
+  scarsz:
+    group:
+    - Tester
+  yourpaljake:
+    group:
+    - Tester
+  vidsify:
+    group:
+    - Tester
+  manish1267:
+    group:
+    - Tester
+  smellyonionman:
+    group:
+    - Tester
+  sherbetaddict:
+    group:
+    - Default
+  ehte:
+    group:
+    - Default
+  butterfield8:
+    group:
+    - Tester
+  matthewplayshd:
+    group:
+    - Tester
+  bb47d81a-5293-4280-b4e5-9d85a5f40572:
+    group:
+    - Tester
+    options:
+      name: FallingCactus
+  _yuky_:
+    group:
+    - Tester
+  aneryan:
+    group:
+    - Tester
+  6bc8880d-f3d9-4f65-9a9f-2eb50257d3dc:
+    group:
+    - Helper
+    options:
+      name: Dr4g0nHunt3r
+  969e5bc6-6cd6-457e-b9d6-2bbc2cd58782:
+    group:
+    - Tester
+    options:
+      name: robertlit
+  a974f91b-1b91-48b4-9334-1769329e2b7c:
+    group:
+    - Tester
+    options:
+      name: Niktix
+  woutwoot:
+    group:
+    - Tester
+  diamonddagger590:
     group:
     - Tester
 schema-version: 1
