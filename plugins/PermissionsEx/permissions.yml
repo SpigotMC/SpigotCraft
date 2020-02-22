@@ -2192,9 +2192,6 @@ users:
   nahuld:
     group:
     - Tester
-  m310n:
-    group:
-    - Tester
   3f73ea2c-703e-4404-ad3d-3c24c2c92fa5:
     group:
     - Tester
@@ -2515,4 +2512,41 @@ users:
   diamonddagger590:
     group:
     - Tester
+  _vertig0:
+    group:
+    - Tester
+  mraureliusr:
+    group:
+    - Tester
+  lucatjeyt:
+    group:
+    - Tester
+  319cc616-d751-4465-8d82-a4104f0f1f9c:
+    group:
+    - Tester
+    options:
+      name: FavioMC19
+  e92e7367-ea29-4729-b92e-644e156b6749:
+    group:
+    - Tester
+    options:
+      name: Nemo_64
+  kangarko:
+    group:
+    - Tester
+  66fba70c-0a73-4976-8ace-9903f65f78af:
+    group:
+    - Tester
+    options:
+      name: M310N
+  accfcd51-a052-4f95-8831-35b7c8779fbf:
+    group:
+    - Default
+    options:
+      name: ImNotDragon
+  3f1e5a6f-85a6-45cd-8f69-313763e85ee9:
+    group:
+    - Tester
+    options:
+      name: besuper_
 schema-version: 1
