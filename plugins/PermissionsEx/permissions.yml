@@ -2493,7 +2493,7 @@ users:
     - Tester
   6bc8880d-f3d9-4f65-9a9f-2eb50257d3dc:
     group:
-    - Helper
+    - Moderator
     options:
       name: Dr4g0nHunt3r
   969e5bc6-6cd6-457e-b9d6-2bbc2cd58782:
@@ -2533,7 +2533,7 @@ users:
       name: Nemo_64
   kangarko:
     group:
-    - Tester
+    - Helper
   66fba70c-0a73-4976-8ace-9903f65f78af:
     group:
     - Tester
