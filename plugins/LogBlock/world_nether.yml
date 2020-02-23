@@ -39,4 +39,22 @@ logging:
   LOCKEDCHESTDECAY: false
   NATURALSTRUCTUREGROW: false
   ENDERCRYSTALEXPLOSION: true
+  DRAGONEGGTELEPORT: true
+  DAYLIGHTDETECTORINTERACT: false
+  BEDEXPLOSION: true
 table: lb-world_nether
+entity:
+  spawn:
+  - ARMOR_STAND
+  - ITEM_FRAME
+  - IRON_GOLEM
+  - SNOWMAN
+  destroy:
+  - ARMOR_STAND
+  - ITEM_FRAME
+  - VILLAGER
+  - IRON_GOLEM
+  - SNOWMAN
+  - ANIMAL
+  modify:
+  - ALL

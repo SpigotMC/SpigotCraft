@@ -49,6 +49,7 @@ groups:
     - essentials.msg.url
     - spawnerprotection.spawners.buy
     - spawnerprotection.spawners.buy.*
+    - minecraft.command.seed 
     options:
       rank: 1000
       default: true

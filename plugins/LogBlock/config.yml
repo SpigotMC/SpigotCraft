@@ -7,7 +7,8 @@ consumer:
   useBukkitScheduler: true
 tools:
   toolblock:
-    item: 79
+    item: BEDROCK
+    removeOnDisable: true
     canDrop: false
     leftClickBehavior: TOOL
     mode: LOOKUP
@@ -15,21 +16,25 @@ tools:
     - tb
     rightClickBehavior: BLOCK
     defaultEnabled: true
+    dropToDisable: false
     permissionDefault: OP
-    params: area 0 all sum none limit 15 desc silent
+    params: area 0 all sum none limit 15 desc since 60d silent
   tool:
     leftClickBehavior: NONE
-    item: 270
+    item: WOODEN_PICKAXE
     defaultEnabled: true
     mode: LOOKUP
+    dropToDisable: false
+    removeOnDisable: true
     aliases:
     - t
-    params: area 0 all sum none limit 15 desc silent
+    params: area 0 all sum none limit 15 desc since 60d silent
     permissionDefault: OP
     canDrop: true
     rightClickBehavior: TOOL
 lookup:
   linesPerPage: 15
+  hardLinesLimit: 100000
   dateFormat: MM-dd HH:mm:ss
   defaultTime: 30 minutes
   defaultDist: 20
@@ -39,6 +44,7 @@ mysql:
   host: localhost
   port: 3306
   database: minecraft
+  requireSSL: false
   user: minecraft
 questioner:
   askRollbacks: true
@@ -47,40 +53,49 @@ questioner:
   banPermission: essentials.ban
   askRollbackAfterBan: true
   askClearLogAfterRollback: true
-clearlog:
-  auto:
-  - world "world" before 365 days all
-  - world "world" player lavaflow waterflow leavesdecay before 7 days all
-  - world world_nether before 365 days all
-  - world world_nether player lavaflow before 7 days all
-  dumpDeletedLog: false
-  autoClearLogDelay: 6h
-  enableAutoClearLog: false
 logging:
-  logCreeperExplosionsAsPlayerWhoTriggeredThese: true
+  logFireSpreadAsPlayerWhoCreatedIt: true
+  logCreeperExplosionsAsPlayerWhoTriggeredThese: false
+  logFluidFlowAsPlayerWhoTriggeredIt: false
   logPlayerInfo: false
-  logEnvironmentalKills: true
+  logEnvironmentalKills: false
   hiddenPlayers: []
   ignoredChat:
   - /register
   - /login
+  logBedExplosionsAsPlayerWhoTriggeredThese: true
   logKillsLevel: PLAYERS
-  hiddenBlocks: []
+  hiddenBlocks:
+  - AIR
+  - CAVE_AIR
+  - VOID_AIR
+clearlog:
+  auto:
+  - world "world" before 365 days all
+  - world "world" player lavaflow waterflow leavesdecay before 7 days all
+  - world "world" entities before 365 days
+  - world "world_nether" before 365 days all
+  - world "world_nether" player lavaflow waterflow leavesdecay before 7 days all
+  - world "world_nether" entities before 365 days
+  - world "world_the_end" before 365 days all
+  - world "world_the_end" player lavaflow waterflow leavesdecay before 7 days all
+  - world "world_the_end" entities before 365 days
+  dumpDeletedLog: false
+  autoClearLogDelay: 6h
+  enableAutoClearLog: false
 rollback:
   maxTime: 2 days
   dontRollback:
-  - 10
-  - 11
-  - 46
-  - 51
+  - LAVA
+  - TNT
+  - FIRE
   maxArea: 50
   replaceAnyway:
-  - 8
-  - 9
-  - 10
-  - 11
-  - 51
-version: 1.12.0
+  - LAVA
+  - WATER
+  - FIRE
+  - GRASS_BLOCK
+version: '1.14.1-SNAPSHOT (build #65)'
 debug: false
 safety:
   id:
