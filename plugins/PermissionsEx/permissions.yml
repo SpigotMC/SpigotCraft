@@ -50,6 +50,7 @@ groups:
     - spawnerprotection.spawners.buy
     - spawnerprotection.spawners.buy.*
     - minecraft.command.seed 
+    - fastcraft.use
     options:
       rank: 1000
       default: true
