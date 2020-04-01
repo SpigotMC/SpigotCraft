@@ -57,7 +57,7 @@ message-format:
   irc-a-response: ' &6-> &7[AdminChat]: %MESSAGE%'
   game-a-chat: '[%WORLD%] <%NAME%> -> [AdminChat]: %MESSAGE%'
   irc-a-chat: '[AdminChat] [&4IRC&r] %MESSAGE%'
-  discord-chat: '[Discord]<%NAME%> %MESSAGE%'
+  discord-spigotcraft-chat: '[Discord]<%NAME%> %MESSAGE%'
   irc-discord-chat: '[IRC]<%NAME%> %MESSAGE%'
   irc-discord-action: '[IRC] ***%NAME% %MESSAGE%'
   clever-send: '[&4BOT]<%NAME%> %MESSAGE%'
