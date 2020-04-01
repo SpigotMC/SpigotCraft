@@ -49,7 +49,7 @@ groups:
     - essentials.msg.url
     - spawnerprotection.spawners.buy
     - spawnerprotection.spawners.buy.*
-    - minecraft.command.seed 
+    - minecraft.command.seed
     options:
       rank: 1000
       default: true
@@ -1476,7 +1476,7 @@ users:
     group:
     - Tester
     options:
-      name: Peymaan
+      name: Subbyyyy
   c883f59d-6621-4243-b64b-3781d9fd9530:
     group:
     - Tester
@@ -1898,7 +1898,7 @@ users:
       name: Darkman_Bree
   29337388-8693-4b34-9013-ae27c980dc7f:
     group:
-    - Tester
+    - Helper
     options:
       name: TheCreeperCow
   stimulation:
@@ -2027,9 +2027,6 @@ users:
   mrdienns:
     group:
     - Tester
-  tassu_:
-    group:
-    - Tester
   ibiza:
     group:
     - Tester
@@ -2097,7 +2094,7 @@ users:
       name: ME1312
   e919bae9-9d06-4dd6-80bf-4947a509e104:
     group:
-    - Tester
+    - Helper
     options:
       name: MrIvanPlays
   77a438d9-fa9f-45a6-ac51-8fbba503b35e:
@@ -2188,9 +2185,6 @@ users:
     group:
     - Tester
   hamoood_:
-    group:
-    - Tester
-  nahuld:
     group:
     - Tester
   3f73ea2c-703e-4404-ad3d-3c24c2c92fa5:
@@ -2336,9 +2330,6 @@ users:
     - Tester
     options:
       name: KraftPlayzMC
-  nitome:
-    group:
-    - Tester
   a680274e-ab83-4f58-b56f-73f9c4f5994a:
     group:
     - Tester
@@ -2466,9 +2457,6 @@ users:
   manish1267:
     group:
     - Tester
-  smellyonionman:
-    group:
-    - Tester
   sherbetaddict:
     group:
     - Default
@@ -2486,9 +2474,6 @@ users:
     - Tester
     options:
       name: FallingCactus
-  _yuky_:
-    group:
-    - Tester
   aneryan:
     group:
     - Tester
@@ -2542,7 +2527,7 @@ users:
       name: M310N
   accfcd51-a052-4f95-8831-35b7c8779fbf:
     group:
-    - Default
+    - Tester
     options:
       name: ImNotDragon
   3f1e5a6f-85a6-45cd-8f69-313763e85ee9:
@@ -2550,4 +2535,83 @@ users:
     - Tester
     options:
       name: besuper_
+  fe8e1b70-00d4-44c1-a630-0e720cefee78:
+    group:
+    - Tester
+    options:
+      name: DrApplebranch
+  408081f7-1550-4c65-be91-664a6c449d8f:
+    group:
+    - Tester
+    options:
+      name: RedSpeeds
+  9a9fb400-2795-448a-a937-a726b3a45a69:
+    group:
+    - Tester
+    options:
+      name: Wilsoon
+  217864f4-e4f2-4657-b06f-fa4141b5f709:
+    group:
+    - Tester
+    options:
+      name: _Yuky_
+  sbdeveloper:
+    group:
+    - Tester
+  lokka30:
+    group:
+    - Tester
+  6u5t4v:
+    group:
+    - Tester
+  5bfb3606-c6f1-4d20-b529-6b96380ea188:
+    group:
+    - Tester
+    options:
+      name: OpenSourcee
+  plesop:
+    group:
+    - Default
+  badgerdev:
+    group:
+    - Tester
+  fede1132:
+    group:
+    - Tester
+  finestaf:
+    group:
+    - Tester
+  ruben_artz:
+    group:
+    - Tester
+  a6383c90-e66c-4a53-b693-a59aa116637f:
+    group:
+    - Tester
+    options:
+      name: smellyonionman
+  0500605b-f6d8-429f-be4b-a320bf7b169d:
+    group:
+    - Tester
+    options:
+      name: jeff142
+  c19bbd36-3fd0-4b30-b40c-89f70e989dcb:
+    group:
+    - Tester
+    options:
+      name: Tassu_
+  e7c34f0f-7ddd-4c97-807e-b024ae92d2ab:
+    group:
+    - Tester
+    options:
+      name: Ardentcrest
+  666d582f-b22a-4a99-b297-ad46b0558159:
+    group:
+    - Tester
+    options:
+      name: Nitome
+  c5da6ba0-7eb0-4882-8e73-947c611a4b17:
+    group:
+    - Tester
+    options:
+      name: NahuLD
 schema-version: 1

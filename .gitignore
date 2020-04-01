@@ -6,6 +6,7 @@
 *.log
 *.sqlite
 
+plugins/DiscordSRV/.token
 plugins/Essentials/spawn.yml
 plugins/Essentials/userdata/
 plugins/Essentials/usermap.csv
