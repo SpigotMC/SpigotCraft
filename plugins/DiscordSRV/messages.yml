@@ -49,7 +49,7 @@ DiscordToMinecraftAllRolesSeparator: " | "
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "%displayname% » %message%"
 MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
 
 # Chat channel plugin message
