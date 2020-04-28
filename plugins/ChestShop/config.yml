@@ -21,7 +21,7 @@ REMOVE_EMPTY_SHOPS: false
 REMOVE_EMPTY_CHESTS: false
 #If true, if the REMOVE_EMPTY_SHOPS option is turned on, the chest is also destroyed.
 
-ADMIN_SHOP_NAME: "Admin Shop"
+ADMIN_SHOP_NAME: "Shop"
 #First line of your Admin Shop's sign should look like this:
 SERVER_ECONOMY_ACCOUNT: ""
 #The economy account which Admin Shops should use and to which all taxes will go
