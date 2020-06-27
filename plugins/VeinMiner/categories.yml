@@ -6,6 +6,7 @@ Axe:
   - 'minecraft:golden_axe'
   - 'minecraft:iron_axe'
   - 'minecraft:diamond_axe'
+  - 'minecraft:netherite_axe'
 
 Hoe:
   MaxVeinSize: 64
@@ -15,6 +16,7 @@ Hoe:
   - 'minecraft:golden_hoe'
   - 'minecraft:iron_hoe'
   - 'minecraft:diamond_hoe'
+  - 'minecraft:netherite_hoe'
 
 Pickaxe:
   MaxVeinSize: 64
@@ -24,6 +26,7 @@ Pickaxe:
   - 'minecraft:golden_pickaxe'
   - 'minecraft:iron_pickaxe'
   - 'minecraft:diamond_pickaxe'
+  - 'minecraft:netherite_pickaxe'
 
 Shears:
   MaxVeinSize: 64
@@ -38,6 +41,7 @@ Shovel:
   - 'minecraft:golden_shovel'
   - 'minecraft:iron_shovel'
   - 'minecraft:diamond_shovel'
+  - 'minecraft:netherite_shovel'
 
 # ExampleCategory:
 #   MaxVeinSize: 10
