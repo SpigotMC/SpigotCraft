@@ -1,4 +1,4 @@
-# ActivationMode values are as followed:
+# ActivationStrategy values are as followed:
 # |--> 'SNEAK': Activated upon breaking block whilst sneaking
 # |--> 'STAND': Activated upon breaking block whilst standing up
 # |--> 'ALWAYS': Always active
@@ -7,49 +7,15 @@
 # To specify states, do so with [brackets]. For example, "minecraft:chest[waterlogged=true]"
 # The above will search for any waterlogged chests. Other states will be ignored when checking.
 
-# All tools may have optional tool templates which define a specific item for its category in order to use VeinMiner
-# All values for the template are optional. If not specified, it will not be checked.
-# How templates are checked is based on precedence. All possible precedences are as follows:
-# Precedence: GLOBAL - Only the global template is checked
-# Precedence: CATEGORY_SPECIFIC - Only the category-specific template is checked. If none, it defaults to VeinMiner's original behaviour
-# Precedence: CATEGORY_SPECIFIC_GLOBAL_DEFAULT - The category-specific template is checked first. If it doesn't match, the global template is then checked
-
-# An example of how to create templates is as follows (this goes right in the root of the config as its own option. Don't nest it anywhere)
-# ToolTemplates:
-#   Precedence: CATEGORY_SPECIFIC
-#   Global:
-#     Type: 'stone' <-- This type can be ANY type at all
-#     Name: "&6The VeinMining Stone" <-- Colour codes are supported
-#     Lore:
-#     - "Colours are supported in &8Lore as well!"
-#     - "Here is the second line of lore with &1colour!"
-#   Pickaxe:
-#     Type: 'diamond_pickaxe' <-- This type MUST be one of the tools defined by the Pickaxe category (i.e. wood, stone, gold, iron, etc. pickaxes)
-#     Name: "&cVeinMiner Pickaxe"
-
 MetricsEnabled: false
 PerformUpdateChecks: false
-
-ActivationMode: SNEAK
+ActivationStrategy: SNEAK
 RepairFriendlyVeinminer: false
 IncludeEdges: true
-SortBlocklistAlphabetically: true
+MaxVeinSize: 64
+Cost: 0.0
 DisabledWorlds:
 - WorldName
-
-Tools:
-  Pickaxe:
-    MaxVeinSize: 64
-  Axe:
-    MaxVeinSize: 64
-  Shovel:
-    MaxVeinSize: 64
-  Hoe:
-    MaxVeinSize: 64
-  Shears:
-    MaxVeinSize: 64
-  Hand:
-    InheritMaterialsFromAll: false
 
 BlockList:
   Pickaxe:
@@ -61,6 +27,7 @@ BlockList:
     - 'minecraft:diamond_ore'
     - 'minecraft:emerald_ore'
     - 'minecraft:nether_quartz_ore'
+    - 'minecraft:nether_gold_ore'
   Axe:
     - 'minecraft:acacia_log'
     - 'minecraft:birch_log'
@@ -79,7 +46,8 @@ BlockList:
     - 'minecraft:carved_pumpkin'
     - 'minecraft:red_mushroom_block'
     - 'minecraft:brown_mushroom_block'
-    - 'minecraft:mushroom_stem'
+    - 'minecraft:crimson_stem'
+    - 'minecraft:warped_stem'
   Shovel:
     - 'minecraft:sand'
     - 'minecraft:gravel'
@@ -119,7 +87,10 @@ BlockList:
     - 'minecraft:ice'
     - 'minecraft:packed_ice'
     - 'minecraft:blue_ice'
-    
+# ExampleCategory:
+#   - 'minecraft:dirt'
+#   - 'minecraft:grass'
+
 Aliases:
 - 'minecraft:red_mushroom_block,minecraft:brown_mushroom_block'
 - 'minecraft:grass,minecraft:tall_grass'
