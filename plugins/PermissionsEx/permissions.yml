@@ -8,6 +8,7 @@ groups:
     - essentials.gc
     - -minecraft.command.locate
     - veinminer.veinmine.*
+    - essentials.kittycannon
     - essentials.heal
     - essentails.feed
     - essentials.signs.use.*
