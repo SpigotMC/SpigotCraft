@@ -1,0 +1,54 @@
+# Configuration for Remco's Creative Control plugin. Written with love.
+# There is a bypass permission which is creativecontrol.admin, only give this to people you deem trustworthy.
+
+#==============================
+#         Messages
+#==============================
+messages:
+    playerEntersCreative: ""
+
+#==============================
+#         Protection
+#==============================
+
+## Toggle whether or not you'd like to block the following actions triggered by players in creative.
+block:
+  # True because nobody wants to be killed by a creative player.
+  pvp: true
+  # Left false because players might request items.
+  dropItems: false
+  # Left false for same reason as above
+  chests: false
+  itemPickup: false
+  # Could be useful in case a creative player tries to spawn creepers rapidly to kill survival players.
+  spawnEggs: true
+
+## Enable / disable what blocks you are allowed to place.
+block-place-blacklist:
+  enabled: false
+  ### Should be the Material name (1.13 support) for blocks. Use this for reference: https://www.digminecraft.com/lists/item_id_list_pc.php
+  ### Blocks placing diamond blocks by default.
+  blacklist:
+  - DIAMOND_BLOCK
+  - IRON_BLOCK
+  - GOLD_BLOCK
+  - DIAMOND_ORE
+  - IRON_ORE
+  - GOLD_ORE
+
+## Enable / disable what blocks you are allowed to break.
+block-break-blacklist:
+  enabled: true
+  ### Should be the numeral IDs for blocks. Use this for reference: https://www.digminecraft.com/lists/item_id_list_pc.php
+  ### Blocks breaking diamond blocks by default.
+  blacklist:
+  - DIAMOND_BLOCK
+
+#==============================
+#         Storage
+#==============================
+
+## Determines whether or not you'd like the player's survival inventory to be stored and cleared while in Creative,
+## then swapped back when they go back to Survival.
+inventoryStorage:
+  enabled: true
