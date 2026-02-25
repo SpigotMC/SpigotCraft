@@ -1,55 +1,7 @@
 groups:
   Default:
     permissions:
-    - multiverse.list.who
-    - multiverse.core.list.who
-    - griefprevention.visualizenearbyclaims
-    - bukkit.command.tps
-    - essentials.gc
-    - -minecraft.command.locate
-    - veinminer.veinmine.*
-    - essentials.heal
-    - essentails.feed
-    - essentials.signs.use.*
-    - essentials.warp.sign
-    - essentials.sign.warp
-    - essentials.warp.list
-    - essentials.warp
-    - essentials.chat.url
-    - essentials.afk.auto
-    - essentials.afk
-    - randomtp.tp
-    - essentials.warps.*
-    - ChestShop.shop.*
-    - automessage.receive.regular
-    - bukkit.command.plugins
-    - essentials.back
-    - essentials.help
-    - essentials.helpop
-    - essentials.home
-    - essentials.info
-    - essentials.list
-    - essentials.mail.read
-    - essentials.mail.send
-    - essentials.me
-    - essentials.motd
-    - essentials.msg
-    - essentials.pay
-    - essentials.ping
-    - essentials.reply
-    - essentials.rules
-    - essentials.sethome
-    - essentials.spawn
-    - essentials.tpa
-    - essentials.tpaccept
-    - essentials.tpahere
-    - essentials.tpdeny
-    - plots.permpack.basic
-    - plots.plot.1
-    - essentials.msg.url
-    - spawnerprotection.spawners.buy
-    - spawnerprotection.spawners.buy.*
-    - minecraft.command.seed
+    - '*'
     options:
       rank: 1000
       default: true
