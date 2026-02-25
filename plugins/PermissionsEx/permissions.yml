@@ -87,6 +87,25 @@ groups:
     - essentials.time
     - essentials.worth
     - plots.plot.4
+    - worldedit.clipboard.cut
+    - worldedit.clipboard.paste
+    -	worldedit.clipboard.copy
+    -	worldedit.clipboard.flip
+    -	worldedit.clipboard.rotate
+    - worldedit.generation.sphere
+    -	worldedit.generation.pyramid
+    -	worldedit.history.undo
+    -	worldedit.history.redo
+    -	worldedit.navigation.thru.command
+    -	worldedit.navigation.up
+    -	worldedit.region.center
+    -	worldedit.region.walls
+    -	worldedit.region.replace
+    -	worldedit.region.set
+    -	worldedit.wand
+    -	worldedit.analysis.count
+    -	worldedit.selection.size
+    - worldedit.calc
     inheritance:
     - Default
     options:
